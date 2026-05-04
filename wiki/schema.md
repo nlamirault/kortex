@@ -18,6 +18,9 @@ Templates for each entity type. Copy-paste when creating new pages.
 title: <concept name>
 type: concept
 status: draft
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
 sources: []
 updated: YYYY-MM-DD
 tags: []
@@ -55,9 +58,15 @@ One-sentence definition.
 title: <title by author, year>
 type: source
 status: draft
-sources: [raw/<filename>]
+confidence: high
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: [raw/<subdir>/<filename>]
 updated: YYYY-MM-DD
 tags: []
+key_claims:
+  - <claim 1>
+  - <claim 2>
 ---
 
 # <Title>
@@ -98,6 +107,9 @@ tags: []
 title: <person name>
 type: person
 status: draft
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
 sources: []
 updated: YYYY-MM-DD
 tags: []
@@ -131,6 +143,9 @@ Brief bio.
 title: <project name>
 type: project
 status: draft
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
 sources: []
 updated: YYYY-MM-DD
 tags: []
@@ -165,6 +180,9 @@ Why this matters for this knowledge base.
 title: <decision title>
 type: decision
 status: draft
+confidence: high
+cluster: <domain-slug>
+domain: [<domain-slug>]
 sources: []
 updated: YYYY-MM-DD
 tags: []
@@ -206,6 +224,9 @@ What changes as a result.
 title: <domain name>
 type: domain
 status: active
+confidence: high
+cluster: <self>
+domain: [<self-slug>]
 sources: []
 updated: YYYY-MM-DD
 tags: []
@@ -215,7 +236,9 @@ tags: []
 
 One-paragraph description of this knowledge domain.
 
-## Core Concepts
+## In This Cluster
+
+*(list all member concepts — split cluster when > 15 members)*
 
 - [[concept:slug]] — one-line description
 
@@ -230,4 +253,134 @@ One-paragraph description of this knowledge domain.
 ## Open Questions
 
 - ?
+```
+
+---
+
+## Comparison Page
+
+```markdown
+---
+title: <thing A> vs <thing B>
+type: comparison
+status: draft
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: []
+updated: YYYY-MM-DD
+tags: []
+---
+
+# <Thing A> vs <Thing B>
+
+**Purpose of comparison:** one sentence on why this matters.
+
+## Overview
+
+| Dimension | [[concept:thing-a]] | [[concept:thing-b]] |
+|-----------|---------------------|---------------------|
+| Dimension 1 | | |
+| Dimension 2 | | |
+| Dimension 3 | | |
+
+## Thing A
+
+Key strengths and weaknesses.
+
+## Thing B
+
+Key strengths and weaknesses.
+
+## When to Use Which
+
+Decision guidance.
+
+## Sources
+
+- [[source:slug]] — supports claim X
+```
+
+---
+
+## Synthesis Page
+
+```markdown
+---
+title: <synthesis title>
+type: synthesis
+status: active
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: []
+filed_from_query: true
+updated: YYYY-MM-DD
+tags: []
+---
+
+# <Synthesis Title>
+
+**Filed from:** conversation on YYYY-MM-DD
+**Question that prompted this:** one sentence
+
+## Analysis
+
+Cross-source synthesis. Every claim cites a wiki page or raw source.
+
+## Key Findings
+
+- Finding 1 — [[source:slug]]
+- Finding 2 — [[concept:slug]]
+
+## Limitations
+
+What this synthesis doesn't cover or where confidence is low.
+
+## Related
+
+- [[domain:slug]]
+- [[concept:slug]]
+```
+
+---
+
+## Gap Page
+
+```markdown
+---
+title: <gap description>
+type: gap
+status: draft
+confidence: low
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: []
+updated: YYYY-MM-DD
+tags: []
+---
+
+# Gap: <Title>
+
+**Opened:** YYYY-MM-DD
+**Status:** open | investigating | resolved
+
+## What Is Unknown
+
+Describe the knowledge gap or open question.
+
+## Why It Matters
+
+Why resolving this gap matters.
+
+## Attempted Investigations
+
+- YYYY-MM-DD: tried X → result
+
+## Resolution
+
+*(fill in when resolved)*
+
+✅ Resolved — YYYY-MM-DD
+Evidence: [[source:slug]]
 ```
