@@ -96,6 +96,31 @@ key_claims:
 ## Open Questions Raised
 
 - ?
+
+## Rhetorical Analysis
+
+**Audience:** <target readership — practitioner | researcher | executive | general>
+**Style:** <academic | practitioner | polemic | advocacy | narrative>
+**Epistemic stance:** <certain | hedged | speculative | contrarian>
+**Persuasion devices:** <list: data-heavy, anecdote-first, authority appeals, aphorisms, etc.>
+**Bias indicators:** <funding, affiliation, prior positions that may color claims>
+
+## KnowledgeGraph
+
+### Triples
+
+| Subject | Type_Subject | Predicate | Object | Type_Object | Confidence | Temporality | Source |
+|---------|-------------|-----------|--------|-------------|------------|-------------|--------|
+
+*Confidence: 0.0–1.0. Temporality: STATIQUE \| DYNAMIQUE \| ATEMPOREL. Source: déclaré_article \| inféré*
+
+### Entities
+
+| Entity | Type | Attribute | Value | Action |
+|--------|------|-----------|-------|--------|
+
+*Types: PERSONNE \| ORGANISATION \| TECHNOLOGIE \| CONCEPT \| METHODOLOGIE \| EVENEMENT \| PROJET \| DOCUMENT*
+*Action: AJOUT (new) \| MISE_A_JOUR (update existing entity)*
 ```
 
 ---
