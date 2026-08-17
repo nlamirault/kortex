@@ -21,3 +21,7 @@ Domain hub for domotic knowledge.
 - [Matter](../concepts/matter.md)
 - [Thread](../concepts/thread.md)
 - [Zigbee](../concepts/zigbee.md)
+
+## Projects
+
+*(none yet)*

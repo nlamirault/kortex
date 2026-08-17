@@ -18,10 +18,13 @@ Domain hub for data knowledge.
 
 - [ACID](../concepts/acid.md)
 - [Change Data Capture](../concepts/change-data-capture.md)
-- [Clickhouse](../concepts/clickhouse.md)
 - [Data Lake, Data Warehouse, Data Lakehouse](../concepts/data-lake-data-warehouse-data-lakehouse.md)
 - [Database Models](../concepts/database-models.md)
-- [Dragonfly](../concepts/dragonfly.md)
-- [DynamoDB](../concepts/dynamodb.md)
 - [Lineage Object Model](../concepts/lineage-object-model.md)
 - [OpenLineage](../concepts/openlineage.md)
+
+## Projects
+
+- [Clickhouse](../projects/clickhouse.md)
+- [Dragonfly](../projects/dragonfly.md)
+- [DynamoDB](../projects/dynamodb.md)

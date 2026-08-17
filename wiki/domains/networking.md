@@ -18,12 +18,15 @@ Domain hub for networking knowledge.
 
 - [API Gateway](../concepts/api-gateway.md)
 - [API Rest / GraphQL](../concepts/api-rest-graphql.md)
-- [Envoy](../concepts/envoy.md)
 - [Ingress vs Gateway API](../concepts/ingress-vs-gateway-api.md)
-- [Istio](../concepts/istio.md)
 - [Istio CRDs](../concepts/istio-crds.md)
-- [Nats](../concepts/nats.md)
 - [OSI Model](../concepts/osi-model.md)
 - [REST API Authentication methods](../concepts/rest-api-authentication-methods.md)
 - [REST API Best Practices](../concepts/rest-api-best-practices.md)
 - [URL / URI / URN](../concepts/url-uri-urn.md)
+
+## Projects
+
+- [Envoy](../projects/envoy.md)
+- [Istio](../projects/istio.md)
+- [Nats](../projects/nats.md)

@@ -17,4 +17,7 @@ Domain hub for metering knowledge.
 ## Concepts
 
 - [FOCUS](../concepts/focus.md)
-- [OpenMeter](../concepts/openmeter.md)
+
+## Projects
+
+- [OpenMeter](../projects/openmeter.md)

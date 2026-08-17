@@ -17,7 +17,6 @@ Domain hub for ai knowledge.
 ## Concepts
 
 - [AI / Context Engineering](../concepts/ai-context-engineering.md)
-- [AI / Prompts](../concepts/ai-prompts.md)
 - [AI / Protocols](../concepts/ai-protocols.md)
 - [AWS Bedrock Agent Core](../concepts/aws-bedrock-agent-core.md)
 - [AWS Bedrock AgentCore](../concepts/aws-bedrock-agentcore.md)
@@ -31,3 +30,7 @@ Domain hub for ai knowledge.
 - [MCP](../concepts/mcp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
+
+## Projects
+
+*(none yet)*

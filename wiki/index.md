@@ -43,46 +43,21 @@ Last updated: 2026-08-17
 - [MCP Reference](concepts/mcp.md) — MCP reference
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
 <!-- Kubernetes -->
-- [Argo CD](concepts/argo-cd.md) — GitOps continuous delivery
-- [Argo Events](concepts/argo-events.md) — event-driven workflows on k8s
 - [Argo Events CRDs](concepts/argo-events-crds.md) — EventSource, Sensor CRD reference
-- [Argo Rollouts](concepts/argo-rollouts.md) — advanced deployment strategies
-- [Argo Workflows](concepts/argo-workflows.md) — container-native workflow engine
 - [Argo Workflows CRDs](concepts/argo-workflows-crds.md) — Workflow, CronWorkflow CRD reference
-- [AWS Controllers for Kubernetes (ACK)](concepts/aws-controllers-for-kubernetes-ack.md) — manage AWS services from k8s
 - [EKS Best Practices](concepts/eks-best-practices.md) — AWS EKS guidance
-- [Karpenter](concepts/karpenter.md) — node autoprovisioning
-- [KEDA](concepts/keda.md) — event-driven autoscaling
 - [KEDA CRDs](concepts/keda-crds.md) — ScaledObject, ScaledJob CRD reference
-- [Kro](concepts/kro.md) — Kube Resource Orchestrator
 - [Kubernetes Autoscaling](concepts/kubernetes-autoscaling.md) — HPA, VPA, KEDA overview
 - [Kubernetes Design Patterns](concepts/kubernetes-design-pattern.md) — common k8s patterns
 <!-- Observability -->
-- [Alertmanager](concepts/alertmanager.md) — Prometheus alert routing and dedup
-- [Beyla](concepts/beyla.md) — eBPF-based auto-instrumentation
-- [Grafana](concepts/grafana.md) — metrics/logs/traces visualization
-- [Grafana Alloy](concepts/grafana-alloy.md) — OpenTelemetry collector distribution
-- [GreptimeDB](concepts/greptimedb.md) — time-series and observability database
 - [Heartbeat](concepts/heartbeat.md) — distributed systems health detection
-- [Loki](concepts/loki.md) — log aggregation system
-- [Mimir](concepts/mimir.md) — long-term Prometheus storage
 - [Observability](concepts/observability.md) — logs, traces, metrics overview
-- [OpenTelemetry Collector](concepts/opentelemetry-collector.md) — vendor-neutral telemetry pipeline
 - [OTTL](concepts/ottl.md) — OpenTelemetry Transformation Language
-- [Prometheus](concepts/prometheus.md) — metrics collection and alerting
-- [Pyrra](concepts/pyrra.md) — SLO management for Prometheus
-- [Quickwit](concepts/quickwit.md) — cloud-native search engine
-- [Tempo](concepts/tempo.md) — distributed tracing backend
-- [VictoriaLogs](concepts/victorialogs.md) — fast log storage
-- [VictoriaMetrics](concepts/victoriametrics.md) — high-performance metrics storage
 <!-- Networking -->
 - [API Gateway](concepts/api-gateway.md) — API gateway patterns
 - [API: REST vs GraphQL](concepts/api-rest-graphql.md) — comparison of API styles
-- [Envoy](concepts/envoy.md) — high-performance proxy
 - [Ingress vs Gateway API](concepts/ingress-vs-gateway-api.md) — k8s ingress comparison
-- [Istio](concepts/istio.md) — service mesh
 - [Istio CRDs](concepts/istio-crds.md) — VirtualService, DestinationRule reference
-- [NATS](concepts/nats.md) — cloud-native messaging
 - [OSI Model](concepts/osi-model.md) — network layer reference
 - [REST API Authentication Methods](concepts/rest-api-authentication-methods.md) — auth method comparison
 - [REST API Best Practices](concepts/rest-api-best-practices.md) — REST design guidance
@@ -94,20 +69,14 @@ Last updated: 2026-08-17
 - [Encoding vs Encryption vs Tokenization](concepts/encoding-vs-encryption-vs-tokenization.md)
 - [SBOM](concepts/sbom.md) — software bill of materials
 - [Sigstore](concepts/sigstore.md) — software signing framework
-- [Sigstore Cosign](concepts/sigstore-cosign.md) — container image signing
-- [Sigstore Fulcio](concepts/sigstore-fulcio.md) — certificate authority
-- [Sigstore Rekor](concepts/sigstore-rekor.md) — transparency log
 - [SLSA](concepts/slsa.md) — supply chain security levels
 - [VEX](concepts/vex.md) — Vulnerability Exploitability eXchange
 - [xBOM](concepts/xbom.md) — extended bill of materials
 <!-- Data -->
 - [ACID](concepts/acid.md) — database transaction properties
 - [Change Data Capture](concepts/change-data-capture.md) — CDC patterns
-- [ClickHouse](concepts/clickhouse.md) — columnar OLAP database
 - [Data Lake / Warehouse / Lakehouse](concepts/data-lake-data-warehouse-data-lakehouse.md)
 - [Database Models](concepts/database-models.md) — relational, document, graph overview
-- [Dragonfly](concepts/dragonfly.md) — in-memory data store
-- [DynamoDB](concepts/dynamodb.md) — AWS managed NoSQL
 - [Lineage Object Model](concepts/lineage-object-model.md) — OpenLineage LOM spec
 - [OpenLineage](concepts/openlineage.md) — data lineage standard
 <!-- Blockchain -->
@@ -122,9 +91,7 @@ Last updated: 2026-08-17
 - [TUI](concepts/tui.md) — terminal UI reference
 <!-- Metering -->
 - [FOCUS](concepts/focus.md) — FinOps open cost schema
-- [OpenMeter](concepts/openmeter.md) — usage metering platform
 <!-- WASM -->
-- [WasmCloud](concepts/wasmcloud.md) — WebAssembly application platform
 <!-- Domotic -->
 - [Interrupteur simple](concepts/interrupteur-simple.md) — single-pole switch wiring
 - [Interrupteur va-et-vient](concepts/interrupteur-va-et-vient.md) — two-way switch wiring
@@ -153,6 +120,54 @@ Last updated: 2026-08-17
 ## Projects
 
 *(tools, codebases, initiatives)*
+
+
+<!-- Observability -->
+- [Alertmanager](projects/alertmanager.md) — Alertmanager is a component of the Prometheus monitoring system that handles ale
+- [Beyla](projects/beyla.md) — Grafana Beyla is part of Grafana Labs' open-source observability stack, focusing
+- [Grafana](projects/grafana.md) — Grafana is an open-source platform for monitoring and observability that allows 
+- [Grafana Alloy](projects/grafana-alloy.md) — Grafana Alloy is a [OpenTelemetry Collector](https://opentelemetry.io/docs/colle
+- [GreptimeDB](projects/greptimedb.md) — At a high level, GreptimeDB is built as a **modular, horizontally scalable syste
+- [Loki](projects/loki.md) — Grafana Loki is a horizontally scalable, highly available, multi-tenant log aggr
+- [Mimir](projects/mimir.md) — Grafana Mimir is an open-source, highly scalable, and operationally simple long-
+- [OpenTelemetry Collector](projects/opentelemetry-collector.md) — OpenTelemetry Collector is an open-source, unified agent that collects distribut
+- [Prometheus](projects/prometheus.md) — Prometheus is an open-source systems monitoring and alerting toolkit originally 
+- [Pyrra](projects/pyrra.md) — Pyrra is an open-source tool designed to monitor Service Level Objectives (SLOs)
+- [Quickwit](projects/quickwit.md) — Quickwit is an open-source, distributed search engine designed for large-scale d
+- [Tempo](projects/tempo.md) — Grafana Tempo is an open-source, high-volume, and minimal-dependency distributed
+- [VictoriaLogs](projects/victorialogs.md) — VictoriaLogs is an open-source project developed by the same team behind Victori
+- [VictoriaMetrics](projects/victoriametrics.md) — VictoriaMetrics is an open-source time series database and monitoring system bui
+
+<!-- Kubernetes -->
+- [AWS Controllers for Kubernetes (ACK)](projects/aws-controllers-for-kubernetes-ack.md) — AWS Controllers for Kubernetes (ACK) enables you to manage AWS services directly
+- [Argo CD](projects/argo-cd.md) — Argo CD is a **declarative, GitOps-based continuous delivery (CD) tool** for Kub
+- [Argo Events](projects/argo-events.md) — **Argo Events** is an event-driven workflow automation framework for Kubernetes.
+- [Argo Rollouts](projects/argo-rollouts.md) — **Argo Rollouts** is a Kubernetes controller that provides advanced deployment s
+- [Argo Workflows](projects/argo-workflows.md) — Argo Workflows is a **container-native workflow engine** designed for orchestrat
+- [Karpenter](projects/karpenter.md) — Karpenter is an open-source project by AWS (but designed to be cloud-agnostic) t
+- [Keda](projects/keda.md) — KEDA (Kubernetes Event-Driven Autoscaling) is an open-source project that enable
+- [Kro](projects/kro.md) — Kube Resource Orchestrator (**Kro**) is an open-source, Kubernetes-native projec
+
+<!-- Networking -->
+- [Envoy](projects/envoy.md) — Envoy is a high-performance, cloud-native edge and service proxy designed for mi
+- [Istio](projects/istio.md) — Istio is a **service mesh** that helps manage, secure, and monitor communication
+- [Nats](projects/nats.md) — It's an open-source messaging platform, often used as a **pub/sub, request/reply
+
+<!-- Security -->
+- [Sigstore Cosign](projects/sigstore-cosign.md) — **Cosign** is an open-source CLI tool developed by Sigstore that allows develope
+- [Sigstore Fulcio](projects/sigstore-fulcio.md) — **Fulcio** is an **open-source Certificate Authority** specifically designed for
+- [Sigstore Rekor](projects/sigstore-rekor.md) — **Rekor** is a **transparency log server** that records cryptographically signed
+
+<!-- Data -->
+- [Clickhouse](projects/clickhouse.md) — ClickHouse is an open-source columnar database management system (DBMS) designed
+- [Dragonfly](projects/dragonfly.md)
+- [DynamoDB](projects/dynamodb.md) — In 2021, there was a 66-hour Amazon Prime Day shopping event.
+
+<!-- Metering -->
+- [OpenMeter](projects/openmeter.md) — **OpenMeter** ([https://openmeter.io/](https://openmeter.io/)) is an open-source
+
+<!-- WASM -->
+- [WasmCloud](projects/wasmcloud.md)
 
 <!-- add project pages here -->
 

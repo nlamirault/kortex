@@ -80,8 +80,8 @@ Here’s a simplified example of how Sigstore components work together:
 
 # Next
 
-[Explanation: Sigstore Cosign](../concepts/sigstore-cosign.md)
+[Explanation: Sigstore Cosign](../projects/sigstore-cosign.md)
 
-[Explanation: Sigstore Fulcio](../concepts/sigstore-fulcio.md)
+[Explanation: Sigstore Fulcio](../projects/sigstore-fulcio.md)
 
-[Explanation: Sigstore Rekor](../concepts/sigstore-rekor.md)
+[Explanation: Sigstore Rekor](../projects/sigstore-rekor.md)

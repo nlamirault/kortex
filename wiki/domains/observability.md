@@ -16,20 +16,23 @@ Domain hub for observability knowledge.
 
 ## Concepts
 
-- [Alertmanager](../concepts/alertmanager.md)
-- [Beyla](../concepts/beyla.md)
-- [Grafana](../concepts/grafana.md)
-- [Grafana Alloy](../concepts/grafana-alloy.md)
-- [GreptimeDB](../concepts/greptimedb.md)
 - [Heartbeat](../concepts/heartbeat.md)
-- [Loki](../concepts/loki.md)
-- [Mimir](../concepts/mimir.md)
 - [OTTL](../concepts/ottl.md)
 - [Observability](../concepts/observability.md)
-- [OpenTelemetry Collector](../concepts/opentelemetry-collector.md)
-- [Prometheus](../concepts/prometheus.md)
-- [Pyrra](../concepts/pyrra.md)
-- [Quickwit](../concepts/quickwit.md)
-- [Tempo](../concepts/tempo.md)
-- [VictoriaLogs](../concepts/victorialogs.md)
-- [VictoriaMetrics](../concepts/victoriametrics.md)
+
+## Projects
+
+- [Alertmanager](../projects/alertmanager.md)
+- [Beyla](../projects/beyla.md)
+- [Grafana](../projects/grafana.md)
+- [Grafana Alloy](../projects/grafana-alloy.md)
+- [GreptimeDB](../projects/greptimedb.md)
+- [Loki](../projects/loki.md)
+- [Mimir](../projects/mimir.md)
+- [OpenTelemetry Collector](../projects/opentelemetry-collector.md)
+- [Prometheus](../projects/prometheus.md)
+- [Pyrra](../projects/pyrra.md)
+- [Quickwit](../projects/quickwit.md)
+- [Tempo](../projects/tempo.md)
+- [VictoriaLogs](../projects/victorialogs.md)
+- [VictoriaMetrics](../projects/victoriametrics.md)

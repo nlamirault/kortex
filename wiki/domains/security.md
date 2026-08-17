@@ -23,8 +23,11 @@ Domain hub for security knowledge.
 - [SBOM](../concepts/sbom.md)
 - [SLSA](../concepts/slsa.md)
 - [Sigstore](../concepts/sigstore.md)
-- [Sigstore Cosign](../concepts/sigstore-cosign.md)
-- [Sigstore Fulcio](../concepts/sigstore-fulcio.md)
-- [Sigstore Rekor](../concepts/sigstore-rekor.md)
 - [VEX](../concepts/vex.md)
 - [xBOM](../concepts/xbom.md)
+
+## Projects
+
+- [Sigstore Cosign](../projects/sigstore-cosign.md)
+- [Sigstore Fulcio](../projects/sigstore-fulcio.md)
+- [Sigstore Rekor](../projects/sigstore-rekor.md)

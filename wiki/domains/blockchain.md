@@ -19,3 +19,7 @@ Domain hub for blockchain knowledge.
 - [Blockchain](../concepts/blockchain.md)
 - [Blockchain Layer 1](../concepts/blockchain-layer-1.md)
 - [Blockchain Layers](../concepts/blockchain-layers.md)
+
+## Projects
+
+*(none yet)*

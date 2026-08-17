@@ -16,4 +16,8 @@ Domain hub for wasm knowledge.
 
 ## Concepts
 
-- [WasmCloud](../concepts/wasmcloud.md)
+*(none yet)*
+
+## Projects
+
+- [WasmCloud](../projects/wasmcloud.md)

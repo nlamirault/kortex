@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-17] [IMPROVE] | Reclassify tools, add sources/people, cross-link
+  └─ pages: wiki/projects/{33 pages}, wiki/sources/{8 pages}, wiki/people/{3 pages}
+  └─ note: tools moved from concepts/ to projects/; domain hubs rebuilt with separate sections
+
 ## [2026-08-17] [INGEST] | Migrated Notion KB export into wiki schema (domains + concepts)
   └─ pages: wiki/domains/{11 hubs}, wiki/concepts/{94 pages}, wiki/syntheses/ai-prompts.md
   └─ sources: /Users/nicolas.lamirault/TMP/KB (109 Notion export files, 95 migrated)
