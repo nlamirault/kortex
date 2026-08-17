@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: ai
 domain: [ai]
-sources: [TMP/KB]
+sources: []
 updated: 2026-01-14
 tags: [AI, Protocol]
 ---

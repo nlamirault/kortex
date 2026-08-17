@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-03-05
 tags: [Architecture, Events]
 ---

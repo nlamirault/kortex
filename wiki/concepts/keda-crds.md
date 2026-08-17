@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-07-28
 tags: [Architecture, Autoscaling, CRD, Kubernetes]
 ---

@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-05-06
 tags: [Kubernetes, Orchestrator]
 ---

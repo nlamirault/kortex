@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: observability
 domain: [observability]
-sources: [TMP/KB]
+sources: []
 updated: 2025-10-27
 tags: [Database, OpenTelemetry]
 ---

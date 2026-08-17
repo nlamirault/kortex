@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-04-08
 tags: [Gitops]
 ---

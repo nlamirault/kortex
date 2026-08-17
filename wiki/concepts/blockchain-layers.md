@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: blockchain
 domain: [blockchain]
-sources: [TMP/KB]
+sources: []
 updated: 2025-08-27
 tags: [Blockchain]
 ---

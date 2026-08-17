@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: ai
 domain: [ai]
-sources: [TMP/KB]
+sources: []
 updated: 2025-12-11
 tags: [AI, AWS]
 ---

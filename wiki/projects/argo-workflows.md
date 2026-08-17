@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-03-27
 tags: [Architecture, Workflows]
 ---

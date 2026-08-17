@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: ai
 domain: [ai]
-sources: [TMP/KB]
+sources: []
 updated: 2025-04-10
 tags: [AI]
 ---

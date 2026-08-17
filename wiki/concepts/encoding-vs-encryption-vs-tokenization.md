@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: security
 domain: [security]
-sources: [TMP/KB]
+sources: []
 updated: 2025-02-28
 tags: [Security]
 ---

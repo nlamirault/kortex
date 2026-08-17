@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: domotic
 domain: [domotic]
-sources: [TMP/KB]
+sources: []
 updated: 2026-01-26
 tags: [Electricity]
 ---

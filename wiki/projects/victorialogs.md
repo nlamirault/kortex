@@ -5,7 +5,7 @@ status: active
 confidence: high
 cluster: observability
 domain: [observability]
-sources: [TMP/KB]
+sources: []
 updated: 2025-04-14
 tags: [Logging, Observability]
 ---

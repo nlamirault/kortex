@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: kubernetes
 domain: [kubernetes]
-sources: [TMP/KB]
+sources: []
 updated: 2025-04-15
 tags: [Architecture, Best-Practices, Kubernetes]
 ---

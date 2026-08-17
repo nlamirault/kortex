@@ -5,7 +5,7 @@ status: draft
 confidence: low
 cluster: platform
 domain: [platform]
-sources: [TMP/KB]
+sources: []
 updated: 2025-05-28
 tags: []
 ---
