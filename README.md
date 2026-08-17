@@ -2,6 +2,8 @@
 
 Personal knowledge base powered by the [LLM Wiki protocol](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
+Wiki pages use [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) v0.2 for structured frontmatter, including provenance (`generated`), human sign-off (`verified`), and freshness expiry (`stale_after`) fields.
+
 ## Structure
 
 ```
