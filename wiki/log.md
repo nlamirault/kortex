@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-17] [INGEST] | Migrated Notion KB export into wiki schema (domains + concepts)
+  └─ pages: wiki/domains/{11 hubs}, wiki/concepts/{94 pages}, wiki/syntheses/ai-prompts.md
+  └─ sources: /Users/nicolas.lamirault/TMP/KB (109 Notion export files, 95 migrated)
+  └─ note: Notion types → kortex types: Explanation/Reference→concept, How-to→synthesis; 14 stubs skipped
+
 ## [2026-05-04] [INIT] | Bootstrapped Kortex wiki structure
   └─ pages: wiki/index.md, wiki/log.md, wiki/schema.md
   └─ sources: CLAUDE.md (schema)

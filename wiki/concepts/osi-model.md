@@ -1,0 +1,13 @@
+---
+title: OSI Model
+type: concept
+status: active
+confidence: high
+cluster: networking
+domain: [networking]
+sources: [TMP/KB]
+updated: 2025-02-28
+tags: [Architecture, Networking]
+---
+
+![osi.jpeg](Reference%20OSI%20Model/osi.jpeg)
