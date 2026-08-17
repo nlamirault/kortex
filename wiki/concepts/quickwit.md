@@ -12,7 +12,7 @@ tags: [Logging, Observability, OpenTelemetry, Tracing]
 
 Quickwit is an open-source, distributed search engine designed for large-scale datasets such as logs and events. It is built with a focus on cost-efficiency and is optimized for large-scale indexation and searches.
 
-![home-page-architecture-dark.svg](Explanation%20Quickwit/home-page-architecture-dark.svg)
+
 
 Here's a high-level overview of its architecture:
 
@@ -28,4 +28,4 @@ Here's a high-level overview of its architecture:
 - **Streaming and Batching**: Quickwit can ingest data both in real-time (streaming) and in batch mode. This flexibility allows it to handle various types of workloads and use cases.
 - **Cost-Efficiency**: The architecture is designed to optimize for cost. By leveraging object storage and a columnar format, Quickwit minimizes the amount of data read during queries, which can significantly reduce costs in cloud environments.
 
-![napkin-selection (12).png](Explanation%20Quickwit/napkin-selection_(12).png)
+.png)

@@ -14,7 +14,7 @@ tags: [Monitoring, Observability, OpenTelemetry]
 
 Grafana Mimir is an open-source, highly scalable, and operationally simple long-term storage for Prometheus. Mimir provides long-term storage, querying, and horizontal scalability for Prometheus metrics.
 
-![napkin-selection (10).png](Explanation%20Mimir/napkin-selection_(10).png)
+.png)
 
 Here's a high-level overview of its architecture:
 
@@ -31,7 +31,7 @@ Here's a high-level overview of its architecture:
 
 # Architecture
 
-![mimir-architecture (1).png](Explanation%20Mimir/mimir-architecture_(1).png)
+.png)
 
 ### **Writing metrics**
 
@@ -40,7 +40,7 @@ Here's a high-level overview of its architecture:
 - Once a block is full, Mimir finalizes it, saves it to disk, and sends it to S3 for long-term storage.
 - Once the metrics are written to S3, ***Compactor*** comes into play to optimize the block storage. It merges one-hour blocks into two-hour blocks, and so on.
 
-![mimir-architecture-writing-metrics (1).png](Explanation%20Mimir/mimir-architecture-writing-metrics_(1).png)
+.png)
 
 ### **Reading metrics**
 
@@ -53,7 +53,7 @@ All the queries end up in the ***Query** **Frontend***. It:
 
 *Querier* retrieves the query from the ***Query Frontend*** and prepares the data required to execute that query. To do so, it requests them first from ***Ingester*** and then from the ***Store Gateway***, which acts as the S3 data gateway.
 
-![mimir-architecture-reading-metrics (1).png](Explanation%20Mimir/mimir-architecture-reading-metrics_(1).png)
+.png)
 
 ### **Store gateway**
 

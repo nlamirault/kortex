@@ -14,7 +14,7 @@ tags: [Database, OpenTelemetry]
 
 At a high level, GreptimeDB is built as a **modular, horizontally scalable system** with three primary components:
 
-![architecture-3-463d7251dfecb83ef0e89587643952e0.png](Explanation%20GreptimeDB/architecture-3-463d7251dfecb83ef0e89587643952e0.png)
+
 
 ## **Frontend (SQL & API Layer)**
 

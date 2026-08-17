@@ -44,7 +44,7 @@ Here’s the interaction model between the 7 services:
 - **Browser Tool** and **Code Interpreter** are specialized tools that extend agent capabilities.
 - **Observability** connects across all layers for tracing, metrics, and auditability.
 
-![bedrock-agent-core.png](Explanation%20AWS%20Bedrock%20AgentCore/bedrock-agent-core.png)
+
 
 # Next
 

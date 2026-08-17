@@ -18,7 +18,7 @@ The concepts of data warehouse, data lake, and data lakehouse are architectures 
 
 A data warehouse is a centralized system optimized for processing structured data. Data is extracted, transformed and loaded (ETL) from different data sources to create a single repository of reliable, consistent data. Data stored in a Data Warehouse is generally historical and often aggregated to enable analysis and generate reports.
 
-![642d6fbcab70ee3188022fae_Data Warehouse@4x.png](Reference%20Data%20Lake,%20Data%20Warehouse,%20Data%20Lakehous/642d6fbcab70ee3188022fae_Data_Warehouse4x.png)
+
 
 ### **Advantages :**
 
@@ -36,7 +36,7 @@ A data warehouse is a centralized system optimized for processing structured dat
 
 In contrast, a Data Lake is a repository for voluminous, diversified data that stores data in its raw, untransformed form, without the need for predefined structures. Data stored in a Data Lake can be structured, semi-structured or unstructured, and can come from a variety of sources. This data is often used for exploratory analyses and Machine Learning models.
 
-![642d6fecfa7530fc29a03b62_Data Lake@4x.png](Reference%20Data%20Lake,%20Data%20Warehouse,%20Data%20Lakehous/642d6fecfa7530fc29a03b62_Data_Lake4x.png)
+
 
 ### Advantages :
 
@@ -56,7 +56,7 @@ In contrast, a Data Lake is a repository for voluminous, diversified data that s
 
 A Data Lakehouse is an architecture that combines the advantages of the Data Warehouse and the Data Lake. In a Data Lakehouse, data is stored in its raw form, but also organized into tables to enable standard SQL queries. Data is also often indexed and optimized to improve performance. This enables analysts to work with both raw and aggregated data, while using standard SQL tools to query it.
 
-![642d702c136b145c2570f771_Data Lakehouse@4x.png](Reference%20Data%20Lake,%20Data%20Warehouse,%20Data%20Lakehous/642d702c136b145c2570f771_Data_Lakehouse4x.png)
+
 
 ### **Benefits :**
 

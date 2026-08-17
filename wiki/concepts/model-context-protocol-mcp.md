@@ -18,7 +18,7 @@ tags: [AI, Protocol]
 
 ![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fy081akh1ng31owvdq95j.png)
 
-![Akshay-🚀-on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-dive-in.png](Explanation%20Model%20Context%20Protocol%20(MCP)/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-dive-in.png)
+/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-dive-in.png)
 
 ## How MCP Works (Key Components)
 
@@ -31,7 +31,7 @@ tags: [AI, Protocol]
     ![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpnsencpst8fkresibw6e.png)
     
 
-![Akshay-🚀-on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div (1).png](Explanation%20Model%20Context%20Protocol%20(MCP)/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div_(1).png)
+/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div_(1).png)
 
 - **Hosts:** Applications the user interacts with (e.g., Claude Desktop, an IDE like Cursor, a custom agent).
 - **Clients:** Live within the Host application and manage the connection to one specific MCP server. Maintain a 1:1 to connection.
@@ -53,7 +53,7 @@ The current components of MCP servers include:
     ![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1nmhc9r8de8l2ipylvwi.png)
     
 
-![Akshay-🚀-on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div (3).png](Explanation%20Model%20Context%20Protocol%20(MCP)/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div_(3).png)
+/Akshay--on-X-MCP-is-like-a-USB-C-port-for-your-AI-applications-Just-as-USB-C-offers-a-standardized-way-to-connect-devices-to-various-accessories-MCP-standardizes-how-your-AI-apps-connect-to-different-data-sources-and-tools-Let-s-div_(3).png)
 
 ## Everyday Benefits
 
@@ -86,4 +86,4 @@ MCP is part of a broader trend toward making AI assistants more capable through 
 
 # Next
 
-[Reference: MCP](Reference%20MCP%201cb1ec0b77e08016bcc7cc818fd6d3ec.md)
+[Reference: MCP](../concepts/mcp.md)

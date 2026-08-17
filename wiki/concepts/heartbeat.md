@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [Observability]
 ---
 
-![unnamed (2) (1).gif](Reference%20Heartbeat/unnamed_(2)_(1).gif)
+_(1).gif)
 
 Heartbeat mechanisms are crucial in distributed systems for monitoring the health and status of various components. Here are several types of heartbeat detection mechanisms commonly used in distributed systems:
 

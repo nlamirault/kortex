@@ -14,7 +14,7 @@ tags: [Logging, Observability, OpenTelemetry]
 
 Grafana Loki is a horizontally scalable, highly available, multi-tenant log aggregation system inspired by Prometheus. It is designed to be very cost-effective and easy to operate, as it does not index the contents of the logs, but rather a set of labels for each log stream.
 
-![napkin-selection (8).png](Explanation%20Loki/napkin-selection_(8).png)
+.png)
 
 The central component of the architecture, the Loki server, is responsible for storing logs and processing queries. It consists of several key components:
 

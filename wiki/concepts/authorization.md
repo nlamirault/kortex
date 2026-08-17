@@ -50,7 +50,7 @@ ReBAC can also be considered PBAC, as authorization policies are centralized.
 
 ## Request Path
 
-![PowerPoint-Präsentation-09-23-2025_12_09_PM.png](Explanation%20Authorization/PowerPoint-Prasentation-09-23-2025_12_09_PM.png)
+
 
 ## XACML
 
@@ -117,7 +117,7 @@ This information may include user attributes, resources, context (time, location
 | PAP | Manages policies | Administration interface for defining rules |
 | PIP | Provides information | Database of user roles, context attributes |
 
-![PowerPoint-Präsentation-09-23-2025_12_09_PM (1).png](Explanation%20Authorization/PowerPoint-Prasentation-09-23-2025_12_09_PM_(1).png)
+.png)
 
 # Next
 

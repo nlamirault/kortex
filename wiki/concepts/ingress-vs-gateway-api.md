@@ -53,7 +53,7 @@ Kubernetes **Ingress** and **Gateway API** are both used to manage external traf
 
 [](https://app.notion.com)
 
-![1743001207608.jpeg](Reference%20Ingress%20vs%20Gateway%20API/1743001207608.jpeg)
+
 
 # **When to Use What?**
 

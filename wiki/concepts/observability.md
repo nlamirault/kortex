@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [Alerting, Logging, Monitoring, Observability, Tracing]
 ---
 
-![napkin-selection (4).png](Reference%20Observability/napkin-selection_(4).png)
+.png)
 
 # Logging
 
@@ -24,6 +24,6 @@ Tracing provides insight into the journey of requests across system components l
 
 Metrics represent aggregate data points reflecting a system's operational state, including query rates, API responsiveness, and service latencies. This time-series data is collected in databases like InfluxDB and often processed by tools such as Prometheus, which supports querying and alerting based on specific criteria. Visualization and alerting on metrics can be done in platforms like Grafana, which integrates with various alerting mechanisms like email, SMS, or Slack.
 
-![napkin-selection (5).png](Reference%20Observability/napkin-selection_(5).png)
+.png)
 
-![GMEOk26akAAmMK1.png](Reference%20Observability/GMEOk26akAAmMK1.png)
+

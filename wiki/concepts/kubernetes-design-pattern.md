@@ -10,4 +10,4 @@ updated: 2025-02-28
 tags: [Architecture, Kubernetes]
 ---
 
-![GYyBTZ7bQAAiDSa.png](Reference%20Kubernetes%20Design%20Pattern/GYyBTZ7bQAAiDSa.png)
+

@@ -20,7 +20,7 @@ Unlike traditional CI/CD tools, Argo CD **continuously monitors** Kubernetes app
 
 Argo CD consists of multiple components that work together to provide **GitOps-based deployment** and synchronization.
 
-![1_MK1v4FgXo-kOWEYqqYd5xQ.gif](Explanation%20Argo%20CD/1_MK1v4FgXo-kOWEYqqYd5xQ.gif)
+
 
 ### **Git Repository (Declarative Source of Truth)**
 

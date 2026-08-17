@@ -127,7 +127,7 @@ In AWS:
 
 This component is coupled with the core Karpenter logic, but can be swapped in a modular fashion for other clouds.
 
-![Components of Karpenter’s architecture - visual selection (1).svg](Explanation%20Karpenter/Components_of_Karpenters_architecture_-_visual_selection_(1).svg)
+.svg)
 
 # RBAC and IAM
 

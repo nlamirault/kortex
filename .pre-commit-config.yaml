@@ -59,6 +59,19 @@ repos:
   - id: check-github-workflows
     name: "✅ github-actions / Validate Github Actions workflow"
     stages: [pre-commit]
+# Docs
+- repo: https://github.com/lycheeverse/lychee
+  rev: lychee-v0.24.2
+  hooks:
+  - id: lychee
+    name: "📝 docs / Check for broken links"
+    stages: [pre-commit]
+    args:
+    - '--no-progress'
+    - '--offline'          # only check local file links (no network)
+    - '--include-fragments'
+    - '--exclude-path=TMP'
+    - '--exclude-path=.git'
 # Security
 - repo: https://github.com/gitleaks/gitleaks
   rev: v8.27.2

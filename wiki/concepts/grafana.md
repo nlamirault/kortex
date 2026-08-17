@@ -14,7 +14,7 @@ tags: [Observability]
 
 Grafana is an open-source platform for monitoring and observability that allows you to query, visualize, alert on, and understand your metrics no matter where they are stored. It provides tools to turn your time-series database (TSDB) data into beautiful graphs and visualizations.
 
-![napkin-selection (1).png](Explanation%20Grafana/napkin-selection_(1).png)
+.png)
 
 Grafana's architecture is modular and includes the following components:
 

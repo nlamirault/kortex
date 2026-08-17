@@ -82,8 +82,8 @@ The architecture consists of the following key components:
 - **Recreate:** In this strategy, the old version is completely shut down before the new version is deployed. This approach ensures a clean state with no overlapping versions, making it ideal for stateful applications or workloads that cannot handle multiple versions running simultaneously. However, it causes downtime during the transition, making it less suitable for applications requiring high availability.
 - **Blue-Green Deployment:** This method runs two application versions in parallel - Blue (current) and Green (new). Traffic remains on the Blue version while the Green version undergoes validation. Once the Green version is confirmed stable, traffic is instantly switched over. If issues arise, rolling back is seamless by reverting traffic to the Blue version. This strategy ensures zero downtime but requires additional infrastructure to run both versions simultaneously.
 
-![blue-green-deployments.webp](Explanation%20Argo%20Rollouts/blue-green-deployments.webp)
+
 
 - **Canary Deployment:** This strategy introduces the new version gradually by shifting traffic in small increments while monitoring performance metrics. Initially, a small percentage of traffic (e.g., 5%) is directed to the new version. If no issues arise, the traffic share is increased to 25%, then 50%, until the full transition is completed. If problems are detected, the rollout can be halted or automatically reverted. This approach allows controlled risk mitigation and is often used with service meshes or ingress controllers for more precise traffic routing.
 
-![canary-deployments.webp](Explanation%20Argo%20Rollouts/canary-deployments.webp)
+

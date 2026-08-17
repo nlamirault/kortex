@@ -24,7 +24,7 @@ It was originally created by Google and is now part of the **Open Source Securit
 
 # **Supply chain threats**
 
-![supply-chain-threats (1).svg](Reference%20SLSA/supply-chain-threats_(1).svg)
+.svg)
 
 # The 4 SLSA Levels
 

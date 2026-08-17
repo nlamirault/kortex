@@ -115,4 +115,4 @@ Each service in the mesh has an **Envoy sidecar** that handles traffic. `istiod`
 
 # Next
 
-[Reference: Istio CRDs](Reference%20Istio%20CRDs%201a81ec0b77e080648e2fe1c60b1b9785.md)
+[Reference: Istio CRDs](../concepts/istio-crds.md)

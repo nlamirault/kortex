@@ -49,4 +49,4 @@ KEDA consists of two main components:
 
 # Next
 
-[Reference: Keda CRDs](Reference%20Keda%20CRDs%201a81ec0b77e08015bb7ae172f6e386fb.md)
+[Reference: Keda CRDs](../concepts/keda-crds.md)

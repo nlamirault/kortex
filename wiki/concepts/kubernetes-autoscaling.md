@@ -16,17 +16,17 @@ If you are unfamiliar with scaling in Kubernetes, there are three primary compon
 
 ![](https://www.nops.io/wp-content/uploads/2023/06/Different-Methods-for-Autoscaling-in-Kubernetes.png)
 
-![image (1).png](Explanation%20Kubernetes%20Autoscaling/image_(1).png)
+.png)
 
 # **Cluster Autoscaling**
 
 Kubernetes clusters are constrained by the CPU and memory capacity of their worker nodes. As applications within a cluster scale, they will eventually surpass the cluster's available capacity. The solution to this problem is Cluster Autoscaling. Cluster Autoscaling focuses on the infrastructure layer instead of individual pods. A Cluster Autoscaler will dynamically add or remove new worker nodes to the cluster depending on the current utilization.  The Cluster Autoscaler lives inside the Kubernetes cluster as a Controller that communicates to your Cloud Provider via API calls to provision new servers.
 
-![image.png](Explanation%20Kubernetes%20Autoscaling/image.png)
+
 
 Tools:
 
-![image (1).png](Explanation%20Kubernetes%20Autoscaling/image_(1)%201.png)
+%201.png)
 
 ## **Cluster Autoscaler**
 
@@ -69,11 +69,11 @@ Challenges:
 
 In Kubernetes, applications run in an object known as a "Pod". To scale applications, more "replicas" of the Pod are created.  This can be done manually by an Administrator or dynamically through an object known as a HPA. HPA stands for **Horizontal Pod Autoscaler** which is an object in Kubernetes that monitors your application's metrics, such as CPU usage, and dynamically scales the amount of Pod replicas based on those metrics. This method of scaling is referred to as "scaling out" the application.
 
-![image (3).png](Explanation%20Kubernetes%20Autoscaling/image_(3).png)
+.png)
 
 Tools:
 
-![image.png](Explanation%20Kubernetes%20Autoscaling/image%201.png)
+
 
 ## Core HPA
 
@@ -112,11 +112,11 @@ Challenges:
 
 VPA stands for **Vertical Pod Autoscaler**, and it's another tool in your Kubernetes autoscaling arsenal, but unlike HPA, it focuses on adjusting the CPU and Memory requests and limits of individual pods instead of scaling their replicas. This gives you finer-grained control over the resource allocation of your application. VPA's are Kubernetes's strategy for "scaling up" applications.
 
-![image.png](Explanation%20Kubernetes%20Autoscaling/image%202.png)
+
 
 Tools:
 
-![image.png](Explanation%20Kubernetes%20Autoscaling/image%203.png)
+
 
 ## VPA
 

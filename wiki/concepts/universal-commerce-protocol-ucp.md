@@ -88,4 +88,4 @@ sequenceDiagram
 
 ### Next
 
-[Reference: AI / Protocols](Reference%20AI%20Protocols%202631ec0b77e080c1a2c0cc2674e1d75f.md)
+[Reference: AI / Protocols](../concepts/ai-protocols.md)

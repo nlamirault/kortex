@@ -33,7 +33,7 @@ The xBOM is a full-stack BOM standard that provides advanced supply chain capabi
 
 An [SBOM](https://www.reversinglabs.com/glossary/software-bill-of-materials-sbom) is a complete, machine-readable inventory of software components, including metadata, dependencies, and licenses, providing transparency across the software supply chain.
 
-See: [Reference: SBOM](Reference%20SBOM%201cf1ec0b77e080ae8deeff5d679467f2.md) 
+See: [Reference: SBOM](../concepts/sbom.md) 
 
 **SaaSBOM (Software as a Service Bill of Materials)**
 

@@ -49,7 +49,7 @@ The A2A protocol usually operates within a **layered architecture**, fitting int
 - Helps discover and route between agents.
 - May align with MCP’s central orchestrator.
 
-![Akshay-🚀-on-X-MCP-vs-A2A-Agent2Agent-protocol-clearly-explained-X-04-16-2025_08_32_AM.png](Explanation%20Agent-to-Agent%20(A2A)/Akshay--on-X-MCP-vs-A2A-Agent2Agent-protocol-clearly-explained-X-04-16-2025_08_32_AM.png)
+/Akshay--on-X-MCP-vs-A2A-Agent2Agent-protocol-clearly-explained-X-04-16-2025_08_32_AM.png)
 
 # 🔩 Core Components of A2A
 
@@ -88,7 +88,7 @@ As per the official Google stance:
 
 What does it mean? Let’s look into an Agentic System architecture that involves multiple Agents.
 
-![a2A-mcp.webp](Explanation%20Agent-to-Agent%20(A2A)/a2A-mcp.webp)
+/a2A-mcp.webp)
 
 *Moving pieces in MCP:*
 
@@ -110,11 +110,11 @@ What does it mean? Let’s look into an Agentic System architecture that involve
 
 Google goes as far as suggesting exposing A2A Agents via MCP server resources.
 
-![a2a-discovery.webp](Explanation%20Agent-to-Agent%20(A2A)/a2a-discovery.webp)
+/a2a-discovery.webp)
 
 1. Each Agent in the mesh would be able to discover other available Agents by connecting to a dedicated MCP Server via a MCP Client and browsing the resource catalogue. The suggestion is to expose Agent Cards through these MCP resources.
 2. Once discovered, Agents would continue communication between each other utilising A2A protocol.
 
 ### Next
 
-[Reference: AI / Protocols](Reference%20AI%20Protocols%202631ec0b77e080c1a2c0cc2674e1d75f.md)
+[Reference: AI / Protocols](../concepts/ai-protocols.md)

@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [Architecture]
 ---
 
-![1713475493854 (1).gif](Reference%20Fantastic%20Four%20of%20System%20Design/1713475493854_(1).gif)
+.gif)
 
 # Scalability
 

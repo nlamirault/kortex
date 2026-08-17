@@ -27,4 +27,4 @@ Here is an overview of the components and architecture of Grafana Alloy:
 - **Lightweight Design**: Grafana Alloy is designed to be more lightweight than a full Prometheus server. It strips out certain features like local storage and querying to reduce its resource footprint, making it ideal for edge or high-scale environments.
 - **High Availability**: While Grafana Alloy itself does not provide high availability features, it can be deployed in a replicated fashion across multiple instances to ensure no single point of failure.
 
-![_- visual selection.svg](Explanation%20Grafana%20Alloy/_-_visual_selection.svg)
+

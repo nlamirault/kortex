@@ -12,7 +12,7 @@ tags: [Electricity]
 
 # **Schéma de branchement d’un va-et-vient**
 
-![schema va et vient.jpg](Reference%20Interrupteur%20va%20et%20vient/schema_va_et_vient.jpg)
+
 
 Le schéma de branchement peut sembler complexe au premier abord, mais chaque ligne correspond à une fonction bien définie. Voici le détail :
 

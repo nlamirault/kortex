@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [Database]
 ---
 
-![826d6425-8401-4806-b801-5ff758d5c69f_1280x1664.webp](Reference%20ACID/826d6425-8401-4806-b801-5ff758d5c69f_1280x1664.webp)
+
 
 # Atomicity
 

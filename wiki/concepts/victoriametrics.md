@@ -12,7 +12,7 @@ tags: [Monitoring, Observability]
 
 VictoriaMetrics is an open-source time series database and monitoring system built specifically for Prometheus style time series data
 
-![k8s-stack-overview.png](Explanation%20VictoriaMetrics/k8s-stack-overview.png)
+
 
 Here's a high-level overview of VictoriaMetrics' architecture:
 

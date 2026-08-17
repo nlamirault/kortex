@@ -14,7 +14,7 @@ tags: [Observability, OpenTelemetry, Tracing]
 
 Grafana Tempo is an open-source, high-volume, and minimal-dependency distributed tracing backend. It is designed to be a robust and cost-effective solution for storing and querying massive amounts of trace data.
 
-![napkin-selection (9).png](Explanation%20Tempo/napkin-selection_(9).png)
+.png)
 
 Here's an overview of its architecture:
 

@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [Security]
 ---
 
-![encoding.png](Reference%20Encoding%20vs%20Encryption%20vs%20Tokenization/encoding.png)
+
 
 # Encoding
 

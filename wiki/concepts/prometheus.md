@@ -28,4 +28,4 @@ Here is an overview of its architecture:
 - **Visualization and Tools**: While Prometheus has a built-in expression browser for running PromQL queries and visualizing results, it is commonly used with external tools like Grafana for more sophisticated dashboards. There are also various other community-contributed tools and integrations that extend Prometheus's functionality.
 - **HTTP API**: Prometheus provides a rich HTTP API to enable automated access from external systems to the time series data and to various aspects of the Prometheus server, such as the alerting rules.
 
-![napkin-selection (6).png](Explanation%20Prometheus/napkin-selection_(6).png)
+.png)

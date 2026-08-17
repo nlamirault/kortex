@@ -18,7 +18,7 @@ It is maintained under the **LF AI & Data Foundation** and acts as a **standard 
 
 Homepage: https://openlineage.io/
 
-![with-ol-24a6cabbc0e0f1e78456b4c5028061ff.svg](Explanation%20OpenLineage/with-ol-24a6cabbc0e0f1e78456b4c5028061ff.svg)
+
 
 # Architecture
 
@@ -102,4 +102,4 @@ This object model is designed to be **platform-agnostic**, **extensible**, and *
 
 # Next
 
-[Reference: Lineage Object Model](Reference%20Lineage%20Object%20Model%201f31ec0b77e080c98de5c260815885d5.md)
+[Reference: Lineage Object Model](../concepts/lineage-object-model.md)

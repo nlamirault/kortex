@@ -14,7 +14,7 @@ tags: [AI]
 
 To understand context engineering, we must first expand our definition of "context." It isn't just the single prompt you send to an LLM. Think of it as everything the model sees before it generates a response.
 
-![context.png](Reference%20AI%20Context%20Engineering/context.png)
+
 
 - **Instructions / System Prompt:** An initial set of instructions that define the behavior of the model during a conversation, can/should include examples, rules ….
 - **User Prompt:** Immediate task or question from the user.
@@ -26,4 +26,4 @@ To understand context engineering, we must first expand our definition of "conte
 
 # Context Engineering for Agents
 
-![context_eng_overview.png](Reference%20AI%20Context%20Engineering/context_eng_overview.png)
+

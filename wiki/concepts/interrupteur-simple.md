@@ -12,7 +12,7 @@ tags: [Electricity]
 
 # **Schéma de branchement interrupteur simple**
 
-![Schéma branchement interrupteur simple.jpg](Reference%20Interrupteur%20simple/Schema_branchement_interrupteur_simple.jpg)
+
 
 Sur ce schéma, on distingue clairement :
 

@@ -22,7 +22,7 @@ It is an **interoperability standard** backed by Apple, Google, Amazon, Samsung,
 
 … **without re-pairing it each time**.
 
-![Thread-home-network.png](Reference%20Matter/Thread-home-network.png)
+
 
 ### 📡 What networks does Matter use?
 

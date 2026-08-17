@@ -18,7 +18,7 @@ The key difference:
 
 👉 **Thread uses IPv6**, meaning devices can communicate natively over IP networks (like the internet).
 
-![thread-data-link-layer.png](Reference%20Thread/thread-data-link-layer.png)
+
 
 ### 🔌 How it works
 

@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [API, Authentication]
 ---
 
-![152fcb14-3acf-4027-a3c2-307f4596ef4b_3000x3900.webp](Reference%20REST%20API%20Authentication%20methods/152fcb14-3acf-4027-a3c2-307f4596ef4b_3000x3900.webp)
+
 
 Some popular authentication methods for REST APIs include:
 

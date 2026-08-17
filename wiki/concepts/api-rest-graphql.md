@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [API]
 ---
 
-![graphQL.jpg](Reference%20API%20Rest%20GraphQL/graphQL.jpg)
+
 
 # REST
 

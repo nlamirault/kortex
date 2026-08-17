@@ -82,7 +82,7 @@ Here's a breakdown of its major components:
 - Events carry unique IDs to avoid double-counting.
 - Deduplication logic is applied during ingestion to maintain accurate metrics.
 
-![download.png](Explanation%20OpenMeter/download.png)
+
 
 # 💡 Summary of Key Components
 
@@ -102,4 +102,4 @@ Here's a breakdown of its major components:
 3. You define a "message_sent" meter with a `count` aggregation grouped by `user_id`.
 4. Your billing system queries OpenMeter’s API to bill customers monthly based on usage.
 
-![753ae01d-d375-4b5a-b4a1-ab82b5c55f1f.png](Explanation%20OpenMeter/753ae01d-d375-4b5a-b4a1-ab82b5c55f1f.png)
+

@@ -10,7 +10,7 @@ updated: 2025-02-28
 tags: [API, Architecture]
 ---
 
-![5073760f-5d61-4ce2-8469-bf21cc640e09_1280x1664.webp](Explanation%20API%20Gateway/5073760f-5d61-4ce2-8469-bf21cc640e09_1280x1664.webp)
+
 
 Step 1 - The client sends an HTTP request to the API gateway.
 

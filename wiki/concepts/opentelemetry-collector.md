@@ -27,4 +27,4 @@ Here's a high-level overview of the OpenTelemetry Collector architecture:
 - **Integrations**: OpenTelemetry Collector includes integrations with popular frameworks, libraries, and systems like Java, .NET, Python, and gRPC to easily collect distributed traces, metrics, and logs using standard formats.
 - **Scalability and Flexibility**: The OpenTelemetry Collector architecture is designed for horizontal scaling, allowing users to deploy multiple collector instances for increased performance and reliability. Users can also customize the collector by adding their own custom processors, receivers, exporters, and integrations as needed.
 
-![napkin-selection (11).png](Explanation%20OpenTelemetry%20Collector/napkin-selection_(11).png)
+.png)

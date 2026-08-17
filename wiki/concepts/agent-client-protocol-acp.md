@@ -16,7 +16,7 @@ The [**Agent Client Protocol (ACP)**](https://agentclientprotocol.com/) is a sta
 
 It defines a common JSON-based interface that allows any editor to integrate with any AI agent, similar to how the **Language Server Protocol (LSP)** standardized the interaction between editors and programming language servers.
 
-![Gemini_Generated_Image_696n0w696n0w696n.png](Explanation%20Agent%20Client%20Protocol%20(ACP)/Gemini_Generated_Image_696n0w696n0w696n.png)
+/Gemini_Generated_Image_696n0w696n0w696n.png)
 
 ### Why ACP?
 
@@ -64,4 +64,4 @@ It defines a common JSON-based interface that allows any editor to integrate wit
 
 ### Next
 
-[Reference: AI / Protocols](Reference%20AI%20Protocols%202631ec0b77e080c1a2c0cc2674e1d75f.md)
+[Reference: AI / Protocols](../concepts/ai-protocols.md)
