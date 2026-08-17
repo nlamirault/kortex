@@ -8,8 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-04-18
 tags: [Messaging]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 It's an open-source messaging platform, often used as a **pub/sub, request/reply, and streaming** messaging system.

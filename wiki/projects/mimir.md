@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Monitoring, Observability, OpenTelemetry]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Grafana Mimir is an open-source, highly scalable, and operationally simple long-term storage for Prometheus. Mimir provides long-term storage, querying, and horizontal scalability for Prometheus metrics.

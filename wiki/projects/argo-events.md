@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-03-05
 tags: [Architecture, Events]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **Overview**
 
 **Argo Events** is an event-driven workflow automation framework for Kubernetes. It is part of the Argo ecosystem and enables users to define, detect, and respond to events by triggering workflows, jobs, and other Kubernetes resources.

@@ -8,8 +8,9 @@ domain: [platform]
 sources: []
 updated: 2026-08-17
 tags: [Platform]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Platform
 
 Domain hub for platform knowledge.

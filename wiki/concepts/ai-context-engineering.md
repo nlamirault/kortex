@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2025-09-03
 tags: [AI]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # Overview
 
 To understand context engineering, we must first expand our definition of "context." It isn't just the single prompt you send to an LLM. Think of it as everything the model sees before it generates a response.

@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-08-17
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # Overview
 
 [UCP](https://ucp.dev/) is an open-source initiative (spearheaded by Google and industry partners) designed to create a **standardized interoperability layer** for commerce on the web

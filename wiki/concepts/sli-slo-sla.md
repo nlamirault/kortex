@@ -8,8 +8,9 @@ domain: [platform]
 sources: []
 updated: 2025-02-28
 tags: [Reliability]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 Google SRE Book: [https://sre.google/sre-book/service-level-objectives/](https://sre.google/sre-book/service-level-objectives/)
 
 # Definitions

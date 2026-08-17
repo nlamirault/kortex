@@ -9,8 +9,9 @@ domain: [security, platform, ai]
 sources: []
 updated: 2026-08-17
 tags: [Security, SRE, Open-Source]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 Google's engineering teams have contributed foundational open-source projects and specifications
 that underpin modern cloud-native infrastructure.
 

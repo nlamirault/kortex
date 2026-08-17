@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-02-28
 tags: [DataEngineering]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 The concepts of data warehouse, data lake, and data lakehouse are architectures for storing and managing data, each with its specific characteristics. Here's an explanation of their differences:
 
 ![](https://miro.medium.com/v2/resize:fit:2912/format:webp/0*NL3Krdw2IFeJKd5Y.png)

@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2026-01-29
 tags: [AWS, Kubernetes]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 ## Overview
 
 AWS Controllers for Kubernetes (ACK) enables you to manage AWS services directly from Kubernetes using native Kubernetes APIs and resources. This explanation covers the architecture, core concepts, and design decisions behind ACK.

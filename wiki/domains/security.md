@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2026-08-17
 tags: [Security]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Security
 
 Domain hub for security knowledge.

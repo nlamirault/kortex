@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2025-12-11
 tags: [AI, AWS]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # Overview
 
 Amazon Bedrock AgentCore is a comprehensive agent platform offered by AWS that enables the creation, deployment, operation, and monitoring of AI agents at the enterprise level in a secure, reliable manner that is interoperable with any framework or model (open-source or proprietary).

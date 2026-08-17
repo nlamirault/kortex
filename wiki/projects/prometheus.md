@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Monitoring, Observability, OpenTelemetry]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud. It has a multi-dimensional data model with time series data identified by metric name and key/value pairs. Prometheus is widely used for its powerful querying language (PromQL), efficient storage, and its integration with the Grafana visualization tool.

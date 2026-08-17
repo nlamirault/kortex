@@ -8,8 +8,9 @@ domain: [metering]
 sources: []
 updated: 2025-04-17
 tags: [Billing, Metering]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Overview**
 
 **OpenMeter** ([https://openmeter.io/](https://openmeter.io/)) is an open-source project designed to provide a **real-time usage metering** system. It allows teams—especially in SaaS, platform, and infrastructure companies—to **track and bill usage-based pricing models** effectively. It's built to be scalable, event-driven, and developer-friendly.

@@ -8,8 +8,9 @@ domain: [blockchain]
 sources: []
 updated: 2025-08-27
 tags: [Architecture, Blockchain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 ## 📌 Technical Definition
 
 A **blockchain** is a **distributed, append-only database**, structured as a sequence of **cryptographically linked blocks**, and replicated across a **peer-to-peer (P2P) network**.

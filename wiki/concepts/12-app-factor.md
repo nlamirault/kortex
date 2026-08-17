@@ -8,8 +8,9 @@ domain: [platform]
 sources: []
 updated: 2025-02-28
 tags: [Architecture]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 The "12 Factor App" offers a set of best practices for building modern software applications. Following these 12 principles can help developers and teams in building reliable, scalable, and manageable applications.
 
 

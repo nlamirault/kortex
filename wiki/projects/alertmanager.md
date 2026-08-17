@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Alerting, Observability]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Alertmanager is a component of the Prometheus monitoring system that handles alerts sent by Prometheus server and takes care of deduplicating, grouping, and routing them to the correct receiver integration such as email, Slack, PagerDuty, …. It also takes care of silencing and inhibition of alerts.

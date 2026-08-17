@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-02-28
 tags: [Kubernetes]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **Scaling Methods in Kubernetes**
 
 If you are unfamiliar with scaling in Kubernetes, there are three primary components to understand:

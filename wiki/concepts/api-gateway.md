@@ -8,10 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-02-28
 tags: [API, Architecture]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
-
-
 Step 1 - The client sends an HTTP request to the API gateway.
 
 Step 2 - The API gateway parses and validates the attributes in the HTTP request.

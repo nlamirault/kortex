@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-01-14
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # What is MCP?
 
 - MCP is like a universal translator between AI assistants and your everyday apps.

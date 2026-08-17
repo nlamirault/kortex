@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-04-14
 tags: [Architecture]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # Overview
 
 **Argo Rollouts** is a Kubernetes controller that provides advanced deployment strategies such as blue-green, canary, and progressive delivery with metric analysis and automated rollbacks.

@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-09
 tags: [Security, Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Overview
 
 **VEX** is a **standardized format** (usually in JSON or XML) used by organizations to **share context around whether a specific vulnerability actually applies to their product or environment**.

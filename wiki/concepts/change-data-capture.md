@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-05-19
 tags: [Database]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Overview**
 
 **Change Data Capture (CDC)** is a technique used to **track and capture changes (inserts, updates, deletes)** made to a database so that downstream systems can react to those changes in near real-time or batch mode.

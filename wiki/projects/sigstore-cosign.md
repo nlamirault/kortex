@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-17
 tags: [Security, Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Overview
 
 **Cosign** is an open-source CLI tool developed by Sigstore that allows developers and CI systems to:

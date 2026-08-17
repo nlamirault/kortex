@@ -8,10 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-02-28
 tags: [Security]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
-
-
 # Encoding
 
 Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.

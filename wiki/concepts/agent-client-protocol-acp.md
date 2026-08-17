@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-08-17
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 ## Overview
 
 The [**Agent Client Protocol (ACP)**](https://agentclientprotocol.com/) is a standard protocol designed to decouple **code editors** (IDEs, text editors) from **AI coding agents**.

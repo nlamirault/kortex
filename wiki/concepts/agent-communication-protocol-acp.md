@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-08-17
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 ## What is ACP?
 
 The [**Agent Communication Protocol (ACP)**](https://agentcommunicationprotocol.dev/) is an open protocol designed to enable interoperability between AI agents, applications, and users. It addresses the growing need for a unified way to connect fragmented ecosystems, providing a standardized REST interface for:

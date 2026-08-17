@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-09-01
 tags: [DataEngineering]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Run**
 
 A **Run** represents a **single execution instance** of a job. It is uniquely identified by a `runId` (typically a UUID).

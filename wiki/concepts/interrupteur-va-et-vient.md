@@ -8,8 +8,9 @@ domain: [domotic]
 sources: []
 updated: 2026-01-26
 tags: [Electricity]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Schéma de branchement d’un va-et-vient**
 
 

@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-03-27
 tags: [Architecture, Workflows]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **Overview**
 
 Argo Workflows is a **container-native workflow engine** designed for orchestrating parallel jobs in **Kubernetes**. It allows users to define complex workflows as **DAGs (Directed Acyclic Graphs)** or **step-based workflows**, making it ideal for CI/CD, ML pipelines, and data processing.

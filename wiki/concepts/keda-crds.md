@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-07-28
 tags: [Architecture, Autoscaling, CRD, Kubernetes]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **ScaledObject** (for Deployment Scaling)
 
 - Links an external event source (e.g., Kafka, RabbitMQ, AWS SQS) to a **Deployment**.

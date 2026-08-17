@@ -8,8 +8,9 @@ domain: [domotic]
 sources: []
 updated: 2026-01-06
 tags: [Domotic, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Overview**
 
 **Zigbee** is a low-power wireless communication protocol created in the early 2000s.

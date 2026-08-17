@@ -10,8 +10,9 @@ authors: [OpenLineage community]
 sources: []
 updated: 2026-08-17
 tags: [DataEngineering, Lineage, OpenLineage]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 The OpenLineage specification defines a standard for collecting and representing data lineage events.
 It includes the Lineage Object Model (LOM) for describing datasets, jobs, and runs.
 

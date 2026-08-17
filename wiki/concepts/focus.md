@@ -8,8 +8,9 @@ domain: [metering]
 sources: []
 updated: 2025-02-28
 tags: [FinOps]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **What is FinOps FOCUS?**
 
 [FinOps Open Cost and Usage Specification (FOCUS)](https://focus.finops.org/what-is-focus/) is an open-source standard developed to streamline the way cloud billing data is formatted and handled across multiple cloud platforms. As a technical specification, FOCUS mandates a unified format for cloud bills, which is aimed at simplifying the complexities involved in data normalization, thereby making FinOps practices more efficient. This specification sets clear requirements for cloud vendors to adhere to a single billing file format, significantly reducing the time FinOps practitioners spend on data ingestion and normalization

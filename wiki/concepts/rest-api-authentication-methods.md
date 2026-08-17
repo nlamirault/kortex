@@ -8,10 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-02-28
 tags: [API, Authentication]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
-
-
 Some popular authentication methods for REST APIs include:
 
 # Basic Authentication

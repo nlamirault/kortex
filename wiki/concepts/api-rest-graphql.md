@@ -8,10 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-02-28
 tags: [API]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
-
-
 # REST
 
 - Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations.

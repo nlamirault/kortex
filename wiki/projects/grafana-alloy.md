@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Logging, Monitoring, Observability, OpenTelemetry, Tracing]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Grafana Alloy is a [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/distributions/) distribution that sends metrics, logs, and traces to the Grafana observability stack. It is optimized for Prometheus-compatible metrics and is designed to reduce memory and CPU usage in comparison to a full Prometheus server.

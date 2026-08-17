@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-09-23
 tags: [Authorization, Identity]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 ## Overview
 
 **Authorization** is the process of determining what actions or resources a user, system, or application is allowed to access after authentication has been successfully completed. It is a critical component of security in systems, networks, and software applications

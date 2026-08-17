@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-02-27
 tags: [AWS, Database]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 In 2021, there was a 66-hour Amazon Prime Day shopping event.
 
 The event generated some staggering stats:

@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-09-01
 tags: [Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 The xBOM is a full-stack BOM standard that provides advanced supply chain capabilities for cyber risk reduction, and includes 12 different BOMs spanning the software and hardware ecosystems. The xBOM builds upon the traditional elements of an SBOM to provide a more comprehensive view by including a broader range of components and information related to software-based products.
 
 | **Acronym** | **Name** | **Focus** |

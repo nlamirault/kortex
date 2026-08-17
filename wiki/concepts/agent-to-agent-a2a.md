@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-08-17
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # Overview
 
 [**A2A (Agent-to-Agent)**](https://a2a-protocol.org) is a communication protocol enabling **autonomous agents** to **interact, collaborate, or negotiate** with each other in a structured, interoperable way. It is often used in **multi-agent systems (MAS)**, **cognitive architectures**, and emerging AI ecosystems involving **modular AI agents** (like perception, planning, or control units).

@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-04-09
 tags: [Architecture, CRD, Events, Kubernetes]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **Summary of Argo Events CRDs**
 
 | CRD | Purpose |

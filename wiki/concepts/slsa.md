@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-09
 tags: [Security, Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Overview**
 
 **SLSA**, pronounced *"salsa"* **(Supply-chain Levels for Software Artifacts)** is a security framework designed to protect software supply chains from threats such as tampering, vulnerabilities, and insider risks. It establishes a set of security standards for software development, defining levels of security maturity that software artifacts can achieve.

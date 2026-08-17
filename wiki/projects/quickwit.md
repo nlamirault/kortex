@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Logging, Observability, OpenTelemetry, Tracing]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 Quickwit is an open-source, distributed search engine designed for large-scale datasets such as logs and events. It is built with a focus on cost-efficiency and is optimized for large-scale indexation and searches.
 
 

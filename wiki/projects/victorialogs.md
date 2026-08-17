@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-04-14
 tags: [Logging, Observability]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 VictoriaLogs is an open-source project developed by the same team behind VictoriaMetrics, designed to provide a centralized log aggregation and analysis system. It focuses on delivering high performance and low latency for handling and querying logs using standard formats such as JSON or Apache LogFormat. 
 
 Here's a brief overview of VictoriaLogs' architecture:

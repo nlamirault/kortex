@@ -8,8 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-03-20
 tags: [Mesh, Networking]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Istio is a **service mesh** that helps manage, secure, and monitor communication between microservices in a distributed system. It acts as a **control plane** for service-to-service networking, providing features like:

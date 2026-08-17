@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-03-08
 tags: [Database, OpenTelemetry]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **ClickHouse**
 
 ClickHouse is an open-source columnar database management system (DBMS) designed for massively parallel analytical processing (OLAP). Its architecture is optimized for high-speed analytical queries on large datasets.

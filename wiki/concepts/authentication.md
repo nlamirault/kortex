@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-14
 tags: [Authentication, Identity]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Authentication
 
 Authentication is the process of verifying the identity of a user, system, or device before granting access to a resource. It ensures that the entity requesting access is who they claim to be. Authentication typically precedes **authorization**, which determines what actions the authenticated entity is allowed to perform.

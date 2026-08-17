@@ -8,8 +8,9 @@ domain: [networking]
 sources: []
 updated: 2026-08-17
 tags: [Networking]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Networking
 
 Domain hub for networking knowledge.

@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2026-08-17
 tags: [AI, Protocol]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 ## 🌐 Agent Payments Protocol (AP2)
 
 The [**Agent Payments Protocol (AP2)**](https://ap2-protocol.org/) is an open standard designed to enable artificial intelligence (AI) agents to perform payments securely and interoperably, especially in scenarios where the user is not physically present. It extends the **Agent2Agent (A2A)** and **Model Context Protocol (MCP)** frameworks, aiming to standardize financial transactions between agents, merchants, and users ([ap2-protocol.org](https://ap2-protocol.org/?utm_source=chatgpt.com)).

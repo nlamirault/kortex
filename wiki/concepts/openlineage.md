@@ -8,8 +8,9 @@ domain: [data]
 sources: []
 updated: 2025-05-14
 tags: [DataEngineering]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Overview
 
 **OpenLineage** is an **open standard** for collecting metadata about data job executions. It allows you to **track the flow of data** across pipelines — from **source to transformation to destination** — making it easier to understand dependencies, troubleshoot issues, and ensure compliance.

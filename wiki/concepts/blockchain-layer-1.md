@@ -8,8 +8,9 @@ domain: [blockchain]
 sources: []
 updated: 2025-08-27
 tags: [Architecture, Blockchain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # 🌐 What is a **Blockchain**?
 
 A **blockchain** is a **distributed database (ledger)** that records transactions in a way that is:

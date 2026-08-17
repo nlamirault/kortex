@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-04-08
 tags: [Gitops]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # Overview
 
 Argo CD is a **declarative, GitOps-based continuous delivery (CD) tool** for Kubernetes. It synchronizes application state defined in a Git repository with the live state in a Kubernetes cluster. This ensures automated, version-controlled, and consistent deployments.

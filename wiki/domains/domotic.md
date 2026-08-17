@@ -8,8 +8,9 @@ domain: [domotic]
 sources: []
 updated: 2026-08-17
 tags: [Domotic]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Domotic
 
 Domain hub for domotic knowledge.

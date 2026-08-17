@@ -8,8 +8,9 @@ domain: [blockchain]
 sources: []
 updated: 2025-08-27
 tags: [Blockchain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 ## **Layer 0: The Foundation**
 
 **Purpose:** Layer 0 refers to the underlying infrastructure that supports the entire blockchain ecosystem. It’s the base layer that enables interoperability, scalability, and communication between different blockchains.

@@ -8,8 +8,10 @@ domain: [ai]
 sources: []
 updated: 2025-07-28
 tags: []
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-02-17
 ---
-
 # Overview
 
 **AgentCore is designed to bridge the gap between AI prototypes and scalable production agents**. It includes core services such as:

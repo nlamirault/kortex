@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-02-28
 tags: [Architecture, Autoscaling]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # **What is KEDA?**
 
 KEDA (Kubernetes Event-Driven Autoscaling) is an open-source project that enables event-driven scaling in Kubernetes. It extends Kubernetes' native **Horizontal Pod Autoscaler (HPA)** to allow applications to scale **based on external event sources** (e.g., message queues, databases, cloud services).

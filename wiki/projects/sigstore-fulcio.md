@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-17
 tags: [Security, Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Overview
 
 **Fulcio** is an **open-source Certificate Authority** specifically designed for **ephemeral certificate issuance** in the context of **automated software signing**.

@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-05-06
 tags: [Kubernetes, Orchestrator]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # Overview
 
 Kube Resource Orchestrator (**Kro**) is an open-source, Kubernetes-native project designed to simplify creating and managing complex custom resources for Kubernetes. It provides a powerful abstraction layer that allows you to define complex multi-resource constructs as reusable components in your applications and systems.

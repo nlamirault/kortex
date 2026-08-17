@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Reliability]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 Pyrra is an open-source tool designed to monitor Service Level Objectives (SLOs) and error budgets in cloud-native environments. It's particularly useful in systems based on **Prometheus**, as it automates and simplifies the tracking of SLOs by integrating with Prometheus metrics and alerting.

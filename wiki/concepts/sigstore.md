@@ -8,8 +8,9 @@ domain: [security]
 sources: []
 updated: 2025-04-17
 tags: [Security, Supply-Chain]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Overview
 
 **Sigstore** is an open-source project backed by the Linux Foundation. It provides tools to **sign, verify, and log software artifacts** (like container images, binaries, packages, etc.) in a **secure and transparent** way, without needing to manage long-term private keys manually.

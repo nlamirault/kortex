@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-04-14
 tags: [Monitoring, Observability]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 VictoriaMetrics is an open-source time series database and monitoring system built specifically for Prometheus style time series data
 
 

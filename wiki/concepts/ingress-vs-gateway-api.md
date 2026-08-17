@@ -8,8 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-03-28
 tags: [Kubernetes, Networking]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **Kubernetes Ingress vs Gateway API: Key Differences**
 
 Kubernetes **Ingress** and **Gateway API** are both used to manage external traffic into a Kubernetes cluster, but they differ in flexibility, extensibility, and capabilities.

@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Logging, Monitoring, Observability, OpenTelemetry, Tracing]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # Description
 
 OpenTelemetry Collector is an open-source, unified agent that collects distributed traces, metrics, and logs using standard formats. It is built by the Cloud Native Computing Foundation (CNCF) as part of the OpenTelemetry project.

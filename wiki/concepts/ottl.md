@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-04-28
 tags: [Observability, OpenTelemetry]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # OpenTelemetry Transform Language
 
 **OTTL** is a **declarative transformation language** created by the OpenTelemetry project.

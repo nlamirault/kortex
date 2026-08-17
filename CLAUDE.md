@@ -255,6 +255,9 @@ domain: [<relevant domain slug>]
 sources: [<raw/filename or URL>]
 updated: <YYYY-MM-DD>
 tags: [<tag1>, <tag2>]
+generated: {by: <model-id>, at: <YYYY-MM-DD>}
+verified: [{by: <name>, at: <YYYY-MM-DD>}]
+stale_after: <YYYY-MM-DD>          # optional — omit for evergreen content
 ---
 ```
 
@@ -268,6 +271,11 @@ tags: [<tag1>, <tag2>]
 - `high` — multiple sources agree, well-verified
 - `medium` — single source or partially verified
 - `low` — uncertain, inferred, or unverified — treat claims with caution
+
+**OKF v0.2 trust signal fields:**
+- `generated` — records which model (or human) authored the page and when. Always set on LLM-synthesized pages. Format: `{by: claude-sonnet-4-6, at: 2026-08-17}`
+- `verified` — list of human or agent sign-offs. Empty list `[]` means unverified. Add an entry when a human reviews and confirms the page. Format: `[{by: nicolas, at: 2026-08-17}]`
+- `stale_after` — absolute expiry date after which the page must be re-verified. Omit for stable/evergreen content. Set for fast-moving domains: AI protocols (6 months), Kubernetes ecosystem (1 year).
 
 **Inline markers:**
 - `NOT VERIFIED` — claim has no traceable source; must be verified before trusting

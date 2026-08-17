@@ -10,8 +10,9 @@ authors: [Betsy Beyer, Niall Richard Murphy, David K. Rensin, Kent Kawahara, Ste
 sources: []
 updated: 2026-08-17
 tags: [SRE, Reliability, Alerting]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 The companion to the SRE Book, focused on practical implementation. Includes the seminal chapter
 "Alerting on SLOs" which defines the multi-window, multi-burn-rate alerting strategy now widely adopted
 in [Pyrra](../projects/pyrra.md) and other SLO tools.

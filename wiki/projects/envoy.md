@@ -8,8 +8,9 @@ domain: [networking]
 sources: []
 updated: 2025-02-28
 tags: [Mesh, Networking]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 # **What is Envoy?**
 
 Envoy is a high-performance, cloud-native edge and service proxy designed for microservices-based architectures. Developed by Lyft and now part of the **Cloud Native Computing Foundation (CNCF)**, Envoy serves as a **L4/L7 proxy** that provides features like load balancing, observability, and security across distributed systems.

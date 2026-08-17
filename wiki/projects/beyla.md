@@ -8,8 +8,9 @@ domain: [observability]
 sources: []
 updated: 2025-02-28
 tags: [Monitoring, Networking, Observability, OpenTelemetry, Tracing]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
 ---
-
 Grafana Beyla is part of Grafana Labs' open-source observability stack, focusing on "eBPF-based application observability." It is designed to provide insights into application performance metrics and traces without altering application code. Leveraging the extended Berkeley Packet Filter (eBPF) technology, Beyla enables high-fidelity monitoring of applications by gathering low-level data directly from the Linux kernel.
 
 .png)

@@ -8,8 +8,10 @@ domain: [kubernetes]
 sources: []
 updated: 2025-04-10
 tags: [Autoscaling]
+generated: {by: claude-sonnet-4-6, at: 2026-08-17}
+verified: [{by: nicolas, at: 2026-08-17}]
+stale_after: 2027-08-17
 ---
-
 # Overview
 
 Karpenter is an open-source project by AWS (but designed to be cloud-agnostic) that acts as a **dynamic Kubernetes cluster autoscaler**. Unlike traditional cluster autoscalers (like the Kubernetes Cluster Autoscaler), Karpenter provides **just-in-time** provisioning of compute resources based on pod requirements and cluster state. It’s built to be fast, extensible, and to better support modern, dynamic workloads.
