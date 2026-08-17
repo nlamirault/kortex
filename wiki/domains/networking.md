@@ -16,14 +16,14 @@ Domain hub for networking knowledge.
 
 ## Concepts
 
-- [[concept:api-gateway]] — API Gateway
-- [[concept:api-rest-graphql]] — API Rest / GraphQL
-- [[concept:envoy]] — Envoy
-- [[concept:ingress-vs-gateway-api]] — Ingress vs Gateway API
-- [[concept:istio]] — Istio
-- [[concept:istio-crds]] — Istio CRDs
-- [[concept:nats]] — Nats
-- [[concept:osi-model]] — OSI Model
-- [[concept:rest-api-authentication-methods]] — REST API Authentication methods
-- [[concept:rest-api-best-practices]] — REST API Best Practices
-- [[concept:url-uri-urn]] — URL / URI / URN
+- [API Gateway](../concepts/api-gateway.md)
+- [API Rest / GraphQL](../concepts/api-rest-graphql.md)
+- [Envoy](../concepts/envoy.md)
+- [Ingress vs Gateway API](../concepts/ingress-vs-gateway-api.md)
+- [Istio](../concepts/istio.md)
+- [Istio CRDs](../concepts/istio-crds.md)
+- [Nats](../concepts/nats.md)
+- [OSI Model](../concepts/osi-model.md)
+- [REST API Authentication methods](../concepts/rest-api-authentication-methods.md)
+- [REST API Best Practices](../concepts/rest-api-best-practices.md)
+- [URL / URI / URN](../concepts/url-uri-urn.md)

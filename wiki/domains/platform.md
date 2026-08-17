@@ -16,8 +16,8 @@ Domain hub for platform knowledge.
 
 ## Concepts
 
-- [[concept:12-app-factor]] — 12 App Factor
-- [[concept:deployment-strategies]] — Deployment strategies
-- [[concept:fantastic-four-of-system-design]] — Fantastic Four of System Design
-- [[concept:sli-slo-sla]] — SLI/SLO/SLA
-- [[concept:tui]] — TUI
+- [12 App Factor](../concepts/12-app-factor.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
+- [Fantastic Four of System Design](../concepts/fantastic-four-of-system-design.md)
+- [SLI/SLO/SLA](../concepts/sli-slo-sla.md)
+- [TUI](../concepts/tui.md)

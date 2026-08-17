@@ -16,12 +16,12 @@ Domain hub for data knowledge.
 
 ## Concepts
 
-- [[concept:acid]] — ACID
-- [[concept:change-data-capture]] — Change Data Capture
-- [[concept:clickhouse]] — Clickhouse
-- [[concept:data-lake-data-warehouse-data-lakehouse]] — Data Lake, Data Warehouse, Data Lakehouse
-- [[concept:database-models]] — Database Models
-- [[concept:dragonfly]] — Dragonfly
-- [[concept:dynamodb]] — DynamoDB
-- [[concept:lineage-object-model]] — Lineage Object Model
-- [[concept:openlineage]] — OpenLineage
+- [ACID](../concepts/acid.md)
+- [Change Data Capture](../concepts/change-data-capture.md)
+- [Clickhouse](../concepts/clickhouse.md)
+- [Data Lake, Data Warehouse, Data Lakehouse](../concepts/data-lake-data-warehouse-data-lakehouse.md)
+- [Database Models](../concepts/database-models.md)
+- [Dragonfly](../concepts/dragonfly.md)
+- [DynamoDB](../concepts/dynamodb.md)
+- [Lineage Object Model](../concepts/lineage-object-model.md)
+- [OpenLineage](../concepts/openlineage.md)

@@ -16,6 +16,6 @@ Domain hub for blockchain knowledge.
 
 ## Concepts
 
-- [[concept:blockchain]] — Blockchain
-- [[concept:blockchain-layer-1]] — Blockchain Layer 1
-- [[concept:blockchain-layers]] — Blockchain Layers
+- [Blockchain](../concepts/blockchain.md)
+- [Blockchain Layer 1](../concepts/blockchain-layer-1.md)
+- [Blockchain Layers](../concepts/blockchain-layers.md)

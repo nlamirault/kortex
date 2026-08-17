@@ -16,20 +16,20 @@ Domain hub for observability knowledge.
 
 ## Concepts
 
-- [[concept:alertmanager]] — Alertmanager
-- [[concept:beyla]] — Beyla
-- [[concept:grafana]] — Grafana
-- [[concept:grafana-alloy]] — Grafana Alloy
-- [[concept:greptimedb]] — GreptimeDB
-- [[concept:heartbeat]] — Heartbeat
-- [[concept:loki]] — Loki
-- [[concept:mimir]] — Mimir
-- [[concept:ottl]] — OTTL
-- [[concept:observability]] — Observability
-- [[concept:opentelemetry-collector]] — OpenTelemetry Collector
-- [[concept:prometheus]] — Prometheus
-- [[concept:pyrra]] — Pyrra
-- [[concept:quickwit]] — Quickwit
-- [[concept:tempo]] — Tempo
-- [[concept:victorialogs]] — VictoriaLogs
-- [[concept:victoriametrics]] — VictoriaMetrics
+- [Alertmanager](../concepts/alertmanager.md)
+- [Beyla](../concepts/beyla.md)
+- [Grafana](../concepts/grafana.md)
+- [Grafana Alloy](../concepts/grafana-alloy.md)
+- [GreptimeDB](../concepts/greptimedb.md)
+- [Heartbeat](../concepts/heartbeat.md)
+- [Loki](../concepts/loki.md)
+- [Mimir](../concepts/mimir.md)
+- [OTTL](../concepts/ottl.md)
+- [Observability](../concepts/observability.md)
+- [OpenTelemetry Collector](../concepts/opentelemetry-collector.md)
+- [Prometheus](../concepts/prometheus.md)
+- [Pyrra](../concepts/pyrra.md)
+- [Quickwit](../concepts/quickwit.md)
+- [Tempo](../concepts/tempo.md)
+- [VictoriaLogs](../concepts/victorialogs.md)
+- [VictoriaMetrics](../concepts/victoriametrics.md)

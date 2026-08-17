@@ -16,8 +16,8 @@ Domain hub for domotic knowledge.
 
 ## Concepts
 
-- [[concept:interrupteur-simple]] — Interrupteur simple
-- [[concept:interrupteur-va-et-vient]] — Interrupteur va et vient
-- [[concept:matter]] — Matter
-- [[concept:thread]] — Thread
-- [[concept:zigbee]] — Zigbee
+- [Interrupteur simple](../concepts/interrupteur-simple.md)
+- [Interrupteur va et vient](../concepts/interrupteur-va-et-vient.md)
+- [Matter](../concepts/matter.md)
+- [Thread](../concepts/thread.md)
+- [Zigbee](../concepts/zigbee.md)

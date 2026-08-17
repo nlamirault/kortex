@@ -16,18 +16,18 @@ Domain hub for kubernetes knowledge.
 
 ## Concepts
 
-- [[concept:aws-controllers-for-kubernetes-ack]] — AWS Controllers for Kubernetes (ACK)
-- [[concept:argo-cd]] — Argo CD
-- [[concept:argo-events]] — Argo Events
-- [[concept:argo-events-crds]] — Argo Events CRDs
-- [[concept:argo-rollouts]] — Argo Rollouts
-- [[concept:argo-workflows]] — Argo Workflows
-- [[concept:argo-workflows-crds]] — Argo Workflows CRDs
-- [[concept:eks-best-practices]] — EKS Best Practices
-- [[concept:foo]] — FOO
-- [[concept:karpenter]] — Karpenter
-- [[concept:keda]] — Keda
-- [[concept:keda-crds]] — Keda CRDs
-- [[concept:kro]] — Kro
-- [[concept:kubernetes-autoscaling]] — Kubernetes Autoscaling
-- [[concept:kubernetes-design-pattern]] — Kubernetes Design Pattern
+- [AWS Controllers for Kubernetes (ACK)](../concepts/aws-controllers-for-kubernetes-ack.md)
+- [Argo CD](../concepts/argo-cd.md)
+- [Argo Events](../concepts/argo-events.md)
+- [Argo Events CRDs](../concepts/argo-events-crds.md)
+- [Argo Rollouts](../concepts/argo-rollouts.md)
+- [Argo Workflows](../concepts/argo-workflows.md)
+- [Argo Workflows CRDs](../concepts/argo-workflows-crds.md)
+- [EKS Best Practices](../concepts/eks-best-practices.md)
+- [FOO](../concepts/foo.md)
+- [Karpenter](../concepts/karpenter.md)
+- [Keda](../concepts/keda.md)
+- [Keda CRDs](../concepts/keda-crds.md)
+- [Kro](../concepts/kro.md)
+- [Kubernetes Autoscaling](../concepts/kubernetes-autoscaling.md)
+- [Kubernetes Design Pattern](../concepts/kubernetes-design-pattern.md)

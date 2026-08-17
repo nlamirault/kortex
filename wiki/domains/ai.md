@@ -16,18 +16,18 @@ Domain hub for ai knowledge.
 
 ## Concepts
 
-- [[concept:ai-context-engineering]] — AI / Context Engineering
-- [[concept:ai-prompts]] — AI / Prompts
-- [[concept:ai-protocols]] — AI / Protocols
-- [[concept:aws-bedrock-agent-core]] — AWS Bedrock Agent Core
-- [[concept:aws-bedrock-agentcore]] — AWS Bedrock AgentCore
-- [[concept:agent-client-protocol-acp]] — Agent Client Protocol (ACP)
-- [[concept:agent-communication-protocol-acp]] — Agent Communication Protocol (ACP)
-- [[concept:agent-payments-protocol-ap2]] — Agent Payments Protocol  (AP2)
-- [[concept:agent-skills]] — Agent Skills
-- [[concept:agent-user-interaction-protocol-ag-ui]] — Agent-User Interaction Protocol (AG-UI)
-- [[concept:agent-to-agent-a2a]] — Agent-to-Agent (A2A)
-- [[concept:agentsmd]] — Agents.md
-- [[concept:mcp]] — MCP
-- [[concept:model-context-protocol-mcp]] — Model Context Protocol (MCP)
-- [[concept:universal-commerce-protocol-ucp]] — Universal Commerce Protocol (UCP)
+- [AI / Context Engineering](../concepts/ai-context-engineering.md)
+- [AI / Prompts](../concepts/ai-prompts.md)
+- [AI / Protocols](../concepts/ai-protocols.md)
+- [AWS Bedrock Agent Core](../concepts/aws-bedrock-agent-core.md)
+- [AWS Bedrock AgentCore](../concepts/aws-bedrock-agentcore.md)
+- [Agent Client Protocol (ACP)](../concepts/agent-client-protocol-acp.md)
+- [Agent Communication Protocol (ACP)](../concepts/agent-communication-protocol-acp.md)
+- [Agent Payments Protocol  (AP2)](../concepts/agent-payments-protocol-ap2.md)
+- [Agent Skills](../concepts/agent-skills.md)
+- [Agent-User Interaction Protocol (AG-UI)](../concepts/agent-user-interaction-protocol-ag-ui.md)
+- [Agent-to-Agent (A2A)](../concepts/agent-to-agent-a2a.md)
+- [Agents.md](../concepts/agentsmd.md)
+- [MCP](../concepts/mcp.md)
+- [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
+- [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)

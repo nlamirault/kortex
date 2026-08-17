@@ -16,15 +16,15 @@ Domain hub for security knowledge.
 
 ## Concepts
 
-- [[concept:authentication]] — Authentication
-- [[concept:authorization]] — Authorization
-- [[concept:digital-identity]] — Digital Identity
-- [[concept:encoding-vs-encryption-vs-tokenization]] — Encoding vs Encryption vs Tokenization
-- [[concept:sbom]] — SBOM
-- [[concept:slsa]] — SLSA
-- [[concept:sigstore]] — Sigstore
-- [[concept:sigstore-cosign]] — Sigstore Cosign
-- [[concept:sigstore-fulcio]] — Sigstore Fulcio
-- [[concept:sigstore-rekor]] — Sigstore Rekor
-- [[concept:vex]] — VEX
-- [[concept:xbom]] — xBOM
+- [Authentication](../concepts/authentication.md)
+- [Authorization](../concepts/authorization.md)
+- [Digital Identity](../concepts/digital-identity.md)
+- [Encoding vs Encryption vs Tokenization](../concepts/encoding-vs-encryption-vs-tokenization.md)
+- [SBOM](../concepts/sbom.md)
+- [SLSA](../concepts/slsa.md)
+- [Sigstore](../concepts/sigstore.md)
+- [Sigstore Cosign](../concepts/sigstore-cosign.md)
+- [Sigstore Fulcio](../concepts/sigstore-fulcio.md)
+- [Sigstore Rekor](../concepts/sigstore-rekor.md)
+- [VEX](../concepts/vex.md)
+- [xBOM](../concepts/xbom.md)
