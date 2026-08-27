@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-27] [UPDATE] | /close now mirrors queue count to hot.md Pending Ingests block
+  └─ pages: .claude/skills/close.md
+  └─ sources: none (closes queue-visibility loop: /today reads live, /close writes snapshot)
+
 ## [2026-08-27] [UPDATE] | Add ## Relations SPO triples to entity page templates and ingest workflow
   └─ pages: wiki/schema.md, .claude/skills/ingest.md, .claude/skills/lint.md
   └─ sources: none (structural improvement — fiches-veille SPO triple pattern on entity pages)
