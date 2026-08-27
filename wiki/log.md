@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-27] [UPDATE] | Add stale_after expiry checks to /lint skill and CLAUDE.md lint list
+  └─ pages: .claude/skills/lint.md, CLAUDE.md
+  └─ sources: none (structural improvement — OKF v0.2 stale_after enforcement)
+
 ## [2026-08-27] [UPDATE] | Add chronological index to wiki/index.md; update Hard Rule 2; add Pending Ingests to hot.md
   └─ pages: wiki/index.md, CLAUDE.md, wiki/hot.md
   └─ sources: none (structural improvement — fiches-veille temporal org inspiration)

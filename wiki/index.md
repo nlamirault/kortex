@@ -210,6 +210,9 @@ Last updated: 2026-08-17
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
+### 2026-08-27
+- [.claude/skills/lint.md](../.claude/skills/lint.md), [CLAUDE.md](../CLAUDE.md) — stale_after expiry checks added to /lint `[UPDATE]`
+
 ### 2026-08-17
 - [33 project pages](projects/) — tools migrated from concepts; domain hubs rebuilt `[IMPROVE]`
 - [11 domain hubs](domains/) — rebuilt with separate concept/project sections `[IMPROVE]`

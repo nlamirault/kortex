@@ -116,6 +116,8 @@ compound. Reports are tiered by severity.
 - [ ] Broken `[[wikilinks]]` (target page missing)
 - [ ] Orphan pages (not linked from index or any other page)
 - [ ] Stale pages (`status: stale` or `updated` date old)
+- [ ] Expired pages (`stale_after` < today) → CRITICAL, mark `status: stale`
+- [ ] Expiring-soon pages (`stale_after` within 30 days) → WARNING
 - [ ] Contradictions between pages → flag both, mark `PENDING — escalate to human`
 - [ ] Missing frontmatter fields
 - [ ] Claims without source citations → mark `NOT VERIFIED`
