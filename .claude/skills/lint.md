@@ -35,6 +35,8 @@ Run all checks below. Collect findings. Report by severity tier. Fix CRITICAL im
 **Knowledge Graph**
 - [ ] Source pages missing `## KnowledgeGraph` section — flag
 - [ ] Source pages with empty Triples or Entities tables — flag
+- [ ] Concept/project/person pages missing `## Relations` section — INFO
+- [ ] Concept/project/person pages with only placeholder rows in `## Relations` (Subject = `[[concept:this-concept]]` etc.) — WARNING
 - [ ] Claims marked `NOT VERIFIED` — list by page
 
 **Consistency**

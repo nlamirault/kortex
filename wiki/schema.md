@@ -39,6 +39,14 @@ One-sentence definition.
 - Property 1
 - Property 2
 
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[concept:this-concept]] | predicate | [[type:slug]] |
+
+*Keep to top 5 relations. Predicates: `is-a`, `part-of`, `enables`, `implements`, `requires`, `contrasts-with`, `extends`, `used-by`, `created-by`.*
+
 ## Related
 
 - [[concept:related-concept]]
@@ -149,6 +157,14 @@ tags: []
 
 Brief bio.
 
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[person:this-person]] | created | [[type:slug]] |
+
+*Keep to top 5 relations. Predicates: `created`, `contributed-to`, `works-at`, `influenced`, `co-authored`, `advocates-for`.*
+
 ## Key Contributions
 
 - [[concept:slug]] — explanation
@@ -185,6 +201,14 @@ tags: []
 ## What It Does
 
 One paragraph.
+
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[project:this-project]] | predicate | [[type:slug]] |
+
+*Keep to top 5 relations. Predicates: `implements`, `extends`, `replaces`, `integrates-with`, `created-by`, `used-by`, `part-of`.*
 
 ## Relevance to Kortex
 

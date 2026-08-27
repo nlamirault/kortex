@@ -14,6 +14,9 @@ Full ingest workflow for a single raw source. Reads source → identifies entiti
 3. **Create/update wiki pages** for each entity:
    - New entity → create page from `wiki/schema.md` template for that entity type
    - Existing entity → update the page, bump `updated:` date
+   - For concept/project/person pages: populate `## Relations` table with top 5 SPO triples
+     drawn from this source (use wikilinks for Subject and Object; pick from the predicate
+     vocabulary in the template comment). Merge with existing relations — no duplicates.
 4. **Fill in KnowledgeGraph section** on the Source page:
    - `### Triples` — one row per relation extracted from source
    - `### Entities` — one row per entity, tagged AJOUT or MISE_A_JOUR
@@ -38,6 +41,7 @@ Before finishing ingest:
 - [ ] `## KnowledgeGraph` section filled — no empty tables
 - [ ] `## Rhetorical Analysis` section filled
 - [ ] Every entity mentioned has a wiki page (or stub) + wikilink
+- [ ] Concept/project/person pages have `## Relations` table populated (≥1 row, no placeholder rows)
 - [ ] All new pages in `wiki/index.md`
 - [ ] All new pages wikilinked from their parent domain page
 - [ ] `wiki/log.md` appended
