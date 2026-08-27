@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-27] [UPDATE] | Add /ingest --fiche mode for articles and blog posts
+  └─ pages: wiki/schema.md, .claude/skills/ingest.md, CLAUDE.md
+  └─ sources: none (structural improvement — fiches-veille fiche card pattern)
+
 ## [2026-08-27] [UPDATE] | /close now mirrors queue count to hot.md Pending Ingests block
   └─ pages: .claude/skills/close.md
   └─ sources: none (closes queue-visibility loop: /today reads live, /close writes snapshot)

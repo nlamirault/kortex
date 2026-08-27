@@ -133,6 +133,74 @@ key_claims:
 
 ---
 
+## Fiche Page
+
+*Use for articles, blog posts, short reads — fast single-pass capture. Use Source Page for books, papers, long-form content.*
+
+```markdown
+---
+title: <article title>
+type: source
+format: fiche
+status: active
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: [<url or raw/articles/<slug>.md>]
+updated: YYYY-MM-DD
+tags: []
+generated: {by: <model-id>, at: YYYY-MM-DD}
+stale_after: <YYYY-MM-DD>  # 6mo AI/protocols, 1yr k8s, omit evergreen
+---
+
+# <Title>
+
+**Auteur :** <name> | **Publié :** <YYYY-MM-DD> | **Lien :** <url>
+**Domaine :** [[domain:slug]] | **Lecture :** ~N min
+
+## En Bref
+
+2–3 sentences. What does this argue, and why does it matter for this domain?
+
+## Points Clés
+
+- **Point 1:** one sentence with concrete claim
+- **Point 2:** one sentence with concrete claim
+- **Point 3:** one sentence with concrete claim
+
+*(3–5 points max — if you need more, use Source Page instead)*
+
+## Citation Notable
+
+> "Quote that captures the core argument." — Author
+
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[type:slug]] | predicate | [[type:slug]] |
+
+*Predicates: `argues-that`, `extends`, `contrasts-with`, `implements`, `created-by`, `used-by`, `enables`*
+*(3–5 triples max)*
+
+## Liens Wiki
+
+- [[concept:slug]] — why linked
+- [[project:slug]] — why linked
+```
+
+**Naming:** `wiki/sources/<domain>-<short-title>-YYYY.md` (same as Source Page)
+**Fiche vs Source Page decision:**
+
+| Signal | Use Fiche | Use Source Page |
+|--------|-----------|----------------|
+| Format | Article, blog post, tweet thread | Book, paper, talk transcript |
+| Read time | < 20 min | > 20 min |
+| Entity density | < 5 new entities | > 5 new entities |
+| Depth needed | Quick capture | Deep synthesis |
+
+---
+
 ## Person Page
 
 ```markdown

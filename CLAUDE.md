@@ -66,13 +66,16 @@ documents. Knowledge compounds; it doesn't disappear into chat history.
 
 ### Operation 1: Ingest
 
-**Trigger:** New file dropped in `raw/` → say `"Ingest raw/<filename>"`
+**Trigger:** New file dropped in `raw/` → say `"Ingest raw/<filename>"` or `/ingest --fiche <url>` for articles.
 
-The LLM reads the source, identifies all entities (concepts, people, projects), creates or
-updates the relevant wiki pages, strengthens cross-references between related pages, and
-logs the operation. A single source typically touches 10–15 wiki pages.
+Two modes — choose before starting:
 
-**Steps:**
+| Mode | Command | Use for | Output |
+|------|---------|---------|--------|
+| Full | `/ingest <path>` | Books, papers, talks (>20 min read) | 10–15 wiki pages |
+| Fiche | `/ingest --fiche <path>` | Articles, blog posts (<20 min read) | 1 fiche card |
+
+**Full ingest steps:**
 1. Read source fully — do not skim.
 2. Identify all entities mentioned (concepts, people, projects, decisions).
 3. Create new wiki pages or update existing ones for each entity.
@@ -80,7 +83,9 @@ logs the operation. A single source typically touches 10–15 wiki pages.
 5. Update `wiki/index.md` with new entries.
 6. Append to `wiki/log.md` with prefix `[INGEST]`.
 
-**Skill:** `/ingest <path>` — runs the full ingest workflow for a single source.
+**Fiche steps:** read → one fiche card (En Bref + Points Clés + Relations) → update index → log → mark queue done.
+
+**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.claude/skills/ingest.md` for full workflow.
 
 ---
 
@@ -157,7 +162,8 @@ conversation insight as a wiki page.
 |-------|---------|-------------|
 | `/today` | Session start | Morning briefing from hot cache + recent log |
 | `/recall` | Before any query | Pre-load relevant wiki pages into context |
-| `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log |
+| `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log. Books, papers, talks. |
+| `/ingest --fiche <path>` | Article/blog post added | Fiche mode: single ~400-word card → link → log. Articles, short reads. |
 | `/lint` | Weekly or on demand | Health audit: broken links, orphans, stale, contradictions |
 | `/file-back "<title>"` | Insight from conversation | Capture and file reusable knowledge to wiki |
 | `/bootstrap <domain>` | Starting a new domain | Create domain hub + seed concept stubs + log |
