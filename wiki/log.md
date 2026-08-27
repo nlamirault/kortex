@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-27] [UPDATE] | Surface raw/queue.md in /today briefing
+  └─ pages: .claude/skills/today.md
+  └─ sources: none (structural improvement — complete ingest queue visibility at session start)
+
 ## [2026-08-27] [UPDATE] | Add stale_after expiry checks to /lint skill and CLAUDE.md lint list
   └─ pages: .claude/skills/lint.md, CLAUDE.md
   └─ sources: none (structural improvement — OKF v0.2 stale_after enforcement)

@@ -211,6 +211,7 @@ Last updated: 2026-08-17
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
 ### 2026-08-27
+- [.claude/skills/today.md](../.claude/skills/today.md) — /today now reads raw/queue.md for ingest queue count `[UPDATE]`
 - [.claude/skills/lint.md](../.claude/skills/lint.md), [CLAUDE.md](../CLAUDE.md) — stale_after expiry checks added to /lint `[UPDATE]`
 
 ### 2026-08-17
