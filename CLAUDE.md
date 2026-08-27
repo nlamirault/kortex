@@ -310,7 +310,10 @@ Every new page must be wikilinked from its parent domain page and from `wiki/ind
 1. **Update before ending.** Every session that touches knowledge must update relevant wiki
    pages before stopping.
 2. **Log every edit.** Every create/update/delete to any wiki page gets a `wiki/log.md`
-   entry with date, pages affected, and source referenced.
+   entry with date, pages affected, and source referenced. Also add the affected pages to
+   the `## By Date` section of `wiki/index.md` under today's date — use the log operation
+   tag as suffix (e.g. `[INGEST]`). Batch entries from the same operation on one line.
+   Prune entries older than 90 days to a single summary line.
 3. **Frontmatter stays current.** Set `updated:` on every touched page. Mark outdated
    pages `status: stale` immediately — stale is worse than missing.
 4. **Link new pages.** Every new page must be in `wiki/index.md` and wikilinked from at

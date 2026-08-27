@@ -202,3 +202,22 @@ Last updated: 2026-08-17
 *(open questions, unknowns, unresolved topics)*
 
 <!-- add gap pages here -->
+
+---
+
+## By Date
+
+*(recent additions and updates — newest first; derived from `wiki/log.md`)*
+*(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-08-17
+- [33 project pages](projects/) — tools migrated from concepts; domain hubs rebuilt `[IMPROVE]`
+- [11 domain hubs](domains/) — rebuilt with separate concept/project sections `[IMPROVE]`
+- [94 concept pages](concepts/) — migrated from Notion KB export `[INGEST]`
+- [8 source pages](sources/) — migrated from Notion KB export `[INGEST]`
+- [3 people pages](people/) — migrated from Notion KB export `[INGEST]`
+
+### 2026-05-04
+- [wiki/index.md](index.md), [wiki/log.md](log.md), [wiki/schema.md](schema.md) — bootstrapped `[INIT]`
+- [wiki/hot.md](hot.md), [wiki/overview.md](overview.md) — session infrastructure `[UPDATE]`
+- [CLAUDE.md](../CLAUDE.md) — schema expanded with Three-Layer Architecture `[UPDATE]`

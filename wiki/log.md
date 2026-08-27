@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-27] [UPDATE] | Add chronological index to wiki/index.md; update Hard Rule 2; add Pending Ingests to hot.md
+  └─ pages: wiki/index.md, CLAUDE.md, wiki/hot.md
+  └─ sources: none (structural improvement — fiches-veille temporal org inspiration)
+
 ## [2026-08-17] [IMPROVE] | Reclassify tools, add sources/people, cross-link
   └─ pages: wiki/projects/{33 pages}, wiki/sources/{8 pages}, wiki/people/{3 pages}
   └─ note: tools moved from concepts/ to projects/; domain hubs rebuilt with separate sections
