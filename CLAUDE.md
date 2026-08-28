@@ -107,6 +107,7 @@ it is filed back as a new page automatically.
    or sources conflict and must be resolved.
 
 **Skill:** Natural language — no slash command needed. Just ask.
+For structured relation queries ("what implements X?", "what connects to Y?"), use `/graph <entity>` instead — it traverses `## Relations` SPO tables directly without reading full page text.
 
 ---
 
@@ -162,6 +163,7 @@ conversation insight as a wiki page.
 |-------|---------|-------------|
 | `/today` | Session start | Morning briefing from hot cache + recent log |
 | `/recall` | Before any query | Pre-load relevant wiki pages into context |
+| `/graph <entity>` | Structured relation query | Traverse Relations SPO tables — find connections to/from an entity |
 | `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log. Books, papers, talks. |
 | `/ingest --fiche <path>` | Article/blog post added | Fiche mode: single ~400-word card → link → log. Articles, short reads. |
 | `/lint` | Weekly or on demand | Health audit: broken links, orphans, stale, contradictions |

@@ -5,6 +5,10 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-28] [UPDATE] | Add /graph skill — SPO Relations table traversal for graph queries
+  └─ pages: .claude/skills/graph.md (new), CLAUDE.md
+  └─ sources: none (structural improvement — unlocks Relations tables added in Task 4)
+
 ## [2026-08-27] [UPDATE] | Add /ingest --fiche mode for articles and blog posts
   └─ pages: wiki/schema.md, .claude/skills/ingest.md, CLAUDE.md
   └─ sources: none (structural improvement — fiches-veille fiche card pattern)

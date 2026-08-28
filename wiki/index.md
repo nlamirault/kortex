@@ -210,6 +210,9 @@ Last updated: 2026-08-17
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
+### 2026-08-28
+- [.claude/skills/graph.md](../.claude/skills/graph.md), [CLAUDE.md](../CLAUDE.md) — /graph skill for SPO Relations traversal `[UPDATE]`
+
 ### 2026-08-27
 - [wiki/schema.md](schema.md), [.claude/skills/ingest.md](../.claude/skills/ingest.md), [CLAUDE.md](../CLAUDE.md) — /ingest --fiche mode for articles `[UPDATE]`
 - [.claude/skills/close.md](../.claude/skills/close.md) — /close now writes queue count to hot.md Pending Ingests `[UPDATE]`
