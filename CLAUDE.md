@@ -66,13 +66,16 @@ documents. Knowledge compounds; it doesn't disappear into chat history.
 
 ### Operation 1: Ingest
 
-**Trigger:** New file dropped in `raw/` → say `"Ingest raw/<filename>"`
+**Trigger:** New file dropped in `raw/` → say `"Ingest raw/<filename>"` or `/ingest --fiche <url>` for articles.
 
-The LLM reads the source, identifies all entities (concepts, people, projects), creates or
-updates the relevant wiki pages, strengthens cross-references between related pages, and
-logs the operation. A single source typically touches 10–15 wiki pages.
+Two modes — choose before starting:
 
-**Steps:**
+| Mode | Command | Use for | Output |
+|------|---------|---------|--------|
+| Full | `/ingest <path>` | Books, papers, talks (>20 min read) | 10–15 wiki pages |
+| Fiche | `/ingest --fiche <path>` | Articles, blog posts (<20 min read) | 1 fiche card |
+
+**Full ingest steps:**
 1. Read source fully — do not skim.
 2. Identify all entities mentioned (concepts, people, projects, decisions).
 3. Create new wiki pages or update existing ones for each entity.
@@ -80,7 +83,9 @@ logs the operation. A single source typically touches 10–15 wiki pages.
 5. Update `wiki/index.md` with new entries.
 6. Append to `wiki/log.md` with prefix `[INGEST]`.
 
-**Skill:** `/ingest <path>` — runs the full ingest workflow for a single source.
+**Fiche steps:** read → one fiche card (En Bref + Points Clés + Relations) → update index → log → mark queue done.
+
+**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.claude/skills/ingest.md` for full workflow.
 
 ---
 
@@ -102,6 +107,7 @@ it is filed back as a new page automatically.
    or sources conflict and must be resolved.
 
 **Skill:** Natural language — no slash command needed. Just ask.
+For structured relation queries ("what implements X?", "what connects to Y?"), use `/graph <entity>` instead — it traverses `## Relations` SPO tables directly without reading full page text.
 
 ---
 
@@ -116,6 +122,8 @@ compound. Reports are tiered by severity.
 - [ ] Broken `[[wikilinks]]` (target page missing)
 - [ ] Orphan pages (not linked from index or any other page)
 - [ ] Stale pages (`status: stale` or `updated` date old)
+- [ ] Expired pages (`stale_after` < today) → CRITICAL, mark `status: stale`
+- [ ] Expiring-soon pages (`stale_after` within 30 days) → WARNING
 - [ ] Contradictions between pages → flag both, mark `PENDING — escalate to human`
 - [ ] Missing frontmatter fields
 - [ ] Claims without source citations → mark `NOT VERIFIED`
@@ -155,7 +163,9 @@ conversation insight as a wiki page.
 |-------|---------|-------------|
 | `/today` | Session start | Morning briefing from hot cache + recent log |
 | `/recall` | Before any query | Pre-load relevant wiki pages into context |
-| `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log |
+| `/graph <entity>` | Structured relation query | Traverse Relations SPO tables — find connections to/from an entity |
+| `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log. Books, papers, talks. |
+| `/ingest --fiche <path>` | Article/blog post added | Fiche mode: single ~400-word card → link → log. Articles, short reads. |
 | `/lint` | Weekly or on demand | Health audit: broken links, orphans, stale, contradictions |
 | `/file-back "<title>"` | Insight from conversation | Capture and file reusable knowledge to wiki |
 | `/bootstrap <domain>` | Starting a new domain | Create domain hub + seed concept stubs + log |
@@ -310,7 +320,10 @@ Every new page must be wikilinked from its parent domain page and from `wiki/ind
 1. **Update before ending.** Every session that touches knowledge must update relevant wiki
    pages before stopping.
 2. **Log every edit.** Every create/update/delete to any wiki page gets a `wiki/log.md`
-   entry with date, pages affected, and source referenced.
+   entry with date, pages affected, and source referenced. Also add the affected pages to
+   the `## By Date` section of `wiki/index.md` under today's date — use the log operation
+   tag as suffix (e.g. `[INGEST]`). Batch entries from the same operation on one line.
+   Prune entries older than 90 days to a single summary line.
 3. **Frontmatter stays current.** Set `updated:` on every touched page. Mark outdated
    pages `status: stale` immediately — stale is worse than missing.
 4. **Link new pages.** Every new page must be in `wiki/index.md` and wikilinked from at

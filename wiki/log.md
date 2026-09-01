@@ -5,6 +5,34 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-08-28] [UPDATE] | Add /graph skill — SPO Relations table traversal for graph queries
+  └─ pages: .claude/skills/graph.md (new), CLAUDE.md
+  └─ sources: none (structural improvement — unlocks Relations tables added in Task 4)
+
+## [2026-08-27] [UPDATE] | Add /ingest --fiche mode for articles and blog posts
+  └─ pages: wiki/schema.md, .claude/skills/ingest.md, CLAUDE.md
+  └─ sources: none (structural improvement — fiches-veille fiche card pattern)
+
+## [2026-08-27] [UPDATE] | /close now mirrors queue count to hot.md Pending Ingests block
+  └─ pages: .claude/skills/close.md
+  └─ sources: none (closes queue-visibility loop: /today reads live, /close writes snapshot)
+
+## [2026-08-27] [UPDATE] | Add ## Relations SPO triples to entity page templates and ingest workflow
+  └─ pages: wiki/schema.md, .claude/skills/ingest.md, .claude/skills/lint.md
+  └─ sources: none (structural improvement — fiches-veille SPO triple pattern on entity pages)
+
+## [2026-08-27] [UPDATE] | Surface raw/queue.md in /today briefing
+  └─ pages: .claude/skills/today.md
+  └─ sources: none (structural improvement — complete ingest queue visibility at session start)
+
+## [2026-08-27] [UPDATE] | Add stale_after expiry checks to /lint skill and CLAUDE.md lint list
+  └─ pages: .claude/skills/lint.md, CLAUDE.md
+  └─ sources: none (structural improvement — OKF v0.2 stale_after enforcement)
+
+## [2026-08-27] [UPDATE] | Add chronological index to wiki/index.md; update Hard Rule 2; add Pending Ingests to hot.md
+  └─ pages: wiki/index.md, CLAUDE.md, wiki/hot.md
+  └─ sources: none (structural improvement — fiches-veille temporal org inspiration)
+
 ## [2026-08-17] [IMPROVE] | Reclassify tools, add sources/people, cross-link
   └─ pages: wiki/projects/{33 pages}, wiki/sources/{8 pages}, wiki/people/{3 pages}
   └─ note: tools moved from concepts/ to projects/; domain hubs rebuilt with separate sections

@@ -25,6 +25,9 @@ Run this before ending any session where wiki pages were touched.
    - Replace **Last Operations** with the last 5 entries from `wiki/log.md`
    - Update **Active Pages** list
    - Append to **Known Failures** if any dead-ends were hit
+   - Read `raw/queue.md` → count items under `## Pending` and `## Processing` → update
+     the **Pending Ingests** block: `- raw/queue.md: N pending, N processing`
+     (If `raw/queue.md` is missing, write `- raw/queue.md: not found`.)
 
 3. **Verify wiki consistency:**
    - All new pages are in `wiki/index.md` ✓
@@ -41,6 +44,7 @@ Run this before ending any session where wiki pages were touched.
 - Focus: <what was worked on>
 - Pages modified: <list>
 - Open questions added: <list or "none">
+- Ingest queue: N pending, N processing
 - wiki/hot.md: updated
 - Consistency checks: passed / N warnings
 ```

@@ -50,6 +50,14 @@ No active focus. Fresh start.
 
 ---
 
+## Pending Ingests
+
+*(mirrors `raw/queue.md` pending count — update on `/close`)*
+
+- raw/queue.md: 0 pending
+
+---
+
 ## Known Failures
 
 *(Dead-ends recorded to prevent repetition)*

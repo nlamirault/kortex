@@ -202,3 +202,32 @@ Last updated: 2026-08-17
 *(open questions, unknowns, unresolved topics)*
 
 <!-- add gap pages here -->
+
+---
+
+## By Date
+
+*(recent additions and updates — newest first; derived from `wiki/log.md`)*
+*(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-08-28
+- [.claude/skills/graph.md](../.claude/skills/graph.md), [CLAUDE.md](../CLAUDE.md) — /graph skill for SPO Relations traversal `[UPDATE]`
+
+### 2026-08-27
+- [wiki/schema.md](schema.md), [.claude/skills/ingest.md](../.claude/skills/ingest.md), [CLAUDE.md](../CLAUDE.md) — /ingest --fiche mode for articles `[UPDATE]`
+- [.claude/skills/close.md](../.claude/skills/close.md) — /close now writes queue count to hot.md Pending Ingests `[UPDATE]`
+- [wiki/schema.md](schema.md), [.claude/skills/ingest.md](../.claude/skills/ingest.md), [.claude/skills/lint.md](../.claude/skills/lint.md) — SPO Relations section added to entity page templates `[UPDATE]`
+- [.claude/skills/today.md](../.claude/skills/today.md) — /today now reads raw/queue.md for ingest queue count `[UPDATE]`
+- [.claude/skills/lint.md](../.claude/skills/lint.md), [CLAUDE.md](../CLAUDE.md) — stale_after expiry checks added to /lint `[UPDATE]`
+
+### 2026-08-17
+- [33 project pages](projects/) — tools migrated from concepts; domain hubs rebuilt `[IMPROVE]`
+- [11 domain hubs](domains/) — rebuilt with separate concept/project sections `[IMPROVE]`
+- [94 concept pages](concepts/) — migrated from Notion KB export `[INGEST]`
+- [8 source pages](sources/) — migrated from Notion KB export `[INGEST]`
+- [3 people pages](people/) — migrated from Notion KB export `[INGEST]`
+
+### 2026-05-04
+- [wiki/index.md](index.md), [wiki/log.md](log.md), [wiki/schema.md](schema.md) — bootstrapped `[INIT]`
+- [wiki/hot.md](hot.md), [wiki/overview.md](overview.md) — session infrastructure `[UPDATE]`
+- [CLAUDE.md](../CLAUDE.md) — schema expanded with Three-Layer Architecture `[UPDATE]`

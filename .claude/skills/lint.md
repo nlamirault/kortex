@@ -27,11 +27,16 @@ Run all checks below. Collect findings. Report by severity tier. Fix CRITICAL im
 **Freshness**
 - [ ] Pages with `status: stale` — list them
 - [ ] Pages with `updated:` date > 90 days ago and `status: active` — flag as candidate-stale
+- [ ] Pages where `stale_after` < today — CRITICAL: page is past expiry; mark `status: stale` and flag for re-verification
+- [ ] Pages where `stale_after` is within 30 days from today — WARNING: expiry approaching; schedule review
+- [ ] Pages in fast-moving domains (AI/protocols: 6mo, Kubernetes: 1yr) that lack `stale_after` — INFO: add expiry date
 - [ ] `wiki/hot.md` — is Focus still current? Are Active Pages still relevant?
 
 **Knowledge Graph**
 - [ ] Source pages missing `## KnowledgeGraph` section — flag
 - [ ] Source pages with empty Triples or Entities tables — flag
+- [ ] Concept/project/person pages missing `## Relations` section — INFO
+- [ ] Concept/project/person pages with only placeholder rows in `## Relations` (Subject = `[[concept:this-concept]]` etc.) — WARNING
 - [ ] Claims marked `NOT VERIFIED` — list by page
 
 **Consistency**
@@ -60,6 +65,9 @@ Stats:
   Broken links: N
   Orphans: N
   Stale: N
+  Expired (stale_after past): N
+  Expiring soon (≤30d): N
+  Missing stale_after (fast-moving domain): N
   NOT VERIFIED claims: N
   Open gaps: N
 ```
@@ -74,6 +82,7 @@ Stats:
   └─ pages: <N pages audited>
   └─ sources: none
   └─ critical: <N>, warning: <N>, info: <N>
+  └─ expired: <N>, expiring-soon: <N>
 ```
 
 3. Update `wiki/hot.md` if open questions or active pages changed.
