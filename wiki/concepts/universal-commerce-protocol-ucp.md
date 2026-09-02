@@ -88,6 +88,11 @@ sequenceDiagram
 | **ACP** | Agent-to-Agent Dialogue | The Phone call between buyer and seller |
 | **A2A** | Value Transfer | The direct Wire Transfer |
 
+### Related Protocols
+
+- [[concept:x402]] — internet-native payment protocol (HTTP 402 + stablecoins). Could serve
+  as the **settlement engine** in a UCP flow, alongside or instead of A2A bank transfers.
+
 ### Next
 
 [Reference: AI / Protocols](../concepts/ai-protocols.md)

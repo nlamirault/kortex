@@ -9,7 +9,9 @@
 
 *(What is the active work or research thread?)*
 
-No active focus. Fresh start.
+Ingested **x402** — internet-native payment protocol (HTTP 402 + stablecoin settlement).
+Active pages: `concepts/x402.md`, `sources/x402-org-2026.md`. Sits at AI ∩ blockchain ∩
+networking; cross-linked to AP2 and UCP as complementary agentic-payment standards.
 
 ---
 
@@ -47,6 +49,7 @@ No active focus. Fresh start.
 
 *(Pages currently being built or needing follow-up)*
 
+- `concepts/x402.md` — facilitator role + supported chains still `NOT VERIFIED`; confirm from primary sources
 - `wiki/overview.md` — stub, needs clusters as domains are added
 - `wiki/hot.md` — this file, update on `/close`
 

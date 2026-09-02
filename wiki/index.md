@@ -9,7 +9,7 @@ Last updated: 2026-09-01
 
 *(broad topic hubs — start here; see `wiki/overview.md` for cluster map)*
 
-- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (15 concepts)
+- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (16 concepts)
 - [Blockchain](domains/blockchain.md) — distributed ledger, L1, layers (3 concepts)
 - [Data](domains/data.md) — databases, data engineering, lineage (9 concepts)
 - [Domotic](domains/domotic.md) — smart home: Matter, Zigbee, Thread (5 concepts)
@@ -42,6 +42,7 @@ Last updated: 2026-09-01
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
 - [MCP Reference](concepts/mcp.md) — MCP reference
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
+- [x402](concepts/x402.md) — internet-native payment protocol (HTTP 402 + stablecoins)
 <!-- Kubernetes -->
 - [Argo Events CRDs](concepts/argo-events-crds.md) — EventSource, Sensor CRD reference
 - [Argo Workflows CRDs](concepts/argo-workflows-crds.md) — Workflow, CronWorkflow CRD reference
@@ -105,6 +106,7 @@ Last updated: 2026-09-01
 
 *(books, papers, articles, talks)*
 
+- [x402.org — Internet-Native Payment Protocol](sources/x402-org-2026.md) — landing page for the x402 standard
 <!-- add source pages here -->
 
 ---
@@ -225,6 +227,9 @@ Last updated: 2026-09-01
 
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-09-02
+- [concepts/x402.md](concepts/x402.md), [sources/x402-org-2026.md](sources/x402-org-2026.md), [domains/ai.md](domains/ai.md), [domains/blockchain.md](domains/blockchain.md), [concepts/agent-payments-protocol-ap2.md](concepts/agent-payments-protocol-ap2.md), [concepts/universal-commerce-protocol-ucp.md](concepts/universal-commerce-protocol-ucp.md) — ingested x402.org internet-native payment protocol `[INGEST]`
 
 ### 2026-09-01
 - [ADR-0001](decisions/adopt-wikiskill-evolution-loop.md), [skill-impact.md](skill-impact.md), [patterns/](patterns/), [.claude/skills/evolve.md](../.claude/skills/evolve.md), [gaps/evolve-loop-coverage.md](gaps/evolve-loop-coverage.md) — adopt WikiSkill evolution loop; `pattern` entity type; `## Purpose` added to all 8 skills; CLAUDE.md + schema.md updated `[UPDATE]`
