@@ -25,6 +25,7 @@ No active focus. Fresh start.
 
 *(Decisions made in recent sessions — schema changes, direction pivots)*
 
+- 2026-09-01: Adopted WikiSkill evolution loop (ADR-0001) — `/evolve`, `patterns/`, `skill-impact.md`, `## Purpose` on all skills.
 - 2026-05-04: Initialized wiki structure using Karpathy LLM Wiki protocol v1.
 - 2026-05-04: Added `confidence`, `cluster` frontmatter fields to all entity types.
 - 2026-05-04: Added `comparisons/` entity type for side-by-side source analysis.
@@ -35,6 +36,7 @@ No active focus. Fresh start.
 
 *(Last 3–5 operations from `wiki/log.md` — copy on `/close`)*
 
+- `[UPDATE]` 2026-09-01 — Adopted WikiSkill evolution loop (ADR-0001): /evolve, patterns/, skill-impact ledger
 - `[INIT]` 2026-05-04 — Bootstrapped Kortex wiki structure
 - `[UPDATE]` 2026-05-04 — Expanded schema with Three-Layer Architecture and operations
 - `[UPDATE]` 2026-05-04 — Added hot cache, overview, comparisons, raw subdirs, skills

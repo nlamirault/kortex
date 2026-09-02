@@ -1,7 +1,7 @@
 # Kortex Wiki — Index
 
 Content catalog organized by entity type.
-Last updated: 2026-08-17
+Last updated: 2026-09-01
 
 ---
 
@@ -175,9 +175,9 @@ Last updated: 2026-08-17
 
 ## Decisions
 
-*(architectural and design choices for this knowledge base)*
+*(architectural and design choices for this knowledge base — ADRs)*
 
-<!-- add decision pages here -->
+- [ADR-0001 — Adopt WikiSkill Evolution Loop](decisions/adopt-wikiskill-evolution-loop.md) — close the wiki→procedure feedback loop from arxiv 2608.27454
 
 ---
 
@@ -197,11 +197,27 @@ Last updated: 2026-08-17
 
 ---
 
+## Patterns
+
+*(recurring failure modes / winning strategies — drive `/evolve`)*
+
+<!-- add pattern pages here — none yet; created by /evolve from !failure log entries -->
+
+---
+
+## Meta
+
+*(operational ledgers for the wiki machine itself)*
+
+- [Skill Impact Ledger](skill-impact.md) — audit trail of every skill/rule change (ADR-0001)
+
+---
+
 ## Gaps
 
 *(open questions, unknowns, unresolved topics)*
 
-<!-- add gap pages here -->
+- [Evolve loop coverage](gaps/evolve-loop-coverage.md) — open questions on the WikiSkill loop's gate
 
 ---
 
@@ -209,6 +225,9 @@ Last updated: 2026-08-17
 
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-09-01
+- [ADR-0001](decisions/adopt-wikiskill-evolution-loop.md), [skill-impact.md](skill-impact.md), [patterns/](patterns/), [.claude/skills/evolve.md](../.claude/skills/evolve.md), [gaps/evolve-loop-coverage.md](gaps/evolve-loop-coverage.md) — adopt WikiSkill evolution loop; `pattern` entity type; `## Purpose` added to all 8 skills; CLAUDE.md + schema.md updated `[UPDATE]`
 
 ### 2026-08-28
 - [.claude/skills/graph.md](../.claude/skills/graph.md), [CLAUDE.md](../CLAUDE.md) — /graph skill for SPO Relations traversal `[UPDATE]`

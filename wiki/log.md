@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-01] [UPDATE] | Adopt WikiSkill evolution loop (ADR-0001) — close the wiki→procedure feedback arc
+  └─ pages: wiki/decisions/adopt-wikiskill-evolution-loop.md (new), wiki/skill-impact.md (new), wiki/gaps/evolve-loop-coverage.md (new), wiki/patterns/ (new dir), .claude/skills/evolve.md (new), .claude/skills/{today,close,recall,ingest,lint,graph,bootstrap,file-back}.md (+ ## Purpose), CLAUDE.md, wiki/schema.md, wiki/index.md
+  └─ sources: https://arxiv.org/html/2608.27454v1 (WikiSkill paper)
+  └─ note: adds `pattern` entity type, /evolve operation, skill-impact ledger, ## Purpose provenance on all skills, lint+query acceptance gate
+
 ## [2026-08-28] [UPDATE] | Add /graph skill — SPO Relations table traversal for graph queries
   └─ pages: .claude/skills/graph.md (new), CLAUDE.md
   └─ sources: none (structural improvement — unlocks Relations tables added in Task 4)
