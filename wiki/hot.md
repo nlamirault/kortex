@@ -9,7 +9,7 @@
 
 *(What is the active work or research thread?)*
 
-No active focus. Fresh start.
+Ingested **Machine Payments Protocol (MPP)** — HTTP 402 machine-to-machine payments by Tempo Labs & Stripe. New: [[concept:machine-payments-protocol-mpp]], [[project:tempo]], [[source:mpp-specs]]. Part of the agentic-payments protocol cluster (AP2, UCP).
 
 ---
 
@@ -47,6 +47,8 @@ No active focus. Fresh start.
 
 *(Pages currently being built or needing follow-up)*
 
+- `wiki/concepts/machine-payments-protocol-mpp.md` — new, unverified; verify against spec before trusting
+- `wiki/projects/tempo.md` — new, unverified
 - `wiki/overview.md` — stub, needs clusters as domains are added
 - `wiki/hot.md` — this file, update on `/close`
 

@@ -70,6 +70,16 @@ AP2 integrates seamlessly with A2A and MCP protocols:
 
 Together, these protocols allow AP2 to deliver a fully interoperable solution for agent-based payments.
 
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[concept:agent-payments-protocol-ap2]] | extends | [[concept:agent-to-agent-a2a]] |
+| [[concept:agent-payments-protocol-ap2]] | extends | [[concept:model-context-protocol-mcp]] |
+| [[concept:agent-payments-protocol-ap2]] | contrasts-with | [[concept:machine-payments-protocol-mpp]] |
+
+*AP2 (Google-led) signs cryptographic mandates over A2A/MCP; [[concept:machine-payments-protocol-mpp]] (Tempo/Stripe) settles inline over HTTP 402. Both target agentic payments from different layers.*
+
 ### Next
 
 [Reference: AI / Protocols](../concepts/ai-protocols.md)

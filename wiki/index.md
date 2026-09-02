@@ -9,8 +9,8 @@ Last updated: 2026-09-01
 
 *(broad topic hubs — start here; see `wiki/overview.md` for cluster map)*
 
-- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (15 concepts)
-- [Blockchain](domains/blockchain.md) — distributed ledger, L1, layers (3 concepts)
+- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (16 concepts)
+- [Blockchain](domains/blockchain.md) — distributed ledger, L1, layers, Tempo (3 concepts, 1 project)
 - [Data](domains/data.md) — databases, data engineering, lineage (9 concepts)
 - [Domotic](domains/domotic.md) — smart home: Matter, Zigbee, Thread (5 concepts)
 - [Kubernetes](domains/kubernetes.md) — Argo, KEDA, Karpenter, CRDs, patterns (15 concepts)
@@ -39,6 +39,7 @@ Last updated: 2026-09-01
 - [AI Protocols](concepts/ai-protocols.md) — overview of AI communication protocols
 - [AWS Bedrock AgentCore](concepts/aws-bedrock-agentcore.md) — AWS managed agent runtime
 - [AWS Bedrock Agent Core (Reference)](concepts/aws-bedrock-agent-core.md) — reference for Bedrock Agent Core
+- [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
 - [MCP Reference](concepts/mcp.md) — MCP reference
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
@@ -105,6 +106,8 @@ Last updated: 2026-09-01
 
 *(books, papers, articles, talks)*
 
+- [MPP Specifications (Tempo/Stripe, 2026)](sources/mpp-specs.md) — Machine Payments Protocol spec: HTTP 402 machine-to-machine payments
+
 <!-- add source pages here -->
 
 ---
@@ -166,6 +169,9 @@ Last updated: 2026-09-01
 <!-- Metering -->
 - [OpenMeter](projects/openmeter.md) — **OpenMeter** ([https://openmeter.io/](https://openmeter.io/)) is an open-source
 
+<!-- Blockchain -->
+- [Tempo](projects/tempo.md) — Stripe/Paradigm L1 blockchain for stablecoin machine payments; settles MPP
+
 <!-- WASM -->
 - [WasmCloud](projects/wasmcloud.md)
 
@@ -225,6 +231,9 @@ Last updated: 2026-09-01
 
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-09-02
+- [MPP](concepts/machine-payments-protocol-mpp.md), [Tempo](projects/tempo.md), [mpp-specs](sources/mpp-specs.md) — ingest Machine Payments Protocol (paymentauth.org); cross-linked from AP2, UCP, ai-protocols, ai + blockchain domains `[INGEST]`
 
 ### 2026-09-01
 - [ADR-0001](decisions/adopt-wikiskill-evolution-loop.md), [skill-impact.md](skill-impact.md), [patterns/](patterns/), [.claude/skills/evolve.md](../.claude/skills/evolve.md), [gaps/evolve-loop-coverage.md](gaps/evolve-loop-coverage.md) — adopt WikiSkill evolution loop; `pattern` entity type; `## Purpose` added to all 8 skills; CLAUDE.md + schema.md updated `[UPDATE]`

@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-02] [INGEST] | Added Machine Payments Protocol (MPP) by Tempo Labs & Stripe
+  └─ pages: wiki/concepts/machine-payments-protocol-mpp.md (new), wiki/projects/tempo.md (new), wiki/sources/mpp-specs.md (new), wiki/concepts/agent-payments-protocol-ap2.md (+Relations), wiki/concepts/universal-commerce-protocol-ucp.md (+Related), wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/domains/blockchain.md, wiki/index.md, wiki/hot.md
+  └─ sources: https://paymentauth.org/, https://github.com/tempoxyz/mpp-specs
+  └─ note: MPP revives HTTP 402 for machine-to-machine payments; Tempo = Stripe/Paradigm L1 settlement. Draft 00–01, stale_after 6mo. Open: relation to Coinbase x402 (no page yet).
+
 ## [2026-09-01] [UPDATE] | Adopt WikiSkill evolution loop (ADR-0001) — close the wiki→procedure feedback arc
   └─ pages: wiki/decisions/adopt-wikiskill-evolution-loop.md (new), wiki/skill-impact.md (new), wiki/gaps/evolve-loop-coverage.md (new), wiki/patterns/ (new dir), .claude/skills/evolve.md (new), .claude/skills/{today,close,recall,ingest,lint,graph,bootstrap,file-back}.md (+ ## Purpose), CLAUDE.md, wiki/schema.md, wiki/index.md
   └─ sources: https://arxiv.org/html/2608.27454v1 (WikiSkill paper)

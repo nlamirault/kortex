@@ -3,27 +3,43 @@ title: Tempo
 type: project
 status: active
 confidence: high
-cluster: observability
-domain: [observability]
-sources: []
-updated: 2025-02-28
-tags: [Observability, OpenTelemetry, Tracing]
-generated: {by: claude-sonnet-4-6, at: 2026-08-17}
-verified: [{by: nicolas, at: 2026-08-17}]
+cluster: blockchain
+domain: [blockchain, ai]
+sources: [https://paymentauth.org/, https://github.com/tempoxyz/mpp-specs]
+updated: 2026-09-02
+tags: [Blockchain, Payments, Stablecoin, L1]
+generated: {by: claude-opus-4-8, at: 2026-09-02}
+verified: []
+stale_after: 2027-09-02
 ---
-# Description
 
-Grafana Tempo is an open-source, high-volume, and minimal-dependency distributed tracing backend. It is designed to be a robust and cost-effective solution for storing and querying massive amounts of trace data.
+# Tempo
 
-.png)
+**Type:** initiative (Layer-1 blockchain)
+**Status:** active — mainnet live 2026-03-18
+**URL:** https://paymentauth.org/ · https://github.com/tempoxyz/mpp-specs
 
-Here's an overview of its architecture:
+## What It Does
 
-- **Distributed Tracing Data Sources**: These are various services and applications instrumented with distributed tracing libraries (like Jaeger, Zipkin, OpenTelemetry) that send trace data to Tempo.
-- **Distributors**: When traces are received, they first hit the distributors. Distributors are responsible for batching and sharding the trace data before it's forwarded to ingesters. They ensure that each trace id ends up at the same ingester.
-- **Ingester**: Ingester nodes are the workhorses that process the incoming trace data. They write the trace data to a local WAL (Write-Ahead Log) and then to the backend object store. Ingester nodes also hold the traces in memory until they are flushed to the object store, allowing for quick querying of recent trace data.
-- **Querier**: When a user queries for a trace, the query is handled by a querier node. The querier fetches the trace ID's list of blocks from the index and then retrieves the full trace data from the object store.
-- **Query Frontend**: An optional component that can be used to accelerate queries. It acts as a reverse proxy for queriers, providing query sharding and parallelization, result caching, and retries.
-- **Compactor**: The compactor applies retention policies and compacts traces in the backend object store, reducing storage requirements and optimizing query performance.
-- **Backend Object Store**: This is where the actual trace data is stored long-term. Tempo is designed to work with any S3-compatible backend, such as Amazon S3, Google Cloud Storage, or MinIO.
-- **Query UI**: Grafana itself can be used to query and visualize traces stored in Tempo. Tempo is integrated with Grafana's Explore feature, which allows users to search for traces by ID and visualize them.
+Tempo is a specialized [[concept:blockchain-layer-1|Layer-1 blockchain]] built by **Stripe** and **Paradigm**, engineered exclusively for high-frequency stablecoin transactions at internet scale. Where general-purpose L1s optimize for arbitrary smart contracts, Tempo optimizes for one thing: settling machine-to-machine payments cheaply and fast enough that an AI agent can pay per API call. Tempo Labs co-authored the [[concept:machine-payments-protocol-mpp|Machine Payments Protocol (MPP)]] with Stripe and serves as one of its native settlement methods.
+
+## Relations
+
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[project:tempo]] | is-a | [[concept:blockchain-layer-1]] |
+| [[project:tempo]] | implements | [[concept:machine-payments-protocol-mpp]] |
+| [[project:tempo]] | part-of | [[domain:blockchain]] |
+
+*Built by Tempo Labs with Stripe + Paradigm; MPP is co-authored by Tempo Labs and Stripe. No `organization` entity type exists in this wiki — Stripe and Paradigm are named in prose.*
+
+## Relevance to Kortex
+
+Tempo is the settlement backbone of the emerging agentic-payments stack. It anchors the [[concept:machine-payments-protocol-mpp]] concept on the blockchain side and gives the [[domain:blockchain]] domain its first concrete project. Design partners at launch included Visa, Mastercard, Deutsche Bank, Standard Chartered, Revolut, Nubank, Shopify, OpenAI, Anthropic, Ramp, and DoorDash — signalling that machine-to-machine commerce is being built by both incumbent finance and frontier-AI labs at once.
+
+## Related
+
+- [[concept:machine-payments-protocol-mpp]] — the protocol Tempo co-authors and settles
+- [[concept:blockchain-layer-1]] — the L1 class Tempo belongs to
+- [[source:mpp-specs]] — specification source
+- [[domain:blockchain]] — parent domain
