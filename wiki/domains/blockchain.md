@@ -20,6 +20,7 @@ Domain hub for blockchain knowledge.
 - [Blockchain](../concepts/blockchain.md)
 - [Blockchain Layer 1](../concepts/blockchain-layer-1.md)
 - [Blockchain Layers](../concepts/blockchain-layers.md)
+- [x402 (Internet-Native Payment Protocol)](../concepts/x402.md) — HTTP 402 + stablecoin settlement (primary cluster: ai)
 
 ## Projects
 

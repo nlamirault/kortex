@@ -88,9 +88,11 @@ sequenceDiagram
 | **ACP** | Agent-to-Agent Dialogue | The Phone call between buyer and seller |
 | **A2A** | Value Transfer | The direct Wire Transfer |
 
-## Related
+## Related Protocols
 
-- [[concept:machine-payments-protocol-mpp]] — MPP settles machine payments over HTTP 402; complementary to UCP's product/cart data layer.
+- [[concept:machine-payments-protocol-mpp]] — settles machine payments over HTTP 402; complementary to UCP's product/cart data layer.
+- [[concept:x402]] — internet-native payment protocol (HTTP 402 + stablecoins). Could serve
+  as the **settlement engine** in a UCP flow, alongside or instead of A2A bank transfers.
 
 ### Next
 

@@ -33,6 +33,7 @@ Domain hub for ai knowledge.
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
+- [x402 (Internet-Native Payment Protocol)](../concepts/x402.md)
 
 ## Projects
 

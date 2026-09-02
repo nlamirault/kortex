@@ -77,8 +77,14 @@ Together, these protocols allow AP2 to deliver a fully interoperable solution fo
 | [[concept:agent-payments-protocol-ap2]] | extends | [[concept:agent-to-agent-a2a]] |
 | [[concept:agent-payments-protocol-ap2]] | extends | [[concept:model-context-protocol-mcp]] |
 | [[concept:agent-payments-protocol-ap2]] | contrasts-with | [[concept:machine-payments-protocol-mpp]] |
+| [[concept:agent-payments-protocol-ap2]] | contrasts-with | [[concept:x402]] |
 
-*AP2 (Google-led) signs cryptographic mandates over A2A/MCP; [[concept:machine-payments-protocol-mpp]] (Tempo/Stripe) settles inline over HTTP 402. Both target agentic payments from different layers.*
+*AP2 (Google-led) authorizes payments at the **agent layer** — cryptographic mandates over A2A/MCP. Both [[concept:machine-payments-protocol-mpp]] (Tempo/Stripe) and [[concept:x402]] settle at the **transport layer** over HTTP 402. Complementary, not competing.*
+
+### Related Protocols
+
+- [[concept:x402]] — internet-native payment protocol (HTTP 402 + on-chain stablecoins), transport-layer settlement.
+- [[concept:machine-payments-protocol-mpp]] — machine-to-machine payments over HTTP 402 (Tempo/Stripe), rail-agnostic settlement.
 
 ### Next
 

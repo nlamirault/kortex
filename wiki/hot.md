@@ -9,7 +9,11 @@
 
 *(What is the active work or research thread?)*
 
-Ingested **Machine Payments Protocol (MPP)** — HTTP 402 machine-to-machine payments by Tempo Labs & Stripe. New: [[concept:machine-payments-protocol-mpp]], [[project:tempo]], [[source:mpp-specs]]. Part of the agentic-payments protocol cluster (AP2, UCP).
+Ingested two HTTP-402 payment protocols into the agentic-payments cluster:
+- **Machine Payments Protocol (MPP)** — machine-to-machine payments by Tempo Labs & Stripe. New: [[concept:machine-payments-protocol-mpp]], [[project:tempo]], [[source:mpp-specs]].
+- **x402** — internet-native payment protocol (HTTP 402 + stablecoin settlement). New: [[concept:x402]], `sources/x402-org-2026.md`.
+
+Both cross-link to each other, AP2, and UCP. Sit at AI ∩ blockchain ∩ networking.
 
 ---
 
@@ -49,6 +53,7 @@ Ingested **Machine Payments Protocol (MPP)** — HTTP 402 machine-to-machine pay
 
 - `wiki/concepts/machine-payments-protocol-mpp.md` — new, unverified; verify against spec before trusting
 - `wiki/projects/tempo.md` — new, unverified
+- `concepts/x402.md` — facilitator role + supported chains still `NOT VERIFIED`; confirm from primary sources
 - `wiki/overview.md` — stub, needs clusters as domains are added
 - `wiki/hot.md` — this file, update on `/close`
 

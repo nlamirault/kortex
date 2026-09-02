@@ -42,6 +42,7 @@ Its headline primitive is the **session**: an agent authorizes a spending limit 
 | [[concept:machine-payments-protocol-mpp]] | extends | [[concept:url-uri-urn]] |
 | [[concept:machine-payments-protocol-mpp]] | used-by | [[concept:model-context-protocol-mcp]] |
 | [[concept:machine-payments-protocol-mpp]] | contrasts-with | [[concept:agent-payments-protocol-ap2]] |
+| [[concept:machine-payments-protocol-mpp]] | contrasts-with | [[concept:x402]] |
 | [[concept:machine-payments-protocol-mpp]] | contrasts-with | [[concept:universal-commerce-protocol-ucp]] |
 
 *Note: `extends` HTTP semantics (402 status code) is captured via the URI/URN identifier page; MPP itself defines no new transport.*
@@ -51,12 +52,13 @@ Its headline primitive is the **session**: an agent authorizes a spending limit 
 - [[project:tempo]] — the Stripe/Paradigm L1 blockchain that co-authors and settles MPP
 - [[concept:agent-payments-protocol-ap2]] — Google-led agentic payment protocol; AP2 signs mandates over A2A/MCP, MPP settles over HTTP 402
 - [[concept:universal-commerce-protocol-ucp]] — commerce data/cart standard; complementary layer to MPP's settlement
+- [[concept:x402]] — sibling HTTP 402 payment protocol; both revive 402 for machine settlement
 - [[concept:model-context-protocol-mcp]] — used as an MPP transport
 - [[concept:ai-protocols]] — protocol landscape hub
 - [[source:mpp-specs]] — the specification source
 
 ## Open Questions
 
-- How does MPP relate to Coinbase's **x402** (also an HTTP-402 agentic-payment scheme)? Both revive 402 — is there convergence or fragmentation? (No x402 wiki page yet.)
+- How does MPP relate to **x402** (also an HTTP-402 agentic-payment scheme)? Both revive 402 — convergence or fragmentation? See [[concept:x402]].
 - Does the `session` primitive's off-chain streaming introduce settlement/dispute risk versus per-tx on-chain finality?
 - Draft (00–01) — API surface may shift before v1; `stale_after` set to 6 months.
