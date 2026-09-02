@@ -238,6 +238,21 @@ def collect(wiki_dir: Path, page_index: dict) -> tuple[dict, list[dict], dict]:
     entities: dict[str, dict] = {}
     entity_edges: dict[str, list] = defaultdict(list)
 
+    # Seed one entity per wiki page, so the graph covers the whole wiki — not
+    # only pages that happen to carry a `## Relations` table. Relations below
+    # then enrich these with edges (deduped by the shared `type::slug` key).
+    for key, page in page_index.items():
+        etype, slug = key.split("::", 1)
+        entities[key] = {
+            "name": page["title"],
+            "type": etype,
+            "slug": slug,
+            "wiki_path": page["path"],
+            "sources": {str(page["path"])},
+            "out": 0,
+            "in": 0,
+        }
+
     def touch(node: dict, src: str) -> str | None:
         if not node["is_entity"]:
             return None

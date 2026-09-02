@@ -11,7 +11,7 @@ updated: 2026-09-02
 **Type:** domain  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
 
 **Wiki page:** [Blockchain](../domains/blockchain.md)
 
@@ -23,4 +23,5 @@ updated: 2026-09-02
 
 ## Source Pages
 
+- [domains/blockchain.md](../domains/blockchain.md)
 - [projects/tempo.md](../projects/tempo.md)

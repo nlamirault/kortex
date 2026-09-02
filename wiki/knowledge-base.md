@@ -13,20 +13,25 @@ updated: 2026-09-02
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 28 |
-| Major entities (★) | 6 |
-| Minor entities | 22 |
+| Total entities | 138 |
+| Major entities (★) | 7 |
+| Minor entities | 131 |
 | Total triples | 32 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| concept | 14 | [→](kb/_index-type-concept.md) |
+| concept | 66 | [→](kb/_index-type-concept.md) |
+| project | 33 | [→](kb/_index-type-project.md) |
+| domain | 11 | [→](kb/_index-type-domain.md) |
+| source | 10 | [→](kb/_index-type-source.md) |
 | organisation | 6 | [→](kb/_index-type-organisation.md) |
 | technologie | 5 | [→](kb/_index-type-technologie.md) |
-| project | 1 | [→](kb/_index-type-project.md) |
-| domain | 1 | [→](kb/_index-type-domain.md) |
+| person | 3 | [→](kb/_index-type-person.md) |
+| decision | 1 | [→](kb/_index-type-decision.md) |
+| gap | 1 | [→](kb/_index-type-gap.md) |
+| synthesis | 1 | [→](kb/_index-type-synthesis.md) |
 | projet | 1 | [→](kb/_index-type-projet.md) |
 
 ## Top Entities by Degree
@@ -42,14 +47,19 @@ updated: 2026-09-02
 | [Tempo](kb/projet-tempo.md) | projet | 2 | 1 |
 | [x402 Foundation](kb/organisation-x402-foundation.md) | organisation | 2 | 1 |
 | [Coinbase](kb/organisation-coinbase.md) | organisation | 1 | 1 |
-| [Agent-to-Agent (A2A)](kb/concept-agent-to-agent-a2a.md) | concept | 0 | 1 |
+| [12 App Factor](kb/concept-12-app-factor.md) | concept | 0 | 1 |
 
 ## Navigation
 
 - [All entities alphabetical](kb/_index-entities.md)
 - [concept](kb/_index-type-concept.md)
+- [decision](kb/_index-type-decision.md)
 - [domain](kb/_index-type-domain.md)
+- [gap](kb/_index-type-gap.md)
 - [organisation](kb/_index-type-organisation.md)
+- [person](kb/_index-type-person.md)
 - [project](kb/_index-type-project.md)
 - [projet](kb/_index-type-projet.md)
+- [source](kb/_index-type-source.md)
+- [synthesis](kb/_index-type-synthesis.md)
 - [technologie](kb/_index-type-technologie.md)
