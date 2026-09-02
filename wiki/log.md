@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-02] [UPDATE] | Fixed non-rendering `[[type:slug]]` links in agentic-payments cluster; clarified Wikilink Convention
+  └─ pages: wiki/concepts/{x402,machine-payments-protocol-mpp,agent-payments-protocol-ap2,universal-commerce-protocol-ucp}.md, wiki/projects/tempo.md, wiki/sources/{mpp-specs,x402-org-2026}.md, wiki/hot.md, CLAUDE.md, .claude/skills/{ingest,lint}.md
+  └─ sources: none
+  └─ note: Bare `[[type:slug]]` does not render on GitHub. Converted all prose/`## Related`/`## See Also` wikilinks to markdown links `[Title](../dir/slug.md)`; kept `## Relations` SPO tables as `[[type:slug]]` (machine-read by /graph). Split Wikilink Convention into two explicit forms; added ingest step + lint check to prevent recurrence.
+
 ## [2026-09-02] [INGEST] | Added Machine Payments Protocol (MPP) by Tempo Labs & Stripe
   └─ pages: wiki/concepts/machine-payments-protocol-mpp.md (new), wiki/projects/tempo.md (new), wiki/sources/mpp-specs.md (new), wiki/concepts/agent-payments-protocol-ap2.md (+Relations), wiki/concepts/universal-commerce-protocol-ucp.md (+Related), wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/domains/blockchain.md, wiki/index.md, wiki/hot.md
   └─ sources: https://paymentauth.org/, https://github.com/tempoxyz/mpp-specs

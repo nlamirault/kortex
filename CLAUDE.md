@@ -322,24 +322,44 @@ stale_after: <YYYY-MM-DD>          # optional — omit for evergreen content
 
 ## Wikilink Convention
 
-Use `[[type:slug]]` for cross-references:
+Cross-references have **two forms**, and the form depends on where the link sits.
+GitHub renders standard markdown but **not** `[[wikilink]]` syntax — so bare `[[type:slug]]`
+in prose shows up as dead, unclickable text. Never emit it in human-readable content.
+
+### Form 1 — `## Relations` SPO tables → `[[type:slug]]` (machine-readable)
+
+The `## Relations` table is a machine-readable edge list traversed by `/graph`. Its Subject
+and Object cells **must** use raw `[[type:slug]]` — `/graph` parses this exact syntax.
 
 ```
-[[concept:zettelkasten]]
-[[source:building-a-second-brain]]
-[[person:andy-matuschak]]
-[[project:obsidian]]
-[[decision:flat-vs-hierarchical-structure]]
-[[domain:knowledge-management]]
-[[comparison:zettelkasten-vs-para]]
-[[synthesis:pkm-tool-comparison-2026]]
-[[pattern:break-repetition-loop]]
-[[gap:unresolved-spaced-repetition-debate]]
+| Subject          | Predicate | Object              |
+|------------------|-----------|---------------------|
+| [[concept:x402]] | requires  | [[concept:blockchain]] |
 ```
 
-Render as markdown links: `[Zettelkasten](../concepts/zettelkasten.md)`
+Valid types: `[[concept:…]]` `[[source:…]]` `[[person:…]]` `[[project:…]]`
+`[[decision:…]]` `[[domain:…]]` `[[comparison:…]]` `[[synthesis:…]]` `[[pattern:…]]` `[[gap:…]]`.
 
-Every new page must be wikilinked from its parent domain page and from `wiki/index.md`.
+### Form 2 — Everywhere else → rendered markdown links (clickable)
+
+All human-readable references — inline prose, `## Related` / `## See Also` bullet lists,
+`hot.md`, `wiki/index.md`, `## Open Questions` — use standard markdown links so they render
+and click on GitHub:
+
+```
+[x402](../concepts/x402.md)
+[Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
+[Tempo](../projects/tempo.md)
+```
+
+Path is relative to the current file (`../concepts/`, `../projects/`, `../sources/`,
+`../domains/`; from `wiki/` root pages like `hot.md`, drop the `../`). Pick a readable title,
+not the slug. An aliased wikilink `[[concept:mcp|MCP]]` becomes `[MCP](../concepts/mcp.md)`.
+
+**Rule of thumb:** if a human reads the line, it's a markdown link. If `/graph` parses the
+line (Relations table only), it's `[[type:slug]]`.
+
+Every new page must be linked from its parent domain page and from `wiki/index.md`.
 
 ---
 

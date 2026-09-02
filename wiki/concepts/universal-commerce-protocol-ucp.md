@@ -90,8 +90,8 @@ sequenceDiagram
 
 ## Related Protocols
 
-- [[concept:machine-payments-protocol-mpp]] — settles machine payments over HTTP 402; complementary to UCP's product/cart data layer.
-- [[concept:x402]] — internet-native payment protocol (HTTP 402 + stablecoins). Could serve
+- [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md) — settles machine payments over HTTP 402; complementary to UCP's product/cart data layer.
+- [x402](../concepts/x402.md) — internet-native payment protocol (HTTP 402 + stablecoins). Could serve
   as the **settlement engine** in a UCP flow, alongside or instead of A2A bank transfers.
 
 ### Next

@@ -33,7 +33,7 @@ The MPP specifications define an open, rail- and currency-agnostic standard for 
 - **HTTP 402 revival:** payment terms are returned in a `402` response with a `Payment` HTTP auth scheme; the client pays as part of the request/response cycle.
 - **Layered spec:** *Core* (402 semantics, headers, IANA registries) → *Intents* (charge, authorize, subscription) → *Methods* (Tempo, Stripe, ACH, EVM, Solana, Stellar, Hedera, NEAR Intents, Lightning, USDC) → *Extensions* (discovery, identity).
 - **Sessions:** authorize a spending limit upfront, then stream continuous micropayments with no on-chain transaction per interaction.
-- **Transports:** JSON-RPC and [[concept:model-context-protocol-mcp|MCP]], connecting settlement to AI-agent infrastructure.
+- **Transports:** JSON-RPC and [MCP](../concepts/model-context-protocol-mcp.md), connecting settlement to AI-agent infrastructure.
 - **Design principles:** "minimal protocol designed for safe extension," network/method/currency agnosticism, "durable by design."
 
 ## Notable Quotes
@@ -44,8 +44,8 @@ The MPP specifications define an open, rail- and currency-agnostic standard for 
 
 ## Concepts Introduced
 
-- [[concept:machine-payments-protocol-mpp]]
-- [[project:tempo]]
+- [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
+- [Tempo](../projects/tempo.md)
 
 ## Open Questions Raised
 

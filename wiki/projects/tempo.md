@@ -21,7 +21,7 @@ stale_after: 2027-09-02
 
 ## What It Does
 
-Tempo is a specialized [[concept:blockchain-layer-1|Layer-1 blockchain]] built by **Stripe** and **Paradigm**, engineered exclusively for high-frequency stablecoin transactions at internet scale. Where general-purpose L1s optimize for arbitrary smart contracts, Tempo optimizes for one thing: settling machine-to-machine payments cheaply and fast enough that an AI agent can pay per API call. Tempo Labs co-authored the [[concept:machine-payments-protocol-mpp|Machine Payments Protocol (MPP)]] with Stripe and serves as one of its native settlement methods.
+Tempo is a specialized [Layer-1 blockchain](../concepts/blockchain-layer-1.md) built by **Stripe** and **Paradigm**, engineered exclusively for high-frequency stablecoin transactions at internet scale. Where general-purpose L1s optimize for arbitrary smart contracts, Tempo optimizes for one thing: settling machine-to-machine payments cheaply and fast enough that an AI agent can pay per API call. Tempo Labs co-authored the [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md) with Stripe and serves as one of its native settlement methods.
 
 ## Relations
 
@@ -35,11 +35,11 @@ Tempo is a specialized [[concept:blockchain-layer-1|Layer-1 blockchain]] built b
 
 ## Relevance to Kortex
 
-Tempo is the settlement backbone of the emerging agentic-payments stack. It anchors the [[concept:machine-payments-protocol-mpp]] concept on the blockchain side and gives the [[domain:blockchain]] domain its first concrete project. Design partners at launch included Visa, Mastercard, Deutsche Bank, Standard Chartered, Revolut, Nubank, Shopify, OpenAI, Anthropic, Ramp, and DoorDash — signalling that machine-to-machine commerce is being built by both incumbent finance and frontier-AI labs at once.
+Tempo is the settlement backbone of the emerging agentic-payments stack. It anchors the [MPP](../concepts/machine-payments-protocol-mpp.md) concept on the blockchain side and gives the [blockchain](../domains/blockchain.md) domain its first concrete project. Design partners at launch included Visa, Mastercard, Deutsche Bank, Standard Chartered, Revolut, Nubank, Shopify, OpenAI, Anthropic, Ramp, and DoorDash — signalling that machine-to-machine commerce is being built by both incumbent finance and frontier-AI labs at once.
 
 ## Related
 
-- [[concept:machine-payments-protocol-mpp]] — the protocol Tempo co-authors and settles
-- [[concept:blockchain-layer-1]] — the L1 class Tempo belongs to
-- [[source:mpp-specs]] — specification source
-- [[domain:blockchain]] — parent domain
+- [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md) — the protocol Tempo co-authors and settles
+- [Layer-1 blockchain](../concepts/blockchain-layer-1.md) — the L1 class Tempo belongs to
+- [MPP Specs](../sources/mpp-specs.md) — specification source
+- [Blockchain](../domains/blockchain.md) — parent domain

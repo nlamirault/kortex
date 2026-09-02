@@ -235,6 +235,7 @@ Last updated: 2026-09-01
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
 ### 2026-09-02
+- agentic-payments cluster + CLAUDE.md + skills — fixed non-rendering `[[type:slug]]` prose links → markdown links; clarified Wikilink Convention (Relations tables keep `[[…]]`) `[UPDATE]`
 - [MPP](concepts/machine-payments-protocol-mpp.md), [Tempo](projects/tempo.md), [mpp-specs](sources/mpp-specs.md) — ingest Machine Payments Protocol (paymentauth.org); cross-linked from AP2, UCP, ai-protocols, ai + blockchain domains `[INGEST]`
 - [x402](concepts/x402.md), [x402-org-2026](sources/x402-org-2026.md) — ingest x402.org internet-native payment protocol; cross-linked to AP2, UCP `[INGEST]`
 
