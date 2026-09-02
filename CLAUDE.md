@@ -157,6 +157,29 @@ conversation insight as a wiki page.
 
 ---
 
+### Operation 5: Evolve
+
+**Trigger:** `/evolve`, or periodically after failures accumulate.
+
+Closes the WikiSkill loop ([[decision:adopt-wikiskill-evolution-loop]], ADR-0001).
+Where File Back enriches the wiki, Evolve enriches the **procedures** — it reads the
+wiki's recorded failures and patterns and rewrites the skills and rules that maintain
+the wiki. Failure → `pattern:` → skill/rule change → audit trail.
+
+**Steps:**
+1. Read `wiki/skill-impact.md` first — never re-propose a rejected change.
+2. Synthesize recurring `!failure` log entries into `wiki/patterns/` pages.
+3. Propose **one atomic** change to a single skill or CLAUDE.md rule, traced to a
+   `pattern:` or `gap:`.
+4. Gate it: `/lint` clean **and** one sample query still resolves. Both must pass.
+5. Apply if accepted, revert if rejected — either way, record a row in
+   `wiki/skill-impact.md`.
+6. Append to `wiki/log.md` with prefix `[EVOLVE]`.
+
+**Skill:** `/evolve` — runs the maintainer + proposer + gate in one operation.
+
+---
+
 ## Skills Reference
 
 | Skill | Trigger | What It Does |
@@ -168,6 +191,7 @@ conversation insight as a wiki page.
 | `/ingest --fiche <path>` | Article/blog post added | Fiche mode: single ~400-word card → link → log. Articles, short reads. |
 | `/lint` | Weekly or on demand | Health audit: broken links, orphans, stale, contradictions |
 | `/file-back "<title>"` | Insight from conversation | Capture and file reusable knowledge to wiki |
+| `/evolve` | Failures accumulated | Wiki→procedure loop: synthesize patterns, propose+gate one skill/rule change, log to skill-impact ledger |
 | `/bootstrap <domain>` | Starting a new domain | Create domain hub + seed concept stubs + log |
 | `/close` | Session end | Update hot cache, verify consistency, summarize |
 
@@ -215,6 +239,7 @@ kortex/
     ├── index.md           ← content catalog by category
     ├── log.md             ← append-only activity log
     ├── hot.md             ← session hot cache (~500 words, read first)
+    ├── skill-impact.md    ← audit trail for skill/rule changes (ADR-0001)
     ├── overview.md        ← cluster navigation hub
     ├── schema.md          ← entity templates and type definitions
     ├── domains/           ← broad topic hub pages (tier-2)
@@ -225,6 +250,7 @@ kortex/
     ├── decisions/         ← architectural and design choices
     ├── comparisons/       ← side-by-side source/tool analysis
     ├── syntheses/         ← cross-source analyses from queries (tier-5, leaves)
+    ├── patterns/          ← recurring failure modes / winning strategies (drive /evolve)
     └── gaps/              ← open questions and deficiencies
 ```
 
@@ -244,6 +270,7 @@ Every wiki page must be one of these types (set in frontmatter):
 | `decision` | Architectural or design choices | `wiki/decisions/` |
 | `comparison` | Side-by-side analysis of sources or tools | `wiki/comparisons/` |
 | `synthesis` | Cross-source analyses filed from queries (leaves) | `wiki/syntheses/` |
+| `pattern` | Recurring failure mode or winning strategy (drives `/evolve`) | `wiki/patterns/` |
 | `gap` | Open questions, unknowns, deficiencies | `wiki/gaps/` |
 | `log` | Special — only `wiki/log.md` | — |
 | `index` | Special — only `wiki/index.md` | — |
@@ -306,6 +333,7 @@ Use `[[type:slug]]` for cross-references:
 [[domain:knowledge-management]]
 [[comparison:zettelkasten-vs-para]]
 [[synthesis:pkm-tool-comparison-2026]]
+[[pattern:break-repetition-loop]]
 [[gap:unresolved-spaced-repetition-debate]]
 ```
 
@@ -375,7 +403,7 @@ Example:
   └─ sources: raw/ahrens-smart-notes.pdf
 ```
 
-Operations: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[UPDATE]` `[BOOTSTRAP]`
+Operations: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[EVOLVE]` `[UPDATE]` `[BOOTSTRAP]`
 
 **Failure logging:** Use `!failure` tag when a dead-end is hit:
 ```

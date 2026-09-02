@@ -501,3 +501,58 @@ Why resolving this gap matters.
 ✅ Resolved — YYYY-MM-DD
 Evidence: [[source:slug]]
 ```
+
+---
+
+## Pattern Page
+
+*A **recurring behavior** — a failure mode or a winning strategy — synthesized from
+`!failure` log entries or repeated observation. Distinct from a Gap: a gap is
+unknown knowledge; a pattern is known, recurring behavior with a workaround.
+Drives procedure changes via `/evolve`. See [[decision:adopt-wikiskill-evolution-loop]].*
+
+```markdown
+---
+title: <pattern name>
+type: pattern
+status: active
+confidence: medium
+cluster: <domain-slug>
+domain: [<domain-slug>]
+sources: []
+updated: YYYY-MM-DD
+tags: []
+kind: failure | strategy
+occurrences: <N>
+---
+
+# Pattern: <Title>
+
+**Kind:** failure mode | winning strategy
+**First seen:** YYYY-MM-DD | **Occurrences:** N
+
+## Symptom
+
+What is observed when this pattern fires (the failure, or the situation the
+strategy applies to).
+
+## Root Cause
+
+Why it happens. For a strategy: why it works.
+
+## Workaround / Procedure
+
+The fix, or the reusable procedure. If this became a skill/rule change, link it.
+
+## Evidence
+
+- `wiki/log.md` YYYY-MM-DD `!failure` — <one line>
+- `wiki/log.md` YYYY-MM-DD `!failure` — <one line>
+
+## Drove
+
+*(fill in when this pattern motivates a procedure change via `/evolve`)*
+
+- [[decision:slug]] / skill edit — see `wiki/skill-impact.md`
+```
+
