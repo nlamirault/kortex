@@ -8,9 +8,10 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
+// Served at the domain root on Cloudflare Workers (see wrangler.jsonc). No
+// `base` path — asset URLs resolve from `/`, not a `/kortex` project subpath.
 export default defineConfig({
-  site: "https://nlamirault.github.io",
-  base: "/kortex",
+  site: "https://kortex.lamirault.xyz",
   output: "static",
   integrations: [sitemap()],
   vite: {

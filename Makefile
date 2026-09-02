@@ -61,11 +61,25 @@ site-build: ## Build the static wiki website into website/public
 	@./website/build.sh
 
 .PHONY: site-preview
-site-preview: ## Preview the wiki website locally (localhost:8080)
+site-preview: ## Preview the wiki website locally (localhost:4321)
 	@echo -e "$(INFO)$(INFO_COLOR)[Site] Preview $(NO_COLOR)"
 	@./website/build.sh --serve
+
+# wrangler is run on-demand via npx (not a project dependency). Pin the major
+# to keep deploys reproducible.
+WRANGLER = npx --yes wrangler@4
+
+.PHONY: site-serve
+site-serve: site-build ## Serve the built site through the Cloudflare Worker locally (wrangler dev)
+	@echo -e "$(INFO)$(INFO_COLOR)[Site] Serving via wrangler dev $(NO_COLOR)"
+	@cd website && $(WRANGLER) dev
+
+.PHONY: site-deploy
+site-deploy: site-build ## Deploy the site to Cloudflare Workers (wrangler deploy)
+	@echo -e "$(INFO)$(INFO_COLOR)[Site] Deploying to Cloudflare $(NO_COLOR)"
+	@cd website && $(WRANGLER) deploy
 
 .PHONY: clean
 clean: ## Clean project
 	@echo -e "$(INFO)$(INFO_COLOR)[Clean] Processing $(NO_COLOR)"
-	@rm -rf website/.quartz website/public
+	@rm -rf website/dist website/.astro website/.wrangler

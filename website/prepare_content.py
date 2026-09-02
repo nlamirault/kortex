@@ -76,7 +76,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True)
     ap.add_argument("--dst", required=True)
-    ap.add_argument("--base", default="/kortex/", help="site base path (must match astro.config)")
+    ap.add_argument("--base", default="/", help="site base path (must match astro.config)")
     args = ap.parse_args()
     base = args.base if args.base.endswith("/") else args.base + "/"
 
