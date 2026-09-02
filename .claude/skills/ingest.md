@@ -20,13 +20,17 @@ Two modes:
    - New entity → create page from `wiki/schema.md` template for that entity type
    - Existing entity → update the page, bump `updated:` date
    - For concept/project/person pages: populate `## Relations` table with top 5 SPO triples
-     drawn from this source (use wikilinks for Subject and Object; pick from the predicate
-     vocabulary in the template comment). Merge with existing relations — no duplicates.
+     drawn from this source. Subject/Object cells use **raw `[[type:slug]]`** — this is the
+     only place that form is allowed (it is machine-read by `/graph`). Pick predicates from
+     the vocabulary in the template comment. Merge with existing relations — no duplicates.
 4. **Fill in KnowledgeGraph section** on the Source page:
    - `### Triples` — one row per relation extracted from source
    - `### Entities` — one row per entity, tagged AJOUT or MISE_A_JOUR
    - Fill `Rhetorical Analysis` section
-5. **Add wikilinks** from related pages to new pages and back.
+5. **Cross-link pages** — from related pages to new pages and back. In prose, `## Related`
+   / `## See Also` bullets, and any human-readable text, use **rendered markdown links**
+   `[Title](../dir/slug.md)`, never bare `[[type:slug]]` (GitHub does not render wikilinks).
+   Raw `[[type:slug]]` belongs only in `## Relations` tables. See CLAUDE.md → Wikilink Convention.
 6. **Update `wiki/index.md`** — add new pages under their entity-type section.
 7. **Update `wiki/hot.md`** — set Focus to current ingest, list active pages.
 8. **Append to `wiki/log.md`** with `[INGEST]` prefix.
@@ -40,8 +44,8 @@ Optimised for speed. Do NOT do full entity extraction — fiche is the deliverab
    - `## En Bref` — 2–3 sentences: what it argues + why it matters
    - `## Points Clés` — 3–5 concrete bullet claims
    - `## Citation Notable` — best single quote
-   - `## Relations` — 3–5 SPO triples (wikilinks to existing pages; do NOT create new pages for unrecognised entities)
-   - `## Liens Wiki` — link to existing wiki pages that this fiche enriches
+   - `## Relations` — 3–5 SPO triples using raw `[[type:slug]]` (Relations tables only; do NOT create new pages for unrecognised entities)
+   - `## Liens Wiki` — markdown links `[Title](../dir/slug.md)` to existing wiki pages that this fiche enriches
 3. **Update existing entity pages** lightly: add fiche to `## Related` or `## Relations` on concept/project pages if strongly relevant. Do NOT create new entity pages for entities not yet in the wiki — add them to `raw/queue.md` as follow-up ingests instead.
 4. **Update `wiki/index.md`** — add fiche under Sources.
 5. **Append to `wiki/log.md`** with `[INGEST]` prefix and note `(fiche)`.
@@ -69,8 +73,9 @@ Fiche:
 - [ ] Source page exists in `wiki/sources/` with full frontmatter
 - [ ] `## KnowledgeGraph` section filled — no empty tables
 - [ ] `## Rhetorical Analysis` section filled
-- [ ] Every entity mentioned has a wiki page (or stub) + wikilink
+- [ ] Every entity mentioned has a wiki page (or stub) + link
 - [ ] Concept/project/person pages have `## Relations` table populated (≥1 row, no placeholder rows)
+- [ ] No bare `[[type:slug]]` outside `## Relations` tables — prose/Related/See Also use markdown links
 - [ ] All new pages in `wiki/index.md`
 - [ ] All new pages wikilinked from their parent domain page
 - [ ] `wiki/log.md` appended
@@ -81,7 +86,8 @@ Fiche:
 - [ ] `stale_after` set (6mo for AI/protocols, 1yr for k8s, omit for evergreen)
 - [ ] `## En Bref` filled — 2–3 sentences, no placeholders
 - [ ] `## Points Clés` — 3–5 concrete claims, no vague bullet points
-- [ ] `## Relations` — ≥1 real triple with wikilinks to existing pages
+- [ ] `## Relations` — ≥1 real triple with `[[type:slug]]` to existing pages
+- [ ] `## Liens Wiki` and any prose use markdown links, not bare `[[type:slug]]`
 - [ ] Fiche in `wiki/index.md` under Sources
 - [ ] `raw/queue.md` updated — URL moved to `## Done`
 - [ ] `wiki/log.md` appended with `(fiche)` tag

@@ -20,8 +20,9 @@ Run all checks below. Collect findings. Report by severity tier. Fix CRITICAL im
 - [ ] Every page has `updated:` date set
 
 **Links**
-- [ ] Broken `[[wikilinks]]` — target page file does not exist
-- [ ] Orphan pages — not linked from `wiki/index.md` AND not wikilinked from any other page
+- [ ] Broken links — `[[type:slug]]` in a Relations table, or a `[text](path.md)` markdown link, whose target page file does not exist
+- [ ] Bare `[[type:slug]]` **outside** a `## Relations` table (prose, `## Related`/`## See Also` bullets, `hot.md`, `index.md`) — WARNING: does not render on GitHub, convert to `[Title](../dir/slug.md)` (see CLAUDE.md → Wikilink Convention)
+- [ ] Orphan pages — not linked from `wiki/index.md` AND not linked from any other page
 - [ ] Pages present in `wiki/index.md` but file does not exist
 
 **Freshness**
