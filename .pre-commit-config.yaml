@@ -32,6 +32,33 @@ repos:
     files: \.*$
     args: []
 # Lint
+- repo: local
+  hooks:
+  - id: taplo
+    name: "📝 Taplo / TOML formatting"
+    entry: bash -c 'taplo fmt'
+    language: system
+    pass_filenames: true
+    files: \.toml$
+    args: []
+- repo: https://github.com/google/yamlfmt
+  rev: v0.19.0
+  hooks:
+  - id: yamlfmt
+    name: "📝 yamlfmt / YAML formatting"
+    stages: [pre-commit]
+- repo: https://github.com/rvben/rumdl-pre-commit
+  rev: v0.1.90
+  hooks:
+  - id: rumdl
+    name: "📝 rumdl / Markdown linting"
+    stages: [pre-commit]
+- repo: https://github.com/lycheeverse/lychee.git
+  rev: v0.15.1
+  hooks:
+    - id: lychee
+      # Optionally include additional CLI arguments
+      args: ["--no-progress", "--exclude", "file://"]
 - repo: https://github.com/compilerla/conventional-pre-commit
   rev: v4.4.0
   hooks:
