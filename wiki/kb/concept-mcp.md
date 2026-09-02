@@ -11,7 +11,7 @@ updated: 2026-09-02
 **Type:** concept  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
 
 **Wiki page:** [MCP](../concepts/mcp.md)
 
@@ -23,4 +23,5 @@ updated: 2026-09-02
 
 ## Source Pages
 
+- [concepts/mcp.md](../concepts/mcp.md)
 - [sources/mpp-specs.md](../sources/mpp-specs.md)

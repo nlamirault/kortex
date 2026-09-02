@@ -11,7 +11,7 @@ updated: 2026-09-02
 **Type:** concept  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
 
 **Wiki page:** [URL / URI / URN](../concepts/url-uri-urn.md)
 
@@ -24,3 +24,4 @@ updated: 2026-09-02
 ## Source Pages
 
 - [concepts/machine-payments-protocol-mpp.md](../concepts/machine-payments-protocol-mpp.md)
+- [concepts/url-uri-urn.md](../concepts/url-uri-urn.md)

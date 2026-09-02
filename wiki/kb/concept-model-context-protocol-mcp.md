@@ -9,9 +9,9 @@ updated: 2026-09-02
 # Model Context Protocol (MCP)
 
 **Type:** concept  
-**Tier:** Minor  
+**Tier:** Major ★  
 **Degree:** 0 out / 2 in  
-**Source pages:** 2
+**Source pages:** 3
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -26,3 +26,4 @@ updated: 2026-09-02
 
 - [concepts/agent-payments-protocol-ap2.md](../concepts/agent-payments-protocol-ap2.md)
 - [concepts/machine-payments-protocol-mpp.md](../concepts/machine-payments-protocol-mpp.md)
+- [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
