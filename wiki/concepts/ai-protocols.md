@@ -31,3 +31,5 @@ Explanation: **Agent Payments Protocol  (**AP2)%202721ec0b77e080e4aefaf9da57c96
 [Explanation: **Agent-User Interaction Protocol (AG-UI)**](../concepts/agent-user-interaction-protocol-ag-ui.md) 
 
 Explanation: **Universal Commerce Protocol (UCP)**%202e71ec0b77e080f6904adeedced352f3.md)
+
+[Explanation: **Machine Payments Protocol (MPP)**](../concepts/machine-payments-protocol-mpp.md)

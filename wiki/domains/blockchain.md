@@ -24,4 +24,4 @@ Domain hub for blockchain knowledge.
 
 ## Projects
 
-*(none yet)*
+- [Tempo](../projects/tempo.md) — Stripe/Paradigm L1 blockchain for high-frequency stablecoin payments; settles [MPP](../concepts/machine-payments-protocol-mpp.md)
