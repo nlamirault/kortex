@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-02] [INGEST] | Added "x402.org — Internet-Native Payment Protocol" by x402 Foundation
+  └─ pages: wiki/concepts/x402.md (new), wiki/sources/x402-org-2026.md (new), wiki/domains/ai.md, wiki/domains/blockchain.md, wiki/concepts/agent-payments-protocol-ap2.md, wiki/concepts/universal-commerce-protocol-ucp.md, wiki/index.md, wiki/hot.md
+  └─ sources: https://x402.org/
+  └─ note: HTTP 402 + stablecoin settlement protocol; cross-linked to AP2 (agent-layer) and UCP (commerce-layer) as complementary agentic-payment standards. Coinbase origin + facilitator role marked NOT VERIFIED (not on landing page).
+
 ## [2026-09-01] [UPDATE] | Adopt WikiSkill evolution loop (ADR-0001) — close the wiki→procedure feedback arc
   └─ pages: wiki/decisions/adopt-wikiskill-evolution-loop.md (new), wiki/skill-impact.md (new), wiki/gaps/evolve-loop-coverage.md (new), wiki/patterns/ (new dir), .claude/skills/evolve.md (new), .claude/skills/{today,close,recall,ingest,lint,graph,bootstrap,file-back}.md (+ ## Purpose), CLAUDE.md, wiki/schema.md, wiki/index.md
   └─ sources: https://arxiv.org/html/2608.27454v1 (WikiSkill paper)

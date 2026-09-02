@@ -70,6 +70,12 @@ AP2 integrates seamlessly with A2A and MCP protocols:
 
 Together, these protocols allow AP2 to deliver a fully interoperable solution for agent-based payments.
 
+### Related Protocols
+
+- [[concept:x402]] — internet-native payment protocol. Where AP2 authorizes payments at the
+  **agent layer** (cryptographic mandates over A2A/MCP), x402 settles them at the
+  **transport layer** (HTTP 402 + on-chain stablecoins). Complementary, not competing.
+
 ### Next
 
 [Reference: AI / Protocols](../concepts/ai-protocols.md)
