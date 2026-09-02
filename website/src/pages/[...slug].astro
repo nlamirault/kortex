@@ -1,0 +1,78 @@
+---
+// SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+//
+// Renders every synced wiki page through DocsLayout, building the sidebar and
+// prev/next links from the `docs` content collection at build time.
+
+import { getCollection, render } from "astro:content";
+import DocsLayout from "../layouts/DocsLayout.astro";
+
+export async function getStaticPaths() {
+  const LABELS = {
+    kb: "Entities (KB)",
+    syntheses: "Syntheses",
+    people: "People",
+    concepts: "Concepts",
+    projects: "Projects",
+    sources: "Sources",
+    domains: "Domains",
+    decisions: "Decisions",
+    gaps: "Gaps",
+    comparisons: "Comparisons",
+    patterns: "Patterns",
+  };
+  const ROOT_ORDER = ["overview", "knowledge-base", "schema", "log"];
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/"); // ensure trailing slash
+  const docs = (await getCollection("docs")).filter((e) => e.id !== "index");
+
+  const titleFor = (e) => e.data?.title ?? e.id.split("/").pop();
+  const hrefFor = (id) => `${base}${id}/`;
+
+  const rootDocs = [];
+  const sections = {};
+  for (const e of docs) {
+    const parts = e.id.split("/");
+    if (parts.length === 1) rootDocs.push(e);
+    else (sections[parts[0]] ??= []).push(e);
+  }
+
+  const nav = [];
+  const rootItems = ROOT_ORDER.map((slug) => rootDocs.find((e) => e.id === slug))
+    .filter(Boolean)
+    .map((e) => ({ label: titleFor(e), href: hrefFor(e.id) }));
+  if (rootItems.length) nav.push({ label: "Kortex", items: rootItems });
+
+  for (const section of Object.keys(sections).sort()) {
+    const items = sections[section]
+      .sort((a, b) => titleFor(a).localeCompare(titleFor(b)))
+      .map((e) => ({ label: titleFor(e), href: hrefFor(e.id) }));
+    const label = LABELS[section] ?? section[0].toUpperCase() + section.slice(1);
+    nav.push({ label, items });
+  }
+
+  const flat = nav.flatMap((g) => g.items);
+
+  return docs.map((entry) => {
+    const idx = flat.findIndex((i) => i.href === hrefFor(entry.id));
+    return {
+      params: { slug: entry.id },
+      props: {
+        entry,
+        nav,
+        prevPage: idx > 0 ? flat[idx - 1] : null,
+        nextPage: idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null,
+      },
+    };
+  });
+}
+
+const { entry, nav, prevPage, nextPage } = Astro.props;
+const { Content } = await render(entry);
+const title = entry.data?.title ?? entry.id;
+const description = entry.data?.description;
+---
+
+<DocsLayout title={title} description={description} nav={nav} prevPage={prevPage} nextPage={nextPage}>
+  <Content />
+</DocsLayout>

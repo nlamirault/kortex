@@ -50,6 +50,22 @@ check-%:
 		echo -e "$(ERROR_COLOR)$(KO)$(NO_COLOR) $*"; \
 	fi
 
+.PHONY: kb
+kb: ## Rebuild knowledge-base entity pages from the wiki graph
+	@echo -e "$(INFO)$(INFO_COLOR)[KB] Building knowledge base $(NO_COLOR)"
+	@python3 scripts/build_knowledge_base.py
+
+.PHONY: site-build
+site-build: ## Build the static wiki website into website/public
+	@echo -e "$(INFO)$(INFO_COLOR)[Site] Build $(NO_COLOR)"
+	@./website/build.sh
+
+.PHONY: site-preview
+site-preview: ## Preview the wiki website locally (localhost:8080)
+	@echo -e "$(INFO)$(INFO_COLOR)[Site] Preview $(NO_COLOR)"
+	@./website/build.sh --serve
+
 .PHONY: clean
 clean: ## Clean project
 	@echo -e "$(INFO)$(INFO_COLOR)[Clean] Processing $(NO_COLOR)"
+	@rm -rf website/.quartz website/public

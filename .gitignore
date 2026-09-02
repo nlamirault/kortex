@@ -21,3 +21,10 @@ build/
 *.so
 *.dylib
 *.exe
+
+# Website (Astro — bespoke theme)
+# src/content/docs is synced from wiki/ at build time; dist is the build output
+website/node_modules/
+website/dist/
+website/.astro/
+website/src/content/docs/

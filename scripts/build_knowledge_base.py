@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
 """
 build_knowledge_base.py — regenerates wiki/kb/ entity pages and wiki/knowledge-base.md
-from ## KnowledgeGraph sections embedded in wiki pages.
+from the knowledge-graph edges embedded in wiki pages.
+
+Two source formats are supported:
+
+  1. Canonical `## Relations` tables (see CLAUDE.md) — a 3-column
+     `Subject | Predicate | Object` edge list whose Subject/Object cells use
+     `[[type:slug]]` wikilinks. This is the format the wiki is written in.
+
+  2. Legacy `## KnowledgeGraph` sections with `### Triples` / `### Entities`
+     subtables (older source pages). Still parsed so their data is not lost.
+
+Entity display names are resolved from the target page's frontmatter `title`
+when a wiki page exists for that `[[type:slug]]`.
 
 Run from the kortex/ root:
     python3 scripts/build_knowledge_base.py
@@ -19,13 +31,103 @@ KNOWLEDGE_BASE_MD = WIKI_DIR / "knowledge-base.md"
 SKIP_STEMS = {"index", "log", "hot", "overview", "schema", "knowledge-base"}
 SKIP_KB_DIR = "kb"
 
+# entity type -> wiki directory (from CLAUDE.md entity-type table)
+TYPE_DIR = {
+    "concept": "concepts",
+    "source": "sources",
+    "person": "people",
+    "project": "projects",
+    "decision": "decisions",
+    "domain": "domains",
+    "comparison": "comparisons",
+    "synthesis": "syntheses",
+    "pattern": "patterns",
+    "gap": "gaps",
+}
+DIR_TYPE = {v: k for k, v in TYPE_DIR.items()}
+
+WIKILINK_RE = re.compile(r"\[\[([a-z]+):([^\]|]+?)(?:\|([^\]]+))?\]\]")
+
 
 def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+def read_frontmatter_title(path: Path) -> str | None:
+    """Cheap YAML-frontmatter `title:` read without a YAML dependency."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end == -1:
+        return None
+    for line in text[3:end].splitlines():
+        m = re.match(r"\s*title:\s*(.+)\s*$", line)
+        if m:
+            return m.group(1).strip().strip("'\"")
+    return None
+
+
+def build_page_index(wiki_dir: Path) -> dict[str, dict]:
+    """Map `type::slug` -> {title, path} for every real wiki entity page."""
+    index: dict[str, dict] = {}
+    for md in sorted(wiki_dir.rglob("*.md")):
+        rel = md.relative_to(wiki_dir)
+        if len(rel.parts) < 2:
+            continue
+        etype = DIR_TYPE.get(rel.parts[0])
+        if not etype:
+            continue
+        slug = md.stem
+        key = f"{etype}::{slug}"
+        index[key] = {
+            "title": read_frontmatter_title(md) or slug,
+            "path": rel,
+        }
+    return index
+
+
+def parse_cell(cell: str) -> dict:
+    """Resolve a table cell into a graph node.
+
+    Returns a dict with `is_entity`; when True, also `type`, `slug`, `display`.
+    A `[[type:slug]]` (optionally `[[type:slug|Alias]]`) cell is an entity;
+    plain text is a literal object (leaf value, not its own node).
+    """
+    cell = cell.strip()
+    m = WIKILINK_RE.search(cell)
+    if m:
+        etype, slug, alias = m.group(1), m.group(2).strip(), m.group(3)
+        note = cell[m.end():].strip()  # trailing gloss, e.g. "(USDC)"
+        return {
+            "is_entity": True,
+            "type": etype,
+            "slug": slug,
+            "display": (alias or slug).strip(),
+            "note": note,
+        }
+    return {"is_entity": False, "display": cell}
+
+
+def make_typed_node(name: str, etype: str) -> dict:
+    """Node from a legacy KnowledgeGraph cell that carries an explicit type."""
+    name = name.strip()
+    if not name or not etype:
+        return {"is_entity": False, "display": name}
+    return {
+        "is_entity": True,
+        "type": etype.strip().lower(),
+        "slug": slugify(name),
+        "display": name,
+        "note": "",
+    }
+
+
 def parse_table(lines: list[str]) -> list[dict]:
-    """Parse pipe-delimited markdown table into list of dicts."""
+    """Parse a pipe-delimited markdown table into a list of row dicts."""
     headers: list[str] | None = None
     rows: list[dict] = []
     for line in lines:
@@ -42,109 +144,146 @@ def parse_table(lines: list[str]) -> list[dict]:
     return rows
 
 
-def extract_kg(path: Path) -> tuple[list[dict], list[dict]]:
-    """Return (triples, entities) from ## KnowledgeGraph section of a wiki page."""
-    text = path.read_text(encoding="utf-8")
-    lines = text.splitlines()
-
+def extract_relations(lines: list[str], src: str) -> list[dict]:
+    """Triples from canonical `## Relations` tables."""
     triples: list[dict] = []
-    entities: list[dict] = []
-    in_kg = False
-    current_table: str | None = None
-    table_lines: list[str] = []
+    in_section = False
+    table: list[str] = []
 
-    def flush():
-        nonlocal table_lines
-        if current_table == "triples":
-            triples.extend(parse_table(table_lines))
-        elif current_table == "entities":
-            entities.extend(parse_table(table_lines))
-        table_lines = []
+    def flush() -> None:
+        for row in parse_table(table):
+            subj = parse_cell(row.get("Subject", ""))
+            pred = row.get("Predicate", "").strip()
+            obj = parse_cell(row.get("Object", ""))
+            if not subj["is_entity"] or not pred:
+                continue  # convention: subject is always a typed entity
+            triples.append({"subj": subj, "pred": pred, "obj": obj, "src": src})
+        table.clear()
 
     for line in lines:
-        if re.match(r"^## KnowledgeGraph", line):
+        if re.match(r"^##\s+Relations\b", line):
+            in_section = True
+            continue
+        if in_section and re.match(r"^##\s+", line):
+            flush()
+            in_section = False
+            continue
+        if in_section and line.lstrip().startswith("|"):
+            table.append(line)
+    if in_section:
+        flush()
+    return triples
+
+
+def extract_knowledge_graph(lines: list[str], src: str) -> list[dict]:
+    """Triples from legacy `## KnowledgeGraph` -> `### Triples` subtables."""
+    triples: list[dict] = []
+    in_kg = False
+    in_triples = False
+    table: list[str] = []
+
+    def flush() -> None:
+        for row in parse_table(table):
+            subj = make_typed_node(
+                row.get("Subject", ""), row.get("Type_Subject", row.get("Subject_Type", ""))
+            )
+            pred = row.get("Predicate", "").strip()
+            obj_type = row.get("Type_Object", row.get("Object_Type", "")).strip()
+            obj = (
+                make_typed_node(row.get("Object", ""), obj_type)
+                if obj_type
+                else parse_cell(row.get("Object", ""))
+            )
+            if not subj["is_entity"] or not pred:
+                continue
+            triples.append({"subj": subj, "pred": pred, "obj": obj, "src": src})
+        table.clear()
+
+    for line in lines:
+        if re.match(r"^##\s+KnowledgeGraph\b", line):
             in_kg = True
             continue
-        if in_kg and re.match(r"^## ", line):
+        if in_kg and re.match(r"^##\s+", line):
             flush()
-            in_kg = False
-            current_table = None
+            in_kg = in_triples = False
             continue
-        if in_kg:
-            if re.match(r"^### Triples", line):
-                flush()
-                current_table = "triples"
-            elif re.match(r"^### Entities", line):
-                flush()
-                current_table = "entities"
-            elif line.startswith("|") and current_table:
-                table_lines.append(line)
+        if in_kg and re.match(r"^###\s+Triples\b", line):
+            flush()
+            in_triples = True
+            continue
+        if in_kg and re.match(r"^###\s+", line):
+            flush()
+            in_triples = False
+            continue
+        if in_kg and in_triples and line.lstrip().startswith("|"):
+            table.append(line)
+    if in_kg:
+        flush()
+    return triples
 
-    flush()
-    return triples, entities
 
-
-def collect(wiki_dir: Path) -> tuple[dict, list[dict], dict]:
-    """Walk wiki/, collect all KG data. Returns (entities, all_triples, entity_triples)."""
+def collect(wiki_dir: Path, page_index: dict) -> tuple[dict, list[dict], dict]:
+    """Walk wiki/, collect all edges. Returns (entities, triples, entity_edges)."""
     all_triples: list[dict] = []
-    entities: dict[str, dict] = {}  # key=TYPE::name_lower
-    entity_triples: dict[str, list] = defaultdict(list)
 
     for md in sorted(wiki_dir.rglob("*.md")):
         rel = md.relative_to(wiki_dir)
-        if rel.parts[0] == SKIP_KB_DIR:
+        if rel.parts[0] == SKIP_KB_DIR or md.stem in SKIP_STEMS:
             continue
-        if md.stem in SKIP_STEMS:
-            continue
+        lines = md.read_text(encoding="utf-8").splitlines()
+        src = str(rel)
+        all_triples.extend(extract_relations(lines, src))
+        all_triples.extend(extract_knowledge_graph(lines, src))
 
-        page_triples, page_entities = extract_kg(md)
+    entities: dict[str, dict] = {}
+    entity_edges: dict[str, list] = defaultdict(list)
 
-        for t in page_triples:
-            t["_src"] = str(md)
-            all_triples.append(t)
-
-        for e in page_entities:
-            name = e.get("Entity", "").strip()
-            etype = e.get("Type", "").strip()
-            if not name or not etype:
-                continue
-            key = f"{etype}::{name.lower()}"
-            if key not in entities:
-                entities[key] = {
-                    "name": name,
-                    "type": etype,
-                    "attrs": {},
-                    "sources": set(),
-                    "out_triples": 0,
-                }
-            attr = e.get("Attribute", "").strip()
-            val = e.get("Value", "").strip()
-            if attr and val:
-                entities[key]["attrs"][attr] = val
-            entities[key]["sources"].add(str(md))
+    def touch(node: dict, src: str) -> str | None:
+        if not node["is_entity"]:
+            return None
+        key = f"{node['type']}::{node['slug']}"
+        page = page_index.get(key)
+        if key not in entities:
+            entities[key] = {
+                "name": page["title"] if page else node["display"],
+                "type": node["type"],
+                "slug": node["slug"],
+                "wiki_path": page["path"] if page else None,
+                "sources": set(),
+                "out": 0,
+                "in": 0,
+            }
+        entities[key]["sources"].add(src)
+        return key
 
     for t in all_triples:
-        subj = t.get("Subject", "").strip()
-        stype = t.get("Type_Subject", "").strip()
-        obj = t.get("Object", "").strip()
-        otype = t.get("Type_Object", "").strip()
-        sk = f"{stype}::{subj.lower()}"
-        ok = f"{otype}::{obj.lower()}"
-        if sk in entities:
-            entities[sk]["out_triples"] += 1
-        entity_triples[sk].append(("out", t))
-        entity_triples[ok].append(("in", t))
+        sk = touch(t["subj"], t["src"])
+        ok = touch(t["obj"], t["src"])
+        if sk:
+            entities[sk]["out"] += 1
+            entity_edges[sk].append(("out", t))
+        if ok:
+            entities[ok]["in"] += 1
+            entity_edges[ok].append(("in", t))
 
     for e in entities.values():
-        e["is_major"] = e["out_triples"] >= 3 or len(e["sources"]) >= 3
+        e["is_major"] = e["out"] >= 3 or len(e["sources"]) >= 3
         e["source_list"] = sorted(e["sources"])
         del e["sources"]
 
-    return entities, all_triples, entity_triples
+    return entities, all_triples, entity_edges
 
 
-def write_entity_page(entity: dict, triples: list, kb_dir: Path) -> None:
-    slug = slugify(entity["name"])
+def obj_label(node: dict) -> str:
+    """Display label for an object cell in a relation table."""
+    if node["is_entity"]:
+        label = node["display"]
+        return f"{label} {node['note']}".strip() if node.get("note") else label
+    return node["display"]
+
+
+def write_entity_page(entity: dict, edges: list, kb_dir: Path) -> None:
+    slug = slugify(f"{entity['type']}-{entity['slug']}")
     today = date.today().isoformat()
     lines = [
         "---",
@@ -153,63 +292,48 @@ def write_entity_page(entity: dict, triples: list, kb_dir: Path) -> None:
         f"entity_type: {entity['type']}",
         "status: auto-generated",
         f"updated: {today}",
-        f"sources: {entity['source_list']}",
         "---",
         "",
         f"# {entity['name']}",
         "",
         f"**Type:** {entity['type']}  ",
         f"**Tier:** {'Major ★' if entity['is_major'] else 'Minor'}  ",
-        f"**Outgoing triples:** {entity['out_triples']}  ",
+        f"**Degree:** {entity['out']} out / {entity['in']} in  ",
         f"**Source pages:** {len(entity['source_list'])}",
         "",
     ]
 
-    if entity["attrs"]:
-        lines += ["## Attributes", ""]
-        for attr, val in entity["attrs"].items():
-            lines.append(f"- **{attr}:** {val}")
-        lines.append("")
+    if entity["wiki_path"]:
+        lines += [f"**Wiki page:** [{entity['name']}](../{entity['wiki_path']})", ""]
 
-    outgoing = [t for d, t in triples if d == "out"]
-    incoming = [t for d, t in triples if d == "in"]
+    outgoing = [t for d, t in edges if d == "out"]
+    incoming = [t for d, t in edges if d == "in"]
 
     if outgoing:
         lines += [
-            "## Outgoing Relations", "",
-            "| Predicate | Object | Type | Confidence | Temporality | Source |",
-            "|-----------|--------|------|------------|-------------|--------|",
+            "## Outgoing Relations",
+            "",
+            "| Predicate | Object | Source |",
+            "|-----------|--------|--------|",
         ]
         for t in outgoing:
-            src = Path(t["_src"]).name
-            lines.append(
-                f"| {t.get('Predicate','')} | {t.get('Object','')} | "
-                f"{t.get('Type_Object','')} | {t.get('Confidence','')} | "
-                f"{t.get('Temporality','')} | {src} |"
-            )
+            lines.append(f"| {t['pred']} | {obj_label(t['obj'])} | {Path(t['src']).name} |")
         lines.append("")
 
     if incoming:
         lines += [
-            "## Incoming Relations", "",
-            "| Subject | Type | Predicate | Confidence | Source |",
-            "|---------|------|-----------|------------|--------|",
+            "## Incoming Relations",
+            "",
+            "| Subject | Predicate | Source |",
+            "|---------|-----------|--------|",
         ]
         for t in incoming:
-            src = Path(t["_src"]).name
-            lines.append(
-                f"| {t.get('Subject','')} | {t.get('Type_Subject','')} | "
-                f"{t.get('Predicate','')} | {t.get('Confidence','')} | {src} |"
-            )
+            lines.append(f"| {t['subj']['display']} | {t['pred']} | {Path(t['src']).name} |")
         lines.append("")
 
     lines += ["## Source Pages", ""]
     for sp in entity["source_list"]:
-        try:
-            rel = Path(sp).relative_to(WIKI_DIR)
-            lines.append(f"- [{rel}](../{rel})")
-        except ValueError:
-            lines.append(f"- {sp}")
+        lines.append(f"- [{sp}](../{sp})")
     lines.append("")
 
     (kb_dir / f"{slug}.md").write_text("\n".join(lines), encoding="utf-8")
@@ -233,12 +357,13 @@ def write_entity_index(entities: dict, kb_dir: Path) -> None:
     ]
     current_letter = ""
     for e in sorted_e:
-        letter = (e["name"][0].upper() if e["name"] else "?")
+        letter = e["name"][0].upper() if e["name"] else "?"
         if letter != current_letter:
             lines += [f"## {letter}", ""]
             current_letter = letter
         tier = "★" if e["is_major"] else "·"
-        lines.append(f"- {tier} [{e['name']}]({slugify(e['name'])}.md) — {e['type']}")
+        slug = slugify(f"{e['type']}-{e['slug']}")
+        lines.append(f"- {tier} [{e['name']}]({slug}.md) — {e['type']}")
     (kb_dir / "_index-entities.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -265,7 +390,8 @@ def write_type_indexes(entities: dict, kb_dir: Path) -> None:
         ]
         for e in elist:
             tier = "★" if e["is_major"] else "·"
-            lines.append(f"- {tier} [{e['name']}]({slugify(e['name'])}.md)")
+            slug = slugify(f"{e['type']}-{e['slug']}")
+            lines.append(f"- {tier} [{e['name']}]({slug}.md)")
         (kb_dir / f"_index-type-{slug_type}.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -276,7 +402,7 @@ def write_dashboard(entities: dict, all_triples: list) -> None:
     by_type: dict[str, list] = defaultdict(list)
     for e in entities.values():
         by_type[e["type"]].append(e)
-    top10 = sorted(entities.values(), key=lambda e: e["out_triples"], reverse=True)[:10]
+    top10 = sorted(entities.values(), key=lambda e: e["out"], reverse=True)[:10]
 
     lines = [
         "---",
@@ -315,9 +441,10 @@ def write_dashboard(entities: dict, all_triples: list) -> None:
         "|--------|------|----------|---------|",
     ]
     for e in top10:
+        slug = slugify(f"{e['type']}-{e['slug']}")
         lines.append(
-            f"| [{e['name']}](kb/{slugify(e['name'])}.md) | {e['type']} "
-            f"| {e['out_triples']} | {len(e['source_list'])} |"
+            f"| [{e['name']}](kb/{slug}.md) | {e['type']} "
+            f"| {e['out']} | {len(e['source_list'])} |"
         )
 
     lines += [
@@ -338,8 +465,12 @@ def main() -> None:
         print("Error: wiki/ not found. Run from kortex/ root.", file=sys.stderr)
         sys.exit(1)
 
-    print("Scanning wiki/ for KnowledgeGraph sections...")
-    entities, all_triples, entity_triples = collect(WIKI_DIR)
+    print("Indexing wiki pages...")
+    page_index = build_page_index(WIKI_DIR)
+    print(f"  {len(page_index)} entity pages")
+
+    print("Scanning wiki/ for Relations / KnowledgeGraph edges...")
+    entities, all_triples, entity_edges = collect(WIKI_DIR, page_index)
     print(f"  {len(entities)} entities, {len(all_triples)} triples")
 
     KB_DIR.mkdir(exist_ok=True)
@@ -347,7 +478,7 @@ def main() -> None:
         f.unlink()
 
     for key, entity in entities.items():
-        write_entity_page(entity, entity_triples[key], KB_DIR)
+        write_entity_page(entity, entity_edges[key], KB_DIR)
     print(f"  Wrote {len(entities)} entity pages → wiki/kb/")
 
     write_entity_index(entities, KB_DIR)

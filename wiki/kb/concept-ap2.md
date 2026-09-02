@@ -1,0 +1,24 @@
+---
+title: AP2
+type: kb-entity
+entity_type: concept
+status: auto-generated
+updated: 2026-09-02
+---
+
+# AP2
+
+**Type:** concept  
+**Tier:** Minor  
+**Degree:** 0 out / 1 in  
+**Source pages:** 1
+
+## Incoming Relations
+
+| Subject | Predicate | Source |
+|---------|-----------|--------|
+| MPP | contrasts-with | mpp-specs.md |
+
+## Source Pages
+
+- [sources/mpp-specs.md](../sources/mpp-specs.md)

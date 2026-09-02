@@ -1,0 +1,120 @@
+---
+// SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+//
+// Landing page — devops-graphite hero ported from portefaix-website.
+
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const docs = (await getCollection("docs")).filter((e) => e.id !== "index");
+
+const SECTION_META = {
+  concepts: { label: "Concepts", accent: "k8s", color: "var(--c-accent)", desc: "Ideas, frameworks, mental models." },
+  projects: { label: "Projects", accent: "k8s", color: "var(--c-accent)", desc: "Tools, codebases, initiatives." },
+  sources: { label: "Sources", accent: "k8s", color: "var(--c-accent)", desc: "Books, papers, articles, talks." },
+  domains: { label: "Domains", accent: "k8s", color: "var(--c-accent)", desc: "Broad topic hub pages." },
+  syntheses: { label: "Syntheses", accent: "k8s", color: "var(--c-accent)", desc: "Cross-source analyses." },
+  decisions: { label: "Decisions", accent: "k8s", color: "var(--c-accent)", desc: "Architectural choices (ADRs)." },
+  people: { label: "People", accent: "k8s", color: "var(--c-accent)", desc: "Authors, researchers, thinkers." },
+  kb: { label: "Entities", accent: "k8s", color: "var(--c-accent)", desc: "Auto-generated knowledge graph." },
+  gaps: { label: "Gaps", accent: "k8s", color: "var(--c-accent)", desc: "Open questions and unknowns." },
+};
+
+// Build a card per non-empty section, linking to its first page.
+const sections = {};
+for (const e of docs) {
+  const seg = e.id.includes("/") ? e.id.split("/")[0] : null;
+  if (seg) (sections[seg] ??= []).push(e);
+}
+const cards = Object.keys(sections)
+  .filter((s) => SECTION_META[s])
+  .sort((a, b) => sections[b].length - sections[a].length)
+  .map((s, i) => {
+    const first = [...sections[s]].sort((a, b) => a.id.localeCompare(b.id))[0];
+    return {
+      ...SECTION_META[s],
+      n: String(i + 1).padStart(2, "0"),
+      count: sections[s].length,
+      href: `${base}${first.id}/`,
+    };
+  });
+---
+
+<Layout title="Kortex — Personal Knowledge Base">
+  <!-- Nav -->
+  <nav style="position:fixed;inset-block-start:0;inset-inline:0;z-index:50;height:56px;display:flex;align-items:center;padding:0 clamp(20px,5vw,64px);background:var(--nav-bg);border-bottom:1px solid var(--nav-border);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);">
+    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1200px;margin:0 auto;">
+      <a href={base} style="display:flex;align-items:center;gap:10px;" aria-label="Kortex">
+        <svg style="width:20px;height:20px;color:var(--c-accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <polygon points="12,2 21,7 21,17 12,22 3,17 3,7" />
+          <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+        </svg>
+        <span style="font-family:var(--font-d);font-size:0.95rem;font-weight:700;letter-spacing:0.05em;color:var(--t1);">Kortex</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href={`${base}overview/`} style="font-family:var(--font-m);font-size:0.67rem;letter-spacing:0.08em;color:var(--t2);">WIKI</a>
+        <a href="https://github.com/nlamirault/kortex" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:7px;font-family:var(--font-m);font-size:0.67rem;letter-spacing:0.08em;color:var(--c-accent);border:1px solid rgba(224,164,88,0.3);padding:6px 14px;border-radius:6px;">
+          <svg style="width:13px;height:13px;" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+          GITHUB
+        </a>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-sun" style="width:15px;height:15px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
+          <svg class="icon-moon" style="width:15px;height:15px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="scanline-hero" style="position:relative;z-index:10;display:flex;flex-direction:column;justify-content:center;padding:clamp(120px,16vw,180px) clamp(20px,5vw,64px) clamp(40px,8vw,80px);">
+    <div style="max-width:1200px;margin:0 auto;width:100%;">
+      <div class="e1" style="display:flex;align-items:center;gap:12px;font-family:var(--font-m);font-size:0.62rem;letter-spacing:0.14em;color:var(--c-accent);margin-bottom:clamp(20px,4vw,36px);">
+        <span class="sdot sdot--pulse" style="background:var(--c-accent);color:var(--c-accent);"></span>
+        <span>KNOWLEDGE BASE</span>
+        <span style="color:var(--t3);">—</span>
+        <span style="color:var(--t3);">LLM WIKI PROTOCOL</span>
+      </div>
+      <h1 class="e2" style="font-family:var(--font-d);font-weight:800;line-height:0.92;letter-spacing:-0.03em;color:var(--t1);margin-bottom:clamp(20px,4vw,36px);font-size:clamp(3.6rem,10vw,9rem);">
+        Kortex<span style="color:var(--c-accent);">.</span>
+      </h1>
+      <div class="e3" style="width:clamp(60px,8vw,100px);height:3px;background:var(--c-accent);border-radius:2px;margin-bottom:clamp(18px,3vw,28px);"></div>
+      <p class="e3" style="font-family:var(--font-b);font-size:clamp(1rem,1.8vw,1.15rem);color:var(--t2);max-width:560px;line-height:1.75;margin-bottom:clamp(28px,5vw,44px);">
+        A personal knowledge base powered by the LLM Wiki protocol — raw sources
+        synthesized once into pre-linked, always-ready pages. Knowledge compounds.
+      </p>
+      <div class="e4" style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href={`${base}overview/`} style="display:inline-flex;align-items:center;gap:10px;font-family:var(--font-b);font-weight:600;font-size:0.88rem;color:#ffffff;background:var(--c-accent);padding:12px 24px;border-radius:8px;">Browse the wiki →</a>
+        <a href="https://github.com/nlamirault/kortex" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;font-family:var(--font-b);font-weight:600;font-size:0.88rem;color:var(--t1);border:1px solid var(--card-b2);padding:12px 24px;border-radius:8px;">View source</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section cards -->
+  <section id="sections" style="position:relative;z-index:10;padding:clamp(20px,4vw,40px) clamp(20px,5vw,64px) clamp(80px,12vw,120px);">
+    <div style="max-width:1200px;margin:0 auto;">
+      <p style="font-family:var(--font-m);font-size:0.62rem;letter-spacing:0.14em;color:var(--t3);text-transform:uppercase;margin-bottom:1.5rem;">Explore by type</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
+        {cards.map((c) => (
+          <a href={c.href} class={`wired wire-${c.accent}`} style="display:block;padding:1.5rem;border-radius:12px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
+              <span style="font-family:var(--font-m);font-size:0.6rem;letter-spacing:0.1em;color:var(--t3);">{c.n}</span>
+              <span class="ntag" style={`color:${c.color};border-color:${c.color}40;`}>{c.count} pages</span>
+            </div>
+            <h3 style="font-family:var(--font-d);font-size:1.15rem;font-weight:500;color:var(--t1);margin-bottom:0.4rem;">{c.label}</h3>
+            <p style="font-family:var(--font-b);font-size:0.85rem;color:var(--t2);line-height:1.6;">{c.desc}</p>
+            <span class="carrow" style={`display:inline-block;margin-top:0.75rem;color:${c.color};font-family:var(--font-m);font-size:0.75rem;`}>open →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--nav-border);padding:2rem clamp(20px,5vw,64px);background:var(--footer-bg);">
+    <div style="max-width:1200px;margin:0 auto;font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.06em;color:var(--t3);">
+      Kortex — LLM Wiki · <a href="https://github.com/nlamirault/kortex" style="color:var(--c-accent);">github.com/nlamirault/kortex</a>
+    </div>
+  </footer>
+</Layout>
