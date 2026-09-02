@@ -1,0 +1,19 @@
+{
+  "name": "kortex-website",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kortex wiki published with Astro (bespoke devops-graphite theme)",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.7",
+    "pagefind": "^1.5.2",
+    "tailwindcss": "^4.3.3"
+  }
+}
