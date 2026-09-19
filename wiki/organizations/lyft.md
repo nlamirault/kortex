@@ -1,6 +1,6 @@
 ---
 title: Lyft
-type: person
+type: organization
 person_type: org
 status: active
 confidence: high

@@ -7,7 +7,7 @@ updated: 2026-09-19
 
 # Entity Index
 
-*137 entities — auto-generated*
+*129 entities — auto-generated*
 
 ## 1
 
@@ -24,15 +24,14 @@ updated: 2026-09-19
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md) — concept
 - · [Agent-to-Agent (A2A) Protocol Specification](source-a2a-spec.md) — source
 - · [Agent-User Interaction Protocol (AG-UI)](concept-agent-user-interaction-protocol-ag-ui.md) — concept
-- · [Agentic payments](concept-agentic-payments.md) — concept
 - · [Agents.md](concept-agentsmd.md) — concept
 - · [AI](domain-ai.md) — domain
 - · [AI / Context Engineering](concept-ai-context-engineering.md) — concept
 - · [AI / Prompts](synthesis-ai-prompts.md) — synthesis
 - · [AI / Protocols](concept-ai-protocols.md) — concept
-- · [Alchemy, AWS, Cloudflare, Stripe, Vercel](organisation-alchemy-aws-cloudflare-stripe-vercel.md) — organisation
+- · [Alchemy](organization-alchemy.md) — organization
 - · [Alertmanager](project-alertmanager.md) — project
-- · [AP2](concept-ap2.md) — concept
+- · [Amazon Web Services (AWS)](organization-aws.md) — organization
 - · [API Gateway](concept-api-gateway.md) — concept
 - · [API Rest / GraphQL](concept-api-rest-graphql.md) — concept
 - · [Argo CD](project-argo-cd.md) — project
@@ -57,7 +56,8 @@ updated: 2026-09-19
 
 - · [Change Data Capture](concept-change-data-capture.md) — concept
 - · [Clickhouse](project-clickhouse.md) — project
-- · [Coinbase](organisation-coinbase.md) — organisation
+- · [Cloudflare](organization-cloudflare.md) — organization
+- · [Coinbase](organization-coinbase.md) — organization
 ## D
 
 - · [Data](domain-data.md) — domain
@@ -73,7 +73,6 @@ updated: 2026-09-19
 - · [EKS Best Practices](concept-eks-best-practices.md) — concept
 - · [Encoding vs Encryption vs Tokenization](concept-encoding-vs-encryption-vs-tokenization.md) — concept
 - · [Envoy](project-envoy.md) — project
-- · [EVM chains + Solana](technologie-evm-chains-solana.md) — technologie
 - · [Evolve loop coverage — open questions](gap-evolve-loop-coverage.md) — gap
 ## F
 
@@ -81,7 +80,7 @@ updated: 2026-09-19
 - · [FOCUS](concept-focus.md) — concept
 ## G
 
-- · [Google](person-google.md) — person
+- · [Google](organization-google.md) — organization
 - · [Google SRE Book](source-google-sre-book.md) — source
 - · [Google SRE Workbook](source-google-sre-workbook.md) — source
 - · [Grafana](project-grafana.md) — project
@@ -90,8 +89,6 @@ updated: 2026-09-19
 ## H
 
 - · [Heartbeat](concept-heartbeat.md) — concept
-- · [HTTP 402 Payment Required](technologie-http-402-payment-required.md) — technologie
-- · [HTTP 402 Payment Required](concept-http-402-payment-required.md) — concept
 ## I
 
 - · [Ingress vs Gateway API](concept-ingress-vs-gateway-api.md) — concept
@@ -112,18 +109,16 @@ updated: 2026-09-19
 
 - · [Lineage Object Model](concept-lineage-object-model.md) — concept
 - · [Loki](project-loki.md) — project
-- · [Lyft](person-lyft.md) — person
+- · [Lyft](organization-lyft.md) — organization
 ## M
 
 - ★ [Machine Payments Protocol (MPP)](concept-machine-payments-protocol-mpp.md) — concept
 - · [Machine Payments Protocol Specifications (MPP), Tempo Labs & Stripe, 2026](source-mpp-specs.md) — source
 - · [Marquez](source-marquez-project.md) — source
 - · [Matter](concept-matter.md) — concept
-- · [MCP](concept-mcp.md) — concept
 - · [Metering](domain-metering.md) — domain
 - · [Mimir](project-mimir.md) — project
 - ★ [Model Context Protocol (MCP)](concept-model-context-protocol-mcp.md) — concept
-- ★ [MPP](concept-mpp.md) — concept
 ## N
 
 - · [Nats](project-nats.md) — project
@@ -140,6 +135,7 @@ updated: 2026-09-19
 - · [OTTL](concept-ottl.md) — concept
 ## P
 
+- · [Paradigm](organization-paradigm.md) — organization
 - · [Platform](domain-platform.md) — domain
 - · [Prometheus](project-prometheus.md) — project
 - · [Pyrra](project-pyrra.md) — project
@@ -160,15 +156,12 @@ updated: 2026-09-19
 - · [Sigstore Rekor](project-sigstore-rekor.md) — project
 - · [SLI/SLO/SLA](concept-sli-slo-sla.md) — concept
 - · [SLSA](concept-slsa.md) — concept
-- · [SoundCloud](person-soundcloud.md) — person
-- · [Stablecoins (USDC)](technologie-stablecoins-usdc.md) — technologie
-- · [Stripe](organisation-stripe.md) — organisation
-- · [Stripe + Paradigm](organisation-stripe-paradigm.md) — organisation
+- · [SoundCloud](organization-soundcloud.md) — organization
+- ★ [Stripe](organization-stripe.md) — organization
 ## T
 
 - ★ [Tempo](project-tempo.md) — project
-- · [Tempo](projet-tempo.md) — projet
-- · [Tempo Labs](organisation-tempo-labs.md) — organisation
+- · [Tempo Labs](organization-tempo-labs.md) — organization
 - · [Thread](concept-thread.md) — concept
 - · [TUI](concept-tui.md) — concept
 ## U
@@ -177,6 +170,7 @@ updated: 2026-09-19
 - · [URL / URI / URN](concept-url-uri-urn.md) — concept
 ## V
 
+- · [Vercel](organization-vercel.md) — organization
 - · [VEX](concept-vex.md) — concept
 - · [VictoriaLogs](project-victorialogs.md) — project
 - · [VictoriaMetrics](project-victoriametrics.md) — project
@@ -187,10 +181,8 @@ updated: 2026-09-19
 - · [WasmCloud](project-wasmcloud.md) — project
 ## X
 
-- ★ [x402](technologie-x402.md) — technologie
-- · [x402 (2025)](technologie-x402-2025.md) — technologie
 - ★ [x402 (Internet-Native Payment Protocol)](concept-x402.md) — concept
-- · [x402 Foundation](organisation-x402-foundation.md) — organisation
+- ★ [x402 Foundation](organization-x402-foundation.md) — organization
 - · [x402.org — Internet-Native Payment Protocol (landing page)](source-x402-org-2026.md) — source
 - · [xBOM](concept-xbom.md) — concept
 ## Z

@@ -10,8 +10,8 @@ updated: 2026-09-19
 
 **Type:** project  
 **Tier:** Major ★  
-**Degree:** 3 out / 1 in  
-**Source pages:** 2
+**Degree:** 6 out / 1 in  
+**Source pages:** 3
 
 **Wiki page:** [Tempo](../projects/tempo.md)
 
@@ -22,6 +22,9 @@ updated: 2026-09-19
 | is-a | blockchain-layer-1 | tempo.md |
 | implements | machine-payments-protocol-mpp | tempo.md |
 | part-of | blockchain | tempo.md |
+| built-by | stripe | mpp-specs.md |
+| built-by | paradigm | mpp-specs.md |
+| settles | machine-payments-protocol-mpp | mpp-specs.md |
 
 ## Incoming Relations
 
@@ -33,3 +36,4 @@ updated: 2026-09-19
 
 - [concepts/machine-payments-protocol-mpp.md](../concepts/machine-payments-protocol-mpp.md)
 - [projects/tempo.md](../projects/tempo.md)
+- [sources/mpp-specs.md](../sources/mpp-specs.md)

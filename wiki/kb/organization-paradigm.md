@@ -1,24 +1,27 @@
 ---
-title: Stripe + Paradigm
+title: Paradigm
 type: kb-entity
-entity_type: organisation
+entity_type: organization
 status: auto-generated
 updated: 2026-09-19
 ---
 
-# Stripe + Paradigm
+# Paradigm
 
-**Type:** organisation  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
+
+**Wiki page:** [Paradigm](../organizations/paradigm.md)
 
 ## Incoming Relations
 
 | Subject | Predicate | Source |
 |---------|-----------|--------|
-| Tempo | built-by | mpp-specs.md |
+| tempo | built-by | mpp-specs.md |
 
 ## Source Pages
 
+- [organizations/paradigm.md](../organizations/paradigm.md)
 - [sources/mpp-specs.md](../sources/mpp-specs.md)

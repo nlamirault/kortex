@@ -40,7 +40,6 @@ Last updated: 2026-09-01
 - [AWS Bedrock AgentCore](concepts/aws-bedrock-agentcore.md) — AWS managed agent runtime
 - [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
-- [MCP Reference](concepts/mcp.md) — MCP reference
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
 - [x402](concepts/x402.md) — internet-native payment protocol (HTTP 402 + stablecoins)
 <!-- Kubernetes -->
@@ -118,6 +117,25 @@ Last updated: 2026-09-01
 *(authors, researchers, thinkers)*
 
 <!-- add people pages here -->
+
+---
+
+## Organizations
+
+*(companies, foundations, standards bodies)*
+
+- [Stripe](organizations/stripe.md) — payments infra; MPP co-author, Tempo co-builder
+- [Coinbase](organizations/coinbase.md) — introduced x402 (2025)
+- [Paradigm](organizations/paradigm.md) — Tempo L1 co-builder
+- [Tempo Labs](organizations/tempo-labs.md) — Tempo L1; MPP co-author
+- [x402 Foundation](organizations/x402-foundation.md) — governs x402 (launched 2026)
+- [Alchemy](organizations/alchemy.md) — Web3 dev platform; x402 backer
+- [Amazon Web Services (AWS)](organizations/aws.md) — cloud platform; x402 backer
+- [Cloudflare](organizations/cloudflare.md) — web infra; x402 backer
+- [Vercel](organizations/vercel.md) — frontend cloud; x402 backer
+- [Google](organizations/google.md)
+- [Lyft](organizations/lyft.md)
+- [SoundCloud](organizations/soundcloud.md)
 
 ---
 

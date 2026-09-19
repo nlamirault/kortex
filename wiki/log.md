@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-19] [EVOLVE] | Added `organization` entity type; normalized invalid/French graph types; merged MCP duplicate
+  └─ pages: CLAUDE.md, scripts/build_knowledge_base.py, website/prepare_content.py, website/src/pages/[...slug].astro, wiki/organizations/*.md (new: stripe, coinbase, paradigm, tempo-labs, x402-foundation, alchemy, aws, cloudflare, vercel; moved from people: google, lyft, soundcloud), wiki/sources/{x402-org-2026,mpp-specs}.md, wiki/concepts/model-context-protocol-mcp.md, wiki/concepts/mcp.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
+  └─ sources: raw/articles/mpp-specs, https://x402.org/
+  └─ note: legacy `## KnowledgeGraph` tables in the two source pages used French types (PROJET/TECHNOLOGIE/ORGANISATION), taken verbatim by build_knowledge_base → phantom duplicate graph nodes (projet-tempo vs project-tempo, etc). Converted both to canonical `## Relations` SPO tables with the 10 valid types + a new `organization` type. Merged concepts/mcp.md stub into model-context-protocol-mcp.md. Entity types now all valid; 0 broken links.
+
 ## [2026-09-19] [UPDATE] | Every rendered page now shows its title; merged duplicate AWS Bedrock AgentCore pages
   └─ pages: website/src/layouts/DocsLayout.astro, website/prepare_content.py, wiki/concepts/aws-bedrock-agentcore.md, wiki/concepts/aws-bedrock-agent-core.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
   └─ sources: none

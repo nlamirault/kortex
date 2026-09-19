@@ -1,20 +1,20 @@
 ---
 title: Google
 type: kb-entity
-entity_type: person
+entity_type: organization
 status: auto-generated
 updated: 2026-09-19
 ---
 
 # Google
 
-**Type:** person  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 0 in  
 **Source pages:** 1
 
-**Wiki page:** [Google](../people/google.md)
+**Wiki page:** [Google](../organizations/google.md)
 
 ## Source Pages
 
-- [people/google.md](../people/google.md)
+- [organizations/google.md](../organizations/google.md)

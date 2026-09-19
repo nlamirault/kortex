@@ -37,6 +37,7 @@ TYPE_DIR = {
     "source": "sources",
     "person": "people",
     "project": "projects",
+    "organization": "organizations",
     "decision": "decisions",
     "domain": "domains",
     "comparison": "comparisons",

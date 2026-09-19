@@ -1,20 +1,20 @@
 ---
 title: Lyft
 type: kb-entity
-entity_type: person
+entity_type: organization
 status: auto-generated
 updated: 2026-09-19
 ---
 
 # Lyft
 
-**Type:** person  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 0 in  
 **Source pages:** 1
 
-**Wiki page:** [Lyft](../people/lyft.md)
+**Wiki page:** [Lyft](../organizations/lyft.md)
 
 ## Source Pages
 
-- [people/lyft.md](../people/lyft.md)
+- [organizations/lyft.md](../organizations/lyft.md)

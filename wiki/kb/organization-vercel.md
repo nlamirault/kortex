@@ -1,24 +1,27 @@
 ---
-title: x402 (2025)
+title: Vercel
 type: kb-entity
-entity_type: technologie
+entity_type: organization
 status: auto-generated
 updated: 2026-09-19
 ---
 
-# x402 (2025)
+# Vercel
 
-**Type:** technologie  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
+
+**Wiki page:** [Vercel](../organizations/vercel.md)
 
 ## Incoming Relations
 
 | Subject | Predicate | Source |
 |---------|-----------|--------|
-| Coinbase | introduced | x402-org-2026.md |
+| x402-foundation | backed-by | x402-org-2026.md |
 
 ## Source Pages
 
+- [organizations/vercel.md](../organizations/vercel.md)
 - [sources/x402-org-2026.md](../sources/x402-org-2026.md)

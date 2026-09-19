@@ -28,7 +28,6 @@ Domain hub for ai knowledge.
 - [Agent-User Interaction Protocol (AG-UI)](../concepts/agent-user-interaction-protocol-ag-ui.md)
 - [Agent-to-Agent (A2A)](../concepts/agent-to-agent-a2a.md)
 - [Agents.md](../concepts/agentsmd.md)
-- [MCP](../concepts/mcp.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)

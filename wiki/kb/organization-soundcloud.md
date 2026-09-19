@@ -1,20 +1,20 @@
 ---
 title: SoundCloud
 type: kb-entity
-entity_type: person
+entity_type: organization
 status: auto-generated
 updated: 2026-09-19
 ---
 
 # SoundCloud
 
-**Type:** person  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 0 in  
 **Source pages:** 1
 
-**Wiki page:** [SoundCloud](../people/soundcloud.md)
+**Wiki page:** [SoundCloud](../organizations/soundcloud.md)
 
 ## Source Pages
 
-- [people/soundcloud.md](../people/soundcloud.md)
+- [organizations/soundcloud.md](../organizations/soundcloud.md)
