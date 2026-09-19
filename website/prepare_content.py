@@ -27,6 +27,45 @@ DROP = {"hot.md", "skill-impact.md"}
 # ](target) or ](target#anchor), relative and ending in .md.
 LINK_RE = re.compile(r"\]\((?!https?:|mailto:|/|#)([^)\s]+?\.md)(#[^)\s]*)?\)")
 
+# [[type:slug]] or [[type:slug|alias]] — machine-readable wikilinks used in
+# `## Relations` SPO tables. Kept raw in wiki/ (parsed by /graph); rewritten to
+# clickable pretty-URL links here so the rendered site doesn't show dead text.
+WIKILINK_RE = re.compile(r"\[\[([a-z]+):([^\]|]+?)(?:\|([^\]]+?))?\]\]")
+
+# entity type -> wiki subdirectory (must match the folders under wiki/).
+TYPE_DIR = {
+    "concept": "concepts",
+    "source": "sources",
+    "person": "people",
+    "project": "projects",
+    "decision": "decisions",
+    "domain": "domains",
+    "comparison": "comparisons",
+    "synthesis": "syntheses",
+    "pattern": "patterns",
+    "gap": "gaps",
+}
+
+
+def rewrite_wikilinks(text: str, base: str, titles: dict) -> str:
+    """Rewrite `[[type:slug]]` -> `[title](base + dir/slug/)` pretty links.
+
+    Display text is the alias if given, else the target page's title, else a
+    humanized slug. Unknown types are left untouched.
+    """
+
+    def repl(m: re.Match) -> str:
+        typ, slug, alias = m.group(1), m.group(2).strip(), m.group(3)
+        directory = TYPE_DIR.get(typ)
+        if directory is None or slug not in titles:
+            # unknown type, or target page doesn't exist (dangling link / a
+            # schema.md syntax example) — leave raw rather than fake a link.
+            return m.group(0)
+        text_out = (alias or titles[slug]).strip()
+        return f"[{text_out}]({base}{directory}/{slug}/)"
+
+    return WIKILINK_RE.sub(repl, text)
+
 
 def rewrite_links(text: str, src_dir: str, base: str) -> str:
     """Rewrite relative `.md` links to root-absolute pretty URLs.
@@ -44,6 +83,18 @@ def rewrite_links(text: str, src_dir: str, base: str) -> str:
         return f"]({base}{resolved}/{anchor})"
 
     return LINK_RE.sub(repl, text)
+
+
+def get_title(text: str, slug: str) -> str:
+    """Frontmatter `title:` if present, else first H1, else humanized slug."""
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end != -1:
+            for ln in text[3:end].splitlines():
+                m = re.match(r'\s*title\s*:\s*"?(.+?)"?\s*$', ln)
+                if m:
+                    return m.group(1)
+    return title_from_body(text, slug)
 
 
 def title_from_body(text: str, fallback: str) -> str:
@@ -86,6 +137,13 @@ def main() -> None:
         shutil.rmtree(dst)
     dst.mkdir(parents=True)
 
+    # First pass: index slug -> title so wikilinks can show real page titles.
+    titles = {}
+    for md in src.rglob("*.md"):
+        if md.name in DROP:
+            continue
+        titles[md.stem] = get_title(md.read_text(encoding="utf-8"), md.stem)
+
     copied = dropped = 0
     for md in sorted(src.rglob("*.md")):
         rel = md.relative_to(src)
@@ -94,6 +152,7 @@ def main() -> None:
             continue
         src_dir = "" if str(rel.parent) == "." else rel.parent.as_posix()
         text = rewrite_links(md.read_text(encoding="utf-8"), src_dir, base)
+        text = rewrite_wikilinks(text, base, titles)
         text = ensure_title(text, md.stem)
         out = dst / rel
         out.parent.mkdir(parents=True, exist_ok=True)

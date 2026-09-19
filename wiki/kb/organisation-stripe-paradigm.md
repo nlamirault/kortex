@@ -3,7 +3,7 @@ title: Stripe + Paradigm
 type: kb-entity
 entity_type: organisation
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # Stripe + Paradigm

@@ -2,7 +2,7 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # Entity Index
@@ -19,7 +19,7 @@ updated: 2026-09-02
 - · [AG-UI Protocol Specification](source-ag-ui-protocol.md) — source
 - · [Agent Client Protocol (ACP)](concept-agent-client-protocol-acp.md) — concept
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md) — concept
-- ★ [Agent Payments Protocol  (AP2)](concept-agent-payments-protocol-ap2.md) — concept
+- ★ [Agent Payments Protocol (AP2)](concept-agent-payments-protocol-ap2.md) — concept
 - · [Agent Skills](concept-agent-skills.md) — concept
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md) — concept
 - · [Agent-to-Agent (A2A) Protocol Specification](source-a2a-spec.md) — source

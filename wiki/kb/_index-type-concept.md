@@ -2,7 +2,7 @@
 title: concept Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # concept
@@ -13,7 +13,7 @@ updated: 2026-09-02
 - · [ACID](concept-acid.md)
 - · [Agent Client Protocol (ACP)](concept-agent-client-protocol-acp.md)
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md)
-- ★ [Agent Payments Protocol  (AP2)](concept-agent-payments-protocol-ap2.md)
+- ★ [Agent Payments Protocol (AP2)](concept-agent-payments-protocol-ap2.md)
 - · [Agent Skills](concept-agent-skills.md)
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md)
 - · [Agent-User Interaction Protocol (AG-UI)](concept-agent-user-interaction-protocol-ag-ui.md)

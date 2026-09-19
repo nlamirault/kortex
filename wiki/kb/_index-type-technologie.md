@@ -2,7 +2,7 @@
 title: technologie Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # technologie

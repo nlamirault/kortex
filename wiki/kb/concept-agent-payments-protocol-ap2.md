@@ -1,19 +1,19 @@
 ---
-title: Agent Payments Protocol  (AP2)
+title: Agent Payments Protocol (AP2)
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
-# Agent Payments Protocol  (AP2)
+# Agent Payments Protocol (AP2)
 
 **Type:** concept  
 **Tier:** Major ★  
 **Degree:** 4 out / 2 in  
 **Source pages:** 3
 
-**Wiki page:** [Agent Payments Protocol  (AP2)](../concepts/agent-payments-protocol-ap2.md)
+**Wiki page:** [Agent Payments Protocol (AP2)](../concepts/agent-payments-protocol-ap2.md)
 
 ## Outgoing Relations
 

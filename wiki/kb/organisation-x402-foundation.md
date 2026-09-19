@@ -3,7 +3,7 @@ title: x402 Foundation
 type: kb-entity
 entity_type: organisation
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # x402 Foundation

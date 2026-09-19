@@ -3,7 +3,7 @@ title: HTTP 402 Payment Required
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # HTTP 402 Payment Required

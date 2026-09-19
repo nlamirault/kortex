@@ -17,7 +17,7 @@ tags: [self-improvement, evolve, meta]
 
 ## What Is Unknown
 
-The WikiSkill evolution loop ([[decision:adopt-wikiskill-evolution-loop]]) is
+The WikiSkill evolution loop ([adopt WikiSkill evolution loop](../decisions/adopt-wikiskill-evolution-loop.md)) is
 adopted but unproven on this wiki. Open questions:
 
 - **What counts as a "recurring" failure?** How many `!failure` entries before a

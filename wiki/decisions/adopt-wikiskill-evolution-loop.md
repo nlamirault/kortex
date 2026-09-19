@@ -98,6 +98,6 @@ or winning strategy) with a workaround.
 
 ## Related
 
-- [[gap:evolve-loop-coverage]] — open questions on the loop
+- [evolve loop coverage](../gaps/evolve-loop-coverage.md) — open questions on the loop
 - `wiki/skill-impact.md` — the audit trail this ADR mandates
 - `.claude/skills/evolve.md` — the operation this ADR mandates

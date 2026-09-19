@@ -5,6 +5,20 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-19] [UPDATE] | Fixed 5 broken Notion-export links in AI/Protocols page (mangled `%20<hash>.md)` fragments → proper markdown links)
+  └─ pages: wiki/concepts/ai-protocols.md
+  └─ sources: none
+
+## [2026-09-19] [LINT] | Wiki-wide broken-link scan; fixed 3 bare `[[type:slug]]` prose wikilinks (dead on GitHub render) → markdown links
+  └─ pages: wiki/gaps/evolve-loop-coverage.md, wiki/decisions/adopt-wikiskill-evolution-loop.md, wiki/skill-impact.md
+  └─ sources: none
+  └─ note: schema.md/log.md/index.md `[[..:slug]]` are intentional template examples, left as-is; no other broken relative links found
+
+## [2026-09-19] [UPDATE] | Website build now renders `## Relations` `[[type:slug]]` as clickable pretty-URL links (were dead text on the site, e.g. AP2 page)
+  └─ pages: website/prepare_content.py, wiki/concepts/agent-payments-protocol-ap2.md (title whitespace)
+  └─ sources: none
+  └─ note: rewrite_wikilinks() two-pass slug→title index; only links existing pages, leaves unknown/dangling + schema.md syntax examples raw; source wiki/ [[..]] untouched so /graph still parses
+
 ## [2026-09-02] [UPDATE] | Fixed non-rendering `[[type:slug]]` links in agentic-payments cluster; clarified Wikilink Convention
   └─ pages: wiki/concepts/{x402,machine-payments-protocol-mpp,agent-payments-protocol-ap2,universal-commerce-protocol-ucp}.md, wiki/projects/tempo.md, wiki/sources/{mpp-specs,x402-org-2026}.md, wiki/hot.md, CLAUDE.md, .claude/skills/{ingest,lint}.md
   └─ sources: none

@@ -3,7 +3,7 @@ title: AWS Bedrock Agent Core
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # AWS Bedrock Agent Core
