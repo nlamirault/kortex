@@ -20,7 +20,6 @@ Domain hub for ai knowledge.
 
 - [AI / Context Engineering](../concepts/ai-context-engineering.md)
 - [AI / Protocols](../concepts/ai-protocols.md)
-- [AWS Bedrock Agent Core](../concepts/aws-bedrock-agent-core.md)
 - [AWS Bedrock AgentCore](../concepts/aws-bedrock-agentcore.md)
 - [Agent Client Protocol (ACP)](../concepts/agent-client-protocol-acp.md)
 - [Agent Communication Protocol (ACP)](../concepts/agent-communication-protocol-acp.md)

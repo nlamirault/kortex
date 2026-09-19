@@ -38,7 +38,6 @@ Last updated: 2026-09-01
 - [AI Context Engineering](concepts/ai-context-engineering.md) — context management for LLMs
 - [AI Protocols](concepts/ai-protocols.md) — overview of AI communication protocols
 - [AWS Bedrock AgentCore](concepts/aws-bedrock-agentcore.md) — AWS managed agent runtime
-- [AWS Bedrock Agent Core (Reference)](concepts/aws-bedrock-agent-core.md) — reference for Bedrock Agent Core
 - [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
 - [MCP Reference](concepts/mcp.md) — MCP reference

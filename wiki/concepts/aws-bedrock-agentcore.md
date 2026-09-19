@@ -50,6 +50,8 @@ Here’s the interaction model between the 7 services:
 
 # Next
 
+https://aws.amazon.com/fr/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/
+
 https://notebooklm.google.com/notebook/9f18c0c9-d599-4c5f-b341-61f7367262da
 
 https://www.workshops.aws/?tag=AgentCore

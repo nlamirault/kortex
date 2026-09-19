@@ -85,6 +85,44 @@ def rewrite_links(text: str, src_dir: str, base: str) -> str:
     return LINK_RE.sub(repl, text)
 
 
+def _norm_heading(s: str) -> str:
+    """Normalize a heading for comparison: keep alphanumerics only (drops the
+    leading #, bold/italic markers, emoji, punctuation and whitespace)."""
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def demote_body_headings(text: str, title: str) -> str:
+    """Reconcile body headings with the title now rendered as the layout <h1>.
+
+    The layout renders the frontmatter title as the single page <h1>. To avoid
+    a second/competing <h1>, drop any body `# ` heading that just repeats the
+    title, and demote every other `# ` heading to `## ` so the page has exactly
+    one top-level heading.
+    """
+    if not text.startswith("---"):
+        head, body = "", text
+    else:
+        end = text.find("\n---", 3)
+        head, body = (text[: end + 4], text[end + 4 :]) if end != -1 else ("", text)
+
+    ntitle = _norm_heading(title)
+    out, in_fence = [], False
+    for line in body.splitlines():
+        stripped = line.lstrip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        if not in_fence and re.match(r"#{1,6}\s+\S", line):  # a heading
+            if _norm_heading(line) == ntitle:
+                continue  # repeats the title (any level) — drop
+            if re.match(r"#\s+\S", line):
+                out.append("#" + line)  # demote a competing `# ` H1 -> `## `
+                continue
+        out.append(line)
+    return head + "\n".join(out)
+
+
 def get_title(text: str, slug: str) -> str:
     """Frontmatter `title:` if present, else first H1, else humanized slug."""
     if text.startswith("---"):
@@ -154,6 +192,7 @@ def main() -> None:
         text = rewrite_links(md.read_text(encoding="utf-8"), src_dir, base)
         text = rewrite_wikilinks(text, base, titles)
         text = ensure_title(text, md.stem)
+        text = demote_body_headings(text, titles.get(md.stem, md.stem))
         out = dst / rel
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(text, encoding="utf-8")

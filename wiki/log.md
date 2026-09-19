@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-19] [UPDATE] | Every rendered page now shows its title; merged duplicate AWS Bedrock AgentCore pages
+  └─ pages: website/src/layouts/DocsLayout.astro, website/prepare_content.py, wiki/concepts/aws-bedrock-agentcore.md, wiki/concepts/aws-bedrock-agent-core.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
+  └─ sources: none
+  └─ note: DocsLayout renders frontmatter title as the page <h1>; prepare_content drops title-repeat headings + demotes competing body H1s. aws-bedrock-agent-core (draft stub) merged into aws-bedrock-agentcore (canonical, official spelling).
+
 ## [2026-09-19] [UPDATE] | Fixed 5 broken Notion-export links in AI/Protocols page (mangled `%20<hash>.md)` fragments → proper markdown links)
   └─ pages: wiki/concepts/ai-protocols.md
   └─ sources: none

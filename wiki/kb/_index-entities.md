@@ -7,7 +7,7 @@ updated: 2026-09-19
 
 # Entity Index
 
-*138 entities — auto-generated*
+*137 entities — auto-generated*
 
 ## 1
 
@@ -43,7 +43,6 @@ updated: 2026-09-19
 - · [Argo Workflows CRDs](concept-argo-workflows-crds.md) — concept
 - · [Authentication](concept-authentication.md) — concept
 - · [Authorization](concept-authorization.md) — concept
-- · [AWS Bedrock Agent Core](concept-aws-bedrock-agent-core.md) — concept
 - · [AWS Bedrock AgentCore](concept-aws-bedrock-agentcore.md) — concept
 - · [AWS Controllers for Kubernetes (ACK)](project-aws-controllers-for-kubernetes-ack.md) — project
 ## B

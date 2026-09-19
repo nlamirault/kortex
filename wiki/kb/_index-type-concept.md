@@ -7,7 +7,7 @@ updated: 2026-09-19
 
 # concept
 
-*66 entities*
+*65 entities*
 
 - · [12 App Factor](concept-12-app-factor.md)
 - · [ACID](concept-acid.md)
@@ -28,7 +28,6 @@ updated: 2026-09-19
 - · [Argo Workflows CRDs](concept-argo-workflows-crds.md)
 - · [Authentication](concept-authentication.md)
 - · [Authorization](concept-authorization.md)
-- · [AWS Bedrock Agent Core](concept-aws-bedrock-agent-core.md)
 - · [AWS Bedrock AgentCore](concept-aws-bedrock-agentcore.md)
 - · [Blockchain](concept-blockchain.md)
 - · [Blockchain Layer 1](concept-blockchain-layer-1.md)
