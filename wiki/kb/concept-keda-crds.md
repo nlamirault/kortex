@@ -3,7 +3,7 @@ title: Keda CRDs
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # Keda CRDs

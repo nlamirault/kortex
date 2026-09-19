@@ -3,7 +3,7 @@ title: Adopt WikiSkill Evolution Loop
 type: kb-entity
 entity_type: decision
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # Adopt WikiSkill Evolution Loop

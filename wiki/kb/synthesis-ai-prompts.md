@@ -3,7 +3,7 @@ title: AI / Prompts
 type: kb-entity
 entity_type: synthesis
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # AI / Prompts

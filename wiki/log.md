@@ -5,6 +5,30 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-19] [EVOLVE] | Added `organization` entity type; normalized invalid/French graph types; merged MCP duplicate
+  └─ pages: CLAUDE.md, scripts/build_knowledge_base.py, website/prepare_content.py, website/src/pages/[...slug].astro, wiki/organizations/*.md (new: stripe, coinbase, paradigm, tempo-labs, x402-foundation, alchemy, aws, cloudflare, vercel; moved from people: google, lyft, soundcloud), wiki/sources/{x402-org-2026,mpp-specs}.md, wiki/concepts/model-context-protocol-mcp.md, wiki/concepts/mcp.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
+  └─ sources: raw/articles/mpp-specs, https://x402.org/
+  └─ note: legacy `## KnowledgeGraph` tables in the two source pages used French types (PROJET/TECHNOLOGIE/ORGANISATION), taken verbatim by build_knowledge_base → phantom duplicate graph nodes (projet-tempo vs project-tempo, etc). Converted both to canonical `## Relations` SPO tables with the 10 valid types + a new `organization` type. Merged concepts/mcp.md stub into model-context-protocol-mcp.md. Entity types now all valid; 0 broken links.
+
+## [2026-09-19] [UPDATE] | Every rendered page now shows its title; merged duplicate AWS Bedrock AgentCore pages
+  └─ pages: website/src/layouts/DocsLayout.astro, website/prepare_content.py, wiki/concepts/aws-bedrock-agentcore.md, wiki/concepts/aws-bedrock-agent-core.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
+  └─ sources: none
+  └─ note: DocsLayout renders frontmatter title as the page <h1>; prepare_content drops title-repeat headings + demotes competing body H1s. aws-bedrock-agent-core (draft stub) merged into aws-bedrock-agentcore (canonical, official spelling).
+
+## [2026-09-19] [UPDATE] | Fixed 5 broken Notion-export links in AI/Protocols page (mangled `%20<hash>.md)` fragments → proper markdown links)
+  └─ pages: wiki/concepts/ai-protocols.md
+  └─ sources: none
+
+## [2026-09-19] [LINT] | Wiki-wide broken-link scan; fixed 3 bare `[[type:slug]]` prose wikilinks (dead on GitHub render) → markdown links
+  └─ pages: wiki/gaps/evolve-loop-coverage.md, wiki/decisions/adopt-wikiskill-evolution-loop.md, wiki/skill-impact.md
+  └─ sources: none
+  └─ note: schema.md/log.md/index.md `[[..:slug]]` are intentional template examples, left as-is; no other broken relative links found
+
+## [2026-09-19] [UPDATE] | Website build now renders `## Relations` `[[type:slug]]` as clickable pretty-URL links (were dead text on the site, e.g. AP2 page)
+  └─ pages: website/prepare_content.py, wiki/concepts/agent-payments-protocol-ap2.md (title whitespace)
+  └─ sources: none
+  └─ note: rewrite_wikilinks() two-pass slug→title index; only links existing pages, leaves unknown/dangling + schema.md syntax examples raw; source wiki/ [[..]] untouched so /graph still parses
+
 ## [2026-09-02] [UPDATE] | Fixed non-rendering `[[type:slug]]` links in agentic-payments cluster; clarified Wikilink Convention
   └─ pages: wiki/concepts/{x402,machine-payments-protocol-mpp,agent-payments-protocol-ap2,universal-commerce-protocol-ucp}.md, wiki/projects/tempo.md, wiki/sources/{mpp-specs,x402-org-2026}.md, wiki/hot.md, CLAUDE.md, .claude/skills/{ingest,lint}.md
   └─ sources: none

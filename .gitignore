@@ -28,3 +28,4 @@ website/node_modules/
 website/dist/
 website/.astro/
 website/src/content/docs/
+website/__pycache__

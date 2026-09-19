@@ -247,6 +247,7 @@ kortex/
     ├── sources/           ← book/article/paper summaries (tier-4)
     ├── people/            ← authors, researchers, thinkers
     ├── projects/          ← tools, codebases, initiatives
+    ├── organizations/     ← companies, foundations, standards bodies
     ├── decisions/         ← architectural and design choices
     ├── comparisons/       ← side-by-side source/tool analysis
     ├── syntheses/         ← cross-source analyses from queries (tier-5, leaves)
@@ -267,6 +268,7 @@ Every wiki page must be one of these types (set in frontmatter):
 | `source` | Books, papers, articles, talks | `wiki/sources/` |
 | `person` | Authors, researchers, thinkers | `wiki/people/` |
 | `project` | Tools, codebases, initiatives | `wiki/projects/` |
+| `organization` | Companies, foundations, standards bodies | `wiki/organizations/` |
 | `decision` | Architectural or design choices | `wiki/decisions/` |
 | `comparison` | Side-by-side analysis of sources or tools | `wiki/comparisons/` |
 | `synthesis` | Cross-source analyses filed from queries (leaves) | `wiki/syntheses/` |
@@ -338,7 +340,8 @@ and Object cells **must** use raw `[[type:slug]]` — `/graph` parses this exact
 ```
 
 Valid types: `[[concept:…]]` `[[source:…]]` `[[person:…]]` `[[project:…]]`
-`[[decision:…]]` `[[domain:…]]` `[[comparison:…]]` `[[synthesis:…]]` `[[pattern:…]]` `[[gap:…]]`.
+`[[decision:…]]` `[[domain:…]]` `[[comparison:…]]` `[[synthesis:…]]` `[[pattern:…]]` `[[gap:…]]`
+`[[organization:…]]`.
 
 ### Form 2 — Everywhere else → rendered markdown links (clickable)
 

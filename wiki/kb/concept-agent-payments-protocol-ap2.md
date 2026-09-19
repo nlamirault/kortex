@@ -1,19 +1,19 @@
 ---
-title: Agent Payments Protocol  (AP2)
+title: Agent Payments Protocol (AP2)
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
-# Agent Payments Protocol  (AP2)
+# Agent Payments Protocol (AP2)
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 4 out / 2 in  
-**Source pages:** 3
+**Degree:** 4 out / 3 in  
+**Source pages:** 4
 
-**Wiki page:** [Agent Payments Protocol  (AP2)](../concepts/agent-payments-protocol-ap2.md)
+**Wiki page:** [Agent Payments Protocol (AP2)](../concepts/agent-payments-protocol-ap2.md)
 
 ## Outgoing Relations
 
@@ -30,9 +30,11 @@ updated: 2026-09-02
 |---------|-----------|--------|
 | machine-payments-protocol-mpp | contrasts-with | machine-payments-protocol-mpp.md |
 | x402 | contrasts-with | x402.md |
+| machine-payments-protocol-mpp | contrasts-with | mpp-specs.md |
 
 ## Source Pages
 
 - [concepts/agent-payments-protocol-ap2.md](../concepts/agent-payments-protocol-ap2.md)
 - [concepts/machine-payments-protocol-mpp.md](../concepts/machine-payments-protocol-mpp.md)
 - [concepts/x402.md](../concepts/x402.md)
+- [sources/mpp-specs.md](../sources/mpp-specs.md)

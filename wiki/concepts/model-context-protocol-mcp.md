@@ -86,6 +86,10 @@ You could have an MCP server connected to Claude Desktop app, allowing it to hav
 
 MCP is part of a broader trend toward making AI assistants more capable through tool use and external connectivity, moving beyond the limitations of their training data.
 
-# Next
+## MCP Server Directories
 
-[Reference: MCP](../concepts/mcp.md)
+- [MCP Servers — official GitHub repository](https://github.com/modelcontextprotocol/servers)
+- [mcpservers.org](https://mcpservers.org/)
+- [mcp.so](https://mcp.so/)
+- [Glama MCP servers](https://glama.ai/mcp/servers)
+- [Cline MCP marketplace](https://cline.bot/mcp-marketplace)

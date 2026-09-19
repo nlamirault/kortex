@@ -1,5 +1,5 @@
 ---
-title: Agent Payments Protocol  (AP2)
+title: Agent Payments Protocol (AP2)
 type: concept
 status: active
 confidence: high

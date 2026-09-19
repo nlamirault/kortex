@@ -60,28 +60,15 @@ The MPP specifications define an open, rail- and currency-agnostic standard for 
 **Persuasion devices:** appeal to open standards (CC0), incumbent-authority co-authorship (Stripe), reuse of an existing web primitive (402) rather than inventing transport, breadth of supported rails.
 **Bias indicators:** authored by Tempo Labs and Stripe, who directly benefit from adoption — Tempo is a named settlement method; framing favours the Tempo/Stripe stack even as the spec claims rail-agnosticism.
 
-## KnowledgeGraph
+## Relations
 
-### Triples
-
-| Subject | Type_Subject | Predicate | Object | Type_Object | Confidence | Temporality | Source |
-|---------|-------------|-----------|--------|-------------|------------|-------------|--------|
-| MPP | CONCEPT | co-authored-by | Tempo Labs | ORGANISATION | 1.0 | STATIQUE | déclaré_article |
-| MPP | CONCEPT | co-authored-by | Stripe | ORGANISATION | 1.0 | STATIQUE | déclaré_article |
-| MPP | CONCEPT | uses-transport | MCP | CONCEPT | 0.9 | ATEMPOREL | déclaré_article |
-| MPP | CONCEPT | reuses | HTTP 402 Payment Required | TECHNOLOGIE | 1.0 | ATEMPOREL | déclaré_article |
-| Tempo | PROJET | built-by | Stripe + Paradigm | ORGANISATION | 1.0 | STATIQUE | déclaré_article |
-| Tempo | PROJET | settles | MPP | CONCEPT | 0.9 | ATEMPOREL | inféré |
-| MPP | CONCEPT | contrasts-with | AP2 | CONCEPT | 0.7 | ATEMPOREL | inféré |
-
-### Entities
-
-| Entity | Type | Attribute | Value | Action |
-|--------|------|-----------|-------|--------|
-| Machine Payments Protocol (MPP) | CONCEPT | status | draft 00–01 | AJOUT |
-| Tempo | PROJET | class | L1 stablecoin blockchain | AJOUT |
-| Stripe | ORGANISATION | role | co-author, payment method | AJOUT |
-| Paradigm | ORGANISATION | role | co-builder of Tempo L1 | AJOUT |
-| MCP | CONCEPT | role | MPP transport | MISE_A_JOUR |
-| HTTP 402 | TECHNOLOGIE | role | core status code | AJOUT |
-| AP2 | CONCEPT | relation | contrasting payment protocol | MISE_A_JOUR |
+| Subject | Predicate | Object |
+|---------|-----------|--------|
+| [[concept:machine-payments-protocol-mpp]] | co-authored-by | [[organization:tempo-labs]] |
+| [[concept:machine-payments-protocol-mpp]] | co-authored-by | [[organization:stripe]] |
+| [[concept:machine-payments-protocol-mpp]] | uses-transport | [[concept:model-context-protocol-mcp]] |
+| [[concept:machine-payments-protocol-mpp]] | reuses | HTTP 402 Payment Required |
+| [[project:tempo]] | built-by | [[organization:stripe]] |
+| [[project:tempo]] | built-by | [[organization:paradigm]] |
+| [[project:tempo]] | settles | [[concept:machine-payments-protocol-mpp]] |
+| [[concept:machine-payments-protocol-mpp]] | contrasts-with | [[concept:agent-payments-protocol-ap2]] |

@@ -2,33 +2,30 @@
 title: concept Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # concept
 
-*66 entities*
+*60 entities*
 
 - · [12 App Factor](concept-12-app-factor.md)
 - · [ACID](concept-acid.md)
 - · [Agent Client Protocol (ACP)](concept-agent-client-protocol-acp.md)
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md)
-- ★ [Agent Payments Protocol  (AP2)](concept-agent-payments-protocol-ap2.md)
+- ★ [Agent Payments Protocol (AP2)](concept-agent-payments-protocol-ap2.md)
 - · [Agent Skills](concept-agent-skills.md)
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md)
 - · [Agent-User Interaction Protocol (AG-UI)](concept-agent-user-interaction-protocol-ag-ui.md)
-- · [Agentic payments](concept-agentic-payments.md)
 - · [Agents.md](concept-agentsmd.md)
 - · [AI / Context Engineering](concept-ai-context-engineering.md)
 - · [AI / Protocols](concept-ai-protocols.md)
-- · [AP2](concept-ap2.md)
 - · [API Gateway](concept-api-gateway.md)
 - · [API Rest / GraphQL](concept-api-rest-graphql.md)
 - · [Argo Events CRDs](concept-argo-events-crds.md)
 - · [Argo Workflows CRDs](concept-argo-workflows-crds.md)
 - · [Authentication](concept-authentication.md)
 - · [Authorization](concept-authorization.md)
-- · [AWS Bedrock Agent Core](concept-aws-bedrock-agent-core.md)
 - · [AWS Bedrock AgentCore](concept-aws-bedrock-agentcore.md)
 - · [Blockchain](concept-blockchain.md)
 - · [Blockchain Layer 1](concept-blockchain-layer-1.md)
@@ -43,7 +40,6 @@ updated: 2026-09-02
 - · [Fantastic Four of System Design](concept-fantastic-four-of-system-design.md)
 - · [FOCUS](concept-focus.md)
 - · [Heartbeat](concept-heartbeat.md)
-- · [HTTP 402 Payment Required](concept-http-402-payment-required.md)
 - · [Ingress vs Gateway API](concept-ingress-vs-gateway-api.md)
 - · [Interrupteur simple](concept-interrupteur-simple.md)
 - · [Interrupteur va et vient](concept-interrupteur-va-et-vient.md)
@@ -54,9 +50,7 @@ updated: 2026-09-02
 - · [Lineage Object Model](concept-lineage-object-model.md)
 - ★ [Machine Payments Protocol (MPP)](concept-machine-payments-protocol-mpp.md)
 - · [Matter](concept-matter.md)
-- · [MCP](concept-mcp.md)
 - ★ [Model Context Protocol (MCP)](concept-model-context-protocol-mcp.md)
-- ★ [MPP](concept-mpp.md)
 - · [Observability](concept-observability.md)
 - · [OpenLineage](concept-openlineage.md)
 - · [OSI Model](concept-osi-model.md)

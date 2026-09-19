@@ -9,7 +9,7 @@ updated: 2026-09-01
 
 Audit trail for every change to a **skill** (`.claude/skills/*.md`) or an
 **operating rule** (`CLAUDE.md`). Mandated by
-[[decision:adopt-wikiskill-evolution-loop]] (ADR-0001).
+[adopt WikiSkill evolution loop](decisions/adopt-wikiskill-evolution-loop.md) (ADR-0001).
 
 Adapted from the WikiSkill paper's `skill-impact.md`: a complete ground-truth
 record of proposals and outcomes so future `/evolve` runs never re-litigate a

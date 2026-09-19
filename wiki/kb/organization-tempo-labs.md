@@ -1,24 +1,27 @@
 ---
 title: Tempo Labs
 type: kb-entity
-entity_type: organisation
+entity_type: organization
 status: auto-generated
-updated: 2026-09-02
+updated: 2026-09-19
 ---
 
 # Tempo Labs
 
-**Type:** organisation  
+**Type:** organization  
 **Tier:** Minor  
 **Degree:** 0 out / 1 in  
-**Source pages:** 1
+**Source pages:** 2
+
+**Wiki page:** [Tempo Labs](../organizations/tempo-labs.md)
 
 ## Incoming Relations
 
 | Subject | Predicate | Source |
 |---------|-----------|--------|
-| MPP | co-authored-by | mpp-specs.md |
+| machine-payments-protocol-mpp | co-authored-by | mpp-specs.md |
 
 ## Source Pages
 
+- [organizations/tempo-labs.md](../organizations/tempo-labs.md)
 - [sources/mpp-specs.md](../sources/mpp-specs.md)
