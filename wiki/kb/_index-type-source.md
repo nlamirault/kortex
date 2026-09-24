@@ -2,12 +2,12 @@
 title: source Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # source
 
-*10 entities*
+*11 entities*
 
 - · [AG-UI Protocol Specification](source-ag-ui-protocol.md)
 - · [Agent-to-Agent (A2A) Protocol Specification](source-a2a-spec.md)
@@ -17,5 +17,6 @@ updated: 2026-09-19
 - · [Machine Payments Protocol Specifications (MPP), Tempo Labs & Stripe, 2026](source-mpp-specs.md)
 - · [Marquez](source-marquez-project.md)
 - · [OpenLineage Specification](source-openlineage-spec.md)
+- · [unifiedharnessprotocol.org — Unified Harness Protocol (landing page)](source-uhp-website-2026.md)
 - · [VictoriaMetrics Documentation](source-victoriametrics-docs.md)
 - · [x402.org — Internet-Native Payment Protocol (landing page)](source-x402-org-2026.md)

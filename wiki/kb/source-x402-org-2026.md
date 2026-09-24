@@ -3,7 +3,7 @@ title: x402.org — Internet-Native Payment Protocol (landing page)
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # x402.org — Internet-Native Payment Protocol (landing page)

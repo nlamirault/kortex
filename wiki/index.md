@@ -39,7 +39,9 @@ Last updated: 2026-09-01
 - [AI Protocols](concepts/ai-protocols.md) — overview of AI communication protocols
 - [AWS Bedrock AgentCore](concepts/aws-bedrock-agentcore.md) — AWS managed agent runtime
 - [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
+- [Agent Harness](concepts/agent-harness.md) — a complete agent runtime (plan, call tools, edit files, report)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
+- [Unified Harness Protocol (UHP)](concepts/unified-harness-protocol-uhp.md) — open standard for driving agent harnesses as infrastructure
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
 - [x402](concepts/x402.md) — internet-native payment protocol (HTTP 402 + stablecoins)
 <!-- Kubernetes -->
@@ -107,6 +109,7 @@ Last updated: 2026-09-01
 
 - [MPP Specifications (Tempo/Stripe, 2026)](sources/mpp-specs.md) — Machine Payments Protocol spec: HTTP 402 machine-to-machine payments
 - [x402.org — Internet-Native Payment Protocol](sources/x402-org-2026.md) — landing page for the x402 standard
+- [unifiedharnessprotocol.org — Unified Harness Protocol](sources/uhp-website-2026.md) — landing page + spec index for the UHP standard
 
 <!-- add source pages here -->
 
@@ -193,6 +196,9 @@ Last updated: 2026-09-01
 
 <!-- WASM -->
 - [WasmCloud](projects/wasmcloud.md)
+
+<!-- AI -->
+- [HarnessRouter](projects/harnessrouter.md) — open-source reference implementation of the Unified Harness Protocol (UHP)
 
 <!-- add project pages here -->
 

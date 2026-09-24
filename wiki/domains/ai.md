@@ -22,6 +22,7 @@ Domain hub for ai knowledge.
 - [AI / Protocols](../concepts/ai-protocols.md)
 - [AWS Bedrock AgentCore](../concepts/aws-bedrock-agentcore.md)
 - [Agent Client Protocol (ACP)](../concepts/agent-client-protocol-acp.md)
+- [Agent Harness](../concepts/agent-harness.md)
 - [Agent Communication Protocol (ACP)](../concepts/agent-communication-protocol-acp.md)
 - [Agent Payments Protocol  (AP2)](../concepts/agent-payments-protocol-ap2.md)
 - [Agent Skills](../concepts/agent-skills.md)
@@ -30,9 +31,10 @@ Domain hub for ai knowledge.
 - [Agents.md](../concepts/agentsmd.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
+- [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
 - [x402 (Internet-Native Payment Protocol)](../concepts/x402.md)
 
 ## Projects
 
-*(none yet)*
+- [HarnessRouter](../projects/harnessrouter.md) — open-source reference implementation of UHP

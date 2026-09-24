@@ -26,3 +26,5 @@ stale_after: 2027-02-17
 - [Agent-User Interaction Protocol (AG-UI)](../concepts/agent-user-interaction-protocol-ag-ui.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
+- [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
+- [Agent Harness](../concepts/agent-harness.md)
