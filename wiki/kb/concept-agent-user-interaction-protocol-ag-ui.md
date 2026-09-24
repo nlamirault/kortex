@@ -3,7 +3,7 @@ title: Agent-User Interaction Protocol (AG-UI)
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # Agent-User Interaction Protocol (AG-UI)

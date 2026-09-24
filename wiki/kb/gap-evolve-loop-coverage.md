@@ -3,7 +3,7 @@ title: Evolve loop coverage — open questions
 type: kb-entity
 entity_type: gap
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # Evolve loop coverage — open questions

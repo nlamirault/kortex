@@ -2,24 +2,25 @@
 title: concept Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # concept
 
-*60 entities*
+*62 entities*
 
 - · [12 App Factor](concept-12-app-factor.md)
 - · [ACID](concept-acid.md)
 - · [Agent Client Protocol (ACP)](concept-agent-client-protocol-acp.md)
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md)
+- ★ [Agent Harness](concept-agent-harness.md)
 - ★ [Agent Payments Protocol (AP2)](concept-agent-payments-protocol-ap2.md)
 - · [Agent Skills](concept-agent-skills.md)
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md)
 - · [Agent-User Interaction Protocol (AG-UI)](concept-agent-user-interaction-protocol-ag-ui.md)
 - · [Agents.md](concept-agentsmd.md)
 - · [AI / Context Engineering](concept-ai-context-engineering.md)
-- · [AI / Protocols](concept-ai-protocols.md)
+- ★ [AI / Protocols](concept-ai-protocols.md)
 - · [API Gateway](concept-api-gateway.md)
 - · [API Rest / GraphQL](concept-api-rest-graphql.md)
 - · [Argo Events CRDs](concept-argo-events-crds.md)
@@ -63,6 +64,7 @@ updated: 2026-09-19
 - · [SLSA](concept-slsa.md)
 - · [Thread](concept-thread.md)
 - · [TUI](concept-tui.md)
+- ★ [Unified Harness Protocol (UHP)](concept-unified-harness-protocol-uhp.md)
 - · [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md)
 - · [URL / URI / URN](concept-url-uri-urn.md)
 - · [VEX](concept-vex.md)

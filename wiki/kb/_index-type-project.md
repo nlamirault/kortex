@@ -2,12 +2,12 @@
 title: project Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # project
 
-*33 entities*
+*34 entities*
 
 - · [Alertmanager](project-alertmanager.md)
 - · [Argo CD](project-argo-cd.md)
@@ -23,6 +23,7 @@ updated: 2026-09-19
 - · [Grafana](project-grafana.md)
 - · [Grafana Alloy](project-grafana-alloy.md)
 - · [GreptimeDB](project-greptimedb.md)
+- ★ [HarnessRouter](project-harnessrouter.md)
 - · [Istio](project-istio.md)
 - · [Karpenter](project-karpenter.md)
 - · [Keda](project-keda.md)

@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-09-23] [INGEST] | Added "Unified Harness Protocol (UHP)" landing page + spec index
+  └─ pages: wiki/sources/uhp-website-2026.md, wiki/concepts/unified-harness-protocol-uhp.md, wiki/concepts/agent-harness.md, wiki/projects/harnessrouter.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md
+  └─ sources: https://unifiedharnessprotocol.org/
+  └─ note: UHP = open standard for driving complete agent harnesses as infrastructure (task-in / running-agent-out, deliberately OpenAI-Responses-API-shaped, HTTP-only, Apache 2.0, 11 chapters @ v2026-09-12). Sits in AI protocols cluster one layer above MCP/A2A/ACP. Used canonical `## Relations` SPO tables (not legacy KnowledgeGraph). Example harnesses (Codex, Claude Code, Gemini CLI, Hermes, DeepSeek, Pi) + authorship left as `NOT VERIFIED` rather than stubbed.
+
 ## [2026-09-19] [EVOLVE] | Added `organization` entity type; normalized invalid/French graph types; merged MCP duplicate
   └─ pages: CLAUDE.md, scripts/build_knowledge_base.py, website/prepare_content.py, website/src/pages/[...slug].astro, wiki/organizations/*.md (new: stripe, coinbase, paradigm, tempo-labs, x402-foundation, alchemy, aws, cloudflare, vercel; moved from people: google, lyft, soundcloud), wiki/sources/{x402-org-2026,mpp-specs}.md, wiki/concepts/model-context-protocol-mcp.md, wiki/concepts/mcp.md (deleted), wiki/index.md, wiki/domains/ai.md, wiki/kb/*
   └─ sources: raw/articles/mpp-specs, https://x402.org/

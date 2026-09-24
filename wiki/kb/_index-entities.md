@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # Entity Index
 
-*129 entities — auto-generated*
+*133 entities — auto-generated*
 
 ## 1
 
@@ -19,6 +19,7 @@ updated: 2026-09-19
 - · [AG-UI Protocol Specification](source-ag-ui-protocol.md) — source
 - · [Agent Client Protocol (ACP)](concept-agent-client-protocol-acp.md) — concept
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md) — concept
+- ★ [Agent Harness](concept-agent-harness.md) — concept
 - ★ [Agent Payments Protocol (AP2)](concept-agent-payments-protocol-ap2.md) — concept
 - · [Agent Skills](concept-agent-skills.md) — concept
 - · [Agent-to-Agent (A2A)](concept-agent-to-agent-a2a.md) — concept
@@ -28,7 +29,7 @@ updated: 2026-09-19
 - · [AI](domain-ai.md) — domain
 - · [AI / Context Engineering](concept-ai-context-engineering.md) — concept
 - · [AI / Prompts](synthesis-ai-prompts.md) — synthesis
-- · [AI / Protocols](concept-ai-protocols.md) — concept
+- ★ [AI / Protocols](concept-ai-protocols.md) — concept
 - · [Alchemy](organization-alchemy.md) — organization
 - · [Alertmanager](project-alertmanager.md) — project
 - · [Amazon Web Services (AWS)](organization-aws.md) — organization
@@ -88,6 +89,7 @@ updated: 2026-09-19
 - · [GreptimeDB](project-greptimedb.md) — project
 ## H
 
+- ★ [HarnessRouter](project-harnessrouter.md) — project
 - · [Heartbeat](concept-heartbeat.md) — concept
 ## I
 
@@ -166,6 +168,8 @@ updated: 2026-09-19
 - · [TUI](concept-tui.md) — concept
 ## U
 
+- ★ [Unified Harness Protocol (UHP)](concept-unified-harness-protocol-uhp.md) — concept
+- · [unifiedharnessprotocol.org — Unified Harness Protocol (landing page)](source-uhp-website-2026.md) — source
 - · [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md) — concept
 - · [URL / URI / URN](concept-url-uri-urn.md) — concept
 ## V

@@ -9,11 +9,15 @@
 
 *(What is the active work or research thread?)*
 
-Ingested two HTTP-402 payment protocols into the agentic-payments cluster:
-- **Machine Payments Protocol (MPP)** — machine-to-machine payments by Tempo Labs & Stripe. New: [MPP](concepts/machine-payments-protocol-mpp.md), [Tempo](projects/tempo.md), [MPP Specs](sources/mpp-specs.md).
-- **x402** — internet-native payment protocol (HTTP 402 + stablecoin settlement). New: [x402](concepts/x402.md), [x402.org source](sources/x402-org-2026.md).
+Ingested the **Unified Harness Protocol (UHP)** — an open standard for driving complete
+agent harnesses as shared infrastructure (task-in / running-agent-out, Responses-API-shaped).
+New: [UHP](concepts/unified-harness-protocol-uhp.md), [Agent Harness](concepts/agent-harness.md),
+[HarnessRouter](projects/harnessrouter.md), [UHP source](sources/uhp-website-2026.md).
+Sits in the AI protocols cluster alongside MCP/A2A/ACP — one layer up (drive the whole harness, not just tools).
 
-Both cross-link to each other, AP2, and UCP. Sit at AI ∩ blockchain ∩ networking.
+Prior: two HTTP-402 payment protocols in the agentic-payments cluster:
+- **Machine Payments Protocol (MPP)** — machine-to-machine payments by Tempo Labs & Stripe. [MPP](concepts/machine-payments-protocol-mpp.md), [Tempo](projects/tempo.md), [MPP Specs](sources/mpp-specs.md).
+- **x402** — internet-native payment protocol (HTTP 402 + stablecoin settlement). [x402](concepts/x402.md), [x402.org source](sources/x402-org-2026.md).
 
 ---
 
@@ -51,6 +55,8 @@ Both cross-link to each other, AP2, and UCP. Sit at AI ∩ blockchain ∩ networ
 
 *(Pages currently being built or needing follow-up)*
 
+- `wiki/concepts/unified-harness-protocol-uhp.md` — new, unverified; verify against the 11-chapter spec + conformance suite
+- `wiki/projects/harnessrouter.md` — new, medium confidence; GitHub URL/details inferred from landing page, `NOT VERIFIED`
 - `wiki/concepts/machine-payments-protocol-mpp.md` — new, unverified; verify against spec before trusting
 - `wiki/projects/tempo.md` — new, unverified
 - `concepts/x402.md` — facilitator role + supported chains still `NOT VERIFIED`; confirm from primary sources
