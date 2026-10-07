@@ -3,7 +3,7 @@ title: Google SRE Workbook
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # Google SRE Workbook

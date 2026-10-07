@@ -3,7 +3,7 @@ title: unifiedharnessprotocol.org — Unified Harness Protocol (landing page)
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # unifiedharnessprotocol.org — Unified Harness Protocol (landing page)

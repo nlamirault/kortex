@@ -2,12 +2,12 @@
 title: concept Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # concept
 
-*62 entities*
+*63 entities*
 
 - · [12 App Factor](concept-12-app-factor.md)
 - · [ACID](concept-acid.md)
@@ -56,6 +56,7 @@ updated: 2026-09-23
 - · [OpenLineage](concept-openlineage.md)
 - · [OSI Model](concept-osi-model.md)
 - · [OTTL](concept-ottl.md)
+- ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md)
 - · [REST API Authentication methods](concept-rest-api-authentication-methods.md)
 - · [REST API Best Practices](concept-rest-api-best-practices.md)
 - · [SBOM](concept-sbom.md)
@@ -65,7 +66,7 @@ updated: 2026-09-23
 - · [Thread](concept-thread.md)
 - · [TUI](concept-tui.md)
 - ★ [Unified Harness Protocol (UHP)](concept-unified-harness-protocol-uhp.md)
-- · [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md)
+- ★ [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md)
 - · [URL / URI / URN](concept-url-uri-urn.md)
 - · [VEX](concept-vex.md)
 - ★ [x402 (Internet-Native Payment Protocol)](concept-x402.md)

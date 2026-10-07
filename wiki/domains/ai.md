@@ -6,7 +6,7 @@ confidence: high
 cluster: ai
 domain: [ai]
 sources: []
-updated: 2026-08-17
+updated: 2026-10-07
 tags: [AI]
 generated: {by: claude-sonnet-4-6, at: 2026-08-17}
 verified: [{by: nicolas, at: 2026-08-17}]
@@ -31,6 +31,7 @@ Domain hub for ai knowledge.
 - [Agents.md](../concepts/agentsmd.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
+- [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md)
 - [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
 - [x402 (Internet-Native Payment Protocol)](../concepts/x402.md)
@@ -38,3 +39,13 @@ Domain hub for ai knowledge.
 ## Projects
 
 - [HarnessRouter](../projects/harnessrouter.md) — open-source reference implementation of UHP
+
+## People
+
+- [Bret Taylor](../people/bret-taylor.md) — Sierra co-founder; co-author of PAP
+- [Clay Bavor](../people/clay-bavor.md) — Sierra co-founder; co-author of PAP
+
+## Organizations
+
+- [Meta](../organizations/meta.md) — PAP co-lead
+- [Sierra](../organizations/sierra.md) — PAP co-lead

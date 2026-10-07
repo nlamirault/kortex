@@ -6,7 +6,7 @@ confidence: high
 cluster: ai
 domain: [ai]
 sources: []
-updated: 2026-09-19
+updated: 2026-10-07
 tags: [AI]
 generated: {by: claude-sonnet-4-6, at: 2026-08-17}
 verified: [{by: nicolas, at: 2026-08-17}]
@@ -27,4 +27,5 @@ stale_after: 2027-02-17
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
+- [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md)
 - [Agent Harness](../concepts/agent-harness.md)
