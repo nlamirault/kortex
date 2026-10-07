@@ -1,7 +1,7 @@
 # Kortex Wiki — Index
 
 Content catalog organized by entity type.
-Last updated: 2026-09-01
+Last updated: 2026-10-07
 
 ---
 
@@ -9,7 +9,7 @@ Last updated: 2026-09-01
 
 *(broad topic hubs — start here; see `wiki/overview.md` for cluster map)*
 
-- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (17 concepts)
+- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (18 concepts)
 - [Blockchain](domains/blockchain.md) — distributed ledger, L1, layers, Tempo (3 concepts, 1 project)
 - [Data](domains/data.md) — databases, data engineering, lineage (9 concepts)
 - [Domotic](domains/domotic.md) — smart home: Matter, Zigbee, Thread (5 concepts)
@@ -41,6 +41,7 @@ Last updated: 2026-09-01
 - [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
 - [Agent Harness](concepts/agent-harness.md) — a complete agent runtime (plan, call tools, edit files, report)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
+- [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — personal-agent↔business standard (Meta/Sierra), OAuth sessions
 - [Unified Harness Protocol (UHP)](concepts/unified-harness-protocol-uhp.md) — open standard for driving agent harnesses as infrastructure
 - [Universal Commerce Protocol (UCP)](concepts/universal-commerce-protocol-ucp.md) — commerce protocol for AI
 - [x402](concepts/x402.md) — internet-native payment protocol (HTTP 402 + stablecoins)
@@ -110,6 +111,7 @@ Last updated: 2026-09-01
 - [MPP Specifications (Tempo/Stripe, 2026)](sources/mpp-specs.md) — Machine Payments Protocol spec: HTTP 402 machine-to-machine payments
 - [x402.org — Internet-Native Payment Protocol](sources/x402-org-2026.md) — landing page for the x402 standard
 - [unifiedharnessprotocol.org — Unified Harness Protocol](sources/uhp-website-2026.md) — landing page + spec index for the UHP standard
+- [Introducing the Personal Agent Protocol (Sierra, 2026)](sources/sierra-personal-agent-protocol-2026.md) — Meta/Sierra announcement of PAP
 
 <!-- add source pages here -->
 
@@ -119,6 +121,9 @@ Last updated: 2026-09-01
 
 *(authors, researchers, thinkers)*
 
+- [Bret Taylor](people/bret-taylor.md) — Sierra co-founder & CEO; co-author of PAP
+- [Clay Bavor](people/clay-bavor.md) — Sierra co-founder; co-author of PAP
+
 <!-- add people pages here -->
 
 ---
@@ -127,7 +132,9 @@ Last updated: 2026-09-01
 
 *(companies, foundations, standards bodies)*
 
-- [Stripe](organizations/stripe.md) — payments infra; MPP co-author, Tempo co-builder
+- [Meta](organizations/meta.md) — PAP co-lead (with Sierra)
+- [Sierra](organizations/sierra.md) — enterprise AI agents; PAP co-lead, announcement author
+- [Stripe](organizations/stripe.md) — payments infra; MPP co-author, Tempo co-builder; PAP launch partner
 - [Coinbase](organizations/coinbase.md) — introduced x402 (2025)
 - [Paradigm](organizations/paradigm.md) — Tempo L1 co-builder
 - [Tempo Labs](organizations/tempo-labs.md) — Tempo L1; MPP co-author
@@ -256,6 +263,9 @@ Last updated: 2026-09-01
 
 *(recent additions and updates — newest first; derived from `wiki/log.md`)*
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
+
+### 2026-10-07
+- [PAP](concepts/personal-agent-protocol-pap.md), [source](sources/sierra-personal-agent-protocol-2026.md), [Bret Taylor](people/bret-taylor.md), [Clay Bavor](people/clay-bavor.md), [Meta](organizations/meta.md), [Sierra](organizations/sierra.md) — ingest Personal Agent Protocol (Meta/Sierra); cross-linked to ai-protocols, ai domain `[INGEST]`
 
 ### 2026-09-02
 - agentic-payments cluster + CLAUDE.md + skills — fixed non-rendering `[[type:slug]]` prose links → markdown links; clarified Wikilink Convention (Relations tables keep `[[…]]`) `[UPDATE]`

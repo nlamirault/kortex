@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-10-07] [INGEST] | Added "Personal Agent Protocol (PAP)" — Meta/Sierra announcement
+  └─ pages: wiki/concepts/personal-agent-protocol-pap.md, wiki/sources/sierra-personal-agent-protocol-2026.md, wiki/people/bret-taylor.md, wiki/people/clay-bavor.md, wiki/organizations/meta.md, wiki/organizations/sierra.md, wiki/organizations/stripe.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md
+  └─ sources: https://sierra.ai/blog/introducing-personal-agent-protocol
+  └─ note: PAP = open standard (led by Meta + Sierra) for direct personal-agent↔business communication, replacing human-style website navigation with OAuth-authenticated machine-to-business sessions that carry across channels. Two-sided control (consumer grants read-only/write scope; company sets parameters + picks access route: website / API via MCP+OpenAPI / company agent). v0.1 spec planned late Oct 2026 + workshops + reference impl — all `NOT VERIFIED`. Launch partners: Genesys, Instinct, Rocket, Shopify, Stripe, Walmart. Authors Bret Taylor + Clay Bavor (Sierra). Used canonical `## Relations` SPO tables (not legacy French-typed KnowledgeGraph) per UHP precedent / 2026-09-19 phantom-node fix. Partner orgs/execs (Genesys/Rocket/Shopify/Walmart + quoted CEOs) left as prose/graph mentions, not stubbed.
+
 ## [2026-09-23] [INGEST] | Added "Unified Harness Protocol (UHP)" landing page + spec index
   └─ pages: wiki/sources/uhp-website-2026.md, wiki/concepts/unified-harness-protocol-uhp.md, wiki/concepts/agent-harness.md, wiki/projects/harnessrouter.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md
   └─ sources: https://unifiedharnessprotocol.org/

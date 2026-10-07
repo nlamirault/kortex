@@ -3,7 +3,7 @@ title: x402 (Internet-Native Payment Protocol)
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # x402 (Internet-Native Payment Protocol)

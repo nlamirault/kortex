@@ -3,7 +3,7 @@ title: Agent-to-Agent (A2A)
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # Agent-to-Agent (A2A)

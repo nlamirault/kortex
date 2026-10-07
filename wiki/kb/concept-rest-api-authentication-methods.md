@@ -3,7 +3,7 @@ title: REST API Authentication methods
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # REST API Authentication methods

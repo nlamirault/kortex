@@ -2,12 +2,12 @@
 title: organization Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # organization
 
-*12 entities*
+*14 entities*
 
 - · [Alchemy](organization-alchemy.md)
 - · [Amazon Web Services (AWS)](organization-aws.md)
@@ -15,7 +15,9 @@ updated: 2026-09-23
 - · [Coinbase](organization-coinbase.md)
 - · [Google](organization-google.md)
 - · [Lyft](organization-lyft.md)
+- ★ [Meta](organization-meta.md)
 - · [Paradigm](organization-paradigm.md)
+- ★ [Sierra](organization-sierra.md)
 - · [SoundCloud](organization-soundcloud.md)
 - ★ [Stripe](organization-stripe.md)
 - · [Tempo Labs](organization-tempo-labs.md)

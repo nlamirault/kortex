@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-09-23
+updated: 2026-10-07
 ---
 
 # Entity Index
 
-*133 entities — auto-generated*
+*139 entities — auto-generated*
 
 ## 1
 
@@ -53,9 +53,11 @@ updated: 2026-09-23
 - · [Blockchain](domain-blockchain.md) — domain
 - · [Blockchain Layer 1](concept-blockchain-layer-1.md) — concept
 - · [Blockchain Layers](concept-blockchain-layers.md) — concept
+- ★ [Bret Taylor](person-bret-taylor.md) — person
 ## C
 
 - · [Change Data Capture](concept-change-data-capture.md) — concept
+- ★ [Clay Bavor](person-clay-bavor.md) — person
 - · [Clickhouse](project-clickhouse.md) — project
 - · [Cloudflare](organization-cloudflare.md) — organization
 - · [Coinbase](organization-coinbase.md) — organization
@@ -96,6 +98,7 @@ updated: 2026-09-23
 - · [Ingress vs Gateway API](concept-ingress-vs-gateway-api.md) — concept
 - · [Interrupteur simple](concept-interrupteur-simple.md) — concept
 - · [Interrupteur va et vient](concept-interrupteur-va-et-vient.md) — concept
+- ★ [Introducing the Personal Agent Protocol (Sierra, 2026)](source-sierra-personal-agent-protocol-2026.md) — source
 - · [Istio](project-istio.md) — project
 - · [Istio CRDs](concept-istio-crds.md) — concept
 ## K
@@ -118,6 +121,7 @@ updated: 2026-09-23
 - · [Machine Payments Protocol Specifications (MPP), Tempo Labs & Stripe, 2026](source-mpp-specs.md) — source
 - · [Marquez](source-marquez-project.md) — source
 - · [Matter](concept-matter.md) — concept
+- ★ [Meta](organization-meta.md) — organization
 - · [Metering](domain-metering.md) — domain
 - · [Mimir](project-mimir.md) — project
 - ★ [Model Context Protocol (MCP)](concept-model-context-protocol-mcp.md) — concept
@@ -138,6 +142,7 @@ updated: 2026-09-23
 ## P
 
 - · [Paradigm](organization-paradigm.md) — organization
+- ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md) — concept
 - · [Platform](domain-platform.md) — domain
 - · [Prometheus](project-prometheus.md) — project
 - · [Pyrra](project-pyrra.md) — project
@@ -152,6 +157,7 @@ updated: 2026-09-23
 
 - · [SBOM](concept-sbom.md) — concept
 - · [Security](domain-security.md) — domain
+- ★ [Sierra](organization-sierra.md) — organization
 - · [Sigstore](concept-sigstore.md) — concept
 - · [Sigstore Cosign](project-sigstore-cosign.md) — project
 - · [Sigstore Fulcio](project-sigstore-fulcio.md) — project
@@ -170,7 +176,7 @@ updated: 2026-09-23
 
 - ★ [Unified Harness Protocol (UHP)](concept-unified-harness-protocol-uhp.md) — concept
 - · [unifiedharnessprotocol.org — Unified Harness Protocol (landing page)](source-uhp-website-2026.md) — source
-- · [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md) — concept
+- ★ [Universal Commerce Protocol (UCP)](concept-universal-commerce-protocol-ucp.md) — concept
 - · [URL / URI / URN](concept-url-uri-urn.md) — concept
 ## V
 

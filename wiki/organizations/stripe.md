@@ -6,7 +6,7 @@ confidence: medium
 cluster: ai
 domain: [ai, blockchain]
 sources: [raw/articles/mpp-specs, https://x402.org/]
-updated: 2026-09-19
+updated: 2026-10-07
 tags: [Organization]
 generated: {by: claude-opus-4-8, at: 2026-09-19}
 verified: []
@@ -17,4 +17,5 @@ Payments infrastructure company. Co-author of the Machine Payments Protocol (MPP
 
 ## Related
 
+- [[concept:personal-agent-protocol-pap]] — launch partner (2026)
 - See the knowledge graph for relations to protocols and projects.
