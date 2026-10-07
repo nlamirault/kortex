@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-10-07] [INGEST] | Added "Introducing the Personal Agent Consent & Trust Protocol (PACT)" by Harry Gao & Gram Liu
+  └─ pages: wiki/sources/decagon-pact-2026.md, wiki/concepts/personal-agent-consent-trust-protocol-pact.md, wiki/concepts/personal-agent.md, wiki/organizations/decagon.md, wiki/organizations/instinct.md, wiki/organizations/meta.md, wiki/people/harry-gao.md, wiki/people/gram-liu.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md, raw/queue.md
+  └─ sources: https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact
+  └─ note: PACT = open protocol for verifiable consent/delegation between a customer's personal agent and a business agent. Three parties (personal agent / business / provider). Built on A2A (communication) + OAuth 2.0 device flow (consent); separates agent identity from delegated authority; credentials stay with the business; short-lived signed JWT + delegation token + signed receipts; business-defined scopes (orders:read, orders:cancel). Co-developed by Decagon + Instinct, under Meta Muse-led Personal Agent Protocol working group. Full source page with KnowledgeGraph + Rhetorical Analysis. Instinct/Meta/authors kept low-confidence (`NOT VERIFIED` beyond the post). kb/ mirrors left to /graph. Related to PAP (ingested same day via #23) — `PENDING — reconcile` how PACT's consent layer relates to the broader PAP standard; Meta org page merged across both ingests.
+
 ## [2026-10-07] [INGEST] | Added "Personal Agent Protocol (PAP)" — Meta/Sierra announcement
   └─ pages: wiki/concepts/personal-agent-protocol-pap.md, wiki/sources/sierra-personal-agent-protocol-2026.md, wiki/people/bret-taylor.md, wiki/people/clay-bavor.md, wiki/organizations/meta.md, wiki/organizations/sierra.md, wiki/organizations/stripe.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md
   └─ sources: https://sierra.ai/blog/introducing-personal-agent-protocol

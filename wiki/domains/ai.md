@@ -31,6 +31,8 @@ Domain hub for ai knowledge.
 - [Agents.md](../concepts/agentsmd.md)
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
+- [Personal Agent](../concepts/personal-agent.md)
+- [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md)
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md)
 - [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
 - [Universal Commerce Protocol (UCP)](../concepts/universal-commerce-protocol-ucp.md)
@@ -44,8 +46,12 @@ Domain hub for ai knowledge.
 
 - [Bret Taylor](../people/bret-taylor.md) — Sierra co-founder; co-author of PAP
 - [Clay Bavor](../people/clay-bavor.md) — Sierra co-founder; co-author of PAP
+- [Harry Gao](../people/harry-gao.md) — Decagon; co-author of PACT
+- [Gram Liu](../people/gram-liu.md) — Decagon; co-author of PACT
 
 ## Organizations
 
-- [Meta](../organizations/meta.md) — PAP co-lead
+- [Meta](../organizations/meta.md) — PAP co-lead; Muse personal agent
 - [Sierra](../organizations/sierra.md) — PAP co-lead
+- [Decagon](../organizations/decagon.md) — PACT creator; hosts business agents
+- [Instinct](../organizations/instinct.md) — PACT co-developer; personal-agent company
