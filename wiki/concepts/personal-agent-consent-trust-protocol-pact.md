@@ -5,7 +5,7 @@ status: active
 confidence: medium
 cluster: ai
 domain: [ai, security]
-sources: [https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact]
+sources: [https://openpactprotocol.org/, https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact]
 updated: 2026-10-07
 tags: [AI, Protocol, Agents, Authorization, OAuth, Consent]
 generated: {by: claude-opus-4-8, at: 2026-10-07}
@@ -25,10 +25,10 @@ PACT does not invent a new transport or auth stack. It layers a consent-and-dele
 
 ## How It Works
 
-Three parties: the **personal agent**, the **business**, and the **provider** hosting the business's agent. Three steps:
+Four parties (per the canonical [openpactprotocol.org](../sources/openpactprotocol-org-2026.md) landing page): the **User**, the **personal agent**, the **brand** (the business), and the **provider** hosting the brand's agent. The Decagon announcement framed this as three parties, leaving the User implicit. PACT builds on **A2A 1.0** unchanged — *"Everything A2A defines works unchanged."* Three steps:
 
-1. **Discover & connect.** The personal agent reads the business's A2A **Agent Card**, which advertises the endpoint, authentication requirements, and available permission **scopes** (e.g., `orders:read`, `orders:cancel`). The personal agent authenticates with a short-lived, signed **JWT**; the provider verifies the signature against published public keys.
-2. **Authenticate customer & obtain consent.** The personal agent requests scopes via the **OAuth device authorization flow**, presenting the customer a login link. The customer signs in directly with the business and approves the permissions. The provider then issues a short-lived, signed **delegation token** binding the verified customer account, the personal-agent platform, the target business, and the approved scopes.
+1. **Discover & connect.** The personal agent discovers the brand's A2A **Agent Card** via a **well-known URL or a registry**; the card advertises the endpoint, authentication requirements, and available permission **scopes** (e.g., `orders:read`, `orders:cancel`). The personal agent signs every request with a short-lived **JWT**; the provider verifies the signature against public keys distributed via **JWKS**.
+2. **Authenticate customer & obtain consent.** The personal agent requests scopes via the **OAuth device authorization flow**, presenting the customer a login link. The customer signs in directly with the business and approves the permissions (the landing page describes this consent step as **optional**). The provider then issues a short-lived, signed **delegation token** binding the verified customer account, the personal-agent platform, the target business, and the approved scopes.
 3. **Act within granted permissions.** Each subsequent request carries both the personal-agent identity and the customer delegation. The provider verifies both before running the business agent within the approved scopes. Replies include signed **receipts** recording the scopes used and the actions taken.
 
 ## Key Properties
@@ -57,7 +57,8 @@ Three parties: the **personal agent**, the **business**, and the **provider** ho
 - [Personal Agent](personal-agent.md) — the actor PACT delegates authority to
 - [Agent-to-Agent (A2A)](agent-to-agent-a2a.md) — the transport PACT builds on
 - [Authorization](authorization.md) — OAuth 2.0 consent model PACT reuses
-- [PACT source: Decagon, 2026](../sources/decagon-pact-2026.md)
+- [openpactprotocol.org — canonical landing page](../sources/openpactprotocol-org-2026.md)
+- [PACT source: Decagon, 2026](../sources/decagon-pact-2026.md) — announcement blog
 
 ## Open Questions
 

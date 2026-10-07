@@ -115,6 +115,7 @@ Last updated: 2026-10-07
 - [unifiedharnessprotocol.org — Unified Harness Protocol](sources/uhp-website-2026.md) — landing page + spec index for the UHP standard
 - [Introducing the Personal Agent Protocol (Sierra, 2026)](sources/sierra-personal-agent-protocol-2026.md) — Meta/Sierra announcement of PAP
 - [Introducing PACT (Decagon, 2026)](sources/decagon-pact-2026.md) — Personal Agent Consent & Trust Protocol announcement
+- [openpactprotocol.org — PACT landing page](sources/openpactprotocol-org-2026.md) — canonical home of the PACT standard (4 parties, A2A 1.0, JWT/JWKS)
 
 <!-- add source pages here -->
 
@@ -272,6 +273,7 @@ Last updated: 2026-10-07
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
 ### 2026-10-07
+- [openpactprotocol-org-2026](sources/openpactprotocol-org-2026.md) — ingest PACT canonical landing page; enriched [PACT](concepts/personal-agent-consent-trust-protocol-pact.md) concept (4th party User, A2A 1.0, JWT/JWKS, well-known discovery, optional consent) `[INGEST]`
 - [PAP](concepts/personal-agent-protocol-pap.md), [source](sources/sierra-personal-agent-protocol-2026.md), [Bret Taylor](people/bret-taylor.md), [Clay Bavor](people/clay-bavor.md), [Meta](organizations/meta.md), [Sierra](organizations/sierra.md) — ingest Personal Agent Protocol (Meta/Sierra); cross-linked to ai-protocols, ai domain `[INGEST]`
 - [PACT](concepts/personal-agent-consent-trust-protocol-pact.md), [Personal Agent](concepts/personal-agent.md), [decagon-pact-2026](sources/decagon-pact-2026.md), [Decagon](organizations/decagon.md), [Instinct](organizations/instinct.md), [Meta](organizations/meta.md), [Harry Gao](people/harry-gao.md), [Gram Liu](people/gram-liu.md) — ingest Decagon PACT announcement; cross-linked to A2A, Authorization, ai-protocols, ai + security domains `[INGEST]`
 

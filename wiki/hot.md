@@ -16,7 +16,9 @@ credentials with the business. New: [PACT](concepts/personal-agent-consent-trust
 [Personal Agent](concepts/personal-agent.md), [source](sources/decagon-pact-2026.md),
 orgs [Decagon](organizations/decagon.md)/[Instinct](organizations/instinct.md)/[Meta](organizations/meta.md),
 people [Harry Gao](people/harry-gao.md)/[Gram Liu](people/gram-liu.md). Sits in the AI protocols cluster
-(consent/trust layer over A2A).
+(consent/trust layer over A2A). Then added the canonical [openpactprotocol.org landing page](sources/openpactprotocol-org-2026.md)
+— adds explicit 4th party (User), A2A 1.0, JWT/JWKS, well-known Agent Card discovery, optional consent;
+working-group governance differs between the two sources → `PENDING — reconcile`.
 
 Same day: **Personal Agent Protocol (PAP)** — open standard (Meta + Sierra) for direct,
 secure communication between a consumer's personal AI agent and a business via

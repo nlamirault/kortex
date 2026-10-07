@@ -5,6 +5,11 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-10-07] [INGEST] | Added "openpactprotocol.org" — PACT canonical landing page; enriched PACT concept
+  └─ pages: wiki/sources/openpactprotocol-org-2026.md, wiki/concepts/personal-agent-consent-trust-protocol-pact.md, wiki/index.md, wiki/hot.md, raw/queue.md
+  └─ sources: https://openpactprotocol.org/
+  └─ note: canonical PACT home. Adds vs Decagon blog: explicit 4th party (User; blog framed 3), "Brand" terminology, A2A 1.0 pinned ("Everything A2A defines works unchanged"), JWKS for public-key distribution, Agent Card discovery via well-known URL or registry, consent step marked optional. Landing page states NO governing org/license/version/repo/SDK; Meta Muse working group (from blog) not mentioned here → `PENDING — reconcile sources`. Signed receipts (blog) absent here. Full source page with KnowledgeGraph + Rhetorical Analysis.
+
 ## [2026-10-07] [INGEST] | Added "Introducing the Personal Agent Consent & Trust Protocol (PACT)" by Harry Gao & Gram Liu
   └─ pages: wiki/sources/decagon-pact-2026.md, wiki/concepts/personal-agent-consent-trust-protocol-pact.md, wiki/concepts/personal-agent.md, wiki/organizations/decagon.md, wiki/organizations/instinct.md, wiki/organizations/meta.md, wiki/people/harry-gao.md, wiki/people/gram-liu.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md, raw/queue.md
   └─ sources: https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact
