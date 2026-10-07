@@ -54,6 +54,7 @@ Four parties (per the canonical [openpactprotocol.org](../sources/openpactprotoc
 ## Related
 
 - [AI / Protocols](ai-protocols.md) — the protocol cluster PACT belongs to
+- [Personal Agent Protocol (PAP)](personal-agent-protocol-pap.md) — sibling Meta/Sierra standard for the same personal-agent↔business link; PACT is the consent/trust layer, PAP the broader connection standard — see Open Questions
 - [Personal Agent](personal-agent.md) — the actor PACT delegates authority to
 - [Agent-to-Agent (A2A)](agent-to-agent-a2a.md) — the transport PACT builds on
 - [Authorization](authorization.md) — OAuth 2.0 consent model PACT reuses
@@ -65,3 +66,4 @@ Four parties (per the canonical [openpactprotocol.org](../sources/openpactprotoc
 - Standardization/governance path via the Personal Agent Protocol working group. `NOT VERIFIED`
 - Precise token and receipt schemas, signature algorithms. `NOT VERIFIED`
 - Overlap with payment-authorization protocols ([AP2](agent-payments-protocol-ap2.md), [MPP](machine-payments-protocol-mpp.md)).
+- Relationship to [PAP](personal-agent-protocol-pap.md) — both announced 2026-10-07 for the personal-agent↔business link, both Meta-adjacent, both OAuth-based. Is PACT a consent/trust profile under PAP, a competing stack, or convergent? `PENDING — reconcile`
