@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 8 in  
-**Source pages:** 9
+**Degree:** 3 out / 9 in  
+**Source pages:** 10
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -34,6 +34,7 @@ updated: 2026-10-08
 | aws | relates-to | aws.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
+| ai-protocols-strands-box-sandboxes-2026 | implements | ai-protocols-strands-box-sandboxes-2026.md |
 | sierra-personal-agent-protocol-2026 | builds-on | sierra-personal-agent-protocol-2026.md |
 
 ## Source Pages
@@ -46,4 +47,5 @@ updated: 2026-10-08
 - [organizations/aws.md](../organizations/aws.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

@@ -2,14 +2,23 @@
 
 ## Pending
 
-Follow-up entities surfaced by the Dogwood fiche (not yet created — promote to full pages on demand):
+Follow-up entities surfaced by the Dogwood + Strands Box fiches (not yet created — promote to full pages on demand):
 
-- **Dogwood** (project) — the governance language itself.
-- **Cedar** (project/concept) — point-in-time policy language Dogwood extends; AgentCore Policy foundation.
+- **Dogwood** (project) — the governance language itself. ★ **Now grounded by 2 sources** (Dogwood fiche + Strands Box embeds it) — promotion candidate.
+- **Cedar** (project/concept) — point-in-time policy language Dogwood extends; AgentCore Policy foundation. Now referenced by 2 sources (Dogwood + Strands Box).
 - **Amazon Bedrock AgentCore / AgentCore Policy** (project) — embeds Dogwood.
 - **Metric First-Order Temporal Logic (MFOTL)** (concept) — formalism behind Dogwood's temporal operators.
 - **Runtime verification** (concept) — the field Dogwood draws on.
-- **Marc Brooker** (person) — VP & Distinguished Engineer, AWS.
+- **Marc Brooker** (person) — VP & Distinguished Engineer, AWS; author of the Dogwood fiche and the Strands Box companion post.
+
+Follow-up entities surfaced by the Strands Box fiche:
+
+- **Strands Box** (project) — open-source (Apache 2.0, dev preview) agent sandbox embedding the Dogwood Local Engine. Promotion candidate alongside Dogwood.
+- **Strands Agents** (project) — the broader effort Box/Dogwood belong to (strandsagents.com); source doesn't define it in detail.
+- **Strands Shell** (project) — shell interpreter that is one of Box's policy-enforcement points.
+- **Monty** (project) — Python interpreter that is one of Box's policy-enforcement points.
+- **macOS Seatbelt** (concept/project) — the OS-level containment mechanism Box starts with.
+- **Fernando Dingler** (person) — Principal Engineer, AWS; author of the Strands Box post.
 
 Follow-up entities surfaced by the A2A/AAIF fiche:
 
@@ -46,3 +55,4 @@ Follow-up entities surfaced by the Sierra PAP fiche:
 - https://x402.org/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications/ → [wiki/sources/ai-protocols-x402-foundation-launch-2026.md](../wiki/sources/ai-protocols-x402-foundation-launch-2026.md) (fiche, 2026-10-08)
 - https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/ → [wiki/sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../wiki/sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) (fiche, 2026-10-08)
 - https://aws.amazon.com/blogs/opensource/introducing-dogwood-runtime-verification-for-ai-agents/ → [wiki/sources/ai-protocols-dogwood-runtime-verification-2026.md](../wiki/sources/ai-protocols-dogwood-runtime-verification-2026.md) (fiche, 2026-10-08)
+- https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/ → [wiki/sources/ai-protocols-strands-box-sandboxes-2026.md](../wiki/sources/ai-protocols-strands-box-sandboxes-2026.md) (fiche, 2026-10-08)

@@ -53,9 +53,11 @@ cannot express.
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | implements | [[concept:model-context-protocol-mcp]] |
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | extends | [[domain:ai-protocols]] |
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | published-by | [[organization:aws]] |
+| [[source:ai-protocols-dogwood-runtime-verification-2026]] | used-by | [[source:ai-protocols-strands-box-sandboxes-2026]] |
 
 ## Liens Wiki
 
+- [Introducing Strands Box: AI agent sandboxes powered by Dogwood](ai-protocols-strands-box-sandboxes-2026.md) — Strands Box embeds the Dogwood Local Engine in an open local sandbox (not only Bedrock AgentCore). **Contradiction, `PENDING — escalate to human`:** its Slack example counts HTTP-200 *responses* and never addresses concurrency, conflicting with this fiche's guidance to count *requests* so concurrency cannot bypass the limit. See the Box fiche's Contradiction section.
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — Dogwood generates its action schema from an agent's MCP tool manifest.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — Dogwood governs exactly the tool-call boundary this concept describes.
 - [AI Protocols](../domains/ai-protocols.md) — adds a governance/policy layer to the agent-protocol stack.

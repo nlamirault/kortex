@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 2 out / 2 in  
-**Source pages:** 3
+**Degree:** 2 out / 3 in  
+**Source pages:** 4
 
 **Wiki page:** [Tool Use / Function Calling](../concepts/tool-use-function-calling.md)
 
@@ -28,9 +28,11 @@ updated: 2026-10-08
 |---------|-----------|--------|
 | model-context-protocol-mcp | enables | model-context-protocol-mcp.md |
 | ai-protocols-dogwood-runtime-verification-2026 | argues-that | ai-protocols-dogwood-runtime-verification-2026.md |
+| ai-protocols-strands-box-sandboxes-2026 | argues-that | ai-protocols-strands-box-sandboxes-2026.md |
 
 ## Source Pages
 
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)

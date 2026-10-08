@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 16 in  
-**Source pages:** 17
+**Degree:** 0 out / 17 in  
+**Source pages:** 18
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -31,6 +31,7 @@ updated: 2026-10-08
 | agents-md-open-format-2026 | extends | agents-md-open-format-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | extends | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
+| ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
 | ai-protocols-x402-foundation-launch-2026 | extends | ai-protocols-x402-foundation-launch-2026.md |
 | decagon-pact-introduction-2026 | extends | decagon-pact-introduction-2026.md |
 | openpactprotocol-pact-spec-2026 | extends | openpactprotocol-pact-spec-2026.md |
@@ -51,6 +52,7 @@ updated: 2026-10-08
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/ai-protocols-x402-foundation-launch-2026.md](../sources/ai-protocols-x402-foundation-launch-2026.md)
 - [sources/decagon-pact-introduction-2026.md](../sources/decagon-pact-introduction-2026.md)
 - [sources/openpactprotocol-pact-spec-2026.md](../sources/openpactprotocol-pact-spec-2026.md)
