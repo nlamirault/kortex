@@ -1,7 +1,7 @@
 # API & Schema Reference
 
 > **Reference** — complete, factual specification of Kortex entities, frontmatter, and
-> skills. Consult while working. The authoritative source is `CLAUDE.md`.
+> skills. Consult while working. The authoritative source is `AGENTS.md` (OKF v0.2).
 
 ## Entity Types
 
@@ -12,6 +12,7 @@
 | `source` | Books, papers, articles, talks | `wiki/sources/` |
 | `person` | Authors, researchers, thinkers | `wiki/people/` |
 | `project` | Tools, codebases, initiatives | `wiki/projects/` |
+| `organization` | Companies, foundations, standards bodies | `wiki/organizations/` |
 | `decision` | Architectural or design choices | `wiki/decisions/` |
 | `comparison` | Side-by-side analysis | `wiki/comparisons/` |
 | `synthesis` | Cross-source analyses (leaves) | `wiki/syntheses/` |
@@ -22,18 +23,20 @@
 
 | Field | Values | Notes |
 |-------|--------|-------|
-| `title` | string | Page title |
-| `type` | entity type | See table above |
-| `status` | `draft` \| `active` \| `stale` \| `superseded` | `stale` = do not trust unverified |
-| `confidence` | `low` \| `medium` \| `high` | Source agreement / verification level |
-| `cluster` | domain slug | Owning domain |
-| `domain` | `[slug]` | Relevant domains |
-| `sources` | `[path or URL]` | Raw provenance |
-| `updated` | `YYYY-MM-DD` | Set on every touch |
-| `tags` | `[tag]` | Free tags |
-| `generated` | `{by, at}` | Authoring model + date |
-| `verified` | `[{by, at}]` | Human/agent sign-offs; `[]` = unverified |
-| `stale_after` | `YYYY-MM-DD` | Optional expiry; omit for evergreen |
+| `type` | entity type | **REQUIRED** — OKF's only always-required key |
+| `title` | string | Recommended — page title |
+| `description` | string | Recommended — one-line summary |
+| `resource` | path or URL | Recommended for `source`/`project`; omit for abstract concepts |
+| `tags` | `[tag]` | Recommended |
+| `sources` | list of `{resource, id?, title?}` | Each entry **must** have `resource` (not a bare string) |
+| `status` | `draft` \| `stable` \| `deprecated` | OKF enum; absent ⇒ `stable`. No `stale`/`superseded` |
+| `generated` | `{by, at}` | `by`: `<producer>/<version>` (e.g. `anthropic/claude-opus-4-8`); `at`: ISO 8601 + UTC offset |
+| `verified` | `[{by, at}]` | `by`: `human:<id>` ⇒ human-reviewed; `[]` = unverified; `at`: ISO 8601 + offset |
+| `stale_after` | ISO 8601 + UTC offset | Page is stale when `now >= stale_after`; omit for evergreen |
+| `confidence` | `low` \| `medium` \| `high` | kortex ext — source agreement / verification level |
+| `cluster` | domain slug | kortex ext — owning domain |
+| `domain` | `[slug]` | kortex ext — relevant domains |
+| `updated` | `YYYY-MM-DD` | kortex ext — set on every touch |
 
 ## Skills
 

@@ -8,7 +8,7 @@ Wiki pages use [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatf
 
 ```
 kortex/
-├── CLAUDE.md        ← operational schema (read first)
+├── AGENTS.md        ← operational schema (read first)
 ├── raw/             ← immutable source documents
 ├── wiki/            ← LLM-maintained synthesis
 │   ├── index.md     ← content catalog
@@ -49,6 +49,6 @@ Architectural decisions are recorded as ADRs under [`docs/decisions/adr/`](docs/
 
 ## Getting Started
 
-1. Read `CLAUDE.md` — the operational protocol
+1. Read `AGENTS.md` — the operational protocol
 2. Add a source to `raw/`
 3. Say: "Ingest `raw/<filename>`"

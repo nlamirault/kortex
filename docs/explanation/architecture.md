@@ -12,14 +12,14 @@ once into a wiki that is read on every query — instead of being re-derived eac
 ## The Three Layers
 
 ```
-Layer 3 — Schema   (CLAUDE.md)  human + LLM co-evolve  → operating rules
+Layer 3 — Schema   (AGENTS.md)  human + LLM co-evolve  → operating rules
 Layer 2 — Wiki     (wiki/)      LLM maintains          → pre-synthesized knowledge
 Layer 1 — Raw      (raw/)       human, immutable        → ground truth
 ```
 
 - **Raw** is immutable ground truth. The LLM never modifies it.
 - **Wiki** is the actively maintained synthesis layer. Queries hit this, not raw sources.
-- **Schema** (`CLAUDE.md`) encodes the rules and co-evolves with the wiki.
+- **Schema** (`AGENTS.md`) encodes the rules and co-evolves with the wiki.
 
 ## Why This Beats RAG
 

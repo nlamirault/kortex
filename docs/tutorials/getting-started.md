@@ -20,7 +20,7 @@ Kortex has three layers:
 
 1. **Raw** (`raw/`) — immutable source documents you drop in.
 2. **Wiki** (`wiki/`) — the LLM-maintained synthesis layer.
-3. **Schema** (`CLAUDE.md`) — the operating rules.
+3. **Schema** (`AGENTS.md`) — the operating rules.
 
 You add to `raw/`. The LLM maintains `wiki/`. You never edit `raw/` after the fact.
 
