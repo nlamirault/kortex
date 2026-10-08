@@ -11,7 +11,7 @@ generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
 updated: 2026-10-08
-tags: [ai-protocols, agents, interoperability, tools, payments]
+tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
 # AI Protocols
@@ -40,6 +40,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 
 ## Key Sources
 
+- [Introducing Clef: open-source decision models (Cloudflare)](../sources/ai-protocols-clef-decision-models-2026.md) — Cloudflare's typed, calibrated decision models for fast agent routing/classification, hosted on Workers AI.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — AWS's open sandbox pairing OS containment with Dogwood policy.
 - [Introducing Dogwood: runtime verification for AI agents](../sources/ai-protocols-dogwood-runtime-verification-2026.md) — history-aware (temporal) governance language extending Cedar at the tool-call boundary.
 - [AGENTS.md — open format for guiding coding agents](../sources/agents-md-open-format-2026.md) — per-repo instructions for coding agents; an AAIF project.

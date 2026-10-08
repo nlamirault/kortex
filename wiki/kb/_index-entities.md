@@ -7,7 +7,7 @@ updated: 2026-10-08
 
 # Entity Index
 
-*24 entities — auto-generated*
+*25 entities — auto-generated*
 
 ## A
 
@@ -24,6 +24,7 @@ updated: 2026-10-08
 ## I
 
 - ★ [Instrumentation](concept-instrumentation.md) — concept
+- · [Introducing Clef: our open-source decision models, and new RL fine-tuning platform](source-ai-protocols-clef-decision-models-2026.md) — source
 - ★ [Introducing Dogwood: runtime verification for AI agents](source-ai-protocols-dogwood-runtime-verification-2026.md) — source
 - ★ [Introducing Personal Agent Protocol](source-sierra-personal-agent-protocol-2026.md) — source
 - ★ [Introducing Strands Box: AI agent sandboxes powered by Dogwood](source-ai-protocols-strands-box-sandboxes-2026.md) — source

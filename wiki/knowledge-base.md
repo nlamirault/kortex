@@ -13,17 +13,17 @@ updated: 2026-10-08
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 24 |
+| Total entities | 25 |
 | Major entities (★) | 22 |
-| Minor entities | 2 |
-| Total triples | 74 |
+| Minor entities | 3 |
+| Total triples | 76 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
 | concept | 13 | [→](kb/_index-type-concept.md) |
-| source | 8 | [→](kb/_index-type-source.md) |
+| source | 9 | [→](kb/_index-type-source.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
 | organization | 1 | [→](kb/_index-type-organization.md) |
 
