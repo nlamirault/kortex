@@ -18,4 +18,4 @@ updated: 2026-10-08
 - ★ [Semantic Conventions](concept-semantic-conventions.md)
 - ★ [Telemetry Signals](concept-telemetry-signals.md)
 - ★ [Tool Use / Function Calling](concept-tool-use-function-calling.md)
-- · [x402](concept-x402.md)
+- ★ [x402](concept-x402.md)

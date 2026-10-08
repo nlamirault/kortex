@@ -13,19 +13,19 @@ updated: 2026-10-08
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 14 |
-| Major entities (★) | 12 |
-| Minor entities | 2 |
-| Total triples | 34 |
+| Total entities | 16 |
+| Major entities (★) | 15 |
+| Minor entities | 1 |
+| Total triples | 43 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
 | concept | 10 | [→](kb/_index-type-concept.md) |
+| source | 3 | [→](kb/_index-type-source.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
 | organization | 1 | [→](kb/_index-type-organization.md) |
-| source | 1 | [→](kb/_index-type-source.md) |
 
 ## Top Entities by Degree
 
@@ -33,14 +33,14 @@ updated: 2026-10-08
 |--------|------|----------|---------|
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
 | [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
+| [A New Chapter for A2A: Joining the Agentic AI Foundation](kb/source-ai-protocols-a2a-agentic-ai-foundation-2026.md) | source | 4 | 2 |
 | [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 4 | 2 |
+| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 3 | 5 |
 | [Distributed Tracing](kb/concept-distributed-tracing.md) | concept | 3 | 4 |
-| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 5 |
-| [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 3 | 2 |
-| [Agent Communication Protocol (ACP)](kb/concept-agent-communication-protocol-acp.md) | concept | 2 | 1 |
-| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 2 | 4 |
-| [Semantic Conventions](kb/concept-semantic-conventions.md) | concept | 2 | 3 |
-| [Telemetry Signals](kb/concept-telemetry-signals.md) | concept | 2 | 4 |
+| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 6 |
+| [x402](kb/concept-x402.md) | concept | 3 | 2 |
+| [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 3 | 4 |
+| [Linux Foundation Announces Operational Launch of x402 Foundation](kb/source-ai-protocols-x402-foundation-launch-2026.md) | source | 3 | 2 |
 
 ## Navigation
 

@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 2 out / 3 in  
-**Source pages:** 4
+**Degree:** 3 out / 4 in  
+**Source pages:** 5
 
 **Wiki page:** [Agent2Agent (A2A)](../concepts/agent2agent-a2a.md)
 
@@ -21,6 +21,7 @@ updated: 2026-10-08
 |-----------|--------|--------|
 | part-of | ai-protocols | agent2agent-a2a.md |
 | contrasts-with | model-context-protocol-mcp | agent2agent-a2a.md |
+| described-by | ai-protocols-a2a-agentic-ai-foundation-2026 | agent2agent-a2a.md |
 
 ## Incoming Relations
 
@@ -29,6 +30,7 @@ updated: 2026-10-08
 | agent-communication-protocol-acp | contrasts-with | agent-communication-protocol-acp.md |
 | model-context-protocol-mcp | contrasts-with | model-context-protocol-mcp.md |
 | x402 | enables | x402.md |
+| ai-protocols-a2a-agentic-ai-foundation-2026 | describes | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 
 ## Source Pages
 
@@ -36,3 +38,4 @@ updated: 2026-10-08
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/x402.md](../concepts/x402.md)
+- [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)

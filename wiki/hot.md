@@ -14,20 +14,35 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Ingested (fiche) the AWS **Dogwood** blog post into the **AI Protocols** domain — an
-open-source governance language adding temporal, history-aware rules to agent tool calls
-(extends Cedar with MFOTL operators; action schema from MCP manifest). Follow-up entities
-(Dogwood, Cedar, AgentCore, MFOTL, runtime-verification, Marc Brooker) parked in
-`raw/queue.md` for promotion to full pages on demand.
+Ingested (fiche) the **x402 Foundation launch** (Linux Foundation) into **AI Protocols**:
+Coinbase contributed x402 to a neutral, Linux Foundation-hosted x402 Foundation (~40 members
+incl. AWS, Google, Stripe, Visa, Mastercard, Circle). Verified x402's Coinbase origin +
+card/stablecoin payment scope + Foundation governance; **HTTP-402 wire mechanics stay `NOT
+VERIFIED`** (press release doesn't describe the flow). x402 `draft`→`stable`. Pattern emerging:
+both A2A and x402 moved to **Linux Foundation** governance — that org is now the top queue item.
+
+Prior: ingested (fiche) the **A2A → Agentic AI Foundation** announcement into **AI Protocols**:
+A2A moves to vendor-neutral governance under AAIF (Linux Foundation-directed; sibling
+projects MCP, goose, AGENTS.md). This verified two previously `NOT VERIFIED` claims on the
+A2A concept page (foundation governance + Agent Card) and bumped it `draft`→`stable`,
+`confidence` low→medium; A2A origin (Google/2025) still unverified. New orgs (AAIF, Linux
+Foundation) + Agent Card concept parked in `raw/queue.md`.
+
+Prior: created the **AWS** organization entity from the Dogwood source. Dogwood fiche itself
+(temporal tool-call governance, extends Cedar via MFOTL) in `sources/`; follow-ups parked.
 
 Prior thread: **Observability** domain seed scaffold (`draft` / `confidence: low`, `NOT
 VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md) — latest ingest
+- [x402 Foundation fiche](sources/ai-protocols-x402-foundation-launch-2026.md) — latest ingest
+- [x402](concepts/x402.md) — enriched; origin + payment scope + governance verified
+- [A2A/AAIF fiche](sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — prior ingest
+- [Agent2Agent (A2A)](concepts/agent2agent-a2a.md) — enriched + 2 claims verified by the fiche
+- [AWS](organizations/aws.md) — org entity (native A2A via Bedrock AgentCore)
 - [AI Protocols](domains/ai-protocols.md) — domain hub
-- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched by the fiche
+- [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md) — prior ingest
 - [Observability](domains/observability.md) — domain hub (prior thread)
 
 ## Open Questions
@@ -44,6 +59,10 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-08 `[INGEST]` — x402 Foundation fiche; verified x402 origin/scope/governance, promoted x402 to stable.
+- 2026-10-08 `[INGEST]` — A2A/AAIF fiche; verified 2 A2A claims, promoted A2A to stable.
+- 2026-10-08 `[FILE]` — created AWS organization entity.
+- 2026-10-08 `[INGEST]` — Dogwood fiche into AI Protocols.
 - 2026-10-08 `[BOOTSTRAP]` — created Observability domain + 5 seed concepts.
 - 2026-10-08 `[BOOTSTRAP]` — created AI Protocols domain + 5 seed concepts.
 - 2026-10-08 `[INIT]` — completed bundle scaffold (hot.md, overview.md).

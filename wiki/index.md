@@ -33,6 +33,8 @@ write operation also appends to `## By Date`.
 
 ## Sources
 
+- [Linux Foundation Announces Operational Launch of x402 Foundation](sources/ai-protocols-x402-foundation-launch-2026.md) — fiche: x402 Foundation launches under the Linux Foundation; Coinbase contributes the protocol; ~40 members.
+- [A New Chapter for A2A: Joining the Agentic AI Foundation](sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — fiche: A2A moves to vendor-neutral governance under the Linux Foundation-directed Agentic AI Foundation (AAIF).
 - [Introducing Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — fiche: open-source governance language adding temporal (history-aware) rules to agent tool calls, extending Cedar.
 
 ## People
@@ -57,6 +59,8 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-08
 
+- [Linux Foundation Announces Operational Launch of x402 Foundation](sources/ai-protocols-x402-foundation-launch-2026.md), [x402](concepts/x402.md) — `[INGEST]` (fiche)
+- [A New Chapter for A2A: Joining the Agentic AI Foundation](sources/ai-protocols-a2a-agentic-ai-foundation-2026.md), [Agent2Agent (A2A)](concepts/agent2agent-a2a.md) — `[INGEST]` (fiche)
 - [Amazon Web Services (AWS)](organizations/aws.md) — `[FILE]` (organization)
 - [Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — `[INGEST]` (fiche)
 - [Observability](domains/observability.md), [Telemetry Signals](concepts/telemetry-signals.md), [Distributed Tracing](concepts/distributed-tracing.md), [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md), [Instrumentation](concepts/instrumentation.md), [Semantic Conventions](concepts/semantic-conventions.md) — `[BOOTSTRAP]`
