@@ -14,33 +14,35 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Bootstrapping the **AI Protocols** domain — open standards connecting LLMs and agents to
-tools, each other, and payment rails. Seed scaffold just created; concept pages are
-`draft` / `confidence: low` and carry `NOT VERIFIED` claims from model recall. Next step:
-`/ingest` real protocol specs/articles to replace recall with cited knowledge.
+Bootstrapping the **Observability** domain — understanding system behavior from telemetry
+(traces, metrics, logs), standardized by OpenTelemetry. Seed scaffold just created; concept
+pages are `draft` / `confidence: low` and carry `NOT VERIFIED` claims from model recall. Next
+step: `/ingest` real OTel specs/docs/articles to replace recall with cited knowledge.
 
 ## Active Pages
 
-- [AI Protocols](domains/ai-protocols.md) — domain hub
-- [Tool Use / Function Calling](concepts/tool-use-function-calling.md)
-- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md)
-- [Agent2Agent (A2A)](concepts/agent2agent-a2a.md)
-- [Agent Communication Protocol (ACP)](concepts/agent-communication-protocol-acp.md)
-- [x402](concepts/x402.md)
+- [Observability](domains/observability.md) — domain hub
+- [Telemetry Signals](concepts/telemetry-signals.md)
+- [Distributed Tracing](concepts/distributed-tracing.md)
+- [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md)
+- [Instrumentation](concepts/instrumentation.md)
+- [Semantic Conventions](concepts/semantic-conventions.md)
 
 ## Open Questions
 
-- How do the protocols compose into one stack (tool use + MCP internal, A2A + x402 external)?
-- ACP (IBM) — still distinct, or folded into A2A? (`NOT VERIFIED` on the ACP page)
-- x402 vs. Agentic Commerce Protocol — competing or complementary payment standards?
+- Observability: how do the three signals converge toward a unified data model, and what is each signal's current OTel stability?
+- Observability: where should telemetry be processed — in-SDK, at a Collector, or at the backend?
+- Carried over (AI Protocols): protocol stack composition; ACP vs A2A convergence; x402 vs Agentic Commerce Protocol.
 
 ## Recent Decisions
 
 - Seed concepts chosen as the 5 most load-bearing protocol primitives, not an exhaustive list.
-- Slug convention: `<long-name>-<acronym>` (e.g. `model-context-protocol-mcp`); `x402` stays bare.
+- Slug convention: `<long-name>-<acronym>` (e.g. `model-context-protocol-mcp`, `opentelemetry-otel`); `x402` stays bare.
+- Observability: OTel **Collector** deferred to `projects/opentelemetry-collector.md` on `/ingest` — it's a binary, a `project` not a `concept`. Do NOT seed it under `concepts/`. Instrumentation took the 5th concept slot instead.
 
 ## Last Operations
 
+- 2026-10-08 `[BOOTSTRAP]` — created Observability domain + 5 seed concepts.
 - 2026-10-08 `[BOOTSTRAP]` — created AI Protocols domain + 5 seed concepts.
 - 2026-10-08 `[INIT]` — completed bundle scaffold (hot.md, overview.md).
 
@@ -50,4 +52,4 @@ tools, each other, and payment rails. Seed scaffold just created; concept pages 
 
 ## Pending Ingests
 
-- None queued. Drop protocol specs/articles in `raw/` and run `/ingest` to enrich the domain.
+- None queued. Drop OTel specs/docs/articles (or AI protocol specs) in `raw/` and run `/ingest` to enrich a domain.
