@@ -2,7 +2,7 @@
   // SPDX-License-Identifier: Apache-2.0
   // Static Astro build served from ./dist, wrapped by a thin Worker that adds
   // Markdown content-negotiation (Accept: text/markdown) for AI agents.
-  "name": "kortex-website",
+  "name": "kortex",
   "main": "worker.js",
   "compatibility_date": "2026-04-11",
   "assets": {

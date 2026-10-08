@@ -40,7 +40,13 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 
 ## Key Sources
 
-None yet — pending first `/ingest` of a protocol spec or article into this domain.
+- [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — AWS's open sandbox pairing OS containment with Dogwood policy.
+- [Introducing Dogwood: runtime verification for AI agents](../sources/ai-protocols-dogwood-runtime-verification-2026.md) — history-aware (temporal) governance language extending Cedar at the tool-call boundary.
+- [AGENTS.md — open format for guiding coding agents](../sources/agents-md-open-format-2026.md) — per-repo instructions for coding agents; an AAIF project.
+- [Sierra — Introducing the Personal Agent Protocol](../sources/sierra-personal-agent-protocol-2026.md) — PAP source (Meta + Sierra).
+- [Decagon — Introducing PACT](../sources/decagon-pact-introduction-2026.md) / [openpactprotocol.org spec](../sources/openpactprotocol-pact-spec-2026.md) — PACT sources.
+- [x402 Foundation operational launch](../sources/ai-protocols-x402-foundation-launch-2026.md) — Linux Foundation stewardship of x402.
+- [A2A joins the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — A2A governance under AAIF.
 
 ## Organizations
 

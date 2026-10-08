@@ -14,7 +14,19 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Ingested **AGENTS.md** (agents.md) into **AI Protocols**: open Markdown convention giving AI
+Ingested (fiche) **Strands Box** (AWS Open Source blog, Fernando Dingler, 2026-10-07) into **AI
+Protocols**: open-source (Apache 2.0, dev preview) agent **sandbox** that pairs OS-level
+containment (macOS Seatbelt) with **Dogwood** policy enforced at four boundaries — network
+proxy, Python (Monty), Shell (Strands Shell), and an MCP broker. Credentials injected by the
+gateway (agent sees only placeholders). This **grounds Dogwood with a 2nd source** → Dogwood +
+Strands Box are now promotion candidates to full `project` pages. **Live contradiction,
+`PENDING — escalate to human`:** Box's Slack rate-limit rule counts HTTP-200 *responses* and
+never addresses concurrency, which conflicts with the Dogwood fiche's guidance to count
+*requests* so concurrency cannot bypass the limit. Flagged on both the Box and Dogwood fiches;
+resolve against a real policy run. New follow-ups parked (Strands Box/Agents/Shell, Monty,
+Seatbelt, Fernando Dingler).
+
+Prior: ingested **AGENTS.md** (agents.md) into **AI Protocols**: open Markdown convention giving AI
 coding agents per-repo instructions ("a README for agents"), 60k+ projects, **stewarded by
 AAIF under the Linux Foundation** — which *confirms* the AAIF-sibling claim from the A2A fiche.
 New concept + fiche; linked to MCP (sibling AAIF project). **AAIF is now grounded by 3 ingested
@@ -61,7 +73,10 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [AGENTS.md](concepts/agents-md.md) — new concept (latest ingest; confirms AAIF stewardship)
+- [Strands Box fiche](sources/ai-protocols-strands-box-sandboxes-2026.md) — latest ingest (sandbox embedding Dogwood)
+- [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md) — enriched (used-by Strands Box; 2-source-grounded)
+- [AWS](organizations/aws.md) — enriched (+Strands Box, 2nd source)
+- [AGENTS.md](concepts/agents-md.md) — new concept (prior ingest; confirms AAIF stewardship)
 - [AGENTS.md fiche](sources/agents-md-open-format-2026.md) — source
 - [PAP](concepts/personal-agent-protocol-pap.md) — prior ingest (contradiction flag vs PACT)
 - [Sierra PAP fiche](sources/sierra-personal-agent-protocol-2026.md) — PAP source
@@ -91,6 +106,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-08 `[INGEST]` — Strands Box fiche; sandbox embedding Dogwood; Dogwood now 2-source-grounded (promote); **contradiction PENDING** — rate-limit counts responses vs Dogwood's "count requests" (concurrency bypass).
 - 2026-10-08 `[INGEST]` — AGENTS.md: new concept + fiche; confirms AAIF stewardship; AAIF now 3-source-grounded (promote next).
 - 2026-10-08 `[INGEST]` — PAP (Sierra): new concept + fiche; linked MCP/PACT; **contradiction PENDING** (working group / "Muse").
 - 2026-10-08 `[INGEST]` — PACT (2 sources): new concept + 2 fiches; A2A back-linked; OAuth naming flagged PENDING.

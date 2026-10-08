@@ -7,7 +7,7 @@ updated: 2026-10-08
 
 # Entity Index
 
-*23 entities — auto-generated*
+*24 entities — auto-generated*
 
 ## A
 
@@ -26,6 +26,7 @@ updated: 2026-10-08
 - ★ [Instrumentation](concept-instrumentation.md) — concept
 - ★ [Introducing Dogwood: runtime verification for AI agents](source-ai-protocols-dogwood-runtime-verification-2026.md) — source
 - ★ [Introducing Personal Agent Protocol](source-sierra-personal-agent-protocol-2026.md) — source
+- ★ [Introducing Strands Box: AI agent sandboxes powered by Dogwood](source-ai-protocols-strands-box-sandboxes-2026.md) — source
 - ★ [Introducing the Personal Agent Consent & Trust Protocol (PACT)](source-decagon-pact-introduction-2026.md) — source
 ## L
 
