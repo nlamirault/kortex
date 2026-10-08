@@ -2,6 +2,16 @@
 
 ## Pending
 
+Follow-up entities surfaced by the Clef fiche (Cloudflare decision models):
+
+- **Cloudflare** (organization) — publisher of Clef; hosts Workers AI, AI Gateway, Browser Run. First Cloudflare source — promotion candidate for an org page.
+- **Workers AI** (project) — Cloudflare's model-hosting platform where Clef/Clef-flash run.
+- **Clef / Clef-flash** (project) — the decision-model family itself (Apache 2.0, Hugging Face).
+- **Decision models** (concept) — a model category (narrow, typed, probability-weighted classification) introduced by Typesafe AI / Jev; the core idea behind this fiche.
+- **Typesafe AI / Jev** (organization / model) — originators of the "decision model" category and the Jev Decision Index benchmark; Clef is Jev-API compatible.
+- **RLCD — Reinforcement Learning for Calibrated Decisions** (concept) — Cloudflare's RL method used as a secondary, calibration-focused training objective for Clef.
+- **Michelle Chen, Alex Reneau, Kevin Flansburg** (person) — Clef post authors (Cloudflare).
+
 Follow-up entities surfaced by the Dogwood + Strands Box fiches (not yet created — promote to full pages on demand):
 
 - **Dogwood** (project) — the governance language itself. ★ **Now grounded by 2 sources** (Dogwood fiche + Strands Box embeds it) — promotion candidate.
@@ -48,6 +58,7 @@ Follow-up entities surfaced by the Sierra PAP fiche:
 
 ## Done
 
+- https://blog.cloudflare.com/clef-decision-models/ → [wiki/sources/ai-protocols-clef-decision-models-2026.md](../wiki/sources/ai-protocols-clef-decision-models-2026.md) (fiche, 2026-10-08)
 - https://agents.md/ → [wiki/sources/agents-md-open-format-2026.md](../wiki/sources/agents-md-open-format-2026.md) (fiche, 2026-10-08)
 - https://sierra.ai/blog/introducing-personal-agent-protocol → [wiki/sources/sierra-personal-agent-protocol-2026.md](../wiki/sources/sierra-personal-agent-protocol-2026.md) (fiche, 2026-10-08)
 - https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact → [wiki/sources/decagon-pact-introduction-2026.md](../wiki/sources/decagon-pact-introduction-2026.md) (fiche, 2026-10-08)

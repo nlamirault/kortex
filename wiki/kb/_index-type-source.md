@@ -7,10 +7,11 @@ updated: 2026-10-08
 
 # source
 
-*8 entities*
+*9 entities*
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md)
+- · [Introducing Clef: our open-source decision models, and new RL fine-tuning platform](source-ai-protocols-clef-decision-models-2026.md)
 - ★ [Introducing Dogwood: runtime verification for AI agents](source-ai-protocols-dogwood-runtime-verification-2026.md)
 - ★ [Introducing Personal Agent Protocol](source-sierra-personal-agent-protocol-2026.md)
 - ★ [Introducing Strands Box: AI agent sandboxes powered by Dogwood](source-ai-protocols-strands-box-sandboxes-2026.md)

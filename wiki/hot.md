@@ -14,7 +14,19 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Ingested (fiche) **Strands Box** (AWS Open Source blog, Fernando Dingler, 2026-10-07) into **AI
+Ingested (fiche) **Clef** (Cloudflare blog, Chen/Reneau/Flansburg, 2026-10-01) into **AI
+Protocols**: Cloudflare's open-source **decision models** — Clef (precision) + Clef-flash
+(latency) — that return bounded, **typed** classifications with probabilities so agent code can
+route/escalate/defer without an open-ended LLM. Built on a frozen **Qwen** base with a
+**prefill-only, non-autoregressive** scoring pass over valid schema choices; 64k context + vision
+encoder; trained with label-smoothed CE + **Brier loss** + new **RLCD** calibration RL. Apache 2.0
+on Hugging Face, hosted on **Workers AI**; **Jev-API compatible**; RL fine-tuning via FDE team then
+self-serve. Positioned as the typed **decision layer in front of tool selection** (scored on BFCL /
+ToolRet / API-Bank) — linked `enables` → tool-use. All benchmark/latency numbers are
+**vendor-reported**. No new entity pages (fiche); Cloudflare/Workers AI/Clef/decision-models/Typesafe
+AI-Jev/RLCD/authors parked in queue. First Cloudflare source in the bundle.
+
+Prior: ingested (fiche) **Strands Box** (AWS Open Source blog, Fernando Dingler, 2026-10-07) into **AI
 Protocols**: open-source (Apache 2.0, dev preview) agent **sandbox** that pairs OS-level
 containment (macOS Seatbelt) with **Dogwood** policy enforced at four boundaries — network
 proxy, Python (Monty), Shell (Strands Shell), and an MCP broker. Credentials injected by the
@@ -73,7 +85,9 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [Strands Box fiche](sources/ai-protocols-strands-box-sandboxes-2026.md) — latest ingest (sandbox embedding Dogwood)
+- [Clef fiche](sources/ai-protocols-clef-decision-models-2026.md) — latest ingest (Cloudflare decision models on Workers AI)
+- [Tool Use / Function Calling](concepts/tool-use-function-calling.md) — enriched (Clef = typed decision layer in front of tool selection)
+- [Strands Box fiche](sources/ai-protocols-strands-box-sandboxes-2026.md) — prior ingest (sandbox embedding Dogwood)
 - [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md) — enriched (used-by Strands Box; 2-source-grounded)
 - [AWS](organizations/aws.md) — enriched (+Strands Box, 2nd source)
 - [AGENTS.md](concepts/agents-md.md) — new concept (prior ingest; confirms AAIF stewardship)
@@ -106,6 +120,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-08 `[INGEST]` — Clef fiche (Cloudflare); open-source decision models (Clef/Clef-flash) on Workers AI; typed decision layer linked `enables`→tool-use; vendor-reported benchmarks; first Cloudflare source.
 - 2026-10-08 `[INGEST]` — Strands Box fiche; sandbox embedding Dogwood; Dogwood now 2-source-grounded (promote); **contradiction PENDING** — rate-limit counts responses vs Dogwood's "count requests" (concurrency bypass).
 - 2026-10-08 `[INGEST]` — AGENTS.md: new concept + fiche; confirms AAIF stewardship; AAIF now 3-source-grounded (promote next).
 - 2026-10-08 `[INGEST]` — PAP (Sierra): new concept + fiche; linked MCP/PACT; **contradiction PENDING** (working group / "Muse").
