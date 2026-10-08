@@ -1,0 +1,90 @@
+---
+// SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+const sections = [
+  { href: '/#concepts', label: 'Concepts' },
+  { href: '/#domains', label: 'Domains' },
+  { href: '/#sources', label: 'Sources' },
+];
+---
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true">❦</span>
+      <span class="brand__name">Kortex</span>
+    </a>
+    <div class="nav__links">
+      {sections.map((s) => <a href={s.href}>{s.label}</a>)}
+      <a class="nav__repo" href="https://github.com/nlamirault/kortex" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    background: color-mix(in srgb, var(--paper) 86%, transparent);
+    backdrop-filter: saturate(1.1) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: var(--space-sm);
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--ink);
+  }
+
+  .brand__mark {
+    color: var(--rust);
+    font-size: 1.3rem;
+  }
+
+  .brand__name {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    font-size: 0.9rem;
+  }
+
+  .nav__links a {
+    color: var(--muted);
+  }
+
+  .nav__links a:hover {
+    color: var(--ink);
+  }
+
+  .nav__repo {
+    color: var(--rust) !important;
+    font-weight: 600;
+  }
+
+  @media (max-width: 560px) {
+    .nav__links {
+      gap: var(--space-md);
+      font-size: 0.82rem;
+    }
+    .nav__links a:not(.nav__repo) {
+      display: none;
+    }
+  }
+</style>

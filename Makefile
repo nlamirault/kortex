@@ -87,4 +87,4 @@ site-deploy: site-build ## Deploy the site to Cloudflare Workers (wrangler deplo
 .PHONY: clean
 clean: ## Clean project
 	@echo -e "$(INFO)$(INFO_COLOR)[Clean] Processing $(NO_COLOR)"
-	@rm -rf website/dist website/.astro website/.wrangler
+	@rm -rf website/dist website/.astro website/.wrangler website/node_modules/.astro
