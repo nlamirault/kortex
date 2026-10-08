@@ -18,6 +18,13 @@ Open standards connecting LLMs and autonomous agents to tools, data, each other,
 payment rails. Members: Tool Use, MCP, A2A, ACP, x402. Status: freshly bootstrapped —
 concepts are `draft`, pending first `/ingest`.
 
+### [Observability](domains/observability.md)
+
+Understanding system behavior from the telemetry it emits — traces, metrics, and logs —
+standardized by the vendor-neutral OpenTelemetry project. Members: Telemetry Signals,
+Distributed Tracing, OpenTelemetry (OTel), Instrumentation, Semantic Conventions. Status:
+freshly bootstrapped — concepts are `draft`, pending first `/ingest`.
+
 ---
 
 *New domains are added here by `/bootstrap`.*
