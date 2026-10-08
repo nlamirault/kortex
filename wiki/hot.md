@@ -14,19 +14,21 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Bootstrapping the **Observability** domain — understanding system behavior from telemetry
-(traces, metrics, logs), standardized by OpenTelemetry. Seed scaffold just created; concept
-pages are `draft` / `confidence: low` and carry `NOT VERIFIED` claims from model recall. Next
-step: `/ingest` real OTel specs/docs/articles to replace recall with cited knowledge.
+Ingested (fiche) the AWS **Dogwood** blog post into the **AI Protocols** domain — an
+open-source governance language adding temporal, history-aware rules to agent tool calls
+(extends Cedar with MFOTL operators; action schema from MCP manifest). Follow-up entities
+(Dogwood, Cedar, AgentCore, MFOTL, runtime-verification, Marc Brooker) parked in
+`raw/queue.md` for promotion to full pages on demand.
+
+Prior thread: **Observability** domain seed scaffold (`draft` / `confidence: low`, `NOT
+VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [Observability](domains/observability.md) — domain hub
-- [Telemetry Signals](concepts/telemetry-signals.md)
-- [Distributed Tracing](concepts/distributed-tracing.md)
-- [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md)
-- [Instrumentation](concepts/instrumentation.md)
-- [Semantic Conventions](concepts/semantic-conventions.md)
+- [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md) — latest ingest
+- [AI Protocols](domains/ai-protocols.md) — domain hub
+- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched by the fiche
+- [Observability](domains/observability.md) — domain hub (prior thread)
 
 ## Open Questions
 

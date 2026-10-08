@@ -53,6 +53,7 @@ templates). Transport is typically JSON-RPC over stdio or HTTP (`NOT VERIFIED`).
 - [AI Protocols](../domains/ai-protocols.md)
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md)
 - [Agent2Agent (A2A)](../concepts/agent2agent-a2a.md)
+- [Introducing Dogwood: runtime verification for AI agents](../sources/ai-protocols-dogwood-runtime-verification-2026.md) — governs MCP tool calls; action schema generated from the MCP tool manifest.
 
 ## Open Questions
 
