@@ -5,7 +5,7 @@ from the knowledge-graph edges embedded in wiki pages.
 
 Two source formats are supported:
 
-  1. Canonical `## Relations` tables (see CLAUDE.md) — a 3-column
+  1. Canonical `## Relations` tables (see AGENTS.md) — a 3-column
      `Subject | Predicate | Object` edge list whose Subject/Object cells use
      `[[type:slug]]` wikilinks. This is the format the wiki is written in.
 
@@ -31,7 +31,7 @@ KNOWLEDGE_BASE_MD = WIKI_DIR / "knowledge-base.md"
 SKIP_STEMS = {"index", "log", "hot", "overview", "schema", "knowledge-base"}
 SKIP_KB_DIR = "kb"
 
-# entity type -> wiki directory (from CLAUDE.md entity-type table)
+# entity type -> wiki directory (from AGENTS.md entity-type table)
 TYPE_DIR = {
     "concept": "concepts",
     "source": "sources",

@@ -1,7 +1,9 @@
 # Kortex — LLM Wiki Schema
 
-Kortex is a personal knowledge base powered by the LLM Wiki protocol (Karpathy, 2024).
-This file is the operational schema. **Read it before every session.**
+Kortex is a personal knowledge base powered by the LLM Wiki protocol (Karpathy, 2024),
+with every wiki page serialized as an [Open Knowledge Format (OKF) **v0.2**](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+concept document. `wiki/` is the OKF bundle. This file is the operational schema.
+**Read it before every session.**
 
 ---
 
@@ -18,7 +20,7 @@ The system has three distinct, non-overlapping layers:
 ```
 ┌─────────────────────────────────────────────────────────┐
 │  Layer 3 — Schema                                       │
-│  CLAUDE.md  ← operational rules, entity types,          │
+│  AGENTS.md  ← operational rules, entity types,          │
 │               workflows, and agent behavior              │
 ├─────────────────────────────────────────────────────────┤
 │  Layer 2 — Wiki                                         │
@@ -35,7 +37,7 @@ The system has three distinct, non-overlapping layers:
 |-------|-------|-----------|---------|
 | **Raw Sources** (`raw/`) | Human | Immutable | Ground truth documents |
 | **Wiki** (`wiki/`) | LLM | Actively maintained | Pre-synthesized knowledge |
-| **Schema** (`CLAUDE.md`) | Human + LLM | Co-evolved | Operating rules and structure |
+| **Schema** (`AGENTS.md`) | Human + LLM | Co-evolved | Operating rules and structure |
 
 **Why this beats RAG:** RAG re-derives knowledge from raw sources on every query. The wiki
 is compiled once and enriched continuously — queries hit the synthesized layer, not the raw
@@ -85,7 +87,7 @@ Two modes — choose before starting:
 
 **Fiche steps:** read → one fiche card (En Bref + Points Clés + Relations) → update index → log → mark queue done.
 
-**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.claude/skills/ingest.md` for full workflow.
+**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.agents/skills/ingest.md` for full workflow.
 
 ---
 
@@ -103,8 +105,8 @@ it is filed back as a new page automatically.
 3. Synthesize answer with explicit citations (wiki page + source).
 4. If answer is novel and reusable → trigger File Back.
 5. Append to `wiki/log.md` with prefix `[QUERY]` only if new pages were created.
-6. Read raw sources **only if**: wiki page is `status: stale`, claim marked `NOT VERIFIED`,
-   or sources conflict and must be resolved.
+6. Read raw sources **only if**: wiki page is stale (`now >= stale_after`), claim marked
+   `NOT VERIFIED`, or sources conflict and must be resolved.
 
 **Skill:** Natural language — no slash command needed. Just ask.
 For structured relation queries ("what implements X?", "what connects to Y?"), use `/graph <entity>` instead — it traverses `## Relations` SPO tables directly without reading full page text.
@@ -121,11 +123,17 @@ compound. Reports are tiered by severity.
 **Checks:**
 - [ ] Broken `[[wikilinks]]` (target page missing)
 - [ ] Orphan pages (not linked from index or any other page)
-- [ ] Stale pages (`status: stale` or `updated` date old)
-- [ ] Expired pages (`stale_after` < today) → CRITICAL, mark `status: stale`
+- [ ] Stale pages (`now >= stale_after`) → CRITICAL, re-verify before trusting
 - [ ] Expiring-soon pages (`stale_after` within 30 days) → WARNING
+- [ ] `deprecated` pages missing a link to their replacement → WARNING
 - [ ] Contradictions between pages → flag both, mark `PENDING — escalate to human`
-- [ ] Missing frontmatter fields
+- [ ] **OKF: unparseable YAML frontmatter** → CRITICAL
+- [ ] **OKF: missing or empty `type`** on any non-reserved page → CRITICAL
+- [ ] **OKF: `status` outside `draft | stable | deprecated`**
+- [ ] **OKF: bare date** (no UTC offset) in `generated.at`, `verified[].at`, `stale_after`
+- [ ] **OKF: `sources` entry that is a string or lacks `resource`**
+- [ ] **OKF: `verified[].by` without a `human:` / `process:` / `<producer>/<version>` form**
+- [ ] **OKF: reserved `index.md`/`log.md` carrying stray frontmatter** (root `index.md` may hold only `okf_version`)
 - [ ] Claims without source citations → mark `NOT VERIFIED`
 - [ ] Unfilled template placeholders (`TODO`, `TBD`, `{text}`)
 - [ ] Pages not in `wiki/index.md`
@@ -169,7 +177,7 @@ the wiki. Failure → `pattern:` → skill/rule change → audit trail.
 **Steps:**
 1. Read `wiki/skill-impact.md` first — never re-propose a rejected change.
 2. Synthesize recurring `!failure` log entries into `wiki/patterns/` pages.
-3. Propose **one atomic** change to a single skill or CLAUDE.md rule, traced to a
+3. Propose **one atomic** change to a single skill or AGENTS.md rule, traced to a
    `pattern:` or `gap:`.
 4. Gate it: `/lint` clean **and** one sample query still resolves. Both must pass.
 5. Apply if accepted, revert if rejected — either way, record a row in
@@ -195,7 +203,7 @@ the wiki. Failure → `pattern:` → skill/rule change → audit trail.
 | `/bootstrap <domain>` | Starting a new domain | Create domain hub + seed concept stubs + log |
 | `/close` | Session end | Update hot cache, verify consistency, summarize |
 
-Skills live in `.claude/skills/`. Read the skill file for full workflow details.
+Skills live in `.agents/skills/`. Read the skill file for full workflow details.
 
 ---
 
@@ -204,13 +212,13 @@ Skills live in `.claude/skills/`. Read the skill file for full workflow details.
 Read in this order at the start of every session:
 
 1. **`wiki/hot.md`** — session hot cache; current focus, open questions, active pages
-2. **This file** (`CLAUDE.md`) — schema and operating rules (skip if familiar)
+2. **This file** (`AGENTS.md`) — schema and operating rules (skip if familiar)
 3. **`wiki/index.md`** — locate pages relevant to the current task
 4. **`wiki/overview.md`** — cluster navigation if working across domains
 5. **`wiki/domains/<relevant>.md`** — domain hub page if applicable
 6. **Follow `[[wikilinks]]`** — navigate to concept/source pages as needed
-7. **`raw/` sources** — only when wiki says `NOT VERIFIED`, `status: stale`, or a
-   contradiction must be resolved
+7. **`raw/` sources** — only when wiki says `NOT VERIFIED`, a page is stale
+   (`now >= stale_after`), or a contradiction must be resolved
 
 **Never** read all raw sources at session start. The wiki exists to prevent this.
 
@@ -222,8 +230,8 @@ Read in this order at the start of every session:
 
 ```
 kortex/
-├── CLAUDE.md              ← this schema (read first)
-├── .claude/
+├── AGENTS.md              ← this schema (read first)
+├── .agents/
 │   └── skills/            ← custom session skills
 │       ├── today.md       ← /today  morning startup briefing
 │       ├── close.md       ← /close  end-of-session routine
@@ -235,13 +243,13 @@ kortex/
 │   ├── transcripts/       ← talks, interviews, podcasts
 │   ├── data/              ← datasets, CSVs, structured data
 │   └── assets/            ← images, diagrams, attachments
-└── wiki/                  ← LLM-maintained synthesis layer
-    ├── index.md           ← content catalog by category
-    ├── log.md             ← append-only activity log
-    ├── hot.md             ← session hot cache (~500 words, read first)
-    ├── skill-impact.md    ← audit trail for skill/rule changes (ADR-0001)
-    ├── overview.md        ← cluster navigation hub
-    ├── schema.md          ← entity templates and type definitions
+└── wiki/                  ← LLM-maintained synthesis layer (the OKF bundle)
+    ├── index.md           ← OKF reserved: catalog; carries `okf_version: "0.2"`, no other frontmatter
+    ├── log.md             ← OKF reserved: activity log, newest date first (OKF §9), no frontmatter
+    ├── hot.md             ← session hot cache (~500 words, read first) — `type: cache`
+    ├── skill-impact.md    ← audit trail for skill/rule changes (ADR-0001) — `type: ledger`
+    ├── overview.md        ← cluster navigation hub — `type: overview`
+    ├── schema.md          ← entity templates and type definitions — `type: schema`
     ├── domains/           ← broad topic hub pages (tier-2)
     ├── concepts/          ← ideas, frameworks, mental models (tier-3)
     ├── sources/           ← book/article/paper summaries (tier-4)
@@ -274,47 +282,79 @@ Every wiki page must be one of these types (set in frontmatter):
 | `synthesis` | Cross-source analyses filed from queries (leaves) | `wiki/syntheses/` |
 | `pattern` | Recurring failure mode or winning strategy (drives `/evolve`) | `wiki/patterns/` |
 | `gap` | Open questions, unknowns, deficiencies | `wiki/gaps/` |
-| `log` | Special — only `wiki/log.md` | — |
-| `index` | Special — only `wiki/index.md` | — |
+| `cache` | Session hot cache | `wiki/hot.md` |
+| `overview` | Cluster navigation hub | `wiki/overview.md` |
+| `schema` | Entity templates / type definitions | `wiki/schema.md` |
+| `ledger` | Skill/rule change audit trail | `wiki/skill-impact.md` |
+
+**OKF conformance (§11):** `type` is the only always-required OKF key, and **every
+non-reserved `.md` file must carry frontmatter with a non-empty `type`** — including
+the meta pages above and builder-generated `wiki/kb/*.md` nodes. Only `index.md` and
+`log.md` are OKF-**reserved** (no frontmatter; the root `index.md` carries just
+`okf_version: "0.2"`). OKF types are not centrally registered and consumers tolerate
+unknown types, so the kortex-local `cache`/`overview`/`schema`/`ledger` types are valid.
 
 ---
 
 ## Frontmatter Template
 
-Every wiki page (except `log.md` and `index.md`) must begin with:
+Every wiki page (except the reserved `log.md` and `index.md`) must begin with
+OKF v0.2-conformant frontmatter:
 
 ```yaml
 ---
-title: <page title>
-type: <entity type>
-status: <draft | active | stale | superseded>
+# — OKF v0.2 core —
+type: <entity type>                       # REQUIRED — the only always-required OKF key
+title: <page title>                       # recommended
+description: <one-line summary>            # recommended
+resource: <raw/filename or URL>           # recommended for source/project; omit for abstract concepts
+tags: [<tag1>, <tag2>]                     # recommended
+sources:                                   # provenance — a LIST OF MAPPINGS, not strings
+  - resource: raw/<filename or URL>        #   REQUIRED within each entry (followable artifact / scope)
+    id: <stable-key>                       #   label for per-claim footnote attribution
+    title: <short source title>
+status: <draft | stable | deprecated>      # OKF enum; absent ⇒ stable
+generated: {by: anthropic/<model-id>, at: <ISO-8601-with-offset>}
+verified: [{by: human:<id>, at: <ISO-8601-with-offset>}]   # [] ⇒ unverified
+stale_after: <ISO-8601-with-offset>        # optional — stale when now >= stale_after; omit if evergreen
+# — kortex extensions (OKF preserves unknown keys) —
 confidence: <low | medium | high>
 cluster: <domain slug this page belongs to>
 domain: [<relevant domain slug>]
-sources: [<raw/filename or URL>]
 updated: <YYYY-MM-DD>
-tags: [<tag1>, <tag2>]
-generated: {by: <model-id>, at: <YYYY-MM-DD>}
-verified: [{by: <name>, at: <YYYY-MM-DD>}]
-stale_after: <YYYY-MM-DD>          # optional — omit for evergreen content
 ---
 ```
 
-**Status values:**
+**Status values (OKF v0.2 `status` enum — only these three):**
 - `draft` — stub or in-progress, not yet complete
-- `active` — current and accurate
-- `stale` — source changed or update needed; do not trust without verification
-- `superseded` — replaced by another page (add link to replacement)
+- `stable` — current and accurate (OKF default when `status` is absent)
+- `deprecated` — replaced or retired; add a markdown link to the replacement page
 
-**Confidence values:**
+**Staleness is derived, never a status.** A page is stale when `now >= stale_after`
+(OKF §5). To force a page stale immediately, set `stale_after` to the current instant —
+do **not** invent a `status: stale`. Lint flags staleness by comparing `stale_after`
+against now.
+
+**Confidence values** (kortex extension — orthogonal to OKF trust tiers):
 - `high` — multiple sources agree, well-verified
 - `medium` — single source or partially verified
 - `low` — uncertain, inferred, or unverified — treat claims with caution
 
-**OKF v0.2 trust signal fields:**
-- `generated` — records which model (or human) authored the page and when. Always set on LLM-synthesized pages. Format: `{by: claude-sonnet-4-6, at: 2026-08-17}`
-- `verified` — list of human or agent sign-offs. Empty list `[]` means unverified. Add an entry when a human reviews and confirms the page. Format: `[{by: nicolas, at: 2026-08-17}]`
-- `stale_after` — absolute expiry date after which the page must be re-verified. Omit for stable/evergreen content. Set for fast-moving domains: AI protocols (6 months), Kubernetes ecosystem (1 year).
+**OKF v0.2 provenance & trust fields:**
+- `sources` — a **list of mappings**, each with a required `resource` (followable
+  artifact or scope descriptor) plus optional `id`, `title`, `author`. Per-claim
+  attribution is a markdown footnote whose label matches a `sources[].id`.
+- `generated` — `{by, at}`: who authored the content and when it last meaningfully
+  changed. `by` follows the OKF actor convention: `<producer>/<version>` for agents
+  (e.g. `anthropic/claude-opus-4-8`), `human:<id>` for people, `process:<id>` for jobs.
+- `verified` — list of `{by, at}` sign-offs; `[]` ⇒ **unverified**. A `human:<id>`
+  actor earns the **human-reviewed** tier; only non-human actors ⇒ **machine-confirmed**.
+  A bare name (`nicolas`) without the `human:` prefix never reaches human-reviewed.
+- `stale_after` — absolute **ISO 8601 instant with explicit UTC offset** (e.g.
+  `2027-04-08T00:00:00Z`), not a bare date. Fast-moving domains: AI protocols 6 months,
+  Kubernetes ecosystem 1 year.
+- **All OKF timestamps** (`generated.at`, `verified[].at`, `stale_after`) are ISO 8601
+  with an explicit UTC offset — never a bare `YYYY-MM-DD`.
 
 **Inline markers:**
 - `NOT VERIFIED` — claim has no traceable source; must be verified before trusting
@@ -364,6 +404,43 @@ line (Relations table only), it's `[[type:slug]]`.
 
 Every new page must be linked from its parent domain page and from `wiki/index.md`.
 
+**OKF note:** `[[type:slug]]` lives only in the machine-readable `## Relations` table.
+OKF (§6) wants cross-concept links as standard markdown and leaves the page **body
+free-form**, so the Relations table is a kortex convention *inside* that free-form body —
+it does not break OKF conformance, and every human-facing link already uses OKF-style
+markdown (Form 2). A `[[type:slug]]` resolves to an OKF concept ID = bundle path, mapping
+`type` through the Entity Types directory column (`[[person:x]]` → `people/x`,
+`[[concept:x402]]` → `concepts/x402`), not by the literal type word.
+
+---
+
+## OKF v0.2 Conformance
+
+`wiki/` is a conformant OKF v0.2 bundle. A bundle is conformant (OKF §11) when every
+non-reserved `.md` has parseable YAML frontmatter, every frontmatter block has a
+non-empty `type`, and reserved files follow their structure. Consumers must tolerate
+unknown types/keys and broken links — so kortex extensions are safe.
+
+| OKF v0.2 rule | kortex binding |
+|---------------|----------------|
+| `type` is the only required key | enforced on every non-reserved page (incl. meta + `kb/`) |
+| Reserved files: `index.md`, `log.md` | no frontmatter, except root `index.md` carries only `okf_version: "0.2"` (OKF §8) |
+| `status` ∈ `draft \| stable \| deprecated` (default `stable`) | adopted; `active`/`stale`/`superseded` retired |
+| Staleness derived: `now >= stale_after` | there is **no** `status: stale`; set `stale_after` to now |
+| Timestamps ISO 8601 with UTC offset | `generated.at`, `verified[].at`, `stale_after` |
+| Actor convention `<producer>/<version>`, `human:<id>` | `generated.by: anthropic/<model>`; `verified.by: human:<id>` |
+| `sources` = list of mappings, each with required `resource` | enforced (not a list of strings) |
+| `log.md` newest-first, grouped by date | adopted (overrides Karpathy's append-only) |
+| Links are markdown; brokenness tolerated | Form 2 markdown links; `[[type:slug]]` confined to Relations tables |
+
+**Trust tiers** (OKF-derived, advisory): no `verified` ⇒ *unverified*; only non-human
+actors ⇒ *machine-confirmed*; a `human:<id>` actor ⇒ *human-reviewed*.
+
+**Follow-up (not schema):** `scripts/build_knowledge_base.py` must (a) emit a `type` in the
+frontmatter of each generated `wiki/kb/*.md` node **and** `wiki/knowledge-base.md` so those
+files stay conformant, and (b) anchor its `read_frontmatter_title` regex to a top-level key
+(line start, no leading whitespace) so a nested `sources[].title` cannot shadow the page title.
+
 ---
 
 ## Seven Hard Rules
@@ -375,8 +452,9 @@ Every new page must be linked from its parent domain page and from `wiki/index.m
    the `## By Date` section of `wiki/index.md` under today's date — use the log operation
    tag as suffix (e.g. `[INGEST]`). Batch entries from the same operation on one line.
    Prune entries older than 90 days to a single summary line.
-3. **Frontmatter stays current.** Set `updated:` on every touched page. Mark outdated
-   pages `status: stale` immediately — stale is worse than missing.
+3. **Frontmatter stays current.** Set `updated:` on every touched page. Force an outdated
+   page stale immediately by setting `stale_after` to the current instant (OKF staleness
+   is derived, not a status) — stale is worse than missing.
 4. **Link new pages.** Every new page must be in `wiki/index.md` and wikilinked from at
    least one parent page.
 5. **Gaps don't disappear.** Mark resolved gaps `✅ Resolved — YYYY-MM-DD` with evidence.
@@ -403,7 +481,7 @@ Every new page must be linked from its parent domain page and from `wiki/index.m
 ## Anti-Corruption Rules
 
 1. **Code/source is truth.** When wiki and source disagree, update the wiki — not the source.
-2. **Stale is worse than missing.** An outdated page actively misleads. Mark stale immediately.
+2. **Stale is worse than missing.** An outdated page actively misleads. Set `stale_after` to now immediately.
 3. **One source of truth per fact.** One canonical page; all others wikilink to it. No duplication.
 4. **Every fact has provenance.** No traceable source → mark `NOT VERIFIED`.
 5. **Contradictions are features.** Flagging a contradiction is more valuable than silently
@@ -413,28 +491,23 @@ Every new page must be linked from its parent domain page and from `wiki/index.m
 
 ## Log Format
 
+`wiki/log.md` is OKF-reserved (OKF §9): a `# Log` title, then `## YYYY-MM-DD` date
+headings **newest first**, each holding bulleted entries. **No frontmatter.** The leading
+bold op tag is the attribution convention. This structure overrides the per-entry-heading,
+append-at-bottom phrasing from the LLM Wiki article.
+
 ```
-## [YYYY-MM-DD] [OP] | <summary>
-  └─ pages: <list of affected wiki pages>
-  └─ sources: <list of raw sources or URLs consulted>
+# Log
+
+## 2026-05-04
+
+- **[INGEST]** Added "How to Take Smart Notes" by Ahrens — pages: sources/how-to-take-smart-notes.md, concepts/zettelkasten.md, people/niklas-luhmann.md; sources: raw/ahrens-smart-notes.pdf
+- **!failure** Paywalled article ingest blocked — pages: none; sources: raw/articles/blocked-article.pdf; note: PDF corrupted, re-download
 ```
 
-Example:
-```
-## [2026-05-04] [INGEST] | Added "How to Take Smart Notes" by Ahrens
-  └─ pages: sources/how-to-take-smart-notes.md, concepts/zettelkasten.md, people/niklas-luhmann.md
-  └─ sources: raw/ahrens-smart-notes.pdf
-```
-
-Operations: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[EVOLVE]` `[UPDATE]` `[BOOTSTRAP]`
-
-**Failure logging:** Use `!failure` tag when a dead-end is hit:
-```
-## [2026-05-04] !failure | Attempted ingest of paywalled article — blocked
-  └─ pages: none
-  └─ sources: raw/articles/blocked-article.pdf
-  └─ note: PDF was corrupted; try re-downloading
-```
+Op tags: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[EVOLVE]` `[UPDATE]` `[BOOTSTRAP]`;
+`!failure` for dead-ends. Prune entries older than 90 days to a single summary line under
+their date heading (Hard Rule 2).
 
 ---
 
