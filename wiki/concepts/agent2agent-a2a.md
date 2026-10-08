@@ -52,12 +52,14 @@ from agents written in different frameworks, as long as each speaks A2A.
 | [[concept:agent2agent-a2a]] | part-of | [[domain:ai-protocols]] |
 | [[concept:agent2agent-a2a]] | contrasts-with | [[concept:model-context-protocol-mcp]] |
 | [[concept:agent2agent-a2a]] | described-by | [[source:ai-protocols-a2a-agentic-ai-foundation-2026]] |
+| [[concept:personal-agent-consent-trust-protocol-pact]] | builds-on | [[concept:agent2agent-a2a]] |
 
 ## Related
 
 - [AI Protocols](../domains/ai-protocols.md)
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 - [Agent Communication Protocol (ACP)](../concepts/agent-communication-protocol-acp.md)
+- [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md) — builds on A2A's Agent Card + authorization-required state to add user consent and scoped delegation.
 - [A New Chapter for A2A: Joining the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — the source for A2A's move to AAIF governance.
 
 ## Open Questions

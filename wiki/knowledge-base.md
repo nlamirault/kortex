@@ -13,17 +13,17 @@ updated: 2026-10-08
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 16 |
-| Major entities (★) | 15 |
-| Minor entities | 1 |
-| Total triples | 43 |
+| Total entities | 23 |
+| Major entities (★) | 21 |
+| Minor entities | 2 |
+| Total triples | 67 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| concept | 10 | [→](kb/_index-type-concept.md) |
-| source | 3 | [→](kb/_index-type-source.md) |
+| concept | 13 | [→](kb/_index-type-concept.md) |
+| source | 7 | [→](kb/_index-type-source.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
 | organization | 1 | [→](kb/_index-type-organization.md) |
 
@@ -31,16 +31,16 @@ updated: 2026-10-08
 
 | Entity | Type | Outgoing | Sources |
 |--------|------|----------|---------|
+| [Personal Agent Consent & Trust Protocol (PACT)](kb/concept-personal-agent-consent-trust-protocol-pact.md) | concept | 6 | 5 |
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
 | [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
+| [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 4 | 3 |
 | [A New Chapter for A2A: Joining the Agentic AI Foundation](kb/source-ai-protocols-a2a-agentic-ai-foundation-2026.md) | source | 4 | 2 |
 | [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 4 | 2 |
-| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 3 | 5 |
+| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 3 | 8 |
+| [AGENTS.md](kb/concept-agents-md.md) | concept | 3 | 2 |
 | [Distributed Tracing](kb/concept-distributed-tracing.md) | concept | 3 | 4 |
-| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 6 |
-| [x402](kb/concept-x402.md) | concept | 3 | 2 |
-| [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 3 | 4 |
-| [Linux Foundation Announces Operational Launch of x402 Foundation](kb/source-ai-protocols-x402-foundation-launch-2026.md) | source | 3 | 2 |
+| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 9 |
 
 ## Navigation
 
