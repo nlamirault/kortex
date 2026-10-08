@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 3 in  
-**Source pages:** 4
+**Degree:** 3 out / 8 in  
+**Source pages:** 9
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -28,12 +28,22 @@ updated: 2026-10-08
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | agent2agent-a2a | contrasts-with | agent2agent-a2a.md |
+| agents-md | relates-to | agents-md.md |
+| personal-agent-protocol-pap | builds-on | personal-agent-protocol-pap.md |
 | tool-use-function-calling | used-by | tool-use-function-calling.md |
+| aws | relates-to | aws.md |
+| ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
+| sierra-personal-agent-protocol-2026 | builds-on | sierra-personal-agent-protocol-2026.md |
 
 ## Source Pages
 
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
+- [concepts/agents-md.md](../concepts/agents-md.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
+- [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
+- [organizations/aws.md](../organizations/aws.md)
+- [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

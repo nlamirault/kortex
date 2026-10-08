@@ -52,11 +52,13 @@ cannot express.
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | argues-that | [[concept:tool-use-function-calling]] |
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | implements | [[concept:model-context-protocol-mcp]] |
 | [[source:ai-protocols-dogwood-runtime-verification-2026]] | extends | [[domain:ai-protocols]] |
+| [[source:ai-protocols-dogwood-runtime-verification-2026]] | published-by | [[organization:aws]] |
 
 ## Liens Wiki
 
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — Dogwood generates its action schema from an agent's MCP tool manifest.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — Dogwood governs exactly the tool-call boundary this concept describes.
 - [AI Protocols](../domains/ai-protocols.md) — adds a governance/policy layer to the agent-protocol stack.
+- [Amazon Web Services (AWS)](../organizations/aws.md) — publisher; ships Dogwood in Bedrock AgentCore.
 
 [^dogwood]: AWS Open Source Blog, "Introducing Dogwood: runtime verification for AI agents", 2026-08-06.

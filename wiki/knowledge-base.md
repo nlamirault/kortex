@@ -13,37 +13,39 @@ updated: 2026-10-08
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 13 |
-| Major entities (★) | 11 |
+| Total entities | 23 |
+| Major entities (★) | 21 |
 | Minor entities | 2 |
-| Total triples | 30 |
+| Total triples | 67 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| concept | 10 | [→](kb/_index-type-concept.md) |
+| concept | 13 | [→](kb/_index-type-concept.md) |
+| source | 7 | [→](kb/_index-type-source.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
-| source | 1 | [→](kb/_index-type-source.md) |
+| organization | 1 | [→](kb/_index-type-organization.md) |
 
 ## Top Entities by Degree
 
 | Entity | Type | Outgoing | Sources |
 |--------|------|----------|---------|
+| [Personal Agent Consent & Trust Protocol (PACT)](kb/concept-personal-agent-consent-trust-protocol-pact.md) | concept | 6 | 5 |
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
 | [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
+| [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 4 | 3 |
+| [A New Chapter for A2A: Joining the Agentic AI Foundation](kb/source-ai-protocols-a2a-agentic-ai-foundation-2026.md) | source | 4 | 2 |
+| [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 4 | 2 |
+| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 3 | 8 |
+| [AGENTS.md](kb/concept-agents-md.md) | concept | 3 | 2 |
 | [Distributed Tracing](kb/concept-distributed-tracing.md) | concept | 3 | 4 |
-| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 4 |
-| [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 3 | 1 |
-| [Agent Communication Protocol (ACP)](kb/concept-agent-communication-protocol-acp.md) | concept | 2 | 1 |
-| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 2 | 4 |
-| [Semantic Conventions](kb/concept-semantic-conventions.md) | concept | 2 | 3 |
-| [Telemetry Signals](kb/concept-telemetry-signals.md) | concept | 2 | 4 |
-| [Tool Use / Function Calling](kb/concept-tool-use-function-calling.md) | concept | 2 | 3 |
+| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 9 |
 
 ## Navigation
 
 - [All entities alphabetical](kb/_index-entities.md)
 - [concept](kb/_index-type-concept.md)
 - [domain](kb/_index-type-domain.md)
+- [organization](kb/_index-type-organization.md)
 - [source](kb/_index-type-source.md)
