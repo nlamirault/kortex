@@ -48,6 +48,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Decagon — Introducing PACT](../sources/decagon-pact-introduction-2026.md) / [openpactprotocol.org spec](../sources/openpactprotocol-pact-spec-2026.md) — PACT sources.
 - [x402 Foundation operational launch](../sources/ai-protocols-x402-foundation-launch-2026.md) — Linux Foundation stewardship of x402.
 - [A2A joins the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — A2A governance under AAIF.
+- [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — open SKILL.md folder format with progressive disclosure (Anthropic-origin, broadly adopted).
 
 ## Organizations
 

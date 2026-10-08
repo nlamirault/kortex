@@ -45,6 +45,7 @@ write operation also appends to `## By Date`.
 - [Introducing Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — fiche: open-source governance language adding temporal (history-aware) rules to agent tool calls, extending Cedar.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](sources/ai-protocols-strands-box-sandboxes-2026.md) — fiche: AWS open-source agent sandbox pairing OS containment (macOS Seatbelt) with Dogwood policy at network/shell/Python/MCP boundaries.
 - [Introducing Clef: open-source decision models (Cloudflare)](sources/ai-protocols-clef-decision-models-2026.md) — fiche: Cloudflare's Clef/Clef-flash decision models return typed, calibrated classifications for fast agent routing; open-sourced (Apache 2.0) and hosted on Workers AI, with an RL fine-tuning service.
+- [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — fiche: open SKILL.md folder format with progressive disclosure (discovery → activation → execution); Anthropic-origin, broadly adopted across coding agents.
 
 ## People
 
@@ -68,6 +69,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-08
 
+- [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — `[INGEST]` (fiche); open SKILL.md folder format + progressive disclosure, contrasts with AGENTS.md — also touched [AGENTS.md](concepts/agents-md.md), [AI Protocols](domains/ai-protocols.md)
 - [Introducing Clef: open-source decision models (Cloudflare)](sources/ai-protocols-clef-decision-models-2026.md) — `[INGEST]` (fiche); Cloudflare decision models (Clef/Clef-flash) for typed agent routing on Workers AI — also touched [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [AI Protocols](domains/ai-protocols.md)
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](sources/ai-protocols-strands-box-sandboxes-2026.md) — `[INGEST]` (fiche); AWS agent sandbox embedding Dogwood; **contradiction PENDING** (rate-limit responses vs requests) — also touched [Dogwood fiche](sources/ai-protocols-dogwood-runtime-verification-2026.md), [AWS](organizations/aws.md), [AI Protocols](domains/ai-protocols.md)
 - [AGENTS.md](concepts/agents-md.md), [AGENTS.md — open format](sources/agents-md-open-format-2026.md) — `[INGEST]`; confirms AAIF stewardship — also touched [MCP](concepts/model-context-protocol-mcp.md)
