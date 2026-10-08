@@ -7,13 +7,14 @@ updated: 2026-10-08
 
 # Entity Index
 
-*13 entities — auto-generated*
+*14 entities — auto-generated*
 
 ## A
 
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md) — concept
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [AI Protocols](domain-ai-protocols.md) — domain
+- ★ [Amazon Web Services (AWS)](organization-aws.md) — organization
 ## D
 
 - ★ [Distributed Tracing](concept-distributed-tracing.md) — concept

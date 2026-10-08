@@ -10,8 +10,8 @@ updated: 2026-10-08
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 6 in  
-**Source pages:** 7
+**Degree:** 0 out / 7 in  
+**Source pages:** 8
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -24,6 +24,7 @@ updated: 2026-10-08
 | model-context-protocol-mcp | part-of | model-context-protocol-mcp.md |
 | tool-use-function-calling | part-of | tool-use-function-calling.md |
 | x402 | part-of | x402.md |
+| aws | member-of | aws.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
 
 ## Source Pages
@@ -34,4 +35,5 @@ updated: 2026-10-08
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [concepts/x402.md](../concepts/x402.md)
 - [domains/ai-protocols.md](../domains/ai-protocols.md)
+- [organizations/aws.md](../organizations/aws.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)

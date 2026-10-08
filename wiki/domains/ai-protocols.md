@@ -39,6 +39,10 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 
 None yet — pending first `/ingest` of a protocol spec or article into this domain.
 
+## Organizations
+
+- [Amazon Web Services (AWS)](../organizations/aws.md) — publisher of Dogwood; ships agent tool-call governance via Bedrock AgentCore.
+
 ## Key People
 
 None yet — pending first `/ingest`.

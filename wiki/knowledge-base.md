@@ -13,10 +13,10 @@ updated: 2026-10-08
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 13 |
-| Major entities (★) | 11 |
+| Total entities | 14 |
+| Major entities (★) | 12 |
 | Minor entities | 2 |
-| Total triples | 30 |
+| Total triples | 34 |
 
 ## Entities by Type
 
@@ -24,6 +24,7 @@ updated: 2026-10-08
 |------|-------|-------|
 | concept | 10 | [→](kb/_index-type-concept.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
+| organization | 1 | [→](kb/_index-type-organization.md) |
 | source | 1 | [→](kb/_index-type-source.md) |
 
 ## Top Entities by Degree
@@ -32,18 +33,19 @@ updated: 2026-10-08
 |--------|------|----------|---------|
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
 | [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
+| [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 4 | 2 |
 | [Distributed Tracing](kb/concept-distributed-tracing.md) | concept | 3 | 4 |
-| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 4 |
-| [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 3 | 1 |
+| [Model Context Protocol (MCP)](kb/concept-model-context-protocol-mcp.md) | concept | 3 | 5 |
+| [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 3 | 2 |
 | [Agent Communication Protocol (ACP)](kb/concept-agent-communication-protocol-acp.md) | concept | 2 | 1 |
 | [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 2 | 4 |
 | [Semantic Conventions](kb/concept-semantic-conventions.md) | concept | 2 | 3 |
 | [Telemetry Signals](kb/concept-telemetry-signals.md) | concept | 2 | 4 |
-| [Tool Use / Function Calling](kb/concept-tool-use-function-calling.md) | concept | 2 | 3 |
 
 ## Navigation
 
 - [All entities alphabetical](kb/_index-entities.md)
 - [concept](kb/_index-type-concept.md)
 - [domain](kb/_index-type-domain.md)
+- [organization](kb/_index-type-organization.md)
 - [source](kb/_index-type-source.md)

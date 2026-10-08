@@ -41,6 +41,8 @@ write operation also appends to `## By Date`.
 
 ## Organizations
 
+- [Amazon Web Services (AWS)](organizations/aws.md) — cloud vendor; publisher of Dogwood and home of Bedrock AgentCore agent governance.
+
 ## Decisions
 
 ## Comparisons
@@ -55,6 +57,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-08
 
+- [Amazon Web Services (AWS)](organizations/aws.md) — `[FILE]` (organization)
 - [Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — `[INGEST]` (fiche)
 - [Observability](domains/observability.md), [Telemetry Signals](concepts/telemetry-signals.md), [Distributed Tracing](concepts/distributed-tracing.md), [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md), [Instrumentation](concepts/instrumentation.md), [Semantic Conventions](concepts/semantic-conventions.md) — `[BOOTSTRAP]`
 - [AI Protocols](domains/ai-protocols.md), [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [Agent2Agent (A2A)](concepts/agent2agent-a2a.md), [Agent Communication Protocol (ACP)](concepts/agent-communication-protocol-acp.md), [x402](concepts/x402.md) — `[BOOTSTRAP]`
