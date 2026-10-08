@@ -62,6 +62,7 @@ human-facing.[^agentsmd]
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — a sibling AAIF project; MCP connects agents to tools, AGENTS.md tells them how to work in a repo.
 - [Agent2Agent (A2A)](../concepts/agent2agent-a2a.md) — another AAIF project; A2A's page first surfaced AGENTS.md as an AAIF sibling.
 - [AGENTS.md — open format for guiding coding agents](../sources/agents-md-open-format-2026.md) — the source.
+- [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — portable skill folders (SKILL.md + progressive disclosure); contrasts with per-repo AGENTS.md instructions.
 
 ## Open Questions
 

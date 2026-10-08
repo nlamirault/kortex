@@ -2,6 +2,13 @@
 
 ## Pending
 
+Follow-up entities surfaced by the Agent Skills fiche (agentskills.io):
+
+- **Agent Skills** (concept) — the portable capability-folder format itself (SKILL.md + scripts/references/assets, progressive disclosure). Promotion candidate on next related ingest.
+- **Anthropic** (organization) — originator of the Agent Skills format; released as an open standard.
+- **SKILL.md specification** (source follow-up) — the full format spec at agentskills.io/specification; ingest for wire-level detail.
+- **Agent Skills client roster** (sources) — per-client instruction pages (Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, goose, Codex, …); ingest individually only as needed.
+
 Follow-up entities surfaced by the Clef fiche (Cloudflare decision models):
 
 - **Cloudflare** (organization) — publisher of Clef; hosts Workers AI, AI Gateway, Browser Run. First Cloudflare source — promotion candidate for an org page.
@@ -58,6 +65,7 @@ Follow-up entities surfaced by the Sierra PAP fiche:
 
 ## Done
 
+- https://agentskills.io/ → [wiki/sources/ai-protocols-agent-skills-overview-2026.md](../wiki/sources/ai-protocols-agent-skills-overview-2026.md) (fiche, 2026-10-08)
 - https://blog.cloudflare.com/clef-decision-models/ → [wiki/sources/ai-protocols-clef-decision-models-2026.md](../wiki/sources/ai-protocols-clef-decision-models-2026.md) (fiche, 2026-10-08)
 - https://agents.md/ → [wiki/sources/agents-md-open-format-2026.md](../wiki/sources/agents-md-open-format-2026.md) (fiche, 2026-10-08)
 - https://sierra.ai/blog/introducing-personal-agent-protocol → [wiki/sources/sierra-personal-agent-protocol-2026.md](../wiki/sources/sierra-personal-agent-protocol-2026.md) (fiche, 2026-10-08)
