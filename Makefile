@@ -50,6 +50,11 @@ check-%:
 		echo -e "$(ERROR_COLOR)$(KO)$(NO_COLOR) $*"; \
 	fi
 
+.PHONY: lint
+lint: ## Run mechanical OKF v0.2 conformance + hygiene checks on wiki/
+	@echo -e "$(INFO)$(INFO_COLOR)[Lint] Checking wiki $(NO_COLOR)"
+	@python3 scripts/lint_wiki.py
+
 .PHONY: kb
 kb: ## Rebuild knowledge-base entity pages from the wiki graph
 	@echo -e "$(INFO)$(INFO_COLOR)[KB] Building knowledge base $(NO_COLOR)"

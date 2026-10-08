@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+# Markdown lint configuration (rumdl).
+# MD013 (line length) is disabled: wiki prose and AGENTS.md wrap at sentence
+#   boundaries, not a hard column, and the OKF frontmatter carries long values.
+# MD025 (multiple H1) is disabled: every wiki page carries a `title:` in its OKF
+#   frontmatter AND a body `# H1`; the website pipeline dedupes them on render.
+[global]
+disable = ["MD013", "MD025"]

@@ -42,22 +42,21 @@
 
 | Skill | Trigger | What it does |
 |-------|---------|-------------|
-| `/today` | Session start | Morning briefing from hot cache + log |
-| `/recall` | Before a query | Pre-load relevant wiki pages |
-| `/graph <entity>` | Relation query | Traverse Relations SPO tables |
+| `/session --open` | Session start | Morning briefing from hot cache + log |
+| `/session --close` | Session end | Update hot cache, verify, summarize |
+| `/query` | Any question | Pre-load relevant wiki pages, answer with citations |
+| `/query --graph <entity>` | Relation query | Traverse Relations SPO tables |
 | `/ingest <path>` | New source | Full ingest → 10–15 pages |
 | `/ingest --fiche <path>` | Article | Fiche mode → 1 card |
-| `/lint` | Weekly / on demand | Health audit |
+| `/lint` | Weekly / on demand | `make lint` + judgment checks |
 | `/file-back "<title>"` | Insight from chat | File reusable knowledge |
-| `/evolve` | Failures accrued | Wiki → procedure loop |
-| `/bootstrap <domain>` | New domain | Create hub + seed concepts |
-| `/close` | Session end | Update hot cache, summarize |
+| `/bootstrap <domain>` | New domain | Create hub + seed concepts; cold-start seed |
 
 ## Wikilink Convention
 
 Cross-reference with `[[type:slug]]`, rendered as a relative markdown link:
 
-```
+```text
 [[concept:zettelkasten]]  →  [Zettelkasten](../concepts/zettelkasten.md)
 ```
 
