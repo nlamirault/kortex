@@ -5,6 +5,16 @@ Format: `## [YYYY-MM-DD] [OP] | summary`
 
 ---
 
+## [2026-10-07] [INGEST] | Added "openpactprotocol.org" — PACT canonical landing page; enriched PACT concept
+  └─ pages: wiki/sources/openpactprotocol-org-2026.md, wiki/concepts/personal-agent-consent-trust-protocol-pact.md, wiki/index.md, wiki/hot.md, raw/queue.md
+  └─ sources: https://openpactprotocol.org/
+  └─ note: canonical PACT home. Adds vs Decagon blog: explicit 4th party (User; blog framed 3), "Brand" terminology, A2A 1.0 pinned ("Everything A2A defines works unchanged"), JWKS for public-key distribution, Agent Card discovery via well-known URL or registry, consent step marked optional. Landing page states NO governing org/license/version/repo/SDK; Meta Muse working group (from blog) not mentioned here → `PENDING — reconcile sources`. Signed receipts (blog) absent here. Full source page with KnowledgeGraph + Rhetorical Analysis.
+
+## [2026-10-07] [INGEST] | Added "Introducing the Personal Agent Consent & Trust Protocol (PACT)" by Harry Gao & Gram Liu
+  └─ pages: wiki/sources/decagon-pact-2026.md, wiki/concepts/personal-agent-consent-trust-protocol-pact.md, wiki/concepts/personal-agent.md, wiki/organizations/decagon.md, wiki/organizations/instinct.md, wiki/organizations/meta.md, wiki/people/harry-gao.md, wiki/people/gram-liu.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md, raw/queue.md
+  └─ sources: https://decagon.ai/blog/introducing-the-personal-agent-consent-trust-protocol-pact
+  └─ note: PACT = open protocol for verifiable consent/delegation between a customer's personal agent and a business agent. Three parties (personal agent / business / provider). Built on A2A (communication) + OAuth 2.0 device flow (consent); separates agent identity from delegated authority; credentials stay with the business; short-lived signed JWT + delegation token + signed receipts; business-defined scopes (orders:read, orders:cancel). Co-developed by Decagon + Instinct, under Meta Muse-led Personal Agent Protocol working group. Full source page with KnowledgeGraph + Rhetorical Analysis. Instinct/Meta/authors kept low-confidence (`NOT VERIFIED` beyond the post). kb/ mirrors left to /graph. Related to PAP (ingested same day via #23) — `PENDING — reconcile` how PACT's consent layer relates to the broader PAP standard; Meta org page merged across both ingests.
+
 ## [2026-10-07] [INGEST] | Added "Personal Agent Protocol (PAP)" — Meta/Sierra announcement
   └─ pages: wiki/concepts/personal-agent-protocol-pap.md, wiki/sources/sierra-personal-agent-protocol-2026.md, wiki/people/bret-taylor.md, wiki/people/clay-bavor.md, wiki/organizations/meta.md, wiki/organizations/sierra.md, wiki/organizations/stripe.md, wiki/concepts/ai-protocols.md, wiki/domains/ai.md, wiki/index.md, wiki/hot.md
   └─ sources: https://sierra.ai/blog/introducing-personal-agent-protocol

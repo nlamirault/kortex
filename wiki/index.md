@@ -9,7 +9,7 @@ Last updated: 2026-10-07
 
 *(broad topic hubs — start here; see `wiki/overview.md` for cluster map)*
 
-- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (18 concepts)
+- [AI](domains/ai.md) — agent protocols, MCP, LLM tooling (20 concepts)
 - [Blockchain](domains/blockchain.md) — distributed ledger, L1, layers, Tempo (3 concepts, 1 project)
 - [Data](domains/data.md) — databases, data engineering, lineage (9 concepts)
 - [Domotic](domains/domotic.md) — smart home: Matter, Zigbee, Thread (5 concepts)
@@ -39,6 +39,8 @@ Last updated: 2026-10-07
 - [AI Protocols](concepts/ai-protocols.md) — overview of AI communication protocols
 - [AWS Bedrock AgentCore](concepts/aws-bedrock-agentcore.md) — AWS managed agent runtime
 - [Machine Payments Protocol (MPP)](concepts/machine-payments-protocol-mpp.md) — HTTP 402 machine-to-machine payments (Tempo/Stripe)
+- [Personal Agent](concepts/personal-agent.md) — AI agent acting on a customer's behalf across businesses
+- [Personal Agent Consent & Trust Protocol (PACT)](concepts/personal-agent-consent-trust-protocol-pact.md) — verifiable consent/delegation between personal & business agents (A2A + OAuth)
 - [Agent Harness](concepts/agent-harness.md) — a complete agent runtime (plan, call tools, edit files, report)
 - [MCP (Model Context Protocol)](concepts/model-context-protocol-mcp.md) — tool/context protocol for LLMs
 - [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — personal-agent↔business standard (Meta/Sierra), OAuth sessions
@@ -112,6 +114,8 @@ Last updated: 2026-10-07
 - [x402.org — Internet-Native Payment Protocol](sources/x402-org-2026.md) — landing page for the x402 standard
 - [unifiedharnessprotocol.org — Unified Harness Protocol](sources/uhp-website-2026.md) — landing page + spec index for the UHP standard
 - [Introducing the Personal Agent Protocol (Sierra, 2026)](sources/sierra-personal-agent-protocol-2026.md) — Meta/Sierra announcement of PAP
+- [Introducing PACT (Decagon, 2026)](sources/decagon-pact-2026.md) — Personal Agent Consent & Trust Protocol announcement
+- [openpactprotocol.org — PACT landing page](sources/openpactprotocol-org-2026.md) — canonical home of the PACT standard (4 parties, A2A 1.0, JWT/JWKS)
 
 <!-- add source pages here -->
 
@@ -123,6 +127,8 @@ Last updated: 2026-10-07
 
 - [Bret Taylor](people/bret-taylor.md) — Sierra co-founder & CEO; co-author of PAP
 - [Clay Bavor](people/clay-bavor.md) — Sierra co-founder; co-author of PAP
+- [Harry Gao](people/harry-gao.md) — Decagon MTS; PACT co-author
+- [Gram Liu](people/gram-liu.md) — Decagon MTS; PACT co-author
 
 <!-- add people pages here -->
 
@@ -132,7 +138,7 @@ Last updated: 2026-10-07
 
 *(companies, foundations, standards bodies)*
 
-- [Meta](organizations/meta.md) — PAP co-lead (with Sierra)
+- [Meta](organizations/meta.md) — PAP co-lead (with Sierra); Muse personal agent
 - [Sierra](organizations/sierra.md) — enterprise AI agents; PAP co-lead, announcement author
 - [Stripe](organizations/stripe.md) — payments infra; MPP co-author, Tempo co-builder; PAP launch partner
 - [Coinbase](organizations/coinbase.md) — introduced x402 (2025)
@@ -146,6 +152,8 @@ Last updated: 2026-10-07
 - [Google](organizations/google.md)
 - [Lyft](organizations/lyft.md)
 - [SoundCloud](organizations/soundcloud.md)
+- [Decagon](organizations/decagon.md) — creator of PACT; hosts business AI agents
+- [Instinct](organizations/instinct.md) — personal-agent company; PACT co-developer
 
 ---
 
@@ -265,7 +273,9 @@ Last updated: 2026-10-07
 *(pruning rule: keep last 90 days visible; collapse older to a single summary line)*
 
 ### 2026-10-07
+- [openpactprotocol-org-2026](sources/openpactprotocol-org-2026.md) — ingest PACT canonical landing page; enriched [PACT](concepts/personal-agent-consent-trust-protocol-pact.md) concept (4th party User, A2A 1.0, JWT/JWKS, well-known discovery, optional consent) `[INGEST]`
 - [PAP](concepts/personal-agent-protocol-pap.md), [source](sources/sierra-personal-agent-protocol-2026.md), [Bret Taylor](people/bret-taylor.md), [Clay Bavor](people/clay-bavor.md), [Meta](organizations/meta.md), [Sierra](organizations/sierra.md) — ingest Personal Agent Protocol (Meta/Sierra); cross-linked to ai-protocols, ai domain `[INGEST]`
+- [PACT](concepts/personal-agent-consent-trust-protocol-pact.md), [Personal Agent](concepts/personal-agent.md), [decagon-pact-2026](sources/decagon-pact-2026.md), [Decagon](organizations/decagon.md), [Instinct](organizations/instinct.md), [Meta](organizations/meta.md), [Harry Gao](people/harry-gao.md), [Gram Liu](people/gram-liu.md) — ingest Decagon PACT announcement; cross-linked to A2A, Authorization, ai-protocols, ai + security domains `[INGEST]`
 
 ### 2026-09-02
 - agentic-payments cluster + CLAUDE.md + skills — fixed non-rendering `[[type:slug]]` prose links → markdown links; clarified Wikilink Convention (Relations tables keep `[[…]]`) `[UPDATE]`

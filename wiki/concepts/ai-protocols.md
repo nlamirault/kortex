@@ -28,4 +28,6 @@ stale_after: 2027-02-17
 - [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 - [Unified Harness Protocol (UHP)](../concepts/unified-harness-protocol-uhp.md)
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md)
+- [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md)
+- [Personal Agent](../concepts/personal-agent.md)
 - [Agent Harness](../concepts/agent-harness.md)

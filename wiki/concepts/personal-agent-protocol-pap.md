@@ -77,6 +77,7 @@ parameters for what those agents can do."
 - [[concept:agent-payments-protocol-ap2]] — agent-layer payment authorization; relevant to PAP's planned payment extension
 - [[organization:meta]], [[organization:sierra]] — lead developers
 - [[person:bret-taylor]], [[person:clay-bavor]] — Sierra co-founders, post authors
+- [[concept:personal-agent-consent-trust-protocol-pact]] — sibling standard (Decagon) for the same personal-agent↔business link; consent/trust layer — see Open Questions
 - [[source:sierra-personal-agent-protocol-2026]] — where this comes from
 
 ## Open Questions
@@ -87,3 +88,4 @@ parameters for what those agents can do."
   auth hand-off) is described only at a high level. `NOT VERIFIED`
 - Relationship to the planned payment extension vs. existing agent-payment standards
   (AP2, x402, MPP) is unstated. `NOT VERIFIED`
+- Relationship to [PACT](personal-agent-consent-trust-protocol-pact.md) — both announced 2026-10-07 for the personal-agent↔business link, both Meta-adjacent, both OAuth-based. Convergent, competing, or layered (PACT as consent profile under PAP)? `PENDING — reconcile`

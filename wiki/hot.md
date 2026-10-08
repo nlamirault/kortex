@@ -9,13 +9,24 @@
 
 *(What is the active work or research thread?)*
 
-Ingested the **Personal Agent Protocol (PAP)** — open standard (Meta + Sierra) for direct,
-secure communication between a consumer's personal AI agent and a business, replacing
-human-style website navigation with OAuth-authenticated machine-to-business sessions.
-New: [PAP](concepts/personal-agent-protocol-pap.md), [source](sources/sierra-personal-agent-protocol-2026.md),
+Ingested the **Personal Agent Consent & Trust Protocol (PACT)** — Decagon's open protocol for
+verifiable consent/delegation between a customer's *personal agent* and a *business agent*,
+layered on A2A + OAuth 2.0, separating agent identity from delegated authority and keeping
+credentials with the business. New: [PACT](concepts/personal-agent-consent-trust-protocol-pact.md),
+[Personal Agent](concepts/personal-agent.md), [source](sources/decagon-pact-2026.md),
+orgs [Decagon](organizations/decagon.md)/[Instinct](organizations/instinct.md)/[Meta](organizations/meta.md),
+people [Harry Gao](people/harry-gao.md)/[Gram Liu](people/gram-liu.md). Sits in the AI protocols cluster
+(consent/trust layer over A2A). Then added the canonical [openpactprotocol.org landing page](sources/openpactprotocol-org-2026.md)
+— adds explicit 4th party (User), A2A 1.0, JWT/JWKS, well-known Agent Card discovery, optional consent;
+working-group governance differs between the two sources → `PENDING — reconcile`.
+
+Same day: **Personal Agent Protocol (PAP)** — open standard (Meta + Sierra) for direct,
+secure communication between a consumer's personal AI agent and a business via
+OAuth-authenticated machine-to-business sessions.
+[PAP](concepts/personal-agent-protocol-pap.md), [source](sources/sierra-personal-agent-protocol-2026.md),
 [Bret Taylor](people/bret-taylor.md), [Clay Bavor](people/clay-bavor.md),
-[Meta](organizations/meta.md), [Sierra](organizations/sierra.md).
-Sits in the AI protocols cluster alongside MCP/A2A/UCP — the consumer-agent↔business layer.
+[Meta](organizations/meta.md), [Sierra](organizations/sierra.md). PACT is the consent/trust layer;
+PAP is the broader personal-agent↔business standard — reconcile how the two relate.
 
 Prior: **Unified Harness Protocol (UHP)** — an open standard for driving complete
 agent harnesses as shared infrastructure (task-in / running-agent-out, Responses-API-shaped).
@@ -63,8 +74,12 @@ Earlier: two HTTP-402 payment protocols in the agentic-payments cluster:
 
 *(Pages currently being built or needing follow-up)*
 
+- `wiki/concepts/personal-agent-consent-trust-protocol-pact.md` — new, unverified; token/receipt schemas + working-group governance `NOT VERIFIED`
+- `wiki/organizations/{instinct,meta}.md` — stubs from PACT post only; company details `NOT VERIFIED`
+- `wiki/people/{harry-gao,gram-liu}.md` — roles from blog byline only
 - `wiki/concepts/personal-agent-protocol-pap.md` — new, medium confidence; v0.1 spec/governance/reference-impl all `NOT VERIFIED` (announced, not yet published). Re-verify after late-Oct-2026 spec drop.
 - `wiki/people/{bret-taylor,clay-bavor}.md` — new; bios kept minimal, prior roles `NOT VERIFIED`
+- PACT ↔ PAP relationship — both 2026-10-07 personal-agent↔business standards; `PENDING — reconcile`
 - `wiki/concepts/unified-harness-protocol-uhp.md` — new, unverified; verify against the 11-chapter spec + conformance suite
 - `wiki/projects/harnessrouter.md` — new, medium confidence; GitHub URL/details inferred from landing page, `NOT VERIFIED`
 - `wiki/concepts/machine-payments-protocol-mpp.md` — new, unverified; verify against spec before trusting
