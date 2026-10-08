@@ -54,6 +54,11 @@ def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+def yaml_dq(value: str) -> str:
+    """Double-quote a scalar for a YAML frontmatter value so colons, '#', etc. are safe."""
+    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
 def read_frontmatter_title(path: Path) -> str | None:
     """Cheap YAML-frontmatter `title:` read without a YAML dependency."""
     try:
@@ -303,7 +308,7 @@ def write_entity_page(entity: dict, edges: list, kb_dir: Path) -> None:
     today = date.today().isoformat()
     lines = [
         "---",
-        f"title: {entity['name']}",
+        f"title: {yaml_dq(entity['name'])}",
         "type: kb-entity",
         f"entity_type: {entity['type']}",
         "status: auto-generated",

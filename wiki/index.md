@@ -33,6 +33,8 @@ write operation also appends to `## By Date`.
 
 ## Sources
 
+- [Introducing Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — fiche: open-source governance language adding temporal (history-aware) rules to agent tool calls, extending Cedar.
+
 ## People
 
 ## Projects
@@ -53,6 +55,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-08
 
+- [Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — `[INGEST]` (fiche)
 - [Observability](domains/observability.md), [Telemetry Signals](concepts/telemetry-signals.md), [Distributed Tracing](concepts/distributed-tracing.md), [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md), [Instrumentation](concepts/instrumentation.md), [Semantic Conventions](concepts/semantic-conventions.md) — `[BOOTSTRAP]`
 - [AI Protocols](domains/ai-protocols.md), [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [Agent2Agent (A2A)](concepts/agent2agent-a2a.md), [Agent Communication Protocol (ACP)](concepts/agent-communication-protocol-acp.md), [x402](concepts/x402.md) — `[BOOTSTRAP]`
 - [Hot Cache](hot.md), [Cluster Overview](overview.md) — `[INIT]`
