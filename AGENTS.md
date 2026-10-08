@@ -17,7 +17,7 @@ concept document. `wiki/` is the OKF bundle. This file is the operational schema
 
 The system has three distinct, non-overlapping layers:
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │  Layer 3 — Schema                                       │
 │  AGENTS.md  ← operational rules, entity types,          │
@@ -45,9 +45,9 @@ documents. Knowledge compounds; it doesn't disappear into chat history.
 
 ---
 
-## The Three Operations
+## The Core Operations
 
-```
+```text
   raw/                wiki/               user
    │                    │                  │
    │──[new source]──►   │                  │
@@ -78,6 +78,7 @@ Two modes — choose before starting:
 | Fiche | `/ingest --fiche <path>` | Articles, blog posts (<20 min read) | 1 fiche card |
 
 **Full ingest steps:**
+
 1. Read source fully — do not skim.
 2. Identify all entities mentioned (concepts, people, projects, decisions).
 3. Create new wiki pages or update existing ones for each entity.
@@ -87,7 +88,7 @@ Two modes — choose before starting:
 
 **Fiche steps:** read → one fiche card (En Bref + Points Clés + Relations) → update index → log → mark queue done.
 
-**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.agents/skills/ingest.md` for full workflow.
+**Skill:** `/ingest <path>` or `/ingest --fiche <path>` — see `.agents/skills/ingest/SKILL.md` for full workflow.
 
 ---
 
@@ -100,6 +101,7 @@ an answer with citations. If the answer reveals a reusable insight not yet in th
 it is filed back as a new page automatically.
 
 **Steps:**
+
 1. Read `wiki/index.md` to locate relevant pages.
 2. Follow `[[wikilinks]]` to related pages as needed.
 3. Synthesize answer with explicit citations (wiki page + source).
@@ -108,8 +110,8 @@ it is filed back as a new page automatically.
 6. Read raw sources **only if**: wiki page is stale (`now >= stale_after`), claim marked
    `NOT VERIFIED`, or sources conflict and must be resolved.
 
-**Skill:** Natural language — no slash command needed. Just ask.
-For structured relation queries ("what implements X?", "what connects to Y?"), use `/graph <entity>` instead — it traverses `## Relations` SPO tables directly without reading full page text.
+**Skill:** `/query` pre-loads the relevant pages, or just ask in natural language.
+For structured relation queries ("what implements X?", "what connects to Y?"), use `/query --graph <entity>` — it traverses `## Relations` SPO tables directly without reading full page text.
 
 ---
 
@@ -121,6 +123,7 @@ Periodic health audit of the wiki. Finds drift, decay, and inconsistency before 
 compound. Reports are tiered by severity.
 
 **Checks:**
+
 - [ ] Broken `[[wikilinks]]` (target page missing)
 - [ ] Orphan pages (not linked from index or any other page)
 - [ ] Stale pages (`now >= stale_after`) → CRITICAL, re-verify before trusting
@@ -153,6 +156,7 @@ analyses completed — and files it permanently into the wiki before it is lost 
 history.
 
 **Steps:**
+
 1. Identify the reusable knowledge (decision, framework, synthesis, analysis).
 2. Determine the correct entity type and target page.
 3. Create new wiki page or append to existing one.
@@ -165,45 +169,22 @@ conversation insight as a wiki page.
 
 ---
 
-### Operation 5: Evolve
-
-**Trigger:** `/evolve`, or periodically after failures accumulate.
-
-Closes the WikiSkill loop ([[decision:adopt-wikiskill-evolution-loop]], ADR-0001).
-Where File Back enriches the wiki, Evolve enriches the **procedures** — it reads the
-wiki's recorded failures and patterns and rewrites the skills and rules that maintain
-the wiki. Failure → `pattern:` → skill/rule change → audit trail.
-
-**Steps:**
-1. Read `wiki/skill-impact.md` first — never re-propose a rejected change.
-2. Synthesize recurring `!failure` log entries into `wiki/patterns/` pages.
-3. Propose **one atomic** change to a single skill or AGENTS.md rule, traced to a
-   `pattern:` or `gap:`.
-4. Gate it: `/lint` clean **and** one sample query still resolves. Both must pass.
-5. Apply if accepted, revert if rejected — either way, record a row in
-   `wiki/skill-impact.md`.
-6. Append to `wiki/log.md` with prefix `[EVOLVE]`.
-
-**Skill:** `/evolve` — runs the maintainer + proposer + gate in one operation.
-
----
-
 ## Skills Reference
 
 | Skill | Trigger | What It Does |
 |-------|---------|-------------|
-| `/today` | Session start | Morning briefing from hot cache + recent log |
-| `/recall` | Before any query | Pre-load relevant wiki pages into context |
-| `/graph <entity>` | Structured relation query | Traverse Relations SPO tables — find connections to/from an entity |
+| `/session --open` | Session start / resume | Morning briefing from hot cache + recent log |
+| `/session --close` | Session end | Update hot cache, verify consistency, summarize |
+| `/query` | Any question / before ingest | Pre-load relevant wiki pages and answer with citations |
+| `/query --graph <entity>` | Structured relation query | Traverse Relations SPO tables — find connections to/from an entity |
 | `/ingest <path>` | New source added | Full ingest: read → create/update pages → link → log. Books, papers, talks. |
 | `/ingest --fiche <path>` | Article/blog post added | Fiche mode: single ~400-word card → link → log. Articles, short reads. |
-| `/lint` | Weekly or on demand | Health audit: broken links, orphans, stale, contradictions |
+| `/lint` | Weekly or on demand | `make lint` (mechanical OKF + hygiene), then the judgment checks |
 | `/file-back "<title>"` | Insight from conversation | Capture and file reusable knowledge to wiki |
-| `/evolve` | Failures accumulated | Wiki→procedure loop: synthesize patterns, propose+gate one skill/rule change, log to skill-impact ledger |
-| `/bootstrap <domain>` | Starting a new domain | Create domain hub + seed concept stubs + log |
-| `/close` | Session end | Update hot cache, verify consistency, summarize |
+| `/bootstrap <domain>` | New domain / cold start | Create domain hub + seed concept stubs; seed the bundle on cold start |
 
-Skills live in `.agents/skills/`. Read the skill file for full workflow details.
+Skills live in `.agents/skills/` (one directory per skill, each holding `SKILL.md`). Read the
+skill file for full workflow details.
 
 ---
 
@@ -222,20 +203,23 @@ Read in this order at the start of every session:
 
 **Never** read all raw sources at session start. The wiki exists to prevent this.
 
-**Skill:** `/today` — automated startup briefing from hot cache + recent log.
+**Skill:** `/session --open` — automated startup briefing from hot cache + recent log.
 
 ---
 
 ## Directory Layout
 
-```
+```text
 kortex/
 ├── AGENTS.md              ← this schema (read first)
 ├── .agents/
-│   └── skills/            ← custom session skills
-│       ├── today.md       ← /today  morning startup briefing
-│       ├── close.md       ← /close  end-of-session routine
-│       └── recall.md      ← /recall pre-load wiki context before answering
+│   └── skills/            ← custom session skills (one dir per skill, each holding SKILL.md)
+│       ├── session/SKILL.md    ← /session   open/close a work session
+│       ├── query/SKILL.md      ← /query     recall pages (+ --graph relations)
+│       ├── ingest/SKILL.md     ← /ingest    raw source → wiki pages
+│       ├── lint/SKILL.md       ← /lint      wiki health audit (runs make lint)
+│       ├── file-back/SKILL.md  ← /file-back capture conversation insight
+│       └── bootstrap/SKILL.md  ← /bootstrap new domain / cold-start seed
 ├── raw/                   ← immutable source documents (read-only)
 │   ├── articles/          ← web articles, blog posts
 │   ├── papers/            ← academic papers, research
@@ -247,9 +231,9 @@ kortex/
     ├── index.md           ← OKF reserved: catalog; carries `okf_version: "0.2"`, no other frontmatter
     ├── log.md             ← OKF reserved: activity log, newest date first (OKF §9), no frontmatter
     ├── hot.md             ← session hot cache (~500 words, read first) — `type: cache`
-    ├── skill-impact.md    ← audit trail for skill/rule changes (ADR-0001) — `type: ledger`
     ├── overview.md        ← cluster navigation hub — `type: overview`
     ├── schema.md          ← entity templates and type definitions — `type: schema`
+    ├── kb/                ← builder-generated graph nodes (`make kb`) — `type: kb-entity`
     ├── domains/           ← broad topic hub pages (tier-2)
     ├── concepts/          ← ideas, frameworks, mental models (tier-3)
     ├── sources/           ← book/article/paper summaries (tier-4)
@@ -259,7 +243,7 @@ kortex/
     ├── decisions/         ← architectural and design choices
     ├── comparisons/       ← side-by-side source/tool analysis
     ├── syntheses/         ← cross-source analyses from queries (tier-5, leaves)
-    ├── patterns/          ← recurring failure modes / winning strategies (drive /evolve)
+    ├── patterns/          ← recurring failure modes / winning strategies
     └── gaps/              ← open questions and deficiencies
 ```
 
@@ -280,19 +264,18 @@ Every wiki page must be one of these types (set in frontmatter):
 | `decision` | Architectural or design choices | `wiki/decisions/` |
 | `comparison` | Side-by-side analysis of sources or tools | `wiki/comparisons/` |
 | `synthesis` | Cross-source analyses filed from queries (leaves) | `wiki/syntheses/` |
-| `pattern` | Recurring failure mode or winning strategy (drives `/evolve`) | `wiki/patterns/` |
+| `pattern` | Recurring failure mode or winning strategy | `wiki/patterns/` |
 | `gap` | Open questions, unknowns, deficiencies | `wiki/gaps/` |
 | `cache` | Session hot cache | `wiki/hot.md` |
 | `overview` | Cluster navigation hub | `wiki/overview.md` |
 | `schema` | Entity templates / type definitions | `wiki/schema.md` |
-| `ledger` | Skill/rule change audit trail | `wiki/skill-impact.md` |
 
 **OKF conformance (§11):** `type` is the only always-required OKF key, and **every
 non-reserved `.md` file must carry frontmatter with a non-empty `type`** — including
 the meta pages above and builder-generated `wiki/kb/*.md` nodes. Only `index.md` and
 `log.md` are OKF-**reserved** (no frontmatter; the root `index.md` carries just
 `okf_version: "0.2"`). OKF types are not centrally registered and consumers tolerate
-unknown types, so the kortex-local `cache`/`overview`/`schema`/`ledger` types are valid.
+unknown types, so the kortex-local `cache`/`overview`/`schema` types are valid.
 
 ---
 
@@ -326,6 +309,7 @@ updated: <YYYY-MM-DD>
 ```
 
 **Status values (OKF v0.2 `status` enum — only these three):**
+
 - `draft` — stub or in-progress, not yet complete
 - `stable` — current and accurate (OKF default when `status` is absent)
 - `deprecated` — replaced or retired; add a markdown link to the replacement page
@@ -336,11 +320,13 @@ do **not** invent a `status: stale`. Lint flags staleness by comparing `stale_af
 against now.
 
 **Confidence values** (kortex extension — orthogonal to OKF trust tiers):
+
 - `high` — multiple sources agree, well-verified
 - `medium` — single source or partially verified
 - `low` — uncertain, inferred, or unverified — treat claims with caution
 
 **OKF v0.2 provenance & trust fields:**
+
 - `sources` — a **list of mappings**, each with a required `resource` (followable
   artifact or scope descriptor) plus optional `id`, `title`, `author`. Per-claim
   attribution is a markdown footnote whose label matches a `sources[].id`.
@@ -357,6 +343,7 @@ against now.
   with an explicit UTC offset — never a bare `YYYY-MM-DD`.
 
 **Inline markers:**
+
 - `NOT VERIFIED` — claim has no traceable source; must be verified before trusting
 - `PENDING — escalate to human` — contradiction between sources; human must resolve
 
@@ -370,10 +357,10 @@ in prose shows up as dead, unclickable text. Never emit it in human-readable con
 
 ### Form 1 — `## Relations` SPO tables → `[[type:slug]]` (machine-readable)
 
-The `## Relations` table is a machine-readable edge list traversed by `/graph`. Its Subject
-and Object cells **must** use raw `[[type:slug]]` — `/graph` parses this exact syntax.
+The `## Relations` table is a machine-readable edge list traversed by `/query --graph`. Its Subject
+and Object cells **must** use raw `[[type:slug]]` — `/query --graph` parses this exact syntax.
 
-```
+```text
 | Subject          | Predicate | Object              |
 |------------------|-----------|---------------------|
 | [[concept:x402]] | requires  | [[concept:blockchain]] |
@@ -389,7 +376,7 @@ All human-readable references — inline prose, `## Related` / `## See Also` bul
 `hot.md`, `wiki/index.md`, `## Open Questions` — use standard markdown links so they render
 and click on GitHub:
 
-```
+```text
 [x402](../concepts/x402.md)
 [Machine Payments Protocol (MPP)](../concepts/machine-payments-protocol-mpp.md)
 [Tempo](../projects/tempo.md)
@@ -399,7 +386,7 @@ Path is relative to the current file (`../concepts/`, `../projects/`, `../source
 `../domains/`; from `wiki/` root pages like `hot.md`, drop the `../`). Pick a readable title,
 not the slug. An aliased wikilink `[[concept:mcp|MCP]]` becomes `[MCP](../concepts/mcp.md)`.
 
-**Rule of thumb:** if a human reads the line, it's a markdown link. If `/graph` parses the
+**Rule of thumb:** if a human reads the line, it's a markdown link. If `/query --graph` parses the
 line (Relations table only), it's `[[type:slug]]`.
 
 Every new page must be linked from its parent domain page and from `wiki/index.md`.
@@ -436,10 +423,11 @@ unknown types/keys and broken links — so kortex extensions are safe.
 **Trust tiers** (OKF-derived, advisory): no `verified` ⇒ *unverified*; only non-human
 actors ⇒ *machine-confirmed*; a `human:<id>` actor ⇒ *human-reviewed*.
 
-**Follow-up (not schema):** `scripts/build_knowledge_base.py` must (a) emit a `type` in the
-frontmatter of each generated `wiki/kb/*.md` node **and** `wiki/knowledge-base.md` so those
-files stay conformant, and (b) anchor its `read_frontmatter_title` regex to a top-level key
-(line start, no leading whitespace) so a nested `sources[].title` cannot shadow the page title.
+**Follow-up (not schema):** (a) — done — `scripts/build_knowledge_base.py` emits a `type` on each
+generated `wiki/kb/*.md` node and on `wiki/knowledge-base.md` (`kb-entity` / `kb-index`), and
+`scripts/lint_wiki.py` checks only `type` on those generated files. (b) — open — anchor the
+builder's `read_frontmatter_title` regex (`build_knowledge_base.py:69`) to a top-level key (line
+start, no leading whitespace) so a nested `sources[].title` cannot shadow the page title.
 
 ---
 
@@ -496,7 +484,7 @@ headings **newest first**, each holding bulleted entries. **No frontmatter.** Th
 bold op tag is the attribution convention. This structure overrides the per-entry-heading,
 append-at-bottom phrasing from the LLM Wiki article.
 
-```
+```text
 # Log
 
 ## 2026-05-04
@@ -505,7 +493,7 @@ append-at-bottom phrasing from the LLM Wiki article.
 - **!failure** Paywalled article ingest blocked — pages: none; sources: raw/articles/blocked-article.pdf; note: PDF corrupted, re-download
 ```
 
-Op tags: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[EVOLVE]` `[UPDATE]` `[BOOTSTRAP]`;
+Op tags: `[INIT]` `[INGEST]` `[QUERY]` `[LINT]` `[FILE]` `[UPDATE]` `[BOOTSTRAP]`;
 `!failure` for dead-ends. Prune entries older than 90 days to a single summary line under
 their date heading (Hard Rule 2).
 
@@ -515,7 +503,7 @@ their date heading (Hard Rule 2).
 
 `wiki/index.md` is organized by entity type. Each entry is one line:
 
-```
+```text
 - [Page Title](path/to/page.md) — one-line description
 ```
 
