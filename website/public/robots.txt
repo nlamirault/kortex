@@ -1,0 +1,17 @@
+# Kortex — personal knowledge garden
+#
+# The wiki is meant to be read, by humans and by agents. Every HTML page is
+# also available as clean Markdown via `Accept: text/markdown` (see the Worker).
+
+User-agent: *
+Allow: /
+
+# AI crawlers — welcome to read the garden.
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

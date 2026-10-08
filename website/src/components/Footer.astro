@@ -1,0 +1,63 @@
+---
+// SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__note">
+      <strong>Kortex</strong> — a personal knowledge garden built on the
+      <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md" rel="noopener">Open Knowledge Format</a>.
+      Pages grow from 🌱 seedling to 🌳 evergreen as they are verified.
+    </p>
+    <p class="footer__meta">
+      <span>© {year} Nicolas Lamirault</span>
+      <span>Apache-2.0</span>
+      <a href="/llms.txt">llms.txt</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: var(--space-hero);
+    border-top: 1px solid var(--line);
+    background: var(--surface-alt);
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: var(--space-2xl);
+  }
+
+  .footer__note {
+    max-width: 52ch;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .footer__note a {
+    border-bottom: 1px solid var(--link-border);
+  }
+
+  .footer__meta {
+    display: flex;
+    gap: var(--space-md);
+    color: var(--subtle);
+    font-size: 0.82rem;
+    font-family: var(--font-mono);
+  }
+
+  .footer__meta a {
+    color: var(--subtle);
+  }
+
+  .footer__meta a:hover {
+    color: var(--rust);
+  }
+</style>

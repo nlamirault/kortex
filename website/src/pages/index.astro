@@ -1,0 +1,158 @@
+---
+// SPDX-FileCopyrightText: Copyright (C) 2026 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ConceptCard from '../components/ConceptCard.astro';
+import { growthStage } from '../lib/growth';
+
+const all = await getCollection('wiki');
+
+// Garden census: how many pages sit at each growth stage.
+const census = { seedling: 0, budding: 0, evergreen: 0, archived: 0 };
+for (const e of all) census[growthStage(e.data.status, e.data.confidence).key]++;
+
+const byType = (type: string) =>
+  all
+    .filter((e) => e.data.type === type)
+    .sort((a, b) => (a.data.title ?? a.id).localeCompare(b.data.title ?? b.id));
+
+const sections = [
+  { id: 'domains', type: 'domain', title: 'Domains', blurb: 'Broad topic areas — the beds of the garden.' },
+  { id: 'concepts', type: 'concept', title: 'Concepts', blurb: 'Ideas, frameworks and mental models.' },
+  { id: 'sources', type: 'source', title: 'Sources', blurb: 'Books, papers and articles, synthesized.' },
+  { id: 'organizations', type: 'organization', title: 'Organizations', blurb: 'Companies, foundations and standards bodies.' },
+].filter((s) => byType(s.type).length > 0);
+---
+
+<Layout>
+  <section class="hero container">
+    <span class="eyebrow">Open Knowledge Format · LLM Wiki</span>
+    <h1 class="hero__title">A knowledge garden, not a notebook.</h1>
+    <p class="hero__lede measure">
+      Kortex synthesizes raw sources into an interlinked wiki that gets richer
+      with every addition. Each page ripens from 🌱 <strong>seedling</strong> to
+      🌳 <strong>evergreen</strong> as it is verified — the badge you see is drawn
+      straight from its OKF <code>status</code> and <code>confidence</code>.
+    </p>
+
+    <dl class="census" aria-label="Garden census by growth stage">
+      <div class="census__item">
+        <dt>{all.length}</dt><dd>pages</dd>
+      </div>
+      <div class="census__item census__item--seedling">
+        <dt>🌱 {census.seedling}</dt><dd>seedling</dd>
+      </div>
+      <div class="census__item census__item--budding">
+        <dt>🌿 {census.budding}</dt><dd>budding</dd>
+      </div>
+      <div class="census__item census__item--evergreen">
+        <dt>🌳 {census.evergreen}</dt><dd>evergreen</dd>
+      </div>
+    </dl>
+  </section>
+
+  {sections.map((s) => (
+    <section id={s.id} class="section container">
+      <header class="section__head">
+        <h2>{s.title}</h2>
+        <p>{s.blurb}</p>
+      </header>
+      <div class="grid">
+        {byType(s.type).map((entry) => <ConceptCard entry={entry} />)}
+      </div>
+    </section>
+  ))}
+</Layout>
+
+<style>
+  .hero {
+    padding-block: var(--space-hero) var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .hero__title {
+    font-size: clamp(2.3rem, 6vw, 3.9rem);
+    font-weight: 600;
+    max-width: 16ch;
+  }
+
+  .hero__lede {
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  .hero__lede code {
+    background: var(--surface-alt);
+    padding: 0.05em 0.35em;
+    border-radius: var(--radius-sm);
+    font-size: 0.85em;
+  }
+
+  .census {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin: var(--space-md) 0 0;
+  }
+
+  .census__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+  }
+
+  .census__item dt {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .census__item dd {
+    margin: 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .census__item--seedling { border-color: var(--seedling-soft); }
+  .census__item--budding { border-color: var(--budding-soft); }
+  .census__item--evergreen { border-color: var(--evergreen-soft); }
+
+  .section {
+    padding-block: var(--space-2xl);
+    scroll-margin-top: var(--space-3xl);
+  }
+
+  .section__head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section__head h2 {
+    font-size: 1.9rem;
+  }
+
+  .section__head p {
+    color: var(--muted);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-lg);
+  }
+</style>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Kortex">
+  <rect width="32" height="32" rx="7" fill="#faf8f3"/>
+  <path d="M16 26V14" stroke="#8f4529" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M16 17c-1.2-4-4.6-5.6-8-5.6.2 4 2.8 7.2 8 7.2z" fill="#6b7f6e"/>
+  <path d="M16 15c1-4.2 4.4-6 7.8-6-.1 4.2-2.6 7.6-7.8 7.6z" fill="#3f7a4f"/>
+  <circle cx="16" cy="12" r="2.4" fill="#b5603a"/>
+</svg>

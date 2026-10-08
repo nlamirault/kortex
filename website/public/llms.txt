@@ -1,0 +1,41 @@
+# Kortex
+
+> A personal knowledge base powered by the LLM Wiki protocol (Karpathy, 2024),
+> with every page serialized as an Open Knowledge Format (OKF v0.2) concept
+> document. Raw sources are synthesized once into an interlinked wiki that gets
+> richer with each addition — queries hit the pre-synthesized layer, not the
+> raw documents.
+
+License: Apache-2.0
+Language: English
+
+## How to read it
+
+Every HTML page is also served as clean Markdown. Send `Accept: text/markdown`
+and a Cloudflare Worker strips the chrome and returns the page as Markdown,
+close to its underlying OKF source, with an `x-markdown-tokens` hint header.
+
+## Growth stages
+
+Each entity page carries a growth badge derived from its OKF frontmatter:
+
+- 🌱 Seedling — `status: draft` (just planted, unverified)
+- 🌿 Budding — `status: stable`, `confidence` low or medium (partially verified)
+- 🌳 Evergreen — `status: stable`, `confidence: high` (trusted, sources agree)
+- 🍂 Archived — `status: deprecated` (retired)
+
+A page past its `stale_after` instant also shows a "needs re-verify" marker.
+
+## Entity types
+
+- Domains — broad topic areas, the hub pages
+- Concepts — ideas, frameworks and mental models
+- Sources — books, papers and articles, synthesized
+- Organizations — companies, foundations and standards bodies
+
+## Structure
+
+The site renders the `wiki/` OKF bundle directly. Builder-generated graph
+nodes (`wiki/kb/`) and reserved files (`index.md`, `log.md`) are not published.
+
+Source: https://github.com/nlamirault/kortex
