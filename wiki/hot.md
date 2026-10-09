@@ -95,6 +95,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [Agent Plugins](concepts/agent-plugins.md) — promoted concept (portable 1.0.0 packaging; contrasts-with AGENTS.md; open questions on shippers + deferred layers)
 - [Agent Plugins spec fiche](sources/ai-protocols-agent-plugins-spec-2026.md) — latest ingest (1.0.0 portable packaging: plugin.json + skills/ + mcp.json + client extensions; TSC roster)
 - [Agent Plugins (Google blog) fiche](sources/ai-protocols-agent-plugins-google-2026.md) — latest ingest (Google joins TSC; manifest-fragmentation framing; v1 non-goals; ARD/AI Catalog layering; Agents CLI + Data Agent Kit)
 - [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (Plugins package MCP servers via mcp.json; independent-failure back-links)
@@ -136,6 +137,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 ## Last Operations
 
 - 2026-10-09 `[INGEST]` — Agent Plugins 2 fiches (spec site + Google blog); 1.0.0 portable packaging (Skills + MCP); Google joins TSC; Agent Plugins concept now 2-source-grounded (promote); MCP back-linked.
+- 2026-10-09 `[FILE]` — Agent Plugins promoted to concept (2-source-grounded); contrasts-with AGENTS.md; MCP/AGENTS.md back-linked; queue marked promoted.
 - 2026-10-08 `[INGEST]` — Agent Skills fiche (agentskills.io); open SKILL.md folder format + progressive disclosure; contrasts-with AGENTS.md, enables tool-use; no new entities.
 - 2026-10-08 `[INGEST]` — Clef fiche (Cloudflare); open-source decision models (Clef/Clef-flash) on Workers AI; typed decision layer linked `enables`→tool-use; vendor-reported benchmarks; first Cloudflare source.
 - 2026-10-08 `[INGEST]` — Strands Box fiche; sandbox embedding Dogwood; Dogwood now 2-source-grounded (promote); **contradiction PENDING** — rate-limit counts responses vs Dogwood's "count requests" (concurrency bypass).

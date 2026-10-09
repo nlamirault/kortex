@@ -28,6 +28,7 @@ write operation also appends to `## By Date`.
 - [Personal Agent Consent & Trust Protocol (PACT)](concepts/personal-agent-consent-trust-protocol-pact.md) — consent + scoped delegation on A2A so a personal agent acts on a user's account with verifiable permission.
 - [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT.
 - [AGENTS.md](concepts/agents-md.md) — open Markdown convention giving AI coding agents per-repo instructions; an AAIF/Linux Foundation project.
+- [Agent Plugins](concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills and MCP servers into one portable plugin directory.
 - [Telemetry Signals](concepts/telemetry-signals.md) — the three observability data types: traces, metrics, logs.
 - [Distributed Tracing](concepts/distributed-tracing.md) — following one request across services via spans and context propagation.
 - [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md) — vendor-neutral standard and OTLP wire format for telemetry.
@@ -71,6 +72,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-09
 
+- [Agent Plugins](concepts/agent-plugins.md) — `[FILE]` (concept promotion, 2-source-grounded); portable packaging (Skills + MCP); contrasts-with AGENTS.md — also touched [AGENTS.md](concepts/agents-md.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
 - [Agent Plugins — portable package format (spec site)](sources/ai-protocols-agent-plugins-spec-2026.md), [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — `[INGEST]` (2 fiches); 1.0.0 portable packaging (Skills + MCP servers); Google joins TSC; no new entity pages — also touched [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-10-08

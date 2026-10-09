@@ -37,6 +37,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md) — consent + scoped delegation layer on A2A, so a personal agent acts on a user's account with verifiable permission.
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT (contradiction flagged).
 - [AGENTS.md](../concepts/agents-md.md) — open Markdown convention giving coding agents per-repo instructions; an AAIF/Linux Foundation project.
+- [Agent Plugins](../concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills + MCP servers into one portable plugin directory.
 
 ## Key Sources
 

@@ -4,7 +4,7 @@
 
 Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Google blog):
 
-- **Agent Plugins** (concept/project) — the portable packaging format itself (plugin.json + skills/ + mcp.json + reverse-domain extensions). ★ **Now grounded by 2 sources** (spec site + Google announcement) — promotion candidate.
+- **Agent Plugins** (concept/project) — ✅ Promoted 2026-10-09 → [wiki/concepts/agent-plugins.md](../wiki/concepts/agent-plugins.md) (was grounded by 2 sources: spec site + Google announcement).
 - **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols.
 - **TSC members** (organization) — Amazon, Cursor, Microsoft, OpenAI, Vercel (Core Maintainers); Amazon/AWS already has an org page.
 - **Agents CLI / Data Agent Kit** (project) — Google's first Plugins shippers (expert skills for agent ops; data-cloud skills + MCP servers for BigQuery/Spanner/Cloud SQL).

@@ -58,6 +58,7 @@ templates). Transport is typically JSON-RPC over stdio or HTTP (`NOT VERIFIED`).
 - [AGENTS.md](../concepts/agents-md.md) — a sibling AAIF project; MCP connects agents to tools, AGENTS.md tells them how to work in a repo.
 - [Agent Plugins spec fiche](../sources/ai-protocols-agent-plugins-spec-2026.md) — packages MCP servers via `mcp.json` (explicit transports) alongside Skills in one portable directory.
 - [Agent Plugins (Google blog) fiche](../sources/ai-protocols-agent-plugins-google-2026.md) — announces Plugins 1.0.0 + Google as Core Maintainer; independent-failure rule (bad MCP entry skips, skills still load).
+- [Agent Plugins](../concepts/agent-plugins.md) — the packaging concept: portable directory bundling Skills + MCP servers; MCP servers declared in `mcp.json`.
 
 ## Open Questions
 

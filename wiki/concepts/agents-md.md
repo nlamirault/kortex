@@ -63,6 +63,7 @@ human-facing.[^agentsmd]
 - [Agent2Agent (A2A)](../concepts/agent2agent-a2a.md) — another AAIF project; A2A's page first surfaced AGENTS.md as an AAIF sibling.
 - [AGENTS.md — open format for guiding coding agents](../sources/agents-md-open-format-2026.md) — the source.
 - [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — portable skill folders (SKILL.md + progressive disclosure); contrasts with per-repo AGENTS.md instructions.
+- [Agent Plugins](../concepts/agent-plugins.md) — portable packaging standard (Skills + MCP servers); contrasts with per-repo AGENTS.md instructions and reserves client-owned behavior to extension namespaces.
 
 ## Open Questions
 
