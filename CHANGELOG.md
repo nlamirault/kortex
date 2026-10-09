@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/nlamirault/kortex/compare/v1.0.0...v1.1.0) (2026-10-09)
+
+
+### 🚀 Features
+
+* **wiki:** ingest Agent Skills overview fiche ([#35](https://github.com/nlamirault/kortex/issues/35)) ([8c5b63f](https://github.com/nlamirault/kortex/commit/8c5b63f9d2e34840ad2403c3645d164ef49a1798))
+
+
+### 📚 Documentation
+
+* **wiki:** ingest agent plugins spec and announcement fiches ([#37](https://github.com/nlamirault/kortex/issues/37)) ([c1e1c5a](https://github.com/nlamirault/kortex/commit/c1e1c5a67761c9ba960cb8541e53b457374bb06a))
+
 ## 1.0.0 (2026-10-08)
 
 
