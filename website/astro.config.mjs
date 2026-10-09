@@ -12,6 +12,77 @@ import { defineConfig } from 'astro/config';
 // are unwrapped to plain text, since those pages are not published.
 const PUBLISHED = new Set(['concepts', 'domains', 'sources', 'organizations']);
 
+// OKF type → bundle directory (AGENTS.md "Entity Types"). `[[type:slug]]`
+// resolves to a bundle path by mapping `type` through this table, NOT by
+// using the literal type word (e.g. `[[person:x]]` → `people/x`).
+const TYPE_DIR = {
+  domain: 'domains',
+  concept: 'concepts',
+  source: 'sources',
+  person: 'people',
+  project: 'projects',
+  organization: 'organizations',
+  decision: 'decisions',
+  comparison: 'comparisons',
+  synthesis: 'syntheses',
+  pattern: 'patterns',
+  gap: 'gaps',
+};
+
+const WIKILINK_RE = /\[\[([a-z]+):([^\]|]+)(?:\|([^\]]+))?\]\]/g;
+
+/**
+ * Remark plugin: convert `[[type:slug]]` / `[[type:slug|Label]]` wikilinks
+ * (used in `## Relations` SPO tables) into site links. Published targets
+ * become `/dir/slug/` links; unpublished or unknown types unwrap to plain
+ * text, mirroring remarkWikiLinks policy for unpublished markdown links.
+ */
+function remarkWikilinks() {
+  return (/** @type {any} */ tree) => {
+    /** @param {any} node */
+    const walk = (node) => {
+      if (Array.isArray(node.children)) {
+        for (let i = node.children.length - 1; i >= 0; i--) {
+          const child = node.children[i];
+          if (child.type === 'text' && typeof child.value === 'string') {
+            WIKILINK_RE.lastIndex = 0;
+            let m;
+            let last = 0;
+            const parts = [];
+            while ((m = WIKILINK_RE.exec(child.value)) !== null) {
+              const [full, type, slug, label] = m;
+              if (m.index > last) {
+                parts.push({ type: 'text', value: child.value.slice(last, m.index) });
+              }
+              const dir = TYPE_DIR[type];
+              const text = label || slug;
+              if (dir && PUBLISHED.has(dir)) {
+                parts.push({
+                  type: 'link',
+                  url: `/${dir}/${slug}/`,
+                  children: [{ type: 'text', value: text }],
+                });
+              } else {
+                parts.push({ type: 'text', value: text });
+              }
+              last = m.index + full.length;
+            }
+            if (parts.length > 0) {
+              if (last < child.value.length) {
+                parts.push({ type: 'text', value: child.value.slice(last) });
+              }
+              node.children.splice(i, 1, ...parts);
+            }
+          } else {
+            walk(child);
+          }
+        }
+      }
+    };
+    walk(tree);
+  };
+}
+
 /**
  * Remark plugin: resolve inter-wiki markdown links against the page's own
  * location in the bundle, then map them to site routes. A link is relative to
@@ -71,7 +142,7 @@ function remarkStripLeadingH1() {
 // https://astro.build/config
 export default defineConfig({
   markdown: {
-    remarkPlugins: [remarkWikiLinks, remarkStripLeadingH1],
+    remarkPlugins: [remarkWikilinks, remarkWikiLinks, remarkStripLeadingH1],
     shikiConfig: {
       theme: 'rose-pine-dawn',
       wrap: true,
