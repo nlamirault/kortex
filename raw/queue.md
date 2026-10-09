@@ -2,6 +2,16 @@
 
 ## Pending
 
+Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Google blog):
+
+- **Agent Plugins** (concept/project) — the portable packaging format itself (plugin.json + skills/ + mcp.json + reverse-domain extensions). ★ **Now grounded by 2 sources** (spec site + Google announcement) — promotion candidate.
+- **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols.
+- **TSC members** (organization) — Amazon, Cursor, Microsoft, OpenAI, Vercel (Core Maintainers); Amazon/AWS already has an org page.
+- **Agents CLI / Data Agent Kit** (project) — Google's first Plugins shippers (expert skills for agent ops; data-cloud skills + MCP servers for BigQuery/Spanner/Cloud SQL).
+- **Agentic Resource Discovery (ARD)** (project/concept) — open discovery protocol treating Plugin as a first-class resource type (pre-invocation layer).
+- **AI Catalog** (project) — entry format ARD indexes; `application/agent-plugins+json` proposal points at plugin.json.
+- **Kevin Hou, Haoyu Wang, Alan Blount** (person) — Google post authors (DeepMind / Cloud Data / Cloud AI).
+
 Follow-up entities surfaced by the Agent Skills fiche (agentskills.io):
 
 - **Agent Skills** (concept) — the portable capability-folder format itself (SKILL.md + scripts/references/assets, progressive disclosure). Promotion candidate on next related ingest.
@@ -64,6 +74,9 @@ Follow-up entities surfaced by the Sierra PAP fiche:
 - **"Muse"** (project) — ⚠️ contested: Meta's (per Decagon) vs Rocket's (per Sierra). Resolve before creating a page.
 
 ## Done
+
+- https://agent-plugins.org/ → [wiki/sources/ai-protocols-agent-plugins-spec-2026.md](../wiki/sources/ai-protocols-agent-plugins-spec-2026.md) (fiche, 2026-10-09)
+- https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/ → [wiki/sources/ai-protocols-agent-plugins-google-2026.md](../wiki/sources/ai-protocols-agent-plugins-google-2026.md) (fiche, 2026-10-09)
 
 - https://agentskills.io/ → [wiki/sources/ai-protocols-agent-skills-overview-2026.md](../wiki/sources/ai-protocols-agent-skills-overview-2026.md) (fiche, 2026-10-08)
 - https://blog.cloudflare.com/clef-decision-models/ → [wiki/sources/ai-protocols-clef-decision-models-2026.md](../wiki/sources/ai-protocols-clef-decision-models-2026.md) (fiche, 2026-10-08)

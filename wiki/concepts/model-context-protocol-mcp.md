@@ -56,6 +56,8 @@ templates). Transport is typically JSON-RPC over stdio or HTTP (`NOT VERIFIED`).
 - [Introducing Dogwood: runtime verification for AI agents](../sources/ai-protocols-dogwood-runtime-verification-2026.md) — governs MCP tool calls; action schema generated from the MCP tool manifest.
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md) — uses MCP + OpenAPI as one of its routes for a personal agent to reach a business.
 - [AGENTS.md](../concepts/agents-md.md) — a sibling AAIF project; MCP connects agents to tools, AGENTS.md tells them how to work in a repo.
+- [Agent Plugins spec fiche](../sources/ai-protocols-agent-plugins-spec-2026.md) — packages MCP servers via `mcp.json` (explicit transports) alongside Skills in one portable directory.
+- [Agent Plugins (Google blog) fiche](../sources/ai-protocols-agent-plugins-google-2026.md) — announces Plugins 1.0.0 + Google as Core Maintainer; independent-failure rule (bad MCP entry skips, skills still load).
 
 ## Open Questions
 

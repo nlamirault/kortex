@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-10-08
+updated: 2026-10-09
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,19 @@ updated: 2026-10-08
 
 ## Current Focus
 
-Ingested (fiche) **Agent Skills** (agentskills.io project site, 2026-10-08) into **AI
+Ingested (2 fiches) **Agent Plugins 1.0.0** (agent-plugins.org spec site + Google Developers
+blog, Hou/Wang/Blount, 2026-08-06) into **AI Protocols**: open, vendor-neutral **packaging**
+standard bundling **Agent Skills + MCP servers** into one portable directory (`plugin.json` +
+`skills/` + `mcp.json` + reverse-domain client extensions). Fixes manifest fragmentation
+(same components, per-client wrappers → fork-and-drift); minimal rules (fixed locations, no
+inline declarations, explicit transports, independent failure); v1 non-goals (install, distro,
+permissions, sandboxing, trust, UX) left to clients. Google joins the TSC (Amazon, Cursor,
+Microsoft, OpenAI, Vercel) as Core Maintainer; ecosystem layering ARD → AI Catalog →
+Plugins → MCP/Skills; ships in Agents CLI + Data Agent Kit. No new entity pages (fiche);
+Agent Plugins concept now 2-source-grounded (promotion candidate), Google org + TSC members +
+ARD/AI Catalog + 3 authors parked in queue.
+
+Prior: ingested (fiche) **Agent Skills** (agentskills.io project site, 2026-10-08) into **AI
 Protocols**: Anthropic-originated, open folder-based capability format — a `SKILL.md`
 (metadata + instructions) plus optional scripts/references/assets — loaded via 3-stage
 **progressive disclosure** (discovery → activation → execution) to keep context footprint
@@ -83,7 +95,10 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [Agent Skills fiche](sources/ai-protocols-agent-skills-overview-2026.md) — latest ingest (open SKILL.md format + progressive disclosure; contrasts-with AGENTS.md)
+- [Agent Plugins spec fiche](sources/ai-protocols-agent-plugins-spec-2026.md) — latest ingest (1.0.0 portable packaging: plugin.json + skills/ + mcp.json + client extensions; TSC roster)
+- [Agent Plugins (Google blog) fiche](sources/ai-protocols-agent-plugins-google-2026.md) — latest ingest (Google joins TSC; manifest-fragmentation framing; v1 non-goals; ARD/AI Catalog layering; Agents CLI + Data Agent Kit)
+- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (Plugins package MCP servers via mcp.json; independent-failure back-links)
+- [Agent Skills fiche](sources/ai-protocols-agent-skills-overview-2026.md) — extended by Plugins spec (skills/ follows the Skills spec)
 - [AGENTS.md](concepts/agents-md.md) — enriched (contrasting sibling: portable skills vs per-repo instructions)
 - [Clef fiche](sources/ai-protocols-clef-decision-models-2026.md) — prior ingest (Cloudflare decision models on Workers AI)
 - [Tool Use / Function Calling](concepts/tool-use-function-calling.md) — enriched (Clef = typed decision layer in front of tool selection)
@@ -120,6 +135,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-09 `[INGEST]` — Agent Plugins 2 fiches (spec site + Google blog); 1.0.0 portable packaging (Skills + MCP); Google joins TSC; Agent Plugins concept now 2-source-grounded (promote); MCP back-linked.
 - 2026-10-08 `[INGEST]` — Agent Skills fiche (agentskills.io); open SKILL.md folder format + progressive disclosure; contrasts-with AGENTS.md, enables tool-use; no new entities.
 - 2026-10-08 `[INGEST]` — Clef fiche (Cloudflare); open-source decision models (Clef/Clef-flash) on Workers AI; typed decision layer linked `enables`→tool-use; vendor-reported benchmarks; first Cloudflare source.
 - 2026-10-08 `[INGEST]` — Strands Box fiche; sandbox embedding Dogwood; Dogwood now 2-source-grounded (promote); **contradiction PENDING** — rate-limit counts responses vs Dogwood's "count requests" (concurrency bypass).
