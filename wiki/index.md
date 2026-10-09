@@ -28,6 +28,7 @@ write operation also appends to `## By Date`.
 - [Personal Agent Consent & Trust Protocol (PACT)](concepts/personal-agent-consent-trust-protocol-pact.md) — consent + scoped delegation on A2A so a personal agent acts on a user's account with verifiable permission.
 - [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT.
 - [AGENTS.md](concepts/agents-md.md) — open Markdown convention giving AI coding agents per-repo instructions; an AAIF/Linux Foundation project.
+- [Agent Plugins](concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills and MCP servers into one portable plugin directory.
 - [Telemetry Signals](concepts/telemetry-signals.md) — the three observability data types: traces, metrics, logs.
 - [Distributed Tracing](concepts/distributed-tracing.md) — following one request across services via spans and context propagation.
 - [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md) — vendor-neutral standard and OTLP wire format for telemetry.
@@ -46,6 +47,8 @@ write operation also appends to `## By Date`.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](sources/ai-protocols-strands-box-sandboxes-2026.md) — fiche: AWS open-source agent sandbox pairing OS containment (macOS Seatbelt) with Dogwood policy at network/shell/Python/MCP boundaries.
 - [Introducing Clef: open-source decision models (Cloudflare)](sources/ai-protocols-clef-decision-models-2026.md) — fiche: Cloudflare's Clef/Clef-flash decision models return typed, calibrated classifications for fast agent routing; open-sourced (Apache 2.0) and hosted on Workers AI, with an RL fine-tuning service.
 - [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — fiche: open SKILL.md folder format with progressive disclosure (discovery → activation → execution); Anthropic-origin, broadly adopted across coding agents.
+- [Agent Plugins — portable package format for skills and MCP servers (spec site)](sources/ai-protocols-agent-plugins-spec-2026.md) — fiche: open 1.0.0 packaging standard (plugin.json + skills/ + mcp.json + reverse-domain extensions); TSC Amazon/Cursor/Microsoft/OpenAI/Vercel.
+- [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — fiche: Google (Hou/Wang/Blount, 2026-08-06) joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit.
 
 ## People
 
@@ -66,6 +69,11 @@ write operation also appends to `## By Date`.
 ## Gaps
 
 ## By Date
+
+### 2026-10-09
+
+- [Agent Plugins](concepts/agent-plugins.md) — `[FILE]` (concept promotion, 2-source-grounded); portable packaging (Skills + MCP); contrasts-with AGENTS.md — also touched [AGENTS.md](concepts/agents-md.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
+- [Agent Plugins — portable package format (spec site)](sources/ai-protocols-agent-plugins-spec-2026.md), [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — `[INGEST]` (2 fiches); 1.0.0 portable packaging (Skills + MCP servers); Google joins TSC; no new entity pages — also touched [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-10-08
 

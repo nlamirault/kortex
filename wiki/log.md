@@ -1,5 +1,12 @@
 # Log
 
+## 2026-10-09
+
+- **[FILE]** New concept: Agent Plugins (promoted, 2-source-grounded) — pages: wiki/concepts/agent-plugins.md (new), wiki/concepts/model-context-protocol-mcp.md (Related back-link), wiki/concepts/agents-md.md (contrasts-with back-link), wiki/domains/ai-protocols.md (cluster entry), index.md; note: portable 1.0.0 packaging (plugin.json + skills/ + mcp.json + client extension namespaces); single-skill/single-server non-goal; open questions on shipper roster and deferred layers; sources: https://agent-plugins.org/, https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/
+
+- **[INGEST]** Fiche — "Agent Plugins — portable package format for skills and MCP servers (spec site)" (agent-plugins.org) (fiche) — pages: wiki/sources/ai-protocols-agent-plugins-spec-2026.md (new), wiki/concepts/model-context-protocol-mcp.md (Related back-link), wiki/domains/ai-protocols.md (Key Sources), index.md; note: 1.0.0 open vendor-neutral packaging (plugin.json + skills/ + mcp.json + reverse-domain extensions); TSC Amazon/Cursor/Microsoft/OpenAI/Vercel; follow-ups parked (Agent Plugins concept, Google org, TSC members, Agents CLI/Data Agent Kit, ARD/AI Catalog); sources: https://agent-plugins.org/
+- **[INGEST]** Fiche — "Agent Plugins package your skills, tools, and more" by Kevin Hou, Haoyu Wang & Alan Blount (Google) (fiche) — pages: wiki/sources/ai-protocols-agent-plugins-google-2026.md (new), wiki/concepts/model-context-protocol-mcp.md (Related back-link), wiki/domains/ai-protocols.md (Key Sources), index.md; note: Google joins TSC as Core Maintainer; manifest-fragmentation/fork-and-drift framing; v1 non-goals (install/distro/permissions/sandboxing/trust/UX); ecosystem layering (ARD → AI Catalog → Plugins → MCP/Skills); ships in Agents CLI + Data Agent Kit; sources: https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/
+
 ## 2026-10-08
 
 - **[INGEST]** Fiche — "Agent Skills — standardized way to give AI agents new capabilities" (agentskills.io) (fiche) — pages: wiki/sources/ai-protocols-agent-skills-overview-2026.md (new), wiki/concepts/agents-md.md (contrasts-with back-link), wiki/domains/ai-protocols.md (Key Sources), index.md; note: open SKILL.md folder format + progressive disclosure (discovery → activation → execution), Anthropic-origin; no new entity pages (fiche); follow-ups parked (Agent Skills concept, Anthropic org, SKILL.md spec, client roster); sources: https://agentskills.io/

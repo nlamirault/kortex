@@ -37,6 +37,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md) — consent + scoped delegation layer on A2A, so a personal agent acts on a user's account with verifiable permission.
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT (contradiction flagged).
 - [AGENTS.md](../concepts/agents-md.md) — open Markdown convention giving coding agents per-repo instructions; an AAIF/Linux Foundation project.
+- [Agent Plugins](../concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills + MCP servers into one portable plugin directory.
 
 ## Key Sources
 
@@ -49,6 +50,8 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [x402 Foundation operational launch](../sources/ai-protocols-x402-foundation-launch-2026.md) — Linux Foundation stewardship of x402.
 - [A2A joins the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — A2A governance under AAIF.
 - [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — open SKILL.md folder format with progressive disclosure (Anthropic-origin, broadly adopted).
+- [Agent Plugins — portable package format (spec site)](../sources/ai-protocols-agent-plugins-spec-2026.md) — open 1.0.0 packaging standard bundling Skills + MCP servers (plugin.json + fixed locations + client extension namespaces).
+- [Agent Plugins package your skills, tools, and more (Google blog)](../sources/ai-protocols-agent-plugins-google-2026.md) — Google joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit shippers.
 
 ## Organizations
 
