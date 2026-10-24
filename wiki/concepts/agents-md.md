@@ -13,7 +13,7 @@ sources:
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T00:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-08
+updated: 2026-10-24
 tags: [agents-md, coding-agents, convention, markdown, aaif, linux-foundation]
 ---
 
@@ -64,6 +64,7 @@ human-facing.[^agentsmd]
 - [AGENTS.md — open format for guiding coding agents](../sources/agents-md-open-format-2026.md) — the source.
 - [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — portable skill folders (SKILL.md + progressive disclosure); contrasts with per-repo AGENTS.md instructions.
 - [Agent Plugins](../concepts/agent-plugins.md) — portable packaging standard (Skills + MCP servers); contrasts with per-repo AGENTS.md instructions and reserves client-owned behavior to extension namespaces.
+- [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — frames AGENTS.md as one of three emerging agent-context formats (with `llms.txt`, `skill.md`); companion [agentic-seo](../projects/agentic-seo.md) tool checks for its presence.
 
 ## Open Questions
 

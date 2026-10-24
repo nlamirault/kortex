@@ -10,8 +10,8 @@ updated: 2026-10-24
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 12 in  
-**Source pages:** 13
+**Degree:** 3 out / 13 in  
+**Source pages:** 14
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -33,6 +33,7 @@ updated: 2026-10-24
 | personal-agent-protocol-pap | builds-on | personal-agent-protocol-pap.md |
 | tool-use-function-calling | used-by | tool-use-function-calling.md |
 | aws | relates-to | aws.md |
+| addyosmani-agentic-engine-optimization-2026 | contrasts-with | addyosmani-agentic-engine-optimization-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-agent-plugins-google-2026 | implements | ai-protocols-agent-plugins-google-2026.md |
 | ai-protocols-agent-plugins-spec-2026 | implements | ai-protocols-agent-plugins-spec-2026.md |
@@ -49,6 +50,7 @@ updated: 2026-10-24
 - [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [organizations/aws.md](../organizations/aws.md)
+- [sources/addyosmani-agentic-engine-optimization-2026.md](../sources/addyosmani-agentic-engine-optimization-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)
 - [sources/ai-protocols-agent-plugins-spec-2026.md](../sources/ai-protocols-agent-plugins-spec-2026.md)

@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-08
+updated: 2026-10-24
 tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
@@ -52,6 +52,11 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — open SKILL.md folder format with progressive disclosure (Anthropic-origin, broadly adopted).
 - [Agent Plugins — portable package format (spec site)](../sources/ai-protocols-agent-plugins-spec-2026.md) — open 1.0.0 packaging standard bundling Skills + MCP servers (plugin.json + fixed locations + client extension namespaces).
 - [Agent Plugins package your skills, tools, and more (Google blog)](../sources/ai-protocols-agent-plugins-google-2026.md) — Google joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit shippers.
+- [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — docs structured for AI coding agents (token budgets, `llms.txt`, `skill.md`, AGENTS.md, "Copy for AI"); companion [agentic-seo](../projects/agentic-seo.md) audit tool.
+
+## Projects
+
+- [agentic-seo](../projects/agentic-seo.md) — CLI auditing documentation for AEO readiness (robots.txt, llms.txt, token budgets, skill.md, agent-permissions.json).
 
 ## Organizations
 

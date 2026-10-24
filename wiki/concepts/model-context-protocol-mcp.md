@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-08
+updated: 2026-10-24
 tags: [mcp, tools, context, interoperability]
 ---
 
@@ -59,6 +59,7 @@ templates). Transport is typically JSON-RPC over stdio or HTTP (`NOT VERIFIED`).
 - [Agent Plugins spec fiche](../sources/ai-protocols-agent-plugins-spec-2026.md) — packages MCP servers via `mcp.json` (explicit transports) alongside Skills in one portable directory.
 - [Agent Plugins (Google blog) fiche](../sources/ai-protocols-agent-plugins-google-2026.md) — announces Plugins 1.0.0 + Google as Core Maintainer; independent-failure rule (bad MCP entry skips, skills still load).
 - [Agent Plugins](../concepts/agent-plugins.md) — the packaging concept: portable directory bundling Skills + MCP servers; MCP servers declared in `mcp.json`.
+- [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — contrasts doc-based agent access (AEO's `llms.txt`/Markdown route) with MCP's direct-integration route.
 
 ## Open Questions
 

@@ -7,7 +7,7 @@ updated: 2026-10-24
 
 # Entity Index
 
-*29 entities — auto-generated*
+*31 entities — auto-generated*
 
 ## A
 
@@ -18,6 +18,8 @@ updated: 2026-10-24
 - ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md) — source
 - ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
+- ★ [Agentic Engine Optimization (AEO) — Addy Osmani](source-addyosmani-agentic-engine-optimization-2026.md) — source
+- · [agentic-seo](project-agentic-seo.md) — project
 - ★ [AGENTS.md](concept-agents-md.md) — concept
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md) — source
 - ★ [AI Protocols](domain-ai-protocols.md) — domain
