@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-24
+
+- **[INGEST]** Fiche + project — "Agentic Engine Optimization (AEO)" by Addy Osmani (fiche) + "agentic-seo" (project) — pages: wiki/sources/addyosmani-agentic-engine-optimization-2026.md (new), wiki/projects/agentic-seo.md (new), wiki/concepts/agents-md.md (Related back-link), wiki/concepts/model-context-protocol-mcp.md (Related back-link), wiki/domains/ai-protocols.md (Key Sources + new Projects section), index.md; note: six-layer AEO stack (access control → discovery → capability signaling → content formatting → token surfacing → "Copy for AI"); token count framed as a first-class doc metric (100K–200K agent context limits); companion MIT-licensed CLI audits llms.txt/robots.txt/token-budget/skill.md/agent-permissions.json, scored 0–100; follow-ups parked (AEO concept — single-source, Addy Osmani, llms.txt, skill.md, agent-permissions.json, arXiv agent-fingerprint paper); sources: https://addyosmani.com/blog/agentic-engine-optimization/, https://github.com/addyosmani/agentic-seo
+
 ## 2026-10-09
 
 - **[FILE]** New concept: Agent Plugins (promoted, 2-source-grounded) — pages: wiki/concepts/agent-plugins.md (new), wiki/concepts/model-context-protocol-mcp.md (Related back-link), wiki/concepts/agents-md.md (contrasts-with back-link), wiki/domains/ai-protocols.md (cluster entry), index.md; note: portable 1.0.0 packaging (plugin.json + skills/ + mcp.json + client extension namespaces); single-skill/single-server non-goal; open questions on shipper roster and deferred layers; sources: https://agent-plugins.org/, https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/

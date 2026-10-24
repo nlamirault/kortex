@@ -2,14 +2,15 @@
 title: concept Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # concept
 
-*13 entities*
+*14 entities*
 
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md)
+- ★ [Agent Plugins](concept-agent-plugins.md)
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md)
 - ★ [AGENTS.md](concept-agents-md.md)
 - ★ [Distributed Tracing](concept-distributed-tracing.md)

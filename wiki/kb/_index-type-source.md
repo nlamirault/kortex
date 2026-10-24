@@ -2,14 +2,18 @@
 title: source Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # source
 
-*9 entities*
+*13 entities*
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md)
+- ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md)
+- ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md)
+- ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md)
+- ★ [Agentic Engine Optimization (AEO) — Addy Osmani](source-addyosmani-agentic-engine-optimization-2026.md)
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md)
 - · [Introducing Clef: our open-source decision models, and new RL fine-tuning platform](source-ai-protocols-clef-decision-models-2026.md)
 - ★ [Introducing Dogwood: runtime verification for AI agents](source-ai-protocols-dogwood-runtime-verification-2026.md)

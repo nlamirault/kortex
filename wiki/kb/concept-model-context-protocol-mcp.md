@@ -3,15 +3,15 @@ title: "Model Context Protocol (MCP)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # Model Context Protocol (MCP)
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 9 in  
-**Source pages:** 10
+**Degree:** 3 out / 13 in  
+**Source pages:** 14
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -27,25 +27,33 @@ updated: 2026-10-08
 
 | Subject | Predicate | Source |
 |---------|-----------|--------|
+| agent-plugins | implements | agent-plugins.md |
 | agent2agent-a2a | contrasts-with | agent2agent-a2a.md |
 | agents-md | relates-to | agents-md.md |
 | personal-agent-protocol-pap | builds-on | personal-agent-protocol-pap.md |
 | tool-use-function-calling | used-by | tool-use-function-calling.md |
 | aws | relates-to | aws.md |
+| addyosmani-agentic-engine-optimization-2026 | contrasts-with | addyosmani-agentic-engine-optimization-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
+| ai-protocols-agent-plugins-google-2026 | implements | ai-protocols-agent-plugins-google-2026.md |
+| ai-protocols-agent-plugins-spec-2026 | implements | ai-protocols-agent-plugins-spec-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | implements | ai-protocols-strands-box-sandboxes-2026.md |
 | sierra-personal-agent-protocol-2026 | builds-on | sierra-personal-agent-protocol-2026.md |
 
 ## Source Pages
 
+- [concepts/agent-plugins.md](../concepts/agent-plugins.md)
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
 - [concepts/agents-md.md](../concepts/agents-md.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [organizations/aws.md](../organizations/aws.md)
+- [sources/addyosmani-agentic-engine-optimization-2026.md](../sources/addyosmani-agentic-engine-optimization-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
+- [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)
+- [sources/ai-protocols-agent-plugins-spec-2026.md](../sources/ai-protocols-agent-plugins-spec-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

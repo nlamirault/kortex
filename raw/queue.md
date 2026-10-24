@@ -73,8 +73,19 @@ Follow-up entities surfaced by the Sierra PAP fiche:
 - **Genesys, Rocket, Shopify, Walmart** (organization) — PAP industry partners. (Stripe already queued via x402.)
 - **"Muse"** (project) — ⚠️ contested: Meta's (per Decagon) vs Rocket's (per Sierra). Resolve before creating a page.
 
+Follow-up entities surfaced by the AEO fiche (addyosmani.com) + agentic-seo project:
+
+- **Agentic Engine Optimization (AEO)** (concept) — the named framework itself (six-layer stack: access control → discovery → capability signaling → content formatting → token surfacing → "Copy for AI"). Single-source so far (the fiche) — promotion candidate once a second source (e.g. the Lighthouse `llms.txt` check, or Google's AI-optimization guide) is ingested.
+- **Addy Osmani** (person) — author of the AEO post and the agentic-seo tool; Member of Technical Staff, Anthropic (Claude Code), per page bio; discloses prior Google Cloud AI affiliation.
+- **llms.txt** (concept) — proposed Markdown index format for AI agents; Chrome Lighthouse has an experimental check for it.
+- **skill.md** (concept) — capability-declaration format for services (inputs/constraints); distinct from Anthropic's Agent Skills `SKILL.md` folder format already in the wiki — names collide, scopes differ (service-capability doc vs. loadable agent capability).
+- **agent-permissions.json** (concept) — emerging spec for declarative automated-access rules (rate limits, preferred endpoints).
+- **Developer Experience with AI Coding Agents** (source, arXiv) — the per-agent HTTP-fingerprint research (Claude Code `axios/1.8.4`, Cursor `got`, Windsurf `colly`, etc.) cited by the AEO fiche; https://arxiv.org/html/2604.02544v1.
+
 ## Done
 
+- https://addyosmani.com/blog/agentic-engine-optimization/ → [wiki/sources/addyosmani-agentic-engine-optimization-2026.md](../wiki/sources/addyosmani-agentic-engine-optimization-2026.md) (fiche, 2026-10-24)
+- https://github.com/addyosmani/agentic-seo → [wiki/projects/agentic-seo.md](../wiki/projects/agentic-seo.md) (project, 2026-10-24)
 - https://agent-plugins.org/ → [wiki/sources/ai-protocols-agent-plugins-spec-2026.md](../wiki/sources/ai-protocols-agent-plugins-spec-2026.md) (fiche, 2026-10-09)
 - https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/ → [wiki/sources/ai-protocols-agent-plugins-google-2026.md](../wiki/sources/ai-protocols-agent-plugins-google-2026.md) (fiche, 2026-10-09)
 

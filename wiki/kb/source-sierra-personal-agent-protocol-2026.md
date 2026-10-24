@@ -3,7 +3,7 @@ title: "Introducing Personal Agent Protocol"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # Introducing Personal Agent Protocol

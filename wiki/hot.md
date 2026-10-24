@@ -14,7 +14,21 @@ updated: 2026-10-09
 
 ## Current Focus
 
-Ingested (2 fiches) **Agent Plugins 1.0.0** (agent-plugins.org spec site + Google Developers
+Ingested **Agentic Engine Optimization (AEO)** (Addy Osmani blog fiche + **agentic-seo**
+GitHub project, 2026-10-24) into **AI Protocols**: docs need structuring for AI coding agents,
+not just humans — a six-layer stack (access control → discovery → capability signaling →
+content formatting → token surfacing → "Copy for AI" button). Token count framed as a
+**first-class doc metric** (agents have ~100K–200K context; target <15K quick-starts, <25K API
+refs). Per-agent HTTP fingerprints cited (Claude Code `axios`, Cursor `got`, Windsurf `colly`)
+for AI-traffic monitoring separate from human analytics. **agentic-seo** is Osmani's companion
+MIT CLI implementing the checklist (10 checks, 0–100 score, `init` scaffolds `llms.txt`/
+`AGENTS.md`/`skill.md`/`agent-permissions.json`). New fiche + project page; back-linked
+`extends`→AGENTS.md and `contrasts-with`→MCP (doc-based vs. direct-integration agent access).
+AEO concept itself stays single-source/queued (promotion candidate on a 2nd source); Addy
+Osmani, llms.txt, skill.md, agent-permissions.json, and the cited arXiv fingerprint paper
+parked in queue.
+
+Prior: ingested (2 fiches) **Agent Plugins 1.0.0** (agent-plugins.org spec site + Google Developers
 blog, Hou/Wang/Blount, 2026-08-06) into **AI Protocols**: open, vendor-neutral **packaging**
 standard bundling **Agent Skills + MCP servers** into one portable directory (`plugin.json` +
 `skills/` + `mcp.json` + reverse-domain client extensions). Fixes manifest fragmentation
@@ -95,6 +109,10 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [AEO fiche](sources/addyosmani-agentic-engine-optimization-2026.md) — latest ingest (six-layer stack, token-as-metric, agent HTTP fingerprints)
+- [agentic-seo](projects/agentic-seo.md) — latest ingest (companion audit CLI, 10 checks, 0–100 score)
+- [AGENTS.md](concepts/agents-md.md) — enriched (named an emerging default agent-context format alongside llms.txt/skill.md)
+- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (contrasts-with doc-based AEO access)
 - [Agent Plugins](concepts/agent-plugins.md) — promoted concept (portable 1.0.0 packaging; contrasts-with AGENTS.md; open questions on shippers + deferred layers)
 - [Agent Plugins spec fiche](sources/ai-protocols-agent-plugins-spec-2026.md) — latest ingest (1.0.0 portable packaging: plugin.json + skills/ + mcp.json + client extensions; TSC roster)
 - [Agent Plugins (Google blog) fiche](sources/ai-protocols-agent-plugins-google-2026.md) — latest ingest (Google joins TSC; manifest-fragmentation framing; v1 non-goals; ARD/AI Catalog layering; Agents CLI + Data Agent Kit)
@@ -136,6 +154,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-24 `[INGEST]` — AEO fiche (Addy Osmani) + agentic-seo project (GitHub); six-layer stack, token-as-metric, agent HTTP fingerprints; AGENTS.md/MCP back-linked; AEO concept + Addy Osmani + llms.txt/skill.md/agent-permissions.json parked.
 - 2026-10-09 `[INGEST]` — Agent Plugins 2 fiches (spec site + Google blog); 1.0.0 portable packaging (Skills + MCP); Google joins TSC; Agent Plugins concept now 2-source-grounded (promote); MCP back-linked.
 - 2026-10-09 `[FILE]` — Agent Plugins promoted to concept (2-source-grounded); contrasts-with AGENTS.md; MCP/AGENTS.md back-linked; queue marked promoted.
 - 2026-10-08 `[INGEST]` — Agent Skills fiche (agentskills.io); open SKILL.md folder format + progressive disclosure; contrasts-with AGENTS.md, enables tool-use; no new entities.

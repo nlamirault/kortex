@@ -49,10 +49,13 @@ write operation also appends to `## By Date`.
 - [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — fiche: open SKILL.md folder format with progressive disclosure (discovery → activation → execution); Anthropic-origin, broadly adopted across coding agents.
 - [Agent Plugins — portable package format for skills and MCP servers (spec site)](sources/ai-protocols-agent-plugins-spec-2026.md) — fiche: open 1.0.0 packaging standard (plugin.json + skills/ + mcp.json + reverse-domain extensions); TSC Amazon/Cursor/Microsoft/OpenAI/Vercel.
 - [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — fiche: Google (Hou/Wang/Blount, 2026-08-06) joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit.
+- [Agentic Engine Optimization (AEO) — Addy Osmani](sources/addyosmani-agentic-engine-optimization-2026.md) — fiche: docs need structuring for AI coding agents (token budgets, `llms.txt`, `skill.md`, "Copy for AI"), the SEO analogue for agent-readable content.
 
 ## People
 
 ## Projects
+
+- [agentic-seo](projects/agentic-seo.md) — Osmani's MIT-licensed CLI auditing docs for Agentic Engine Optimization (AEO); 10 checks, 0–100 score.
 
 ## Organizations
 
@@ -69,6 +72,10 @@ write operation also appends to `## By Date`.
 ## Gaps
 
 ## By Date
+
+### 2026-10-24
+
+- [Agentic Engine Optimization (AEO) — Addy Osmani](sources/addyosmani-agentic-engine-optimization-2026.md), [agentic-seo](projects/agentic-seo.md) — `[INGEST]` (fiche + project); six-layer AEO stack (access control → discovery → capability signaling → content formatting → token surfacing → "Copy for AI"); companion audit CLI (10 checks, 0–100 score) — also touched [AGENTS.md](concepts/agents-md.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md)
 
 ### 2026-10-09
 
