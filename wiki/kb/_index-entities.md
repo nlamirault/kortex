@@ -2,17 +2,21 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # Entity Index
 
-*25 entities — auto-generated*
+*29 entities — auto-generated*
 
 ## A
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md) — source
 - · [Agent Communication Protocol (ACP)](concept-agent-communication-protocol-acp.md) — concept
+- ★ [Agent Plugins](concept-agent-plugins.md) — concept
+- ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md) — source
+- ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md) — source
+- ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [AGENTS.md](concept-agents-md.md) — concept
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md) — source

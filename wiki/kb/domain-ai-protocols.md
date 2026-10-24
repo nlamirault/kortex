@@ -3,15 +3,15 @@ title: "AI Protocols"
 type: kb-entity
 entity_type: domain
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # AI Protocols
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 18 in  
-**Source pages:** 19
+**Degree:** 0 out / 20 in  
+**Source pages:** 21
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -20,6 +20,7 @@ updated: 2026-10-08
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | agent-communication-protocol-acp | part-of | agent-communication-protocol-acp.md |
+| agent-plugins | part-of | agent-plugins.md |
 | agent2agent-a2a | part-of | agent2agent-a2a.md |
 | agents-md | part-of | agents-md.md |
 | model-context-protocol-mcp | part-of | model-context-protocol-mcp.md |
@@ -30,6 +31,7 @@ updated: 2026-10-08
 | aws | member-of | aws.md |
 | agents-md-open-format-2026 | extends | agents-md-open-format-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | extends | ai-protocols-a2a-agentic-ai-foundation-2026.md |
+| ai-protocols-agent-skills-overview-2026 | extends | ai-protocols-agent-skills-overview-2026.md |
 | ai-protocols-clef-decision-models-2026 | extends | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
@@ -41,6 +43,7 @@ updated: 2026-10-08
 ## Source Pages
 
 - [concepts/agent-communication-protocol-acp.md](../concepts/agent-communication-protocol-acp.md)
+- [concepts/agent-plugins.md](../concepts/agent-plugins.md)
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
 - [concepts/agents-md.md](../concepts/agents-md.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
@@ -52,6 +55,7 @@ updated: 2026-10-08
 - [organizations/aws.md](../organizations/aws.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
+- [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)

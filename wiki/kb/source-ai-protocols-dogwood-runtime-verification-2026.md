@@ -3,7 +3,7 @@ title: "Introducing Dogwood: runtime verification for AI agents"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-08
+updated: 2026-10-24
 ---
 
 # Introducing Dogwood: runtime verification for AI agents
