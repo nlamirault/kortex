@@ -3,7 +3,7 @@ title: "Personal Agent Protocol (PAP)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Personal Agent Protocol (PAP)

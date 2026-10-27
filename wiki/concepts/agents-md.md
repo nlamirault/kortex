@@ -13,7 +13,7 @@ sources:
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T00:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-24
+updated: 2026-10-27
 tags: [agents-md, coding-agents, convention, markdown, aaif, linux-foundation]
 ---
 
@@ -65,6 +65,7 @@ human-facing.[^agentsmd]
 - [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — portable skill folders (SKILL.md + progressive disclosure); contrasts with per-repo AGENTS.md instructions.
 - [Agent Plugins](../concepts/agent-plugins.md) — portable packaging standard (Skills + MCP servers); contrasts with per-repo AGENTS.md instructions and reserves client-owned behavior to extension namespaces.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — frames AGENTS.md as one of three emerging agent-context formats (with `llms.txt`, `skill.md`); companion [agentic-seo](../projects/agentic-seo.md) tool checks for its presence.
+- [AgentReady](../sources/ai-protocols-agentready-standard-2026.md) — cites AGENTS.md directly in its discovery-file linkage data: 100% of 38 traced fetches arrived via an explicit link, the highest rate of any discovery file it measured (vs. 86% for `llms.txt`'s 416 fetches).
 
 ## Open Questions
 

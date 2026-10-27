@@ -3,15 +3,15 @@ title: "Model Context Protocol (MCP)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Model Context Protocol (MCP)
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 13 in  
-**Source pages:** 14
+**Degree:** 3 out / 14 in  
+**Source pages:** 15
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -37,6 +37,7 @@ updated: 2026-10-24
 | ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-agent-plugins-google-2026 | implements | ai-protocols-agent-plugins-google-2026.md |
 | ai-protocols-agent-plugins-spec-2026 | implements | ai-protocols-agent-plugins-spec-2026.md |
+| ai-protocols-agentready-standard-2026 | argues-that | ai-protocols-agentready-standard-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | implements | ai-protocols-strands-box-sandboxes-2026.md |
 | sierra-personal-agent-protocol-2026 | builds-on | sierra-personal-agent-protocol-2026.md |
@@ -54,6 +55,7 @@ updated: 2026-10-24
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)
 - [sources/ai-protocols-agent-plugins-spec-2026.md](../sources/ai-protocols-agent-plugins-spec-2026.md)
+- [sources/ai-protocols-agentready-standard-2026.md](../sources/ai-protocols-agentready-standard-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

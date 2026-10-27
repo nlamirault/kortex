@@ -8,7 +8,7 @@ Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Goo
 - **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols.
 - **TSC members** (organization) — Amazon, Cursor, Microsoft, OpenAI, Vercel (Core Maintainers); Amazon/AWS already has an org page.
 - **Agents CLI / Data Agent Kit** (project) — Google's first Plugins shippers (expert skills for agent ops; data-cloud skills + MCP servers for BigQuery/Spanner/Cloud SQL).
-- **Agentic Resource Discovery (ARD)** (project/concept) — open discovery protocol treating Plugin as a first-class resource type (pre-invocation layer).
+- **Agentic Resource Discovery (ARD)** (project/concept) — open discovery protocol treating Plugin as a first-class resource type (pre-invocation layer). ★ Now cited by 2 sources (also the AgentReady fiche, as `/.well-known/ai-catalog.json` MAY) — promotion candidate.
 - **AI Catalog** (project) — entry format ARD indexes; `application/agent-plugins+json` proposal points at plugin.json.
 - **Kevin Hou, Haoyu Wang, Alan Blount** (person) — Google post authors (DeepMind / Cloud Data / Cloud AI).
 
@@ -47,6 +47,17 @@ Follow-up entities surfaced by the Strands Box fiche:
 - **macOS Seatbelt** (concept/project) — the OS-level containment mechanism Box starts with.
 - **Fernando Dingler** (person) — Principal Engineer, AWS; author of the Strands Box post.
 
+Follow-up entities surfaced by the AgentReady fiche (agentready.org):
+
+- **Ora** (organization) — publisher of AgentReady; runs the measured-agent-behavior studies (1,056-site study, ~50,000-site April 2026 scan, Stripe Link checkout study) and its own agent-readiness ranker.
+- **AgentReady** (concept) — the find/read/act checklist discipline itself, distinct from Ora the org; promotion candidate once a 2nd independent source appears.
+- **WebMCP** (concept) — W3C Community Group draft; `Act`-stage practice raised from MAY to SHOULD in v2.0.
+- **Web Bot Auth** (concept) — listed among the protocols AgentReady says now serve agents (with MCP, WebMCP, A2A, x402, llms.txt); page doesn't bind it to a specific checklist item — ingest its own spec before claiming more.
+- **"AX is the New AEO"** (source, arXiv:2609.34951, published as an Ora blog post + paper, 2026-09) — the study AgentReady explicitly attributes its 99%-dead-end-journeys/2.1×-blocked/23%-more-turns finding to (4 agent stacks, Claude + GPT via Tavily). AgentReady's other headline figures (1,056-site 3.7×-omission-rate study, 82%/47% answer-provenance finding) are separate, unnamed Ora traced-run research — do not conflate with this paper on ingest. Ingest for primary-source detail (NOT VERIFIED here beyond AgentReady's citation).
+- **UCP / ACP (agent commerce)** (concept) — payment protocols AgentReady lists as `Act`-stage MAY alongside x402 and Stripe Link; ACP name collides with the existing Agent Communication Protocol (IBM/BeeAI) already in the wiki — disambiguate on ingest.
+- **NLWeb** (project/concept) — new `Act`-stage MAY practice added in v2.0 (AR-ACT-09).
+- **Comparable scanners** (projects) — is-agentic.com, Mintlify Agent Score, Netlify AXIS; mentioned alongside [agentic-seo](../wiki/projects/agentic-seo.md) as companion agent-readiness auditors.
+
 Follow-up entities surfaced by the A2A/AAIF fiche:
 
 - **Agentic AI Foundation (AAIF)** (organization) — Linux Foundation-directed body governing A2A, MCP, goose, AGENTS.md. ★ **Top priority — now grounded by 3 ingested sources** (A2A joined it, AGENTS.md stewarded by it, sibling to MCP). Clears the "real source" bar; ready to promote to a full org page.
@@ -84,6 +95,7 @@ Follow-up entities surfaced by the AEO fiche (addyosmani.com) + agentic-seo proj
 
 ## Done
 
+- https://www.agentready.org → [wiki/sources/ai-protocols-agentready-standard-2026.md](../wiki/sources/ai-protocols-agentready-standard-2026.md) (fiche, 2026-10-27)
 - https://addyosmani.com/blog/agentic-engine-optimization/ → [wiki/sources/addyosmani-agentic-engine-optimization-2026.md](../wiki/sources/addyosmani-agentic-engine-optimization-2026.md) (fiche, 2026-10-24)
 - https://github.com/addyosmani/agentic-seo → [wiki/projects/agentic-seo.md](../wiki/projects/agentic-seo.md) (project, 2026-10-24)
 - https://agent-plugins.org/ → [wiki/sources/ai-protocols-agent-plugins-spec-2026.md](../wiki/sources/ai-protocols-agent-plugins-spec-2026.md) (fiche, 2026-10-09)

@@ -14,7 +14,7 @@ sources:
 generated: {by: anthropic/claude-sonnet-5, at: 2026-10-24T00:00:00Z}
 verified: []
 stale_after: 2027-04-24T00:00:00Z
-updated: 2026-10-24
+updated: 2026-10-27
 tags: [aeo, agentic-seo, llms-txt, agents-md, skill-md, token-economics, documentation]
 ---
 
@@ -67,6 +67,7 @@ six-layer stack plus an audit tool to measure it.[^osmani]
 - [AGENTS.md](../concepts/agents-md.md) — named as one of the three emerging agent-context formats (with `llms.txt`, `skill.md`).
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — named as the alternative, direct-integration path to doc-based agent access.
 - [agentic-seo](../projects/agentic-seo.md) — Osmani's own audit tool implementing this post's checklist.
+- [AgentReady](../sources/ai-protocols-agentready-standard-2026.md) — a parallel open MUST/SHOULD/MAY checklist (find/read/act) for the same underlying concern, backed by large-scale agent-behavior studies; it never cites this post or the term AEO by name (editorial link, not sourced).
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
 [^osmani]: Addy Osmani, "Agentic Engine Optimization (AEO)", addyosmani.com, 2026-04-11, consulted 2026-10-24. Author discloses working at Google Cloud AI; post states it is not official Google Search policy.

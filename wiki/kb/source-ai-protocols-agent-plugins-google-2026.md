@@ -3,7 +3,7 @@ title: "Agent Plugins package your skills, tools, and more (Google Developers bl
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Agent Plugins package your skills, tools, and more (Google Developers blog)
