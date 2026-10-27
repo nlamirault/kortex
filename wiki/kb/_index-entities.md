@@ -7,7 +7,7 @@ updated: 2026-10-27
 
 # Entity Index
 
-*33 entities — auto-generated*
+*35 entities — auto-generated*
 
 ## A
 
@@ -19,6 +19,7 @@ updated: 2026-10-27
 - ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [Agentic Engine Optimization (AEO) — Addy Osmani](source-addyosmani-agentic-engine-optimization-2026.md) — source
+- · [agentic-ai-foundation](organization-agentic-ai-foundation.md) — organization
 - · [agentic-seo](project-agentic-seo.md) — project
 - · [AgentReady — Open Specification for Agent-Usable Products](source-ai-protocols-agentready-standard-2026.md) — source
 - ★ [AGENTS.md](concept-agents-md.md) — concept
@@ -57,6 +58,7 @@ updated: 2026-10-27
 ## T
 
 - ★ [Telemetry Signals](concept-telemetry-signals.md) — concept
+- ★ [The Sandbox as an Agent Primitive](source-ai-protocols-opensandbox-agent-primitive-2026.md) — source
 - ★ [Tool Use / Function Calling](concept-tool-use-function-calling.md) — concept
 ## W
 

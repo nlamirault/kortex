@@ -10,8 +10,8 @@ updated: 2026-10-27
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 2 out / 9 in  
-**Source pages:** 10
+**Degree:** 2 out / 10 in  
+**Source pages:** 11
 
 **Wiki page:** [Tool Use / Function Calling](../concepts/tool-use-function-calling.md)
 
@@ -34,6 +34,7 @@ updated: 2026-10-27
 | ai-protocols-clef-decision-models-2026 | enables | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | argues-that | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-open-responses-2026 | extends | ai-protocols-open-responses-2026.md |
+| ai-protocols-opensandbox-agent-primitive-2026 | argues-that | ai-protocols-opensandbox-agent-primitive-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | argues-that | ai-protocols-strands-box-sandboxes-2026.md |
 
 ## Source Pages
@@ -47,4 +48,5 @@ updated: 2026-10-27
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
+- [sources/ai-protocols-opensandbox-agent-primitive-2026.md](../sources/ai-protocols-opensandbox-agent-primitive-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
