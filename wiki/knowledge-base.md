@@ -13,19 +13,19 @@ updated: 2026-10-27
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 33 |
-| Major entities (★) | 28 |
-| Minor entities | 5 |
-| Total triples | 100 |
+| Total entities | 35 |
+| Major entities (★) | 29 |
+| Minor entities | 6 |
+| Total triples | 104 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| source | 15 | [→](kb/_index-type-source.md) |
+| source | 16 | [→](kb/_index-type-source.md) |
 | concept | 14 | [→](kb/_index-type-concept.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
-| organization | 1 | [→](kb/_index-type-organization.md) |
+| organization | 2 | [→](kb/_index-type-organization.md) |
 | project | 1 | [→](kb/_index-type-project.md) |
 
 ## Top Entities by Degree
@@ -36,12 +36,12 @@ updated: 2026-10-27
 | [Agent Plugins](kb/concept-agent-plugins.md) | concept | 5 | 1 |
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
 | [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 5 | 3 |
-| [Introducing Strands Box: AI agent sandboxes powered by Dogwood](kb/source-ai-protocols-strands-box-sandboxes-2026.md) | source | 5 | 3 |
+| [Introducing Strands Box: AI agent sandboxes powered by Dogwood](kb/source-ai-protocols-strands-box-sandboxes-2026.md) | source | 5 | 4 |
 | [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
 | [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 4 | 3 |
 | [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 4 | 5 |
 | [A New Chapter for A2A: Joining the Agentic AI Foundation](kb/source-ai-protocols-a2a-agentic-ai-foundation-2026.md) | source | 4 | 2 |
-| [Agent2Agent (A2A)](kb/concept-agent2agent-a2a.md) | concept | 3 | 8 |
+| [The Sandbox as an Agent Primitive](kb/source-ai-protocols-opensandbox-agent-primitive-2026.md) | source | 4 | 1 |
 
 ## Navigation
 

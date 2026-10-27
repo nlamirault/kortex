@@ -14,7 +14,7 @@ sources:
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T00:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-08
+updated: 2026-10-27
 tags: [governance, sandbox, agents, containment, dogwood, cedar, mcp, aws, runtime-verification]
 ---
 
@@ -73,6 +73,7 @@ above; `PENDING — escalate to human`** — resolve against a real Dogwood/Box 
 
 ## Liens Wiki
 
+- [The Sandbox as an Agent Primitive](ai-protocols-opensandbox-agent-primitive-2026.md) — contrasting sandbox approach: OpenSandbox is a runtime-neutral provisioning/execution API over Docker/Kubernetes, where Box is OS-level containment (macOS Seatbelt) plus Dogwood policy.
 - [Introducing Dogwood: runtime verification for AI agents](ai-protocols-dogwood-runtime-verification-2026.md) — Box embeds the Dogwood Local Engine and enforces its allow/deny decisions.
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — Box ships an MCP broker as one of its four policy-enforcement points.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — Box governs tool effects at the OS/network boundary rather than the tool call.
