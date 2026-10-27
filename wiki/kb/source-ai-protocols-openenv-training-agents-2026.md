@@ -19,7 +19,7 @@ updated: 2026-10-27
 
 | Predicate | Object | Source |
 |-----------|--------|--------|
-| created-by | agentic-ai-foundation | ai-protocols-openenv-training-agents-2026.md |
+| part-of | agentic-ai-foundation | ai-protocols-openenv-training-agents-2026.md |
 | extends | ai-protocols | ai-protocols-openenv-training-agents-2026.md |
 | implements | model-context-protocol-mcp | ai-protocols-openenv-training-agents-2026.md |
 | argues-that | tool-use-function-calling | ai-protocols-openenv-training-agents-2026.md |

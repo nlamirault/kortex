@@ -20,7 +20,7 @@ updated: 2026-10-27
 | Predicate | Object | Source |
 |-----------|--------|--------|
 | contrasts-with | ai-protocols-strands-box-sandboxes-2026 | ai-protocols-opensandbox-agent-primitive-2026.md |
-| created-by | agentic-ai-foundation | ai-protocols-opensandbox-agent-primitive-2026.md |
+| part-of | agentic-ai-foundation | ai-protocols-opensandbox-agent-primitive-2026.md |
 | extends | ai-protocols | ai-protocols-opensandbox-agent-primitive-2026.md |
 | argues-that | tool-use-function-calling | ai-protocols-opensandbox-agent-primitive-2026.md |
 

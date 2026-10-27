@@ -14,8 +14,8 @@ Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Goo
 
 Follow-up entities surfaced by the Agent Skills fiche (agentskills.io):
 
-- **Agent Skills** (concept) — the portable capability-folder format itself (SKILL.md + scripts/references/assets, progressive disclosure). Promotion candidate on next related ingest.
-- **Anthropic** (organization) — originator of the Agent Skills format; released as an open standard.
+- **Agent Skills** (concept) — the portable capability-folder format itself (SKILL.md + scripts/references/assets, progressive disclosure). ★ Now 2-source-grounded (agentskills.io + AAIF four-projects release, 2026-10-27: Anthropic → AAIF donation) — promote.
+- **Anthropic** (organization) — originator of the Agent Skills format; released as an open standard, contributed to AAIF 2026-10-22 (2 sources).
 - **SKILL.md specification** (source follow-up) — the full format spec at agentskills.io/specification; ingest for wire-level detail.
 - **Agent Skills client roster** (sources) — per-client instruction pages (Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, goose, Codex, …); ingest individually only as needed.
 
@@ -96,7 +96,7 @@ Follow-up entities surfaced by the AEO fiche (addyosmani.com) + agentic-seo proj
 Follow-up entities surfaced by the Open Responses fiche (aaif.io):
 
 - **Open Responses** (concept) — the spec itself (OpenAI Responses API shape, standardized; extensions mechanism). Single-source so far — promotion candidate once a second independent source (e.g. the openresponses.org spec text, or the Databricks/Vercel implementation posts) is ingested.
-- **Agentic AI Foundation (AAIF)** (organization) — now grounded by a 6th source (A2A, AGENTS.md, MCP-sibling framing, Open Responses, OpenSandbox, OpenEnv). Still top priority for promotion to a full org page.
+- **Agentic AI Foundation (AAIF)** (organization) — ✅ Promoted 2026-10-27 → [wiki/organizations/agentic-ai-foundation.md](../wiki/organizations/agentic-ai-foundation.md) (7th source: AAIF four-projects release).
 - **Databricks** (organization) — Model Serving exposes an Open Responses endpoint fronting Claude, Gemini, and open models.
 - **Vercel** (organization) — AI Gateway exposes an OpenResponses API.
 - **Angie Jones** (person) — author of the Open Responses fiche source (AAIF blog).
@@ -113,8 +113,18 @@ Follow-up entities surfaced by the OpenEnv fiche (aaif.io):
 - **Hugging Face** (organization) — OpenEnv maintainer org (Spaces hosting, TRL integration); not yet an org page.
 - **Reward design / reward hacking** (concept) — the recurring failure mode across the fiche's case studies (proxy metrics diverging from intended behavior); candidate for a `pattern` page if a second instance surfaces elsewhere in the wiki.
 
+Follow-up entities surfaced by the AAIF four-new-projects fiche (aaif.io):
+
+- **Agent Router** (project) — AAIF-hosted project; not described in the release.
+- **agentgateway** (project) — AAIF-hosted project; not described in the release.
+- **goose** (project) — AAIF founding project; cited by 3+ sources, no page yet.
+- **Alibaba** (organization) — contributor of OpenSandbox to AAIF.
+- **Manik Surtani** (person) — CTO and co-founder of AAIF.
+- **David Soria Parra** (person) — co-creator and lead maintainer of MCP (Anthropic); quoted on the Agent Skills donation.
+
 ## Done
 
+- https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects → [wiki/sources/ai-protocols-aaif-four-new-projects-2026.md](../wiki/sources/ai-protocols-aaif-four-new-projects-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/training-agents-for-real-world-tasks-with-openenv → [wiki/sources/ai-protocols-openenv-training-agents-2026.md](../wiki/sources/ai-protocols-openenv-training-agents-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/the-sandbox-as-an-agent-primitive → [wiki/sources/ai-protocols-opensandbox-agent-primitive-2026.md](../wiki/sources/ai-protocols-opensandbox-agent-primitive-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/what-open-responses-changes-for-ai-developers → [wiki/sources/ai-protocols-open-responses-2026.md](../wiki/sources/ai-protocols-open-responses-2026.md) (fiche, 2026-10-27)

@@ -57,7 +57,7 @@ entirely.
 
 | Subject | Predicate | Object |
 |---------|-----------|--------|
-| [[source:ai-protocols-openenv-training-agents-2026]] | created-by | [[organization:agentic-ai-foundation]] |
+| [[source:ai-protocols-openenv-training-agents-2026]] | part-of | [[organization:agentic-ai-foundation]] |
 | [[source:ai-protocols-openenv-training-agents-2026]] | extends | [[domain:ai-protocols]] |
 | [[source:ai-protocols-openenv-training-agents-2026]] | implements | [[concept:model-context-protocol-mcp]] |
 | [[source:ai-protocols-openenv-training-agents-2026]] | argues-that | [[concept:tool-use-function-calling]] |

@@ -10,8 +10,8 @@ updated: 2026-10-27
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 6 in  
-**Source pages:** 7
+**Degree:** 3 out / 7 in  
+**Source pages:** 8
 
 **Wiki page:** [AGENTS.md](../concepts/agents-md.md)
 
@@ -28,6 +28,7 @@ updated: 2026-10-27
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | agent-plugins | contrasts-with | agent-plugins.md |
+| agentic-ai-foundation | relates-to | agentic-ai-foundation.md |
 | agentic-seo | integrates-with | agentic-seo.md |
 | addyosmani-agentic-engine-optimization-2026 | extends | addyosmani-agentic-engine-optimization-2026.md |
 | agents-md-open-format-2026 | describes | agents-md-open-format-2026.md |
@@ -38,6 +39,7 @@ updated: 2026-10-27
 
 - [concepts/agent-plugins.md](../concepts/agent-plugins.md)
 - [concepts/agents-md.md](../concepts/agents-md.md)
+- [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [projects/agentic-seo.md](../projects/agentic-seo.md)
 - [sources/addyosmani-agentic-engine-optimization-2026.md](../sources/addyosmani-agentic-engine-optimization-2026.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)

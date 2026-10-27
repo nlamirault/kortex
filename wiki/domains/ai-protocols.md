@@ -49,7 +49,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Decagon — Introducing PACT](../sources/decagon-pact-introduction-2026.md) / [openpactprotocol.org spec](../sources/openpactprotocol-pact-spec-2026.md) — PACT sources.
 - [x402 Foundation operational launch](../sources/ai-protocols-x402-foundation-launch-2026.md) — Linux Foundation stewardship of x402.
 - [A2A joins the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — A2A governance under AAIF.
-- [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — open SKILL.md folder format with progressive disclosure (Anthropic-origin, broadly adopted).
+- [Agent Skills — standardized way to give AI agents new capabilities](../sources/ai-protocols-agent-skills-overview-2026.md) — open SKILL.md folder format with progressive disclosure (Anthropic-origin, broadly adopted); AAIF project since 2026-10-22.
 - [Agent Plugins — portable package format (spec site)](../sources/ai-protocols-agent-plugins-spec-2026.md) — open 1.0.0 packaging standard bundling Skills + MCP servers (plugin.json + fixed locations + client extension namespaces).
 - [Agent Plugins package your skills, tools, and more (Google blog)](../sources/ai-protocols-agent-plugins-google-2026.md) — Google joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit shippers.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — docs structured for AI coding agents (token budgets, `llms.txt`, `skill.md`, AGENTS.md, "Copy for AI"); companion [agentic-seo](../projects/agentic-seo.md) audit tool.
@@ -57,6 +57,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [What Open Responses changes for AI developers](../sources/ai-protocols-open-responses-2026.md) — shared spec based on OpenAI's Responses API so developers target one provider-neutral contract; now an AAIF project.
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — AAIF's OpenSandbox: a runtime-neutral sandbox lifecycle + execution API over Docker/Kubernetes.
 - [Training agents for real-world tasks with OpenEnv](../sources/ai-protocols-openenv-training-agents-2026.md) — AAIF's OpenEnv reset/step/state interface for agent-training environments; reward-design failure-mode case studies.
+- [Agentic AI Foundation Announces Four New Projects](../sources/ai-protocols-aaif-four-new-projects-2026.md) — AAIF takes in Agent Skills, Open Responses, OpenEnv, OpenSandbox; 10 hosted projects.
 
 ## Projects
 
@@ -64,6 +65,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 
 ## Organizations
 
+- [Agentic AI Foundation (AAIF)](../organizations/agentic-ai-foundation.md) — neutral steward of most agent-interop specs in this cluster (MCP, AGENTS.md, A2A, Agent Skills, Open Responses, …).
 - [Amazon Web Services (AWS)](../organizations/aws.md) — publisher of Dogwood; ships agent tool-call governance via Bedrock AgentCore.
 
 ## Key People
