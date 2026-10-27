@@ -14,7 +14,17 @@ updated: 2026-10-27
 
 ## Current Focus
 
-Ingested **Open Responses** (AAIF blog, Angie Jones, 2026-10-27) into **AI Protocols**: an open,
+**Agent Skills is now an AAIF project.** Ingested the **AAIF four-new-projects press release**
+(AGNTCon + MCPCon NA, 2026-10-22): Anthropic contributed **Agent Skills** to the Agentic AI
+Foundation, alongside **Open Responses** (OpenAI), **OpenEnv** (Hugging Face), and **OpenSandbox**
+(Alibaba) — 10 hosted projects after year one (founding: MCP, goose, AGENTS.md; plus A2A, Agent
+Router, agentgateway). Agent Skills fiche updated (governance bullet, 2nd source, `part-of` AAIF).
+**AAIF promoted to an organization page** (7 grounding sources); the Linux Foundation link stays
+footnoted to the A2A/AGENTS.md fiches because the release text never names the LF. OpenSandbox and
+OpenEnv Relations fixed `created-by`→`part-of` AAIF (release names Alibaba/Hugging Face as
+contributors). Agent Skills concept now 2-source-grounded — next promotion candidate.
+
+Prior: ingested **Open Responses** (AAIF blog, Angie Jones, 2026-10-27) into **AI Protocols**: an open,
 provider-neutral spec built on the **shape of OpenAI's Responses API** so a developer targets one
 request/response contract instead of maintaining a separate adapter per provider (OpenAI
 Responses API, Anthropic Messages API, Google `generateContent`). Switching provider/model becomes
@@ -146,6 +156,9 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [AAIF four-new-projects fiche](sources/ai-protocols-aaif-four-new-projects-2026.md) — latest ingest (Agent Skills/Open Responses/OpenEnv/OpenSandbox join AAIF; 10-project roster)
+- [Agentic AI Foundation (AAIF)](organizations/agentic-ai-foundation.md) — new org page (promoted from queue)
+- [Agent Skills fiche](sources/ai-protocols-agent-skills-overview-2026.md) — enriched (Anthropic → AAIF donation, 2026-10-22)
 - [Open Responses fiche](sources/ai-protocols-open-responses-2026.md) — latest ingest (provider-neutral API spec based on OpenAI's Responses API; namespaced extensions; AAIF-stewarded)
 - [Tool Use / Function Calling](concepts/tool-use-function-calling.md) — enriched (extends: Open Responses standardizes the tool-call contract across providers)
 - [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (contrasts-with Open Responses: tool/data connection vs. the model-provider API contract itself)
@@ -195,6 +208,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-27 `[INGEST]`+`[FILE]` — AAIF four-new-projects fiche; Agent Skills now an AAIF project (Anthropic-contributed); AAIF org page promoted; OpenSandbox/OpenEnv `created-by`→`part-of` AAIF; Agent Router, agentgateway, goose, Alibaba, Surtani, Soria Parra parked.
 - 2026-10-27 `[INGEST]` — Open Responses fiche (AAIF blog, Angie Jones); provider-neutral API spec based on OpenAI's Responses API, namespaced extensions, AAIF-stewarded (4th grounding source); Tool Use/MCP back-linked; Open Responses concept + Databricks + Vercel + Angie Jones parked.
 - 2026-10-27 `[INGEST]` — AgentReady fiche (agentready.org, Ora); find/read/act MUST/SHOULD/MAY checklist, v2.0 MCP-or-CLI MUST, agent-behavior studies; AGENTS.md cited directly (100% link-fidelity finding), MCP argued-for; AEO link flagged editorial (no citation on the page); Ora org + AgentReady concept + WebMCP + Web Bot Auth + UCP/ACP + NLWeb + arXiv study parked, ARD merged into existing entry.
 - 2026-10-24 `[INGEST]` — AEO fiche (Addy Osmani) + agentic-seo project (GitHub); six-layer stack, token-as-metric, agent HTTP fingerprints; AGENTS.md/MCP back-linked; AEO concept + Addy Osmani + llms.txt/skill.md/agent-permissions.json parked.

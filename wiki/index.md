@@ -46,7 +46,7 @@ write operation also appends to `## By Date`.
 - [Introducing Dogwood: runtime verification for AI agents](sources/ai-protocols-dogwood-runtime-verification-2026.md) — fiche: open-source governance language adding temporal (history-aware) rules to agent tool calls, extending Cedar.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](sources/ai-protocols-strands-box-sandboxes-2026.md) — fiche: AWS open-source agent sandbox pairing OS containment (macOS Seatbelt) with Dogwood policy at network/shell/Python/MCP boundaries.
 - [Introducing Clef: open-source decision models (Cloudflare)](sources/ai-protocols-clef-decision-models-2026.md) — fiche: Cloudflare's Clef/Clef-flash decision models return typed, calibrated classifications for fast agent routing; open-sourced (Apache 2.0) and hosted on Workers AI, with an RL fine-tuning service.
-- [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — fiche: open SKILL.md folder format with progressive disclosure (discovery → activation → execution); Anthropic-origin, broadly adopted across coding agents.
+- [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md) — fiche: open SKILL.md folder format with progressive disclosure (discovery → activation → execution); Anthropic-origin, broadly adopted across coding agents; an AAIF project since 2026-10-22.
 - [Agent Plugins — portable package format for skills and MCP servers (spec site)](sources/ai-protocols-agent-plugins-spec-2026.md) — fiche: open 1.0.0 packaging standard (plugin.json + skills/ + mcp.json + reverse-domain extensions); TSC Amazon/Cursor/Microsoft/OpenAI/Vercel.
 - [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — fiche: Google (Hou/Wang/Blount, 2026-08-06) joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](sources/addyosmani-agentic-engine-optimization-2026.md) — fiche: docs need structuring for AI coding agents (token budgets, `llms.txt`, `skill.md`, "Copy for AI"), the SEO analogue for agent-readable content.
@@ -54,6 +54,7 @@ write operation also appends to `## By Date`.
 - [What Open Responses changes for AI developers](sources/ai-protocols-open-responses-2026.md) — fiche: shared spec based on OpenAI's Responses API so developers target one provider-neutral contract across providers; now an AAIF project.
 - [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md) — fiche: AAIF's OpenSandbox gives agents a runtime-neutral lifecycle + execution API over Docker/Kubernetes sandboxes, via an in-sandbox `execd` daemon.
 - [Training agents for real-world tasks with OpenEnv](sources/ai-protocols-openenv-training-agents-2026.md) — fiche: AAIF's OpenEnv reset/step/state interface for agent-training environments, with case studies on reward-design failure modes.
+- [Agentic AI Foundation Announces Four New Projects](sources/ai-protocols-aaif-four-new-projects-2026.md) — fiche: AAIF press release (2026-10-22) taking in Agent Skills (Anthropic), Open Responses (OpenAI), OpenEnv (Hugging Face), OpenSandbox (Alibaba); 10 hosted projects after year one.
 
 ## People
 
@@ -63,6 +64,7 @@ write operation also appends to `## By Date`.
 
 ## Organizations
 
+- [Agentic AI Foundation (AAIF)](organizations/agentic-ai-foundation.md) — vendor-neutral foundation hosting MCP, goose, AGENTS.md, A2A, Agent Skills, Open Responses, OpenEnv, OpenSandbox and more (10 projects).
 - [Amazon Web Services (AWS)](organizations/aws.md) — cloud vendor; publisher of Dogwood and home of Bedrock AgentCore agent governance.
 
 ## Decisions
@@ -79,6 +81,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-10-27
 
+- [Agentic AI Foundation Announces Four New Projects](sources/ai-protocols-aaif-four-new-projects-2026.md), [Agentic AI Foundation (AAIF)](organizations/agentic-ai-foundation.md) — `[INGEST]` (fiche) + `[FILE]` (organization, promoted from queue); Agent Skills contributed by Anthropic to AAIF — also touched [Agent Skills — standardized way to give AI agents new capabilities](sources/ai-protocols-agent-skills-overview-2026.md), [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md), [Training agents for real-world tasks with OpenEnv](sources/ai-protocols-openenv-training-agents-2026.md), [AI Protocols](domains/ai-protocols.md)
 - [AgentReady — open specification for agent-usable products](sources/ai-protocols-agentready-standard-2026.md) — `[INGEST]` (fiche); open find/read/act MUST/SHOULD/MAY checklist backed by measured-agent-behavior studies (Ora); v2.0 MCP-or-CLI MUST; AEO link kept editorial (not cited on the page) — also touched [Agentic Engine Optimization (AEO)](sources/addyosmani-agentic-engine-optimization-2026.md), [AGENTS.md](concepts/agents-md.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md)
 - [What Open Responses changes for AI developers](sources/ai-protocols-open-responses-2026.md) — `[INGEST]` (fiche); OpenAI Responses API shape standardized into a provider-neutral spec, now an AAIF project — also touched [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
 - [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md) — `[INGEST]` (fiche); AAIF's OpenSandbox: runtime-neutral lifecycle/execution API over Docker/Kubernetes sandboxes — also touched [Introducing Strands Box](sources/ai-protocols-strands-box-sandboxes-2026.md), [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [AI Protocols](domains/ai-protocols.md)

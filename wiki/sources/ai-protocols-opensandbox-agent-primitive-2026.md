@@ -53,7 +53,7 @@ interface, split into a lifecycle API and an execution API, backed by Docker or 
 | Subject | Predicate | Object |
 |---------|-----------|--------|
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | contrasts-with | [[source:ai-protocols-strands-box-sandboxes-2026]] |
-| [[source:ai-protocols-opensandbox-agent-primitive-2026]] | created-by | [[organization:agentic-ai-foundation]] |
+| [[source:ai-protocols-opensandbox-agent-primitive-2026]] | part-of | [[organization:agentic-ai-foundation]] |
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | extends | [[domain:ai-protocols]] |
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | argues-that | [[concept:tool-use-function-calling]] |
 
