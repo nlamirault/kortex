@@ -10,8 +10,8 @@ updated: 2026-10-27
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 20 in  
-**Source pages:** 21
+**Degree:** 0 out / 21 in  
+**Source pages:** 22
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -34,6 +34,7 @@ updated: 2026-10-27
 | ai-protocols-agent-skills-overview-2026 | extends | ai-protocols-agent-skills-overview-2026.md |
 | ai-protocols-clef-decision-models-2026 | extends | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
+| ai-protocols-open-responses-2026 | extends | ai-protocols-open-responses-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
 | ai-protocols-x402-foundation-launch-2026 | extends | ai-protocols-x402-foundation-launch-2026.md |
 | decagon-pact-introduction-2026 | extends | decagon-pact-introduction-2026.md |
@@ -58,6 +59,7 @@ updated: 2026-10-27
 - [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/ai-protocols-x402-foundation-launch-2026.md](../sources/ai-protocols-x402-foundation-launch-2026.md)
 - [sources/decagon-pact-introduction-2026.md](../sources/decagon-pact-introduction-2026.md)

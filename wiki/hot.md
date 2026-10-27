@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-10-09
+updated: 2026-10-27
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,23 @@ updated: 2026-10-09
 
 ## Current Focus
 
-Ingested **AgentReady** (agentready.org, Ora, 2026-10-27) into **AI Protocols**: open,
+Ingested **Open Responses** (AAIF blog, Angie Jones, 2026-10-27) into **AI Protocols**: an open,
+provider-neutral spec built on the **shape of OpenAI's Responses API** so a developer targets one
+request/response contract instead of maintaining a separate adapter per provider (OpenAI
+Responses API, Anthropic Messages API, Google `generateContent`). Switching provider/model becomes
+**configuration, not a code branch**; the agent still owns tool execution and permissions, and no
+model retraining is implied — the spec governs only the wire-level API. Provider-specific features
+(hosted search tools, timing/cache events) ship as **namespaced extensions** agents can safely
+ignore if unsupported. Already implemented: **Databricks Model Serving** exposes an Open Responses
+endpoint fronting Claude/Gemini/open models; **Vercel AI Gateway** exposes an OpenResponses API.
+The spec now sits under the **Agentic AI Foundation (AAIF)** — the same vendor-neutral governance
+pattern already seen with A2A and AGENTS.md, **grounding AAIF with a 4th source**. Fiche
+back-linked `extends`→Tool Use/Function Calling (standardizes the tool-call contract itself) and
+`contrasts-with`→MCP (adjacent layer: MCP connects model↔tools/data, Open Responses standardizes
+the model-provider API contract). Open Responses concept (single-source), Databricks, Vercel, and
+Angie Jones parked in queue.
+
+Prior: ingested **AgentReady** (agentready.org, Ora, 2026-10-27) into **AI Protocols**: open,
 vendor-neutral spec of what a product should do to be usable by AI agents — a **find → read →
 act** checklist (MUST/SHOULD/MAY), strength-ranked from measured agent behavior (250,000 agent
 runs), not protocol advocacy. Find: bot-protection access (MUST), sitemap.xml (SHOULD),
@@ -130,6 +146,9 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [Open Responses fiche](sources/ai-protocols-open-responses-2026.md) — latest ingest (provider-neutral API spec based on OpenAI's Responses API; namespaced extensions; AAIF-stewarded)
+- [Tool Use / Function Calling](concepts/tool-use-function-calling.md) — enriched (extends: Open Responses standardizes the tool-call contract across providers)
+- [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (contrasts-with Open Responses: tool/data connection vs. the model-provider API contract itself)
 - [AgentReady fiche](sources/ai-protocols-agentready-standard-2026.md) — latest ingest (find/read/act MUST/SHOULD/MAY checklist, MCP-or-CLI MUST in v2.0, agent-behavior studies)
 - [AEO fiche](sources/addyosmani-agentic-engine-optimization-2026.md) — enriched (extended by AgentReady); six-layer stack, token-as-metric, agent HTTP fingerprints
 - [agentic-seo](projects/agentic-seo.md) — latest ingest (companion audit CLI, 10 checks, 0–100 score)
@@ -176,6 +195,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-27 `[INGEST]` — Open Responses fiche (AAIF blog, Angie Jones); provider-neutral API spec based on OpenAI's Responses API, namespaced extensions, AAIF-stewarded (4th grounding source); Tool Use/MCP back-linked; Open Responses concept + Databricks + Vercel + Angie Jones parked.
 - 2026-10-27 `[INGEST]` — AgentReady fiche (agentready.org, Ora); find/read/act MUST/SHOULD/MAY checklist, v2.0 MCP-or-CLI MUST, agent-behavior studies; AGENTS.md cited directly (100% link-fidelity finding), MCP argued-for; AEO link flagged editorial (no citation on the page); Ora org + AgentReady concept + WebMCP + Web Bot Auth + UCP/ACP + NLWeb + arXiv study parked, ARD merged into existing entry.
 - 2026-10-24 `[INGEST]` — AEO fiche (Addy Osmani) + agentic-seo project (GitHub); six-layer stack, token-as-metric, agent HTTP fingerprints; AGENTS.md/MCP back-linked; AEO concept + Addy Osmani + llms.txt/skill.md/agent-permissions.json parked.
 - 2026-10-09 `[INGEST]` — Agent Plugins 2 fiches (spec site + Google blog); 1.0.0 portable packaging (Skills + MCP); Google joins TSC; Agent Plugins concept now 2-source-grounded (promote); MCP back-linked.
