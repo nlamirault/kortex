@@ -56,6 +56,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [AgentReady — open specification for agent-usable products](../sources/ai-protocols-agentready-standard-2026.md) — Ora's open find/read/act checklist for agent-usable products; MCP-or-CLI MUST in v2.0.
 - [What Open Responses changes for AI developers](../sources/ai-protocols-open-responses-2026.md) — shared spec based on OpenAI's Responses API so developers target one provider-neutral contract; now an AAIF project.
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — AAIF's OpenSandbox: a runtime-neutral sandbox lifecycle + execution API over Docker/Kubernetes.
+- [Training agents for real-world tasks with OpenEnv](../sources/ai-protocols-openenv-training-agents-2026.md) — AAIF's OpenEnv reset/step/state interface for agent-training environments; reward-design failure-mode case studies.
 
 ## Projects
 
