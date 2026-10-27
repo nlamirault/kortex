@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.1.0](https://github.com/nlamirault/kortex/compare/v1.0.0...v1.1.0) (2026-10-27)
+
+
+### 🚀 Features
+
+* **wiki:** ingest Agent Skills overview fiche ([#35](https://github.com/nlamirault/kortex/issues/35)) ([8c5b63f](https://github.com/nlamirault/kortex/commit/8c5b63f9d2e34840ad2403c3645d164ef49a1798))
+
+
+### 🐛 Bug Fixes
+
+* **website:** render wikilink relations as site links ([#38](https://github.com/nlamirault/kortex/issues/38)) ([a076feb](https://github.com/nlamirault/kortex/commit/a076feb2b936873269bcc9c475965e6045340315))
+
+
+### 📚 Documentation
+
+* **agent-ready:** ingest AgentReady open spec fiche into AI Protocols ([#40](https://github.com/nlamirault/kortex/issues/40)) ([ccafa5b](https://github.com/nlamirault/kortex/commit/ccafa5bd34bb5050a30a49e49ff5d7b21a24dcf1))
+* **wiki:** ingest agent plugins spec and announcement fiches ([#37](https://github.com/nlamirault/kortex/issues/37)) ([c1e1c5a](https://github.com/nlamirault/kortex/commit/c1e1c5a67761c9ba960cb8541e53b457374bb06a))
+* **wiki:** ingest Agentic Engine Optimization fiche and agentic-seo project ([#39](https://github.com/nlamirault/kortex/issues/39)) ([dcd0afd](https://github.com/nlamirault/kortex/commit/dcd0afd09a23620a48ae3608d47c12b1ef82ba21))
+* **wiki:** ingest Open Responses fiche into AI Protocols ([#41](https://github.com/nlamirault/kortex/issues/41)) ([b973974](https://github.com/nlamirault/kortex/commit/b97397451d0bb2adea3515fcbda481bede8d5204))
+* **wiki:** ingest OpenEnv training-agents fiche into AI Protocols ([#43](https://github.com/nlamirault/kortex/issues/43)) ([7d7395c](https://github.com/nlamirault/kortex/commit/7d7395c27b1a4577ff356de66c48e37e79ef8da3))
+* **wiki:** ingest OpenSandbox sandbox-primitive fiche into AI Protocols ([#42](https://github.com/nlamirault/kortex/issues/42)) ([aa7ee94](https://github.com/nlamirault/kortex/commit/aa7ee94aef02a0766de5e2d1cee418d0d2003709))
+
 ## 1.0.0 (2026-10-08)
 
 
