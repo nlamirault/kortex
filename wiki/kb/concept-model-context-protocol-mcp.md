@@ -10,8 +10,8 @@ updated: 2026-10-27
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 15 in  
-**Source pages:** 16
+**Degree:** 3 out / 16 in  
+**Source pages:** 17
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -40,6 +40,7 @@ updated: 2026-10-27
 | ai-protocols-agentready-standard-2026 | argues-that | ai-protocols-agentready-standard-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-open-responses-2026 | contrasts-with | ai-protocols-open-responses-2026.md |
+| ai-protocols-openenv-training-agents-2026 | implements | ai-protocols-openenv-training-agents-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | implements | ai-protocols-strands-box-sandboxes-2026.md |
 | sierra-personal-agent-protocol-2026 | builds-on | sierra-personal-agent-protocol-2026.md |
 
@@ -59,5 +60,6 @@ updated: 2026-10-27
 - [sources/ai-protocols-agentready-standard-2026.md](../sources/ai-protocols-agentready-standard-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
+- [sources/ai-protocols-openenv-training-agents-2026.md](../sources/ai-protocols-openenv-training-agents-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

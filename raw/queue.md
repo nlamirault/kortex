@@ -96,7 +96,7 @@ Follow-up entities surfaced by the AEO fiche (addyosmani.com) + agentic-seo proj
 Follow-up entities surfaced by the Open Responses fiche (aaif.io):
 
 - **Open Responses** (concept) — the spec itself (OpenAI Responses API shape, standardized; extensions mechanism). Single-source so far — promotion candidate once a second independent source (e.g. the openresponses.org spec text, or the Databricks/Vercel implementation posts) is ingested.
-- **Agentic AI Foundation (AAIF)** (organization) — now grounded by a 5th source (A2A, AGENTS.md, MCP-sibling framing, Open Responses, OpenSandbox). Still top priority for promotion to a full org page.
+- **Agentic AI Foundation (AAIF)** (organization) — now grounded by a 6th source (A2A, AGENTS.md, MCP-sibling framing, Open Responses, OpenSandbox, OpenEnv). Still top priority for promotion to a full org page.
 - **Databricks** (organization) — Model Serving exposes an Open Responses endpoint fronting Claude, Gemini, and open models.
 - **Vercel** (organization) — AI Gateway exposes an OpenResponses API.
 - **Angie Jones** (person) — author of the Open Responses fiche source (AAIF blog).
@@ -106,8 +106,16 @@ Follow-up entities surfaced by the OpenSandbox fiche (aaif.io):
 - **OpenSandbox** (project) — the sandbox platform itself (Apache 2.0, multi-language SDKs, Docker + Kubernetes runtimes, lifecycle + execution OpenAPI specs). Single-source so far — promotion candidate once a second source (e.g. the spec repo or a client-SDK doc) is ingested.
 - **`execd`** (project/concept) — the in-sandbox execution daemon that carries out commands/file ops from the SDK; minor, fold into the OpenSandbox project page rather than a standalone page.
 
+Follow-up entities surfaced by the OpenEnv fiche (aaif.io):
+
+- **OpenEnv** (project) — the training-environment interface itself (reset/step/state episode API, sync/async clients, MCPEnvironment base class). Single-source so far — promotion candidate once a second source (e.g. the GitHub repo or a Hugging Face doc) is ingested.
+- **Turing** (organization) — ran the Calendar Gym case study cited in the fiche; first Turing-org source in AI Protocols.
+- **Hugging Face** (organization) — OpenEnv maintainer org (Spaces hosting, TRL integration); not yet an org page.
+- **Reward design / reward hacking** (concept) — the recurring failure mode across the fiche's case studies (proxy metrics diverging from intended behavior); candidate for a `pattern` page if a second instance surfaces elsewhere in the wiki.
+
 ## Done
 
+- https://aaif.io/blog/training-agents-for-real-world-tasks-with-openenv → [wiki/sources/ai-protocols-openenv-training-agents-2026.md](../wiki/sources/ai-protocols-openenv-training-agents-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/the-sandbox-as-an-agent-primitive → [wiki/sources/ai-protocols-opensandbox-agent-primitive-2026.md](../wiki/sources/ai-protocols-opensandbox-agent-primitive-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/what-open-responses-changes-for-ai-developers → [wiki/sources/ai-protocols-open-responses-2026.md](../wiki/sources/ai-protocols-open-responses-2026.md) (fiche, 2026-10-27)
 - https://www.agentready.org → [wiki/sources/ai-protocols-agentready-standard-2026.md](../wiki/sources/ai-protocols-agentready-standard-2026.md) (fiche, 2026-10-27)

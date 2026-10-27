@@ -7,7 +7,7 @@ updated: 2026-10-27
 
 # source
 
-*16 entities*
+*17 entities*
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md)
@@ -24,4 +24,5 @@ updated: 2026-10-27
 - ★ [Linux Foundation Announces Operational Launch of x402 Foundation](source-ai-protocols-x402-foundation-launch-2026.md)
 - ★ [PACT Protocol Home (openpactprotocol.org)](source-openpactprotocol-pact-spec-2026.md)
 - ★ [The Sandbox as an Agent Primitive](source-ai-protocols-opensandbox-agent-primitive-2026.md)
+- ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md)
 - ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md)

@@ -7,7 +7,7 @@ updated: 2026-10-27
 
 # Entity Index
 
-*35 entities — auto-generated*
+*36 entities — auto-generated*
 
 ## A
 
@@ -60,6 +60,7 @@ updated: 2026-10-27
 - ★ [Telemetry Signals](concept-telemetry-signals.md) — concept
 - ★ [The Sandbox as an Agent Primitive](source-ai-protocols-opensandbox-agent-primitive-2026.md) — source
 - ★ [Tool Use / Function Calling](concept-tool-use-function-calling.md) — concept
+- ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md) — source
 ## W
 
 - ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md) — source

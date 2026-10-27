@@ -13,16 +13,16 @@ updated: 2026-10-27
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 35 |
-| Major entities (★) | 29 |
+| Total entities | 36 |
+| Major entities (★) | 30 |
 | Minor entities | 6 |
-| Total triples | 104 |
+| Total triples | 108 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| source | 16 | [→](kb/_index-type-source.md) |
+| source | 17 | [→](kb/_index-type-source.md) |
 | concept | 14 | [→](kb/_index-type-concept.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
 | organization | 2 | [→](kb/_index-type-organization.md) |
@@ -41,7 +41,7 @@ updated: 2026-10-27
 | [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 4 | 3 |
 | [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 4 | 5 |
 | [A New Chapter for A2A: Joining the Agentic AI Foundation](kb/source-ai-protocols-a2a-agentic-ai-foundation-2026.md) | source | 4 | 2 |
-| [The Sandbox as an Agent Primitive](kb/source-ai-protocols-opensandbox-agent-primitive-2026.md) | source | 4 | 1 |
+| [Training agents for real-world tasks with OpenEnv](kb/source-ai-protocols-openenv-training-agents-2026.md) | source | 4 | 1 |
 
 ## Navigation
 
