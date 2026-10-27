@@ -3,7 +3,7 @@ title: "Introducing Clef: our open-source decision models, and new RL fine-tunin
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Introducing Clef: our open-source decision models, and new RL fine-tuning platform

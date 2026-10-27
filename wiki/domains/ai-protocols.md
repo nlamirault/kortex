@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-24
+updated: 2026-10-27
 tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
@@ -53,6 +53,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Agent Plugins — portable package format (spec site)](../sources/ai-protocols-agent-plugins-spec-2026.md) — open 1.0.0 packaging standard bundling Skills + MCP servers (plugin.json + fixed locations + client extension namespaces).
 - [Agent Plugins package your skills, tools, and more (Google blog)](../sources/ai-protocols-agent-plugins-google-2026.md) — Google joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit shippers.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — docs structured for AI coding agents (token budgets, `llms.txt`, `skill.md`, AGENTS.md, "Copy for AI"); companion [agentic-seo](../projects/agentic-seo.md) audit tool.
+- [AgentReady — open specification for agent-usable products](../sources/ai-protocols-agentready-standard-2026.md) — Ora's open find/read/act checklist for agent-usable products; MCP-or-CLI MUST in v2.0.
 
 ## Projects
 

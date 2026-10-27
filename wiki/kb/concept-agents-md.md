@@ -3,15 +3,15 @@ title: "AGENTS.md"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # AGENTS.md
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 5 in  
-**Source pages:** 6
+**Degree:** 3 out / 6 in  
+**Source pages:** 7
 
 **Wiki page:** [AGENTS.md](../concepts/agents-md.md)
 
@@ -32,6 +32,7 @@ updated: 2026-10-24
 | addyosmani-agentic-engine-optimization-2026 | extends | addyosmani-agentic-engine-optimization-2026.md |
 | agents-md-open-format-2026 | describes | agents-md-open-format-2026.md |
 | ai-protocols-agent-skills-overview-2026 | contrasts-with | ai-protocols-agent-skills-overview-2026.md |
+| ai-protocols-agentready-standard-2026 | argues-that | ai-protocols-agentready-standard-2026.md |
 
 ## Source Pages
 
@@ -41,3 +42,4 @@ updated: 2026-10-24
 - [sources/addyosmani-agentic-engine-optimization-2026.md](../sources/addyosmani-agentic-engine-optimization-2026.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
+- [sources/ai-protocols-agentready-standard-2026.md](../sources/ai-protocols-agentready-standard-2026.md)

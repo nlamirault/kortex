@@ -2,7 +2,7 @@
 title: organization Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # organization

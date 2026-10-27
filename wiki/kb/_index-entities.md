@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Entity Index
 
-*31 entities — auto-generated*
+*32 entities — auto-generated*
 
 ## A
 
@@ -20,6 +20,7 @@ updated: 2026-10-24
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [Agentic Engine Optimization (AEO) — Addy Osmani](source-addyosmani-agentic-engine-optimization-2026.md) — source
 - · [agentic-seo](project-agentic-seo.md) — project
+- · [AgentReady — Open Specification for Agent-Usable Products](source-ai-protocols-agentready-standard-2026.md) — source
 - ★ [AGENTS.md](concept-agents-md.md) — concept
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md) — source
 - ★ [AI Protocols](domain-ai-protocols.md) — domain

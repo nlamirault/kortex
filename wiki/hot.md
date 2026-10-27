@@ -14,7 +14,28 @@ updated: 2026-10-09
 
 ## Current Focus
 
-Ingested **Agentic Engine Optimization (AEO)** (Addy Osmani blog fiche + **agentic-seo**
+Ingested **AgentReady** (agentready.org, Ora, 2026-10-27) into **AI Protocols**: open,
+vendor-neutral spec of what a product should do to be usable by AI agents — a **find → read →
+act** checklist (MUST/SHOULD/MAY), strength-ranked from measured agent behavior (250,000 agent
+runs), not protocol advocacy. Find: bot-protection access (MUST), sitemap.xml (SHOULD),
+`/.well-known/ai-catalog.json` (MAY, new v2.0). Read: answers in initial HTML + real HTTP status
+codes incl. 404/429+Retry-After [RFC 6585] (MUST), `llms.txt`/JSON-LD/OpenAPI linked from visited
+pages (SHOULD). Act, only if agents should complete tasks: **an MCP server or a CLI (MUST, new
+in v2.0 2026-10, AR-ACT-10)**, OAuth-metadata auth [RFC 8414/9728]/OpenAPI/SDKs/WebMCP (SHOULD,
+WebMCP raised from MAY in v2.0), agent payments x402/UCP/ACP/Stripe Link/NLWeb (MAY). Findings:
+AGENTS.md reached via explicit link 100% of 38 traced fetches (highest of any discovery file,
+vs. 86% for `llms.txt`'s 416); an April 2026 scan of ~50K sites found 88% shipped robots.txt/80%
+crawler-reachable but only 3% shipped a spec-grade MCP server (~1% passed OAuth+PKCE) — "agents
+can read, they cannot act"; across 1,056 sites, unreadable-to-agents businesses got 3.7× more
+fact-omitting answers and 1.9× fewer recommendations; 82% of answers traced to a directly-fetched
+page (docs pages 47%); 92.3% checkout accuracy over Stripe Link. Shares AEO's (Osmani) underlying
+concern but **never cites Osmani or the term AEO** — only echo is Ora's own "AX is the New AEO"
+study (arXiv:2609.34951); fiche back-linked `argues-that`→MCP and `argues-that`→AGENTS.md only,
+AEO link kept to prose and flagged editorial. Publisher Ora, WebMCP, Web Bot Auth (unbound to a
+specific checklist item), UCP/ACP naming collision with existing ACP concept, NLWeb, and the
+arXiv study parked in queue; ARD merged into its existing (now 2-source) queue entry.
+
+Prior: ingested **Agentic Engine Optimization (AEO)** (Addy Osmani blog fiche + **agentic-seo**
 GitHub project, 2026-10-24) into **AI Protocols**: docs need structuring for AI coding agents,
 not just humans — a six-layer stack (access control → discovery → capability signaling →
 content formatting → token surfacing → "Copy for AI" button). Token count framed as a
@@ -109,7 +130,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [AEO fiche](sources/addyosmani-agentic-engine-optimization-2026.md) — latest ingest (six-layer stack, token-as-metric, agent HTTP fingerprints)
+- [AgentReady fiche](sources/ai-protocols-agentready-standard-2026.md) — latest ingest (find/read/act MUST/SHOULD/MAY checklist, MCP-or-CLI MUST in v2.0, agent-behavior studies)
+- [AEO fiche](sources/addyosmani-agentic-engine-optimization-2026.md) — enriched (extended by AgentReady); six-layer stack, token-as-metric, agent HTTP fingerprints
 - [agentic-seo](projects/agentic-seo.md) — latest ingest (companion audit CLI, 10 checks, 0–100 score)
 - [AGENTS.md](concepts/agents-md.md) — enriched (named an emerging default agent-context format alongside llms.txt/skill.md)
 - [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md) — enriched (contrasts-with doc-based AEO access)
@@ -154,6 +176,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-10-27 `[INGEST]` — AgentReady fiche (agentready.org, Ora); find/read/act MUST/SHOULD/MAY checklist, v2.0 MCP-or-CLI MUST, agent-behavior studies; AGENTS.md cited directly (100% link-fidelity finding), MCP argued-for; AEO link flagged editorial (no citation on the page); Ora org + AgentReady concept + WebMCP + Web Bot Auth + UCP/ACP + NLWeb + arXiv study parked, ARD merged into existing entry.
 - 2026-10-24 `[INGEST]` — AEO fiche (Addy Osmani) + agentic-seo project (GitHub); six-layer stack, token-as-metric, agent HTTP fingerprints; AGENTS.md/MCP back-linked; AEO concept + Addy Osmani + llms.txt/skill.md/agent-permissions.json parked.
 - 2026-10-09 `[INGEST]` — Agent Plugins 2 fiches (spec site + Google blog); 1.0.0 portable packaging (Skills + MCP); Google joins TSC; Agent Plugins concept now 2-source-grounded (promote); MCP back-linked.
 - 2026-10-09 `[FILE]` — Agent Plugins promoted to concept (2-source-grounded); contrasts-with AGENTS.md; MCP/AGENTS.md back-linked; queue marked promoted.

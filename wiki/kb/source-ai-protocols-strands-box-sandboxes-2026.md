@@ -3,7 +3,7 @@ title: "Introducing Strands Box: AI agent sandboxes powered by Dogwood"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-24
+updated: 2026-10-27
 ---
 
 # Introducing Strands Box: AI agent sandboxes powered by Dogwood
