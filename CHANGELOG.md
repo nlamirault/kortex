@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/nlamirault/kortex/compare/v1.1.0...v1.1.1) (2026-10-27)
+
+
+### 📚 Documentation
+
+* **wiki:** ingest AAIF four-new-projects fiche and promote AAIF org ([#44](https://github.com/nlamirault/kortex/issues/44)) ([35b79cf](https://github.com/nlamirault/kortex/commit/35b79cfcc189e67be47f57beda8474434ac1b9a2))
+
 ## [1.1.0](https://github.com/nlamirault/kortex/compare/v1.0.0...v1.1.0) (2026-10-27)
 
 
