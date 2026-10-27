@@ -7,7 +7,7 @@ updated: 2026-10-27
 
 # Entity Index
 
-*32 entities — auto-generated*
+*33 entities — auto-generated*
 
 ## A
 
@@ -58,6 +58,9 @@ updated: 2026-10-27
 
 - ★ [Telemetry Signals](concept-telemetry-signals.md) — concept
 - ★ [Tool Use / Function Calling](concept-tool-use-function-calling.md) — concept
+## W
+
+- ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md) — source
 ## X
 
 - ★ [x402](concept-x402.md) — concept

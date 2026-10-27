@@ -61,6 +61,7 @@ templates). Transport is typically JSON-RPC over stdio or HTTP (`NOT VERIFIED`).
 - [Agent Plugins](../concepts/agent-plugins.md) — the packaging concept: portable directory bundling Skills + MCP servers; MCP servers declared in `mcp.json`.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — contrasts doc-based agent access (AEO's `llms.txt`/Markdown route) with MCP's direct-integration route.
 - [AgentReady](../sources/ai-protocols-agentready-standard-2026.md) — its `Act`-stage checklist makes shipping an MCP server (or a CLI) a MUST (added in v2.0, AR-ACT-10) once a product wants agents to complete tasks, not just read; only 3% of ~50,000 scanned sites shipped a spec-grade MCP server as of April 2026.
+- [What Open Responses changes for AI developers](../sources/ai-protocols-open-responses-2026.md) — adjacent-layer spec: MCP standardizes model↔tool/data connections, Open Responses standardizes the model-provider API contract itself; both are AAIF-stewarded interop layers.
 
 ## Open Questions
 

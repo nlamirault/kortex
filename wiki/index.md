@@ -51,6 +51,7 @@ write operation also appends to `## By Date`.
 - [Agent Plugins package your skills, tools, and more (Google blog)](sources/ai-protocols-agent-plugins-google-2026.md) — fiche: Google (Hou/Wang/Blount, 2026-08-06) joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](sources/addyosmani-agentic-engine-optimization-2026.md) — fiche: docs need structuring for AI coding agents (token budgets, `llms.txt`, `skill.md`, "Copy for AI"), the SEO analogue for agent-readable content.
 - [AgentReady — open specification for agent-usable products](sources/ai-protocols-agentready-standard-2026.md) — fiche: Ora's open find/read/act checklist (MUST/SHOULD/MAY) for agent-usable products, backed by large-scale agent-behavior studies; v2.0 adds a MUST-ship-MCP-or-CLI requirement.
+- [What Open Responses changes for AI developers](sources/ai-protocols-open-responses-2026.md) — fiche: shared spec based on OpenAI's Responses API so developers target one provider-neutral contract across providers; now an AAIF project.
 
 ## People
 
@@ -77,6 +78,7 @@ write operation also appends to `## By Date`.
 ### 2026-10-27
 
 - [AgentReady — open specification for agent-usable products](sources/ai-protocols-agentready-standard-2026.md) — `[INGEST]` (fiche); open find/read/act MUST/SHOULD/MAY checklist backed by measured-agent-behavior studies (Ora); v2.0 MCP-or-CLI MUST; AEO link kept editorial (not cited on the page) — also touched [Agentic Engine Optimization (AEO)](sources/addyosmani-agentic-engine-optimization-2026.md), [AGENTS.md](concepts/agents-md.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md)
+- [What Open Responses changes for AI developers](sources/ai-protocols-open-responses-2026.md) — `[INGEST]` (fiche); OpenAI Responses API shape standardized into a provider-neutral spec, now an AAIF project — also touched [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-10-24
 

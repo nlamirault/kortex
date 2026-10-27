@@ -54,6 +54,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Agent Plugins package your skills, tools, and more (Google blog)](../sources/ai-protocols-agent-plugins-google-2026.md) — Google joins as Core Maintainer; manifest-fragmentation framing, v1 non-goals, ARD/AI Catalog layering, Agents CLI + Data Agent Kit shippers.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — docs structured for AI coding agents (token budgets, `llms.txt`, `skill.md`, AGENTS.md, "Copy for AI"); companion [agentic-seo](../projects/agentic-seo.md) audit tool.
 - [AgentReady — open specification for agent-usable products](../sources/ai-protocols-agentready-standard-2026.md) — Ora's open find/read/act checklist for agent-usable products; MCP-or-CLI MUST in v2.0.
+- [What Open Responses changes for AI developers](../sources/ai-protocols-open-responses-2026.md) — shared spec based on OpenAI's Responses API so developers target one provider-neutral contract; now an AAIF project.
 
 ## Projects
 

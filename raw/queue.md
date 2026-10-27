@@ -93,8 +93,17 @@ Follow-up entities surfaced by the AEO fiche (addyosmani.com) + agentic-seo proj
 - **agent-permissions.json** (concept) — emerging spec for declarative automated-access rules (rate limits, preferred endpoints).
 - **Developer Experience with AI Coding Agents** (source, arXiv) — the per-agent HTTP-fingerprint research (Claude Code `axios/1.8.4`, Cursor `got`, Windsurf `colly`, etc.) cited by the AEO fiche; https://arxiv.org/html/2604.02544v1.
 
+Follow-up entities surfaced by the Open Responses fiche (aaif.io):
+
+- **Open Responses** (concept) — the spec itself (OpenAI Responses API shape, standardized; extensions mechanism). Single-source so far — promotion candidate once a second independent source (e.g. the openresponses.org spec text, or the Databricks/Vercel implementation posts) is ingested.
+- **Agentic AI Foundation (AAIF)** (organization) — now grounded by a 4th source (A2A, AGENTS.md, MCP-sibling framing, Open Responses). Still top priority for promotion to a full org page.
+- **Databricks** (organization) — Model Serving exposes an Open Responses endpoint fronting Claude, Gemini, and open models.
+- **Vercel** (organization) — AI Gateway exposes an OpenResponses API.
+- **Angie Jones** (person) — author of the Open Responses fiche source (AAIF blog).
+
 ## Done
 
+- https://aaif.io/blog/what-open-responses-changes-for-ai-developers → [wiki/sources/ai-protocols-open-responses-2026.md](../wiki/sources/ai-protocols-open-responses-2026.md) (fiche, 2026-10-27)
 - https://www.agentready.org → [wiki/sources/ai-protocols-agentready-standard-2026.md](../wiki/sources/ai-protocols-agentready-standard-2026.md) (fiche, 2026-10-27)
 - https://addyosmani.com/blog/agentic-engine-optimization/ → [wiki/sources/addyosmani-agentic-engine-optimization-2026.md](../wiki/sources/addyosmani-agentic-engine-optimization-2026.md) (fiche, 2026-10-24)
 - https://github.com/addyosmani/agentic-seo → [wiki/projects/agentic-seo.md](../wiki/projects/agentic-seo.md) (project, 2026-10-24)
