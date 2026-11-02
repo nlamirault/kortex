@@ -3,7 +3,7 @@ title: "Agentic AI Foundation (AAIF)"
 type: kb-entity
 entity_type: organization
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Agentic AI Foundation (AAIF)

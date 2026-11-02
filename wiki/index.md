@@ -55,12 +55,14 @@ write operation also appends to `## By Date`.
 - [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md) — fiche: AAIF's OpenSandbox gives agents a runtime-neutral lifecycle + execution API over Docker/Kubernetes sandboxes, via an in-sandbox `execd` daemon.
 - [Training agents for real-world tasks with OpenEnv](sources/ai-protocols-openenv-training-agents-2026.md) — fiche: AAIF's OpenEnv reset/step/state interface for agent-training environments, with case studies on reward-design failure modes.
 - [Agentic AI Foundation Announces Four New Projects](sources/ai-protocols-aaif-four-new-projects-2026.md) — fiche: AAIF press release (2026-10-22) taking in Agent Skills (Anthropic), Open Responses (OpenAI), OpenEnv (Hugging Face), OpenSandbox (Alibaba); 10 hosted projects after year one.
+- [Running Agents on Kubernetes with Agent Sandbox](sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — fiche: Kubernetes blog (Kuo & Santa Barbara, 2026-03-20) introducing SIG Apps' Agent Sandbox — a `Sandbox` CRD for isolated, stateful, singleton agent workloads, plus warm-pool extensions.
 
 ## People
 
 ## Projects
 
 - [agentic-seo](projects/agentic-seo.md) — Osmani's MIT-licensed CLI auditing docs for Agentic Engine Optimization (AEO); 10 checks, 0–100 score.
+- [Agent Sandbox](projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD, gVisor/Kata isolation decoupled from the API, warm pools, Python/Go SDKs.
 
 ## Organizations
 
@@ -78,6 +80,10 @@ write operation also appends to `## By Date`.
 ## Gaps
 
 ## By Date
+
+### 2026-11-02
+
+- [Running Agents on Kubernetes with Agent Sandbox](sources/ai-protocols-agent-sandbox-kubernetes-2026.md), [Agent Sandbox](projects/agent-sandbox.md) — `[INGEST]` (fiche + project); Kubernetes SIG Apps `Sandbox` CRD for isolated, stateful, singleton agents; gVisor/Kata decoupled from the API; warm-pool extensions; Python/Go SDKs — also touched [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md), [Introducing Strands Box](sources/ai-protocols-strands-box-sandboxes-2026.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-10-27
 

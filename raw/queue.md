@@ -122,7 +122,20 @@ Follow-up entities surfaced by the AAIF four-new-projects fiche (aaif.io):
 - **Manik Surtani** (person) — CTO and co-founder of AAIF.
 - **David Soria Parra** (person) — co-creator and lead maintainer of MCP (Anthropic); quoted on the Agent Skills donation.
 
+Follow-up entities surfaced by the Agent Sandbox fiche (kubernetes.io blog) + project page (agent-sandbox.sigs.k8s.io):
+
+- **Kubernetes SIG Apps / Kubernetes** (organization) — the SIG developing Agent Sandbox (`kubernetes-sigs/agent-sandbox`). First Kubernetes source in the wiki. Linux Foundation appears only as footer boilerplate ("Kubernetes a Series of LF Projects, LLC") — do not cite it as governance without a real source.
+- **Kubernetes** (domain candidate) — Agent Sandbox is the first `kubernetes-sigs` project ingested; `/bootstrap kubernetes` once a 2nd Kubernetes source lands (AGENTS.md already reserves a 1-year staleness window for the Kubernetes ecosystem).
+- **gVisor** (project) — userspace-kernel isolation backend (intercepts syscalls) documented for Agent Sandbox; site has a dedicated page at https://agent-sandbox.sigs.k8s.io/docs/use-cases/gvisor-isolation/.
+- **Kata Containers** (project) — VM-per-sandbox isolation backend (dedicated kernel, QEMU) for Agent Sandbox; https://agent-sandbox.sigs.k8s.io/docs/use-cases/kata-containers-isolation/.
+- **OpenClaw** (project) — always-on agent environment the site runs inside Agent Sandbox ("Agents in Sandbox"); not described further; https://agent-sandbox.sigs.k8s.io/docs/use-cases/openclaw/.
+- **Janet Kuo, Justin Santa Barbara** (person) — Agent Sandbox launch-post authors; byline gives GitHub handles only (janetkuo, justinsb), no affiliations.
+- **Agent Sandbox docs** (source follow-up) — Getting Started, Sandbox, Runtime Templates, Volumes, Custom Sandbox pages under https://agent-sandbox.sigs.k8s.io/docs/ — ingest for API group/version, CRD fields, license, and maturity, none of which the two ingested pages state.
+
 ## Done
+
+- https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/ → [wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md](../wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md) (fiche, 2026-11-02)
+- https://agent-sandbox.sigs.k8s.io/ → [wiki/projects/agent-sandbox.md](../wiki/projects/agent-sandbox.md) (project, 2026-11-02)
 
 - https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects → [wiki/sources/ai-protocols-aaif-four-new-projects-2026.md](../wiki/sources/ai-protocols-aaif-four-new-projects-2026.md) (fiche, 2026-10-27)
 - https://aaif.io/blog/training-agents-for-real-world-tasks-with-openenv → [wiki/sources/ai-protocols-openenv-training-agents-2026.md](../wiki/sources/ai-protocols-openenv-training-agents-2026.md) (fiche, 2026-10-27)

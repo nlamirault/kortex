@@ -3,7 +3,7 @@ title: "Agent Skills — standardized way to give AI agents new capabilities"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Agent Skills — standardized way to give AI agents new capabilities

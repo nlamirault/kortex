@@ -3,7 +3,7 @@ title: "Training agents for real-world tasks with OpenEnv"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Training agents for real-world tasks with OpenEnv
