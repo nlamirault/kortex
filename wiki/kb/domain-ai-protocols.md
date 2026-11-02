@@ -3,15 +3,15 @@ title: "AI Protocols"
 type: kb-entity
 entity_type: domain
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # AI Protocols
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 25 in  
-**Source pages:** 26
+**Degree:** 0 out / 27 in  
+**Source pages:** 28
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -30,9 +30,11 @@ updated: 2026-10-27
 | x402 | part-of | x402.md |
 | agentic-ai-foundation | member-of | agentic-ai-foundation.md |
 | aws | member-of | aws.md |
+| agent-sandbox | part-of | agent-sandbox.md |
 | agents-md-open-format-2026 | extends | agents-md-open-format-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | extends | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-aaif-four-new-projects-2026 | extends | ai-protocols-aaif-four-new-projects-2026.md |
+| ai-protocols-agent-sandbox-kubernetes-2026 | extends | ai-protocols-agent-sandbox-kubernetes-2026.md |
 | ai-protocols-agent-skills-overview-2026 | extends | ai-protocols-agent-skills-overview-2026.md |
 | ai-protocols-clef-decision-models-2026 | extends | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
@@ -59,9 +61,11 @@ updated: 2026-10-27
 - [domains/ai-protocols.md](../domains/ai-protocols.md)
 - [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [organizations/aws.md](../organizations/aws.md)
+- [projects/agent-sandbox.md](../projects/agent-sandbox.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-aaif-four-new-projects-2026.md](../sources/ai-protocols-aaif-four-new-projects-2026.md)
+- [sources/ai-protocols-agent-sandbox-kubernetes-2026.md](../sources/ai-protocols-agent-sandbox-kubernetes-2026.md)
 - [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)

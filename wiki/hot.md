@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,25 @@ updated: 2026-10-27
 
 ## Current Focus
 
-**Agent Skills is now an AAIF project.** Ingested the **AAIF four-new-projects press release**
+**Agent Sandbox: a Kubernetes-native agent sandbox.** Ingested the Kubernetes blog launch post
+(Janet Kuo & Justin Santa Barbara, 2026-03-20) as a fiche, and the project site
+(agent-sandbox.sigs.k8s.io) as a **new project page** grounded by both sources. SIG Apps argues
+that agents are **isolated, stateful, singleton** workloads: mostly idle, with a persistent
+identity and running untrusted code. That shape otherwise means a StatefulSet of size 1, a
+headless Service and a PVC per agent, which the post calls an "operational nightmare" at scale.
+The **core `Sandbox` CRD** is a single-container environment with gVisor/Kata isolation,
+scale-to-zero with resume, and a stable hostname/network identity. **Optional extensions**
+(`SandboxTemplate` / `SandboxClaim` / `SandboxWarmPool`) hand out pre-warmed pods to remove the
+roughly one-second pod cold start. The Python (`k8s-agent-sandbox`) and Go SDKs both claim
+sandboxes from a warm pool. The site lists use cases by sandbox lifetime, from short-lived code
+execution to always-lived OpenClaw. This is the **third sandbox in the cluster**. An editorial
+comparison: Strands Box offers local OS containment plus Dogwood policy; OpenSandbox hides the
+*provisioning runtime* behind an OpenAPI; Agent Sandbox hides the *isolation backend* behind a
+declarative CRD. Neither source states a license, API version or maturity, and the "in
+development" status is dated 2026-03-20. No contradictions. SIG Apps, gVisor, Kata, OpenClaw,
+both authors, the docs sub-pages and a **Kubernetes domain candidate** are parked in the queue.
+
+Prior: **Agent Skills is now an AAIF project.** Ingested the **AAIF four-new-projects press release**
 (AGNTCon + MCPCon NA, 2026-10-22): Anthropic contributed **Agent Skills** to the Agentic AI
 Foundation, alongside **Open Responses** (OpenAI), **OpenEnv** (Hugging Face), and **OpenSandbox**
 (Alibaba) — 10 hosted projects after year one (founding: MCP, goose, AGENTS.md; plus A2A, Agent
@@ -156,6 +174,10 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [Agent Sandbox fiche](sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — latest ingest (Kubernetes blog: Sandbox CRD for isolated/stateful/singleton agents; warm-pool extensions)
+- [Agent Sandbox](projects/agent-sandbox.md) — new project page (site + blog; gVisor/Kata backends, Python/Go SDKs, use cases by lifetime, 3-way sandbox comparison)
+- [OpenSandbox fiche](sources/ai-protocols-opensandbox-agent-primitive-2026.md) — enriched (contrasts-with Agent Sandbox: provisioning-runtime vs isolation-backend abstraction)
+- [Strands Box fiche](sources/ai-protocols-strands-box-sandboxes-2026.md) — enriched (contrasting back-link to Agent Sandbox)
 - [AAIF four-new-projects fiche](sources/ai-protocols-aaif-four-new-projects-2026.md) — latest ingest (Agent Skills/Open Responses/OpenEnv/OpenSandbox join AAIF; 10-project roster)
 - [Agentic AI Foundation (AAIF)](organizations/agentic-ai-foundation.md) — new org page (promoted from queue)
 - [Agent Skills fiche](sources/ai-protocols-agent-skills-overview-2026.md) — enriched (Anthropic → AAIF donation, 2026-10-22)
@@ -208,6 +230,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.
 - 2026-10-27 `[INGEST]`+`[FILE]` — AAIF four-new-projects fiche; Agent Skills now an AAIF project (Anthropic-contributed); AAIF org page promoted; OpenSandbox/OpenEnv `created-by`→`part-of` AAIF; Agent Router, agentgateway, goose, Alibaba, Surtani, Soria Parra parked.
 - 2026-10-27 `[INGEST]` — Open Responses fiche (AAIF blog, Angie Jones); provider-neutral API spec based on OpenAI's Responses API, namespaced extensions, AAIF-stewarded (4th grounding source); Tool Use/MCP back-linked; Open Responses concept + Databricks + Vercel + Angie Jones parked.
 - 2026-10-27 `[INGEST]` — AgentReady fiche (agentready.org, Ora); find/read/act MUST/SHOULD/MAY checklist, v2.0 MCP-or-CLI MUST, agent-behavior studies; AGENTS.md cited directly (100% link-fidelity finding), MCP argued-for; AEO link flagged editorial (no citation on the page); Ora org + AgentReady concept + WebMCP + Web Bot Auth + UCP/ACP + NLWeb + arXiv study parked, ARD merged into existing entry.

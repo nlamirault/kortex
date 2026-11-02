@@ -3,7 +3,7 @@ title: "Model Context Protocol (MCP)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Model Context Protocol (MCP)

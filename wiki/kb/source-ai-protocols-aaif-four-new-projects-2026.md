@@ -3,7 +3,7 @@ title: "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Re
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox

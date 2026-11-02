@@ -14,7 +14,7 @@ sources:
 generated: {by: anthropic/claude-sonnet-5, at: 2026-10-27T00:00:00Z}
 verified: []
 stale_after: 2027-04-27T00:00:00Z
-updated: 2026-10-27
+updated: 2026-11-02
 tags: [sandbox, agents, isolation, docker, kubernetes, aaif, opensandbox]
 ---
 
@@ -56,10 +56,12 @@ interface, split into a lifecycle API and an execution API, backed by Docker or 
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | part-of | [[organization:agentic-ai-foundation]] |
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | extends | [[domain:ai-protocols]] |
 | [[source:ai-protocols-opensandbox-agent-primitive-2026]] | argues-that | [[concept:tool-use-function-calling]] |
+| [[source:ai-protocols-opensandbox-agent-primitive-2026]] | contrasts-with | [[source:ai-protocols-agent-sandbox-kubernetes-2026]] |
 
 ## Liens Wiki
 
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](ai-protocols-strands-box-sandboxes-2026.md) — contrasting sandbox approach: Box is OS-level containment (macOS Seatbelt) plus policy; OpenSandbox is a runtime-neutral provisioning/execution API over Docker/Kubernetes — the two don't compete on the same axis (containment vs. provisioning interface).
+- [Running Agents on Kubernetes with Agent Sandbox](ai-protocols-agent-sandbox-kubernetes-2026.md) / [Agent Sandbox](../projects/agent-sandbox.md) — contrasting (editorial; neither source cites the other): OpenSandbox abstracts the *provisioning runtime* (Docker or Kubernetes) behind an imperative OpenAPI; Agent Sandbox (Kubernetes SIG Apps) is Kubernetes-only, a declarative `Sandbox` CRD that abstracts the *isolation backend* (gVisor or Kata). Whether OpenSandbox's Kubernetes runtime uses Agent Sandbox CRDs is not stated by either source.
 - [AI Protocols](../domains/ai-protocols.md) — adds a provider-neutral execution-environment layer to the stack.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — the sandbox execution API is the surface an agent calls to run code/commands as a tool effect.
 - [Training agents for real-world tasks with OpenEnv](ai-protocols-openenv-training-agents-2026.md) — a different, complementary concern: OpenSandbox isolates *where* an agent runs; OpenEnv defines *what a training episode looks like* and how it's scored.

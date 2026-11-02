@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-27
+updated: 2026-11-02
 tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
@@ -58,10 +58,12 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — AAIF's OpenSandbox: a runtime-neutral sandbox lifecycle + execution API over Docker/Kubernetes.
 - [Training agents for real-world tasks with OpenEnv](../sources/ai-protocols-openenv-training-agents-2026.md) — AAIF's OpenEnv reset/step/state interface for agent-training environments; reward-design failure-mode case studies.
 - [Agentic AI Foundation Announces Four New Projects](../sources/ai-protocols-aaif-four-new-projects-2026.md) — AAIF takes in Agent Skills, Open Responses, OpenEnv, OpenSandbox; 10 hosted projects.
+- [Running Agents on Kubernetes with Agent Sandbox](../sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — Kubernetes SIG Apps' `Sandbox` CRD for isolated, stateful, singleton agent workloads (gVisor/Kata, scale-to-zero, stable identity, warm pools).
 
 ## Projects
 
 - [agentic-seo](../projects/agentic-seo.md) — CLI auditing documentation for AEO readiness (robots.txt, llms.txt, token budgets, skill.md, agent-permissions.json).
+- [Agent Sandbox](../projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; isolation backend (gVisor or Kata) decoupled from the API.
 
 ## Organizations
 

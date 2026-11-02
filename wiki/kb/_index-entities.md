@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # Entity Index
 
-*37 entities — auto-generated*
+*39 entities — auto-generated*
 
 ## A
 
@@ -16,6 +16,7 @@ updated: 2026-10-27
 - ★ [Agent Plugins](concept-agent-plugins.md) — concept
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md) — source
 - ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md) — source
+- · [Agent Sandbox](project-agent-sandbox.md) — project
 - ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [Agentic AI Foundation (AAIF)](organization-agentic-ai-foundation.md) — organization
@@ -53,6 +54,9 @@ updated: 2026-10-27
 - ★ [PACT Protocol Home (openpactprotocol.org)](source-openpactprotocol-pact-spec-2026.md) — source
 - ★ [Personal Agent Consent & Trust Protocol (PACT)](concept-personal-agent-consent-trust-protocol-pact.md) — concept
 - ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md) — concept
+## R
+
+- ★ [Running Agents on Kubernetes with Agent Sandbox](source-ai-protocols-agent-sandbox-kubernetes-2026.md) — source
 ## S
 
 - ★ [Semantic Conventions](concept-semantic-conventions.md) — concept
