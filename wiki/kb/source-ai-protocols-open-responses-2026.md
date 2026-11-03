@@ -3,7 +3,7 @@ title: "What Open Responses changes for AI developers"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # What Open Responses changes for AI developers

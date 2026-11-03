@@ -13,7 +13,7 @@ sources:
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-08
+updated: 2026-11-03
 tags: [a2a, agents, interoperability, delegation, governance, aaif]
 ---
 
@@ -61,6 +61,7 @@ from agents written in different frameworks, as long as each speaks A2A.
 - [Agent Communication Protocol (ACP)](../concepts/agent-communication-protocol-acp.md)
 - [Personal Agent Consent & Trust Protocol (PACT)](../concepts/personal-agent-consent-trust-protocol-pact.md) — builds on A2A's Agent Card + authorization-required state to add user consent and scoped delegation.
 - [A New Chapter for A2A: Joining the Agentic AI Foundation](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md) — the source for A2A's move to AAIF governance.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — indexes A2A Agent Cards as `application/a2a-agent-card+json` entries so a client can find an agent by intent search before calling it over A2A. A registry MAY also expose its own search as an A2A skill.
 
 ## Open Questions
 

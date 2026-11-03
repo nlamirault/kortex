@@ -3,7 +3,7 @@ title: "Running Agents on Kubernetes with Agent Sandbox"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Running Agents on Kubernetes with Agent Sandbox

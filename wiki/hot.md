@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,29 @@ updated: 2026-11-02
 
 ## Current Focus
 
-**Agent Substrate: a runtime that multiplexes many sandboxed agents onto few pods.** Ingested
+**Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
+from the queue to a **concept page**, grounded on the project site (home, spec v0.91,
+interoperability and governance pages), plus **3 fiches** for the Google, AWS and Hugging Face
+posts. ARD is an open, Apache-2.0 protocol that **sits entirely before invocation**. A client asks
+"what is available for this task?" and a registry answers. The client then calls the resource over
+its own protocol (MCP, A2A, Skills, an API). Spec v0.91 has status **Proposal**, is dated
+2026-08-26 and is authored by Junjie Bu (Google), R.V. Guha and Shaun Smith (HF). It defines
+**JSON-LD entries**: a domain-anchored `urn:air:<publisher>:…` identifier, an IANA media-type
+`type`, `url` or `data`, and 2–5 `representativeQueries` as the search signal. There are 5
+publishing mechanisms, and **REST `POST /search` is mandatory** with federation modes
+`auto`/`referrals`/`none`. **Publisher-authority binding** stops namespace squatting, and the
+relevance score MUST NOT be read as trust. **Governance:** an Oversight Board (Google, HF,
+Microsoft, Amazon, Cisco) plus Maintainers chaired by Guha, with a neutral host "roughly twelve
+months out", so ARD is **not under AAIF**. **Dated drift, noted and not escalated:** the June
+launch posts used `/.well-known/ai-catalog.json` and called ARD "built upon" AI Catalog, while
+v0.91 moved to `/.well-known/ard.json` and calls it "compatibility, not dependency". AgentReady
+v2.0 (October) still recommends `ai-catalog.json`, and HF still serves only `ai-catalog.json`
+(probed today). Google Cloud Agent Registry and AWS Agent Registry are **different products**,
+and **neither is recorded as shipping ARD yet**. **Google and Hugging Face are now promotion
+candidates** (3 and 2 sources). AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco
+and the spec authors are parked.
+
+Prior: **Agent Substrate: a runtime that multiplexes many sandboxed agents onto few pods.** Ingested
 ate.dev as a **new project page**, grounded in the landing page, llms.txt, three sections of the
 docs bundle and GitHub repo metadata. Substrate is a **CNCF Sandbox** project that "was
 originally created by Google" (Apache-2.0). It maps many stateful **actors** onto a small
@@ -194,7 +216,11 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
-- [Agent Substrate](projects/agent-substrate.md) — latest ingest (CNCF Sandbox runtime; actors multiplexed onto warm workers; gVisor / Kata-on-Cloud-Hypervisor; zero-trust egress; Architecture-page drift on identity/policy noted)
+- [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — latest ingest (new concept: pre-invocation discovery, JSON-LD entries, `/.well-known/ard.json`, REST `/search` + federation, publisher-authority trust binding, own governance; dated `ai-catalog.json` → `ard.json` drift)
+- [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md) / [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md) / [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — latest ingest (launch posts: catalogs + registries; AWS Agent Registry + DNS analogy; `hf-discover`)
+- [AWS](organizations/aws.md) — enriched (AWS Agent Registry preview; ARD Oversight Board seat)
+- [Agent Plugins](concepts/agent-plugins.md) — enriched (ARD link; `agent-plugins+zip`/`+gzip` in ARD v0.91 vs AI Catalog's `+json`)
+- [Agent Substrate](projects/agent-substrate.md) — prior ingest (CNCF Sandbox runtime; actors multiplexed onto warm workers; gVisor / Kata-on-Cloud-Hypervisor; zero-trust egress; Architecture-page drift on identity/policy noted)
 - [Agent Sandbox](projects/agent-sandbox.md) — enriched (4th row in the sandbox comparison table)
 - [Agent Sandbox fiche](sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — latest ingest (Kubernetes blog: Sandbox CRD for isolated/stateful/singleton agents; warm-pool extensions)
 - [Agent Sandbox](projects/agent-sandbox.md) — new project page (site + blog; gVisor/Kata backends, Python/Go SDKs, use cases by lifetime, 3-way sandbox comparison)
@@ -252,6 +278,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
 - 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.
 - 2026-10-27 `[INGEST]`+`[FILE]` — AAIF four-new-projects fiche; Agent Skills now an AAIF project (Anthropic-contributed); AAIF org page promoted; OpenSandbox/OpenEnv `created-by`→`part-of` AAIF; Agent Router, agentgateway, goose, Alibaba, Surtani, Soria Parra parked.

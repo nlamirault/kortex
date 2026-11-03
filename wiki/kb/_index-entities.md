@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Entity Index
 
-*40 entities — auto-generated*
+*44 entities — auto-generated*
 
 ## A
 
@@ -23,12 +23,16 @@ updated: 2026-11-02
 - ★ [Agentic AI Foundation (AAIF)](organization-agentic-ai-foundation.md) — organization
 - ★ [Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox](source-ai-protocols-aaif-four-new-projects-2026.md) — source
 - ★ [Agentic Engine Optimization (AEO) — Addy Osmani](source-addyosmani-agentic-engine-optimization-2026.md) — source
+- ★ [Agentic Resource Discovery (ARD)](concept-agentic-resource-discovery-ard.md) — concept
+- · [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](source-ai-protocols-ard-aws-agent-registry-2026.md) — source
+- ★ [Agentic Resource Discovery: Let agents search for tools, skills, and other agents (Hugging Face blog)](source-ai-protocols-ard-hugging-face-discover-2026.md) — source
 - · [agentic-seo](project-agentic-seo.md) — project
 - · [AgentReady — Open Specification for Agent-Usable Products](source-ai-protocols-agentready-standard-2026.md) — source
 - ★ [AGENTS.md](concept-agents-md.md) — concept
 - · [AGENTS.md — A simple, open format for guiding coding agents](source-agents-md-open-format-2026.md) — source
 - ★ [AI Protocols](domain-ai-protocols.md) — domain
 - ★ [Amazon Web Services (AWS)](organization-aws.md) — organization
+- ★ [Announcing the Agentic Resource Discovery specification (Google Developers blog)](source-ai-protocols-ard-google-announcement-2026.md) — source
 ## D
 
 - ★ [Distributed Tracing](concept-distributed-tracing.md) — concept

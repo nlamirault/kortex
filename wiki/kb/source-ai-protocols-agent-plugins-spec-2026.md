@@ -3,7 +3,7 @@ title: "Agent Plugins — portable package format for skills and MCP servers (sp
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Agent Plugins — portable package format for skills and MCP servers (spec site)

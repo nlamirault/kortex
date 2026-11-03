@@ -3,15 +3,15 @@ title: "AI Protocols"
 type: kb-entity
 entity_type: domain
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # AI Protocols
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 28 in  
-**Source pages:** 29
+**Degree:** 0 out / 29 in  
+**Source pages:** 30
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -22,6 +22,7 @@ updated: 2026-11-02
 | agent-communication-protocol-acp | part-of | agent-communication-protocol-acp.md |
 | agent-plugins | part-of | agent-plugins.md |
 | agent2agent-a2a | part-of | agent2agent-a2a.md |
+| agentic-resource-discovery-ard | part-of | agentic-resource-discovery-ard.md |
 | agents-md | part-of | agents-md.md |
 | model-context-protocol-mcp | part-of | model-context-protocol-mcp.md |
 | personal-agent-consent-trust-protocol-pact | part-of | personal-agent-consent-trust-protocol-pact.md |
@@ -53,6 +54,7 @@ updated: 2026-11-02
 - [concepts/agent-communication-protocol-acp.md](../concepts/agent-communication-protocol-acp.md)
 - [concepts/agent-plugins.md](../concepts/agent-plugins.md)
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
+- [concepts/agentic-resource-discovery-ard.md](../concepts/agentic-resource-discovery-ard.md)
 - [concepts/agents-md.md](../concepts/agents-md.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/personal-agent-consent-trust-protocol-pact.md](../concepts/personal-agent-consent-trust-protocol-pact.md)

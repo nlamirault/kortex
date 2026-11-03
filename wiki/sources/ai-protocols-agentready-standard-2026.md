@@ -14,7 +14,7 @@ sources:
 generated: {by: anthropic/claude-sonnet-5, at: 2026-10-27T00:00:00Z}
 verified: []
 stale_after: 2027-04-27T00:00:00Z
-updated: 2026-10-27
+updated: 2026-11-03
 tags: [agentready, aeo, mcp, llms-txt, agents-md, agent-discoverability, checklist, ora]
 ---
 
@@ -82,6 +82,7 @@ its MUST/SHOULD/MAY practices are strength-ranked from measured agent behavior (
 - [AGENTS.md](../concepts/agents-md.md) — cited directly in the discovery-file linkage data: of 38 traced AGENTS.md fetches, 100% arrived via an explicit link, the highest rate of any discovery file measured.
 - [Agentic Engine Optimization (AEO) — Addy Osmani](../sources/addyosmani-agentic-engine-optimization-2026.md) — same underlying concern (structuring a product for AI agents) but AgentReady never names Osmani or AEO; the only textual echo is Ora's own cited study, "AX is the New AEO" — a parallel, not a stated extension. Treat any link between the two as editorial, not sourced.
 - [agentic-seo](../projects/agentic-seo.md) — a comparable companion scanner in spirit; AgentReady names its own Ora ranker plus is-agentic.com, Mintlify Agent Score, and Netlify AXIS as scanners, not agentic-seo itself.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — page re-read 2026-11-03: AR-FIND-04 (MAY, new in v2.0) puts an AI Catalog at `/.well-known/ai-catalog.json` with `rel="ai-catalog"` and names ARD as "the registry layer on top" (Ora Directory is the example registry). ARD's own spec v0.91 (2026-08-26) has publishers use `/.well-known/ard.json` and calls `ai-catalog.json` its predecessor path. ARD's interoperability page allows serving both. See the concept page's drift table.
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
 [^agentready]: agentready.org, "AgentReady — open specification for agent-usable products", consulted 2026-10-27 (page source fetched and read directly, not via summary). Publisher Ora (ora.ai); spec developed at `agentready-org/standard` (MIT); lists Vercel, Stripe, Auth0, Mintlify, Tavily by Nebius, Google, Elementor, Netlify as collaborators. Most figures above are Ora's own cited traced-run research (37,927 agent journeys / 1,056 sites for the omission-rate finding; a separate traced-run dataset for the 82%/47% answer-provenance finding); only the 99%-dead-end/2.1×-blocked/23%-more-turns finding is explicitly attributed on the page to "AX is the New AEO" (Ora research, arXiv:2609.34951, September 2026) — not independently verified here.

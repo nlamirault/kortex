@@ -5,12 +5,24 @@
 Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Google blog):
 
 - **Agent Plugins** (concept/project) — ✅ Promoted 2026-10-09 → [wiki/concepts/agent-plugins.md](../wiki/concepts/agent-plugins.md) (was grounded by 2 sources: spec site + Google announcement).
-- **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols. ★ **2nd source:** originally created Agent Substrate (ate.dev, 2026-11-02; now a CNCF Sandbox project). Agent Executor, which is built on Substrate, links to `github.com/google/ax`, but the page text never names Google, so that link is URL-only and does not count as a 3rd source.
+- **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols. ★ **2nd source:** originally created Agent Substrate (ate.dev, 2026-11-02; now a CNCF Sandbox project). Agent Executor, which is built on Substrate, links to `github.com/google/ax`, but the page text never names Google, so that link is URL-only and does not count as a 3rd source. ★ **3rd source:** launched ARD (Google Developers Blog, Bu & Krishnan, 2026-06-17). It co-authors the spec, holds an ARD Oversight Board seat (Junjie Bu) and runs Google Cloud Agent Registry in Gemini Enterprise Agent Platform, with native ARD support promised "in the coming months". **Promotion candidate.**
 - **TSC members** (organization) — Amazon, Cursor, Microsoft, OpenAI, Vercel (Core Maintainers); Amazon/AWS already has an org page.
 - **Agents CLI / Data Agent Kit** (project) — Google's first Plugins shippers (expert skills for agent ops; data-cloud skills + MCP servers for BigQuery/Spanner/Cloud SQL).
-- **Agentic Resource Discovery (ARD)** (project/concept) — open discovery protocol treating Plugin as a first-class resource type (pre-invocation layer). ★ Now cited by 2 sources (also the AgentReady fiche, as `/.well-known/ai-catalog.json` MAY) — promotion candidate.
-- **AI Catalog** (project) — entry format ARD indexes; `application/agent-plugins+json` proposal points at plugin.json.
+- **Agentic Resource Discovery (ARD)** (project/concept) — ✅ Promoted 2026-11-03 → [wiki/concepts/agentic-resource-discovery-ard.md](../wiki/concepts/agentic-resource-discovery-ard.md) (site + spec v0.91 + interop + governance pages, and the Google, AWS and Hugging Face launch fiches).
+- **AI Catalog** (project) — entry format ARD indexes; `application/agent-plugins+json` proposal points at plugin.json. ★ More grounding (2026-11-03): Google's ARD post says ARD is "built upon the foundational AI Catalog data model" and credits the **AI Catalog Working Group under the Linux Foundation** (repo `github.com/Agent-Card/ai-catalog`). ARD's interop page calls the relationship "compatibility, not dependency" as of **AI Catalog v0.9-RC**, and AgentReady AR-FIND-04 recommends an AI Catalog at `/.well-known/ai-catalog.json`. Ingest the AI Catalog spec itself to settle its version, path and media types.
 - **Kevin Hou, Haoyu Wang, Alan Blount** (person) — Google post authors (DeepMind / Cloud Data / Cloud AI).
+
+Follow-up entities surfaced by the ARD concept + fiches (agenticresourcediscovery.org, Google / AWS / Hugging Face blogs):
+
+- **Google Cloud Agent Registry** (project) — hosted registry in Gemini Enterprise Agent Platform: namespaced URNs, agentic egress policies, tool and spec pinning, Agent Identity verifying the trust manifest; native ARD support "in the coming months" as of 2026-06-17. Different product from AWS Agent Registry.
+- **AWS Agent Registry** (project) — preview; registries plus records, an admin/publisher/curator/consumer workflow, IAM or JWT authorization, hybrid search, a remote MCP endpoint (AWS blog, 2026-08-24). Folded into the AWS org page for now; promote if a 2nd source appears.
+- **hf-discover** (project) — Hugging Face's ARD reference implementation (`github.com/huggingface/hf-discover`): Hub semantic search over Spaces wrapped as ARD entries, reachable via the `hf` CLI, REST `/search` and MCP `/mcp`.
+- **Microsoft** (organization) — ARD Oversight Board (Dhruv Chand, also a Maintainer), working-group participant, 10 people in the spec's acknowledgements; also an Agent Plugins TSC member. Two independent mentions now.
+- **Cisco** (organization) — ARD Oversight Board (Luca Muscariello); 5 people in the acknowledgements.
+- **GoDaddy** (organization) — named among ARD's working-group participants on the home page; 1 person in the acknowledgements.
+- **R.V. Guha / Junjie Bu / Shaun Smith** (person) — ARD spec v0.91 authors. Guha chairs the Maintainers as a member at large; Bu (Google) and Smith (Hugging Face) sit on both bodies. Also Srinivas Krishnan (Google post co-author) and Ben Burtenshaw (HF post co-author).
+- **ARD spec docs** (source follow-up) — the How ARD works, How to publish, Connect a chatbot and Reference Implementations pages; the JSON Schema / CDDL / OpenAPI files in `ards-project/ard-spec`; and the ADR log (spec cites ADR-0007 for the multi-segment URN namespace). ADR-0008 (MCP media-type rename) and ADR-0010 (loose coupling with AI Catalog, 2026-07-09) were read on 2026-11-03 and cited on the concept page; the other 8 ADRs were not. The repo has no tags or releases yet, so re-check `spec/ard.md`'s version header before citing it. Ingest when wire-level detail is needed.
+- **DNS-AID / Agent Naming Service (ANS)** (concept) — cited by ARD v0.91 (informative §5.3.2.1 and attestation scopes: "SCITT/ANS registrations") as federated-routing and naming research. No source describes either yet.
 
 Follow-up entities surfaced by the Agent Skills fiche (agentskills.io):
 
@@ -49,13 +61,13 @@ Follow-up entities surfaced by the Strands Box fiche:
 
 Follow-up entities surfaced by the AgentReady fiche (agentready.org):
 
-- **Ora** (organization) — publisher of AgentReady; runs the measured-agent-behavior studies (1,056-site study, ~50,000-site April 2026 scan, Stripe Link checkout study) and its own agent-readiness ranker.
+- **Ora** (organization) — publisher of AgentReady; runs the measured-agent-behavior studies (1,056-site study, ~50,000-site April 2026 scan, Stripe Link checkout study) and its own agent-readiness ranker. AgentReady v2.0 also names **Ora Directory** as an example ARD registry that indexes published catalogs (re-read 2026-11-03).
 - **AgentReady** (concept) — the find/read/act checklist discipline itself, distinct from Ora the org; promotion candidate once a 2nd independent source appears.
 - **WebMCP** (concept) — W3C Community Group draft; `Act`-stage practice raised from MAY to SHOULD in v2.0.
 - **Web Bot Auth** (concept) — listed among the protocols AgentReady says now serve agents (with MCP, WebMCP, A2A, x402, llms.txt); page doesn't bind it to a specific checklist item — ingest its own spec before claiming more.
 - **"AX is the New AEO"** (source, arXiv:2609.34951, published as an Ora blog post + paper, 2026-09) — the study AgentReady explicitly attributes its 99%-dead-end-journeys/2.1×-blocked/23%-more-turns finding to (4 agent stacks, Claude + GPT via Tavily). AgentReady's other headline figures (1,056-site 3.7×-omission-rate study, 82%/47% answer-provenance finding) are separate, unnamed Ora traced-run research — do not conflate with this paper on ingest. Ingest for primary-source detail (NOT VERIFIED here beyond AgentReady's citation).
-- **UCP / ACP (agent commerce)** (concept) — payment protocols AgentReady lists as `Act`-stage MAY alongside x402 and Stripe Link; ACP name collides with the existing Agent Communication Protocol (IBM/BeeAI) already in the wiki — disambiguate on ingest.
-- **NLWeb** (project/concept) — new `Act`-stage MAY practice added in v2.0 (AR-ACT-09).
+- **UCP / ACP (agent commerce)** (concept) — payment protocols AgentReady lists as `Act`-stage MAY alongside x402 and Stripe Link; ACP name collides with the existing Agent Communication Protocol (IBM/BeeAI) already in the wiki — disambiguate on ingest. ⚠️ A **third ACP** reading: ARD's interop page mentions "ACP's Agent Registry" of "editor-context agents" that can export `ard.json` feeds. That is plausibly Agent Client Protocol, but the page never expands the acronym. NOT VERIFIED; not linked.
+- **NLWeb** (project/concept) — new `Act`-stage MAY practice added in v2.0 (AR-ACT-09). Also appears in ARD spec v0.91 only as an example referral registry URL (`https://finder.nlweb.ai/search`, "Public Agent Finder"); that is illustrative, not a stated deployment.
 - **Comparable scanners** (projects) — is-agentic.com, Mintlify Agent Score, Netlify AXIS; mentioned alongside [agentic-seo](../wiki/projects/agentic-seo.md) as companion agent-readiness auditors.
 
 Follow-up entities surfaced by the A2A/AAIF fiche:
@@ -110,7 +122,7 @@ Follow-up entities surfaced by the OpenEnv fiche (aaif.io):
 
 - **OpenEnv** (project) — the training-environment interface itself (reset/step/state episode API, sync/async clients, MCPEnvironment base class). Single-source so far — promotion candidate once a second source (e.g. the GitHub repo or a Hugging Face doc) is ingested.
 - **Turing** (organization) — ran the Calendar Gym case study cited in the fiche; first Turing-org source in AI Protocols.
-- **Hugging Face** (organization) — OpenEnv maintainer org (Spaces hosting, TRL integration); not yet an org page.
+- **Hugging Face** (organization) — OpenEnv maintainer org (Spaces hosting, TRL integration); not yet an org page. ★ **2nd source (2026-11-03):** ARD co-author (Shaun Smith, spec v0.91 author, Oversight Board member and Maintainer) and publisher of the `hf-discover` reference implementation (HF blog, Burtenshaw & Smith, 2026-06-17). **Promotion candidate.**
 - **Reward design / reward hacking** (concept) — the recurring failure mode across the fiche's case studies (proxy metrics diverging from intended behavior); candidate for a `pattern` page if a second instance surfaces elsewhere in the wiki.
 
 Follow-up entities surfaced by the AAIF four-new-projects fiche (aaif.io):
@@ -137,13 +149,18 @@ Follow-up entities surfaced by the Agent Substrate project page (ate.dev + llms.
 - **Cloud Native Computing Foundation (CNCF)** (organization) — hosts Agent Substrate and kagent as Sandbox projects. First ingested source to name CNCF hosting. The [OpenTelemetry](../wiki/concepts/opentelemetry-otel.md) concept page also calls OTel a CNCF project, but only from recall (`NOT VERIFIED`), so link it once that claim is verified. As with Kubernetes, the "a Series of LF Projects, LLC" footer is boilerplate, so do not cite it as Linux Foundation governance.
 - **kagent** (project) — CNCF Sandbox project; "a Kubernetes-native framework that runs sandboxed, stateful agent workloads on Agent Substrate"; https://github.com/kagent-dev/kagent.
 - **Agent Executor** (project) — "a distributed agent runtime: a secure, hyper-scalable agent harness on Agent Substrate"; https://github.com/google/ax.
-- **SPIFFE** (concept) — workload-identity standard. Substrate gives each actor a short-lived SPIFFE X.509 cert and authenticates clients over SPIFFE mTLS or OIDC JWTs.
+- **SPIFFE** (concept) — workload-identity standard. Substrate gives each actor a short-lived SPIFFE X.509 cert and authenticates clients over SPIFFE mTLS or OIDC JWTs. 2nd mention: ARD spec v0.91 names SPIFFE (next to DID methods and enterprise PKI) as a framework a `trustManifest` may declare. It is an example, not a requirement.
 - **OpenFGA** (project) — authorization engine. `ate-api-server` checks every call against an OpenFGA model.
 - **Cloud Hypervisor** (project) — the VMM under Substrate's `microvm` class (with Kata). Fold it into the Kata Containers page unless a 2nd source appears.
 - **Agent Substrate docs** (source follow-up) — https://ate.dev/llms-full.txt (~516 KB) bundles every guide. The project page drew only on its Overview, Architecture and Sandbox Classes pages. Ingest the Threat Model, Request Parking, Egress Credential Injection and Version Skew Policy pages for detail. Design-doc drift: the Architecture page (marked "[Status: Planned]") still lists identity and policy under "Problems We Haven't Addressed Yet", although the security guides describe both as shipped. Check against the code, or see whether a later Architecture rewrite fixes it.
 - **Agent Substrate demo video** (source) — https://www.youtube.com/watch?v=ZEzkCFJkzjY (~250 actors on 8 pods).
 
 ## Done
+
+- https://agenticresourcediscovery.org/ → [wiki/concepts/agentic-resource-discovery-ard.md](../wiki/concepts/agentic-resource-discovery-ard.md) (concept, 2026-11-03; also read the /spec/, /interoperability/ and /governance/ pages)
+- https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/ → [wiki/sources/ai-protocols-ard-google-announcement-2026.md](../wiki/sources/ai-protocols-ard-google-announcement-2026.md) (fiche, 2026-11-03)
+- https://aws.amazon.com/blogs/machine-learning/agentic-resource-discovery-ard-an-open-specification-for-agent-discovery/ → [wiki/sources/ai-protocols-ard-aws-agent-registry-2026.md](../wiki/sources/ai-protocols-ard-aws-agent-registry-2026.md) (fiche, 2026-11-03)
+- https://huggingface.co/blog/agentic-resource-discovery-launch → [wiki/sources/ai-protocols-ard-hugging-face-discover-2026.md](../wiki/sources/ai-protocols-ard-hugging-face-discover-2026.md) (fiche, 2026-11-03)
 
 - https://ate.dev/ → [wiki/projects/agent-substrate.md](../wiki/projects/agent-substrate.md) (project, 2026-11-02)
 - https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/ → [wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md](../wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md) (fiche, 2026-11-02)

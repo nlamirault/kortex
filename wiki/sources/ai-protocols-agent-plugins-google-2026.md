@@ -14,7 +14,7 @@ sources:
 generated: {by: opencode/muse-spark-1.3-free, at: 2026-10-09T12:00:00Z}
 verified: []
 stale_after: 2027-04-09T00:00:00Z
-updated: 2026-10-09
+updated: 2026-11-03
 tags: [agent-plugins, google, packaging, agent-skills, mcp, discovery, ai-catalog]
 ---
 
@@ -58,6 +58,7 @@ transports, extension namespaces), an explicit v1 non-scope, an ecosystem layeri
 - [Agent Skills fiche](../sources/ai-protocols-agent-skills-overview-2026.md) — the Skills execution contract packaged inside plugins.
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — the tool/service execution contract packaged inside plugins.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — what packaged skills + servers ultimately drive.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — the "find" layer this post names. ARD v0.91 lists packaged plugin archives as `application/agent-plugins+zip` / `+gzip`. The `application/agent-plugins+json` named here is the AI Catalog proposal, a separate spec.
 - [AI Protocols](../domains/ai-protocols.md) — the cluster.
 
 [^google]: Kevin Hou, Haoyu Wang & Alan Blount, "Agent Plugins package your skills, tools, and more", Google Developers Blog, 2026-08-06, consulted 2026-10-09.
