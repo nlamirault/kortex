@@ -10,8 +10,8 @@ updated: 2026-11-02
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 17 in  
-**Source pages:** 18
+**Degree:** 3 out / 18 in  
+**Source pages:** 19
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -34,6 +34,7 @@ updated: 2026-11-02
 | tool-use-function-calling | used-by | tool-use-function-calling.md |
 | agentic-ai-foundation | relates-to | agentic-ai-foundation.md |
 | aws | relates-to | aws.md |
+| agent-substrate | integrates-with | agent-substrate.md |
 | addyosmani-agentic-engine-optimization-2026 | contrasts-with | addyosmani-agentic-engine-optimization-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | contrasts-with | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-agent-plugins-google-2026 | implements | ai-protocols-agent-plugins-google-2026.md |
@@ -55,6 +56,7 @@ updated: 2026-11-02
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [organizations/aws.md](../organizations/aws.md)
+- [projects/agent-substrate.md](../projects/agent-substrate.md)
 - [sources/addyosmani-agentic-engine-optimization-2026.md](../sources/addyosmani-agentic-engine-optimization-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)

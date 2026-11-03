@@ -91,8 +91,9 @@ group.[^agent-sandbox-site-2026]
 
 ## Relevance to Kortex
 
-This is the third agent sandbox in the AI Protocols cluster and the first one native to
-Kubernetes. Each of the three hides something different from the agent. *This is an editorial
+This was the third agent sandbox in the AI Protocols cluster and the first one native to
+Kubernetes. [Agent Substrate](agent-substrate.md) (ingested the same day) is the fourth and the
+second on Kubernetes. Each hides something different from the agent. *This is an editorial
 comparison: no source compares them.*
 
 | | Where it runs | What it hides behind its interface | Isolation | Policy layer |
@@ -100,6 +101,7 @@ comparison: no source compares them.*
 | [Strands Box](../sources/ai-protocols-strands-box-sandboxes-2026.md) | The developer's machine | Nothing; one local runtime | OS containment (macOS Seatbelt first) | Dogwood at the network, shell, Python and MCP boundaries |
 | [OpenSandbox](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) | Docker or Kubernetes | The provisioning runtime, behind lifecycle and execution OpenAPIs | Not described in its fiche | Not described |
 | **Agent Sandbox** | Kubernetes only | The isolation backend, behind a declarative CRD and controller | gVisor (userspace kernel) or Kata Containers (VM per sandbox) | None described |
+| [Agent Substrate](agent-substrate.md) | Kubernetes 1.37+ (worker pods only) | Which worker an actor runs on: actors suspend to snapshots and resume on any warm pod, behind a gRPC API kept off the Kubernetes API path | gVisor (`runsc`) or Kata Containers on Cloud Hypervisor (KVM microVM); plain containers unsupported | Built in: `EgressPolicy` allowlists, OpenFGA authorization, egress credential injection, SPIFFE identity |
 
 It is also the first `kubernetes-sigs` project in the wiki and a seed for a future Kubernetes
 domain (queued).
@@ -109,6 +111,7 @@ domain (queued).
 - [Running Agents on Kubernetes with Agent Sandbox](../sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — launch post fiche (why agents need a new Kubernetes primitive).
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — OpenSandbox (AAIF), a sandbox API that works across runtimes.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — local OS containment plus Dogwood policy.
+- [Agent Substrate](agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended actors onto warm Kubernetes workers; the opposite design choice (workload state out of the Kubernetes API).
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
 [^agent-sandbox-site-2026]: Agent Sandbox project site, https://agent-sandbox.sigs.k8s.io/, read 2026-11-02.

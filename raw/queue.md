@@ -5,7 +5,7 @@
 Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Google blog):
 
 - **Agent Plugins** (concept/project) — ✅ Promoted 2026-10-09 → [wiki/concepts/agent-plugins.md](../wiki/concepts/agent-plugins.md) (was grounded by 2 sources: spec site + Google announcement).
-- **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols.
+- **Google** (organization) — joins the Agent Plugins TSC as Core Maintainer (Kevin Hou); ships Agents CLI + Data Agent Kit. First Google-org source in AI Protocols. ★ **2nd source:** originally created Agent Substrate (ate.dev, 2026-11-02; now a CNCF Sandbox project). Agent Executor, which is built on Substrate, links to `github.com/google/ax`, but the page text never names Google, so that link is URL-only and does not count as a 3rd source.
 - **TSC members** (organization) — Amazon, Cursor, Microsoft, OpenAI, Vercel (Core Maintainers); Amazon/AWS already has an org page.
 - **Agents CLI / Data Agent Kit** (project) — Google's first Plugins shippers (expert skills for agent ops; data-cloud skills + MCP servers for BigQuery/Spanner/Cloud SQL).
 - **Agentic Resource Discovery (ARD)** (project/concept) — open discovery protocol treating Plugin as a first-class resource type (pre-invocation layer). ★ Now cited by 2 sources (also the AgentReady fiche, as `/.well-known/ai-catalog.json` MAY) — promotion candidate.
@@ -15,7 +15,7 @@ Follow-up entities surfaced by the Agent Plugins fiches (agent-plugins.org + Goo
 Follow-up entities surfaced by the Agent Skills fiche (agentskills.io):
 
 - **Agent Skills** (concept) — the portable capability-folder format itself (SKILL.md + scripts/references/assets, progressive disclosure). ★ Now 2-source-grounded (agentskills.io + AAIF four-projects release, 2026-10-27: Anthropic → AAIF donation) — promote.
-- **Anthropic** (organization) — originator of the Agent Skills format; released as an open standard, contributed to AAIF 2026-10-22 (2 sources).
+- **Anthropic** (organization) — originator of the Agent Skills format; released as an open standard, contributed to AAIF 2026-10-22 (2 sources). Claude Code is also a supported Agent Substrate workload, with a "Claude Code Multiplexing" tutorial (3 agents on 2 worker pods); that is product usage, not an org claim.
 - **SKILL.md specification** (source follow-up) — the full format spec at agentskills.io/specification; ingest for wire-level detail.
 - **Agent Skills client roster** (sources) — per-client instruction pages (Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, goose, Codex, …); ingest individually only as needed.
 
@@ -116,7 +116,7 @@ Follow-up entities surfaced by the OpenEnv fiche (aaif.io):
 Follow-up entities surfaced by the AAIF four-new-projects fiche (aaif.io):
 
 - **Agent Router** (project) — AAIF-hosted project; not described in the release.
-- **agentgateway** (project) — AAIF-hosted project; not described in the release.
+- **agentgateway** (project) — AAIF-hosted project; not described in the release. Second mention: Agent Substrate's "Pluggable Egress Networking" tutorial uses Envoy or agentgateway to tunnel and authenticate outbound actor traffic over mTLS (ate.dev/llms.txt, 2026-11-02). That is its first functional description in the wiki.
 - **goose** (project) — AAIF founding project; cited by 3+ sources, no page yet.
 - **Alibaba** (organization) — contributor of OpenSandbox to AAIF.
 - **Manik Surtani** (person) — CTO and co-founder of AAIF.
@@ -125,15 +125,27 @@ Follow-up entities surfaced by the AAIF four-new-projects fiche (aaif.io):
 Follow-up entities surfaced by the Agent Sandbox fiche (kubernetes.io blog) + project page (agent-sandbox.sigs.k8s.io):
 
 - **Kubernetes SIG Apps / Kubernetes** (organization) — the SIG developing Agent Sandbox (`kubernetes-sigs/agent-sandbox`). First Kubernetes source in the wiki. Linux Foundation appears only as footer boilerplate ("Kubernetes a Series of LF Projects, LLC") — do not cite it as governance without a real source.
-- **Kubernetes** (domain candidate) — Agent Sandbox is the first `kubernetes-sigs` project ingested; `/bootstrap kubernetes` once a 2nd Kubernetes source lands (AGENTS.md already reserves a 1-year staleness window for the Kubernetes ecosystem).
-- **gVisor** (project) — userspace-kernel isolation backend (intercepts syscalls) documented for Agent Sandbox; site has a dedicated page at https://agent-sandbox.sigs.k8s.io/docs/use-cases/gvisor-isolation/.
-- **Kata Containers** (project) — VM-per-sandbox isolation backend (dedicated kernel, QEMU) for Agent Sandbox; https://agent-sandbox.sigs.k8s.io/docs/use-cases/kata-containers-isolation/.
-- **OpenClaw** (project) — always-on agent environment the site runs inside Agent Sandbox ("Agents in Sandbox"); not described further; https://agent-sandbox.sigs.k8s.io/docs/use-cases/openclaw/.
+- **Kubernetes** (domain candidate) — Agent Sandbox is the first `kubernetes-sigs` project ingested; `/bootstrap kubernetes` once a 2nd Kubernetes source lands (AGENTS.md already reserves a 1-year staleness window for the Kubernetes ecosystem). ★ **Trigger met 2026-11-02:** Agent Substrate is the 2nd Kubernetes-native source (Kubernetes 1.37+, `ate.dev/v1` CRDs, a `kubectl ate` plugin). Waiting for the human to run `/bootstrap kubernetes`.
+- **gVisor** (project) — userspace-kernel isolation backend (intercepts syscalls) documented for Agent Sandbox; site has a dedicated page at https://agent-sandbox.sigs.k8s.io/docs/use-cases/gvisor-isolation/. ★ **2nd source:** Agent Substrate's `gvisor` sandbox class (`runsc`; checkpoint/restore needs `--allow-connected-on-save`). Promotion candidate.
+- **Kata Containers** (project) — VM-per-sandbox isolation backend (dedicated kernel, QEMU) for Agent Sandbox; https://agent-sandbox.sigs.k8s.io/docs/use-cases/kata-containers-isolation/. ★ **2nd source:** Agent Substrate's `microvm` class runs a Kata guest on the **Cloud Hypervisor** VMM, not QEMU. Promotion candidate.
+- **OpenClaw** (project) — always-on agent environment the site runs inside Agent Sandbox ("Agents in Sandbox"); not described further; https://agent-sandbox.sigs.k8s.io/docs/use-cases/openclaw/. Second mention: listed among the agent frameworks Agent Substrate runs (ate.dev). Neither source describes it.
 - **Janet Kuo, Justin Santa Barbara** (person) — Agent Sandbox launch-post authors; byline gives GitHub handles only (janetkuo, justinsb), no affiliations.
 - **Agent Sandbox docs** (source follow-up) — Getting Started, Sandbox, Runtime Templates, Volumes, Custom Sandbox pages under https://agent-sandbox.sigs.k8s.io/docs/ — ingest for API group/version, CRD fields, license, and maturity, none of which the two ingested pages state.
 
+Follow-up entities surfaced by the Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo):
+
+- **Cloud Native Computing Foundation (CNCF)** (organization) — hosts Agent Substrate and kagent as Sandbox projects. First ingested source to name CNCF hosting. The [OpenTelemetry](../wiki/concepts/opentelemetry-otel.md) concept page also calls OTel a CNCF project, but only from recall (`NOT VERIFIED`), so link it once that claim is verified. As with Kubernetes, the "a Series of LF Projects, LLC" footer is boilerplate, so do not cite it as Linux Foundation governance.
+- **kagent** (project) — CNCF Sandbox project; "a Kubernetes-native framework that runs sandboxed, stateful agent workloads on Agent Substrate"; https://github.com/kagent-dev/kagent.
+- **Agent Executor** (project) — "a distributed agent runtime: a secure, hyper-scalable agent harness on Agent Substrate"; https://github.com/google/ax.
+- **SPIFFE** (concept) — workload-identity standard. Substrate gives each actor a short-lived SPIFFE X.509 cert and authenticates clients over SPIFFE mTLS or OIDC JWTs.
+- **OpenFGA** (project) — authorization engine. `ate-api-server` checks every call against an OpenFGA model.
+- **Cloud Hypervisor** (project) — the VMM under Substrate's `microvm` class (with Kata). Fold it into the Kata Containers page unless a 2nd source appears.
+- **Agent Substrate docs** (source follow-up) — https://ate.dev/llms-full.txt (~516 KB) bundles every guide. The project page drew only on its Overview, Architecture and Sandbox Classes pages. Ingest the Threat Model, Request Parking, Egress Credential Injection and Version Skew Policy pages for detail. Design-doc drift: the Architecture page (marked "[Status: Planned]") still lists identity and policy under "Problems We Haven't Addressed Yet", although the security guides describe both as shipped. Check against the code, or see whether a later Architecture rewrite fixes it.
+- **Agent Substrate demo video** (source) — https://www.youtube.com/watch?v=ZEzkCFJkzjY (~250 actors on 8 pods).
+
 ## Done
 
+- https://ate.dev/ → [wiki/projects/agent-substrate.md](../wiki/projects/agent-substrate.md) (project, 2026-11-02)
 - https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/ → [wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md](../wiki/sources/ai-protocols-agent-sandbox-kubernetes-2026.md) (fiche, 2026-11-02)
 - https://agent-sandbox.sigs.k8s.io/ → [wiki/projects/agent-sandbox.md](../wiki/projects/agent-sandbox.md) (project, 2026-11-02)
 

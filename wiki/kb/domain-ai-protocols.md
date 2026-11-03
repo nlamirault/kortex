@@ -10,8 +10,8 @@ updated: 2026-11-02
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 27 in  
-**Source pages:** 28
+**Degree:** 0 out / 28 in  
+**Source pages:** 29
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -31,6 +31,7 @@ updated: 2026-11-02
 | agentic-ai-foundation | member-of | agentic-ai-foundation.md |
 | aws | member-of | aws.md |
 | agent-sandbox | part-of | agent-sandbox.md |
+| agent-substrate | part-of | agent-substrate.md |
 | agents-md-open-format-2026 | extends | agents-md-open-format-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | extends | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-aaif-four-new-projects-2026 | extends | ai-protocols-aaif-four-new-projects-2026.md |
@@ -62,6 +63,7 @@ updated: 2026-11-02
 - [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [organizations/aws.md](../organizations/aws.md)
 - [projects/agent-sandbox.md](../projects/agent-sandbox.md)
+- [projects/agent-substrate.md](../projects/agent-substrate.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-aaif-four-new-projects-2026.md](../sources/ai-protocols-aaif-four-new-projects-2026.md)
