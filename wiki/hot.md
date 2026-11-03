@@ -14,7 +14,27 @@ updated: 2026-11-02
 
 ## Current Focus
 
-**Agent Sandbox: a Kubernetes-native agent sandbox.** Ingested the Kubernetes blog launch post
+**Agent Substrate: a runtime that multiplexes many sandboxed agents onto few pods.** Ingested
+ate.dev as a **new project page**, grounded in the landing page, llms.txt, three sections of the
+docs bundle and GitHub repo metadata. Substrate is a **CNCF Sandbox** project that "was
+originally created by Google" (Apache-2.0). It maps many stateful **actors** onto a small
+`WorkerPool` of warm pods. An idle actor checkpoints its memory and filesystem to GCS/S3. On a
+request, `atenet-router` parks the call while a worker restores the snapshot, so the **Kubernetes
+API stays off the request path**. Only infrastructure is a CRD (`ate.dev/v1`). Actors and
+policies live in PostgreSQL behind a gRPC API, the **opposite design choice** to Agent Sandbox's
+CRD per sandbox. Its two sandbox classes are `gvisor` (`runsc`) and `microvm` (Kata on Cloud
+Hypervisor); plain containers are unsupported. Security is zero-trust: SPIFFE identity, **no
+credentials in the sandbox** (the egress gateway injects them), default-deny networking,
+`EgressPolicy` allowlists and OpenFGA authorization. It is the first Kubernetes-native sandbox in
+the wiki with egress allowlists and credential injection built in (Strands Box does gateway
+injection locally). The <500 ms resume, 500+/s and 10× figures are project-reported. Status: the
+site says pre-1.0, and the repo tagged `v1.0.0-rc.1` on 2026-10-29. Noted as design-doc drift:
+the Architecture page (marked Planned) still lists identity and policy as unaddressed. Agent
+Sandbox's comparison table now has 4 rows. **gVisor, Kata and Google now each have 2 sources**
+(promotion candidates). The **Kubernetes domain bootstrap trigger is met** and waits on the human. CNCF,
+kagent, Agent Executor, SPIFFE, OpenFGA and Cloud Hypervisor are parked in the queue.
+
+Prior: **Agent Sandbox: a Kubernetes-native agent sandbox.** Ingested the Kubernetes blog launch post
 (Janet Kuo & Justin Santa Barbara, 2026-03-20) as a fiche, and the project site
 (agent-sandbox.sigs.k8s.io) as a **new project page** grounded by both sources. SIG Apps argues
 that agents are **isolated, stateful, singleton** workloads: mostly idle, with a persistent
@@ -174,6 +194,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [Agent Substrate](projects/agent-substrate.md) — latest ingest (CNCF Sandbox runtime; actors multiplexed onto warm workers; gVisor / Kata-on-Cloud-Hypervisor; zero-trust egress; Architecture-page drift on identity/policy noted)
+- [Agent Sandbox](projects/agent-sandbox.md) — enriched (4th row in the sandbox comparison table)
 - [Agent Sandbox fiche](sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — latest ingest (Kubernetes blog: Sandbox CRD for isolated/stateful/singleton agents; warm-pool extensions)
 - [Agent Sandbox](projects/agent-sandbox.md) — new project page (site + blog; gVisor/Kata backends, Python/Go SDKs, use cases by lifetime, 3-way sandbox comparison)
 - [OpenSandbox fiche](sources/ai-protocols-opensandbox-agent-primitive-2026.md) — enriched (contrasts-with Agent Sandbox: provisioning-runtime vs isolation-backend abstraction)
@@ -230,6 +252,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.
 - 2026-10-27 `[INGEST]`+`[FILE]` — AAIF four-new-projects fiche; Agent Skills now an AAIF project (Anthropic-contributed); AAIF org page promoted; OpenSandbox/OpenEnv `created-by`→`part-of` AAIF; Agent Router, agentgateway, goose, Alibaba, Surtani, Soria Parra parked.
 - 2026-10-27 `[INGEST]` — Open Responses fiche (AAIF blog, Angie Jones); provider-neutral API spec based on OpenAI's Responses API, namespaced extensions, AAIF-stewarded (4th grounding source); Tool Use/MCP back-linked; Open Responses concept + Databricks + Vercel + Angie Jones parked.

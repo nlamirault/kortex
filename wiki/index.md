@@ -63,6 +63,7 @@ write operation also appends to `## By Date`.
 
 - [agentic-seo](projects/agentic-seo.md) — Osmani's MIT-licensed CLI auditing docs for Agentic Engine Optimization (AEO); 10 checks, 0–100 score.
 - [Agent Sandbox](projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD, gVisor/Kata isolation decoupled from the API, warm pools, Python/Go SDKs.
+- [Agent Substrate](projects/agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended stateful actors onto warm Kubernetes workers; gVisor or Kata-on-Cloud-Hypervisor; SPIFFE identity, no in-sandbox credentials, default-deny egress.
 
 ## Organizations
 
@@ -83,6 +84,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-11-02
 
+- [Agent Substrate](projects/agent-substrate.md) — `[INGEST]` (project); CNCF Sandbox runtime (originally Google): actors multiplexed onto warm worker pods, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress — also touched [Agent Sandbox](projects/agent-sandbox.md) (4th comparison row), [AI Protocols](domains/ai-protocols.md)
 - [Running Agents on Kubernetes with Agent Sandbox](sources/ai-protocols-agent-sandbox-kubernetes-2026.md), [Agent Sandbox](projects/agent-sandbox.md) — `[INGEST]` (fiche + project); Kubernetes SIG Apps `Sandbox` CRD for isolated, stateful, singleton agents; gVisor/Kata decoupled from the API; warm-pool extensions; Python/Go SDKs — also touched [The Sandbox as an Agent Primitive](sources/ai-protocols-opensandbox-agent-primitive-2026.md), [Introducing Strands Box](sources/ai-protocols-strands-box-sandboxes-2026.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-10-27
