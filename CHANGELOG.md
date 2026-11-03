@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/nlamirault/kortex/compare/v1.1.0...v1.1.1) (2026-11-03)
+
+
+### 📚 Documentation
+
+* **wiki:** ingest AAIF four-new-projects fiche and promote AAIF org ([#44](https://github.com/nlamirault/kortex/issues/44)) ([35b79cf](https://github.com/nlamirault/kortex/commit/35b79cfcc189e67be47f57beda8474434ac1b9a2))
+* **wiki:** ingest Agent Sandbox fiche and project into AI Protocols ([#46](https://github.com/nlamirault/kortex/issues/46)) ([90ba617](https://github.com/nlamirault/kortex/commit/90ba6174362b3bc7ce346aba4f5d656535a38727))
+* **wiki:** ingest Agent Substrate project into AI Protocols ([#47](https://github.com/nlamirault/kortex/issues/47)) ([d79ed69](https://github.com/nlamirault/kortex/commit/d79ed6947b2ab8159ab4e0cebb9ae36dec629e23))
+* **wiki:** ingest Agentic Resource Discovery into AI Protocols ([#48](https://github.com/nlamirault/kortex/issues/48)) ([58ee2df](https://github.com/nlamirault/kortex/commit/58ee2df39db298c34f8507f183904aa7e6611b3f))
+
 ## [1.1.0](https://github.com/nlamirault/kortex/compare/v1.0.0...v1.1.0) (2026-10-27)
 
 
