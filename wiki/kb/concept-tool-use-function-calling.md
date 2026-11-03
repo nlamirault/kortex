@@ -3,15 +3,15 @@ title: "Tool Use / Function Calling"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Tool Use / Function Calling
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 2 out / 11 in  
-**Source pages:** 12
+**Degree:** 2 out / 14 in  
+**Source pages:** 15
 
 **Wiki page:** [Tool Use / Function Calling](../concepts/tool-use-function-calling.md)
 
@@ -27,10 +27,13 @@ updated: 2026-11-02
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | agent-plugins | enables | agent-plugins.md |
+| agentic-resource-discovery-ard | enables | agentic-resource-discovery-ard.md |
 | model-context-protocol-mcp | enables | model-context-protocol-mcp.md |
 | ai-protocols-agent-plugins-google-2026 | enables | ai-protocols-agent-plugins-google-2026.md |
 | ai-protocols-agent-plugins-spec-2026 | enables | ai-protocols-agent-plugins-spec-2026.md |
 | ai-protocols-agent-skills-overview-2026 | enables | ai-protocols-agent-skills-overview-2026.md |
+| ai-protocols-ard-google-announcement-2026 | enables | ai-protocols-ard-google-announcement-2026.md |
+| ai-protocols-ard-hugging-face-discover-2026 | enables | ai-protocols-ard-hugging-face-discover-2026.md |
 | ai-protocols-clef-decision-models-2026 | enables | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | argues-that | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-open-responses-2026 | extends | ai-protocols-open-responses-2026.md |
@@ -41,11 +44,14 @@ updated: 2026-11-02
 ## Source Pages
 
 - [concepts/agent-plugins.md](../concepts/agent-plugins.md)
+- [concepts/agentic-resource-discovery-ard.md](../concepts/agentic-resource-discovery-ard.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/tool-use-function-calling.md](../concepts/tool-use-function-calling.md)
 - [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)
 - [sources/ai-protocols-agent-plugins-spec-2026.md](../sources/ai-protocols-agent-plugins-spec-2026.md)
 - [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
+- [sources/ai-protocols-ard-google-announcement-2026.md](../sources/ai-protocols-ard-google-announcement-2026.md)
+- [sources/ai-protocols-ard-hugging-face-discover-2026.md](../sources/ai-protocols-ard-hugging-face-discover-2026.md)
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)

@@ -13,10 +13,13 @@ sources:
   - resource: https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/
     id: agent-plugins-google-2026
     title: "Agent Plugins package your skills, tools, and more"
+  - resource: https://agenticresourcediscovery.org/spec/
+    id: ard-spec
+    title: "ARD Specification v0.91 (media-type list, §3.3)"
 generated: {by: opencode/muse-spark-1.3-free, at: 2026-10-09T12:00:00Z}
 verified: []
 stale_after: 2027-04-09T00:00:00Z
-updated: 2026-10-09
+updated: 2026-11-03
 tags: [agent-plugins, packaging, agent-skills, mcp, interoperability, plugin-format]
 ---
 
@@ -48,9 +51,12 @@ Version 1 is a package format and nothing more. Install mechanisms, distribution
 models, sandboxing, trust/provenance verification, and UX are explicit non-goals (named in the
 spec's future considerations), because IDEs, CLIs, and managed enterprise platforms have
 genuinely different obligations to their users. Packaging sits in a layered ecosystem where each
-layer is independently adoptable: discover via Agentic Resource Discovery (Plugin as a
-first-class resource type), describe via AI Catalog (`application/agent-plugins+json`), package
-via Agent Plugins, run via MCP + Agent Skills. Governance is open (spec repo, public proposals
+layer is independently adoptable: discover via
+[Agentic Resource Discovery](agentic-resource-discovery-ard.md) (Plugin as a first-class resource
+type), describe via AI Catalog (`application/agent-plugins+json`), package via Agent Plugins, run
+via MCP + Agent Skills.[^google] ARD's own spec v0.91 (2026-08-26) recognizes packaged plugin
+archives as `application/agent-plugins+zip` / `+gzip`. It lists no `+json` plugin type, but its
+`type` term accepts any valid media type.[^ard-spec] Governance is open (spec repo, public proposals
 via GitHub Discussions, Discord); the Technical Steering Committee's Core Maintainers span
 Amazon, Cursor, Microsoft, OpenAI, and Vercel, with Google joining on publication.[^google]
 
@@ -81,6 +87,7 @@ Amazon, Cursor, Microsoft, OpenAI, and Vercel, with Google joining on publicatio
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md) — the server format packaged in `mcp.json`.
 - [Tool Use / Function Calling](../concepts/tool-use-function-calling.md) — what packaged skills + servers ultimately drive.
 - [AGENTS.md](../concepts/agents-md.md) — sibling contrast: portable plugin core vs per-repo instructions and client-owned behavior.
+- [Agentic Resource Discovery (ARD)](agentic-resource-discovery-ard.md) — the discovery layer above Plugins; indexes plugin archives so clients can find them by intent search before install.
 
 ## Open Questions
 
@@ -90,3 +97,4 @@ Amazon, Cursor, Microsoft, OpenAI, and Vercel, with Google joining on publicatio
 
 [^spec]: agent-plugins.org, "Agent Plugins", consulted 2026-10-09.
 [^google]: Kevin Hou, Haoyu Wang & Alan Blount, "Agent Plugins package your skills, tools, and more", Google Developers Blog, 2026-08-06, consulted 2026-10-09.
+[^ard-spec]: "Agentic Resource Discovery Specification", v0.91 (Proposal), 2026-08-26, §3.3, https://agenticresourcediscovery.org/spec/, consulted 2026-11-03.

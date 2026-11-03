@@ -3,15 +3,15 @@ title: "Agent2Agent (A2A)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Agent2Agent (A2A)
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 9 in  
-**Source pages:** 9
+**Degree:** 3 out / 11 in  
+**Source pages:** 11
 
 **Wiki page:** [Agent2Agent (A2A)](../concepts/agent2agent-a2a.md)
 
@@ -29,11 +29,13 @@ updated: 2026-11-02
 |---------|-----------|--------|
 | agent-communication-protocol-acp | contrasts-with | agent-communication-protocol-acp.md |
 | personal-agent-consent-trust-protocol-pact | builds-on | agent2agent-a2a.md |
+| agentic-resource-discovery-ard | contrasts-with | agentic-resource-discovery-ard.md |
 | model-context-protocol-mcp | contrasts-with | model-context-protocol-mcp.md |
 | personal-agent-consent-trust-protocol-pact | builds-on | personal-agent-consent-trust-protocol-pact.md |
 | x402 | enables | x402.md |
 | agentic-ai-foundation | relates-to | agentic-ai-foundation.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | describes | ai-protocols-a2a-agentic-ai-foundation-2026.md |
+| ai-protocols-ard-hugging-face-discover-2026 | contrasts-with | ai-protocols-ard-hugging-face-discover-2026.md |
 | decagon-pact-introduction-2026 | builds-on | decagon-pact-introduction-2026.md |
 | openpactprotocol-pact-spec-2026 | builds-on | openpactprotocol-pact-spec-2026.md |
 
@@ -41,10 +43,12 @@ updated: 2026-11-02
 
 - [concepts/agent-communication-protocol-acp.md](../concepts/agent-communication-protocol-acp.md)
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
+- [concepts/agentic-resource-discovery-ard.md](../concepts/agentic-resource-discovery-ard.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/personal-agent-consent-trust-protocol-pact.md](../concepts/personal-agent-consent-trust-protocol-pact.md)
 - [concepts/x402.md](../concepts/x402.md)
 - [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
+- [sources/ai-protocols-ard-hugging-face-discover-2026.md](../sources/ai-protocols-ard-hugging-face-discover-2026.md)
 - [sources/decagon-pact-introduction-2026.md](../sources/decagon-pact-introduction-2026.md)
 - [sources/openpactprotocol-pact-spec-2026.md](../sources/openpactprotocol-pact-spec-2026.md)

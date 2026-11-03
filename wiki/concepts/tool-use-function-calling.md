@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-27
+updated: 2026-11-03
 tags: [tool-use, function-calling, json-schema, agents, decision-models]
 ---
 
@@ -53,6 +53,7 @@ tool use is prerequisite to understanding why those protocols exist.
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 - [Introducing Clef: open-source decision models (Cloudflare)](../sources/ai-protocols-clef-decision-models-2026.md) — decision models act as a typed, calibrated layer in front of tool selection (scored on BFCL / ToolRet / API-Bank), deciding which tool or route to take rather than emitting the call text.
 - [What Open Responses changes for AI developers](../sources/ai-protocols-open-responses-2026.md) — standardizes the tool-description/result contract itself across providers (OpenAI, Anthropic, Google), so the tool-use loop stays provider-portable.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — moves tool *selection* out of the context window into a search service. Registries rank on representative queries, publisher identity and attestations instead of loading every tool description into the prompt.
 
 ## Open Questions
 

@@ -17,7 +17,7 @@ sources:
 generated: {by: anthropic/claude-opus-5-5, at: 2026-10-27T00:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-10-27
+updated: 2026-11-03
 tags: [agent-skills, skill-md, agents, capability-format, anthropic, progressive-disclosure, aaif]
 ---
 
@@ -67,6 +67,7 @@ MCP, AGENTS.md, and A2A.[^aaif4]
 - [AI Protocols](../domains/ai-protocols.md) — the cluster.
 - [Agentic AI Foundation (AAIF)](../organizations/agentic-ai-foundation.md) — governing body since 2026-10-22.
 - [Agentic AI Foundation Announces Four New Projects](ai-protocols-aaif-four-new-projects-2026.md) — the announcement recording the Anthropic → AAIF donation.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — makes skills searchable before install (`application/agent-skills+md`, `+json`, `+zip`). Hugging Face's `hf-discover` returns a generated `SKILL.md` by default.
 
 [^agentskills]: agentskills.io, "Agent Skills Overview", consulted 2026-10-08.
 [^aaif4]: Agentic AI Foundation, "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox", press release, 2026-10-22.

@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-11-02
+updated: 2026-11-03
 tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
@@ -38,6 +38,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT (contradiction flagged).
 - [AGENTS.md](../concepts/agents-md.md) — open Markdown convention giving coding agents per-repo instructions; an AAIF/Linux Foundation project.
 - [Agent Plugins](../concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills + MCP servers into one portable plugin directory.
+- [Agentic Resource Discovery (ARD)](../concepts/agentic-resource-discovery-ard.md) — open pre-invocation discovery protocol (v0.91, Proposal): domain-anchored entries at `/.well-known/ard.json`, federated registries with a REST `/search`, then invocation over MCP, A2A, Skills or an API.
 
 ## Key Sources
 
@@ -59,6 +60,9 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Training agents for real-world tasks with OpenEnv](../sources/ai-protocols-openenv-training-agents-2026.md) — AAIF's OpenEnv reset/step/state interface for agent-training environments; reward-design failure-mode case studies.
 - [Agentic AI Foundation Announces Four New Projects](../sources/ai-protocols-aaif-four-new-projects-2026.md) — AAIF takes in Agent Skills, Open Responses, OpenEnv, OpenSandbox; 10 hosted projects.
 - [Running Agents on Kubernetes with Agent Sandbox](../sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — Kubernetes SIG Apps' `Sandbox` CRD for isolated, stateful, singleton agent workloads (gVisor/Kata, scale-to-zero, stable identity, warm pools).
+- [Announcing the Agentic Resource Discovery specification (Google blog)](../sources/ai-protocols-ard-google-announcement-2026.md) — ARD launch: catalogs on your own domain, registries as search engines, four-phase runtime demo, Google Cloud Agent Registry.
+- [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](../sources/ai-protocols-ard-aws-agent-registry-2026.md) — AWS Agent Registry (preview) plus ARD as a DNS-like federation layer across clouds, on-prem and SaaS (stated as expectations).
+- [Agentic Resource Discovery: Let agents search (Hugging Face blog)](../sources/ai-protocols-ard-hugging-face-discover-2026.md) — ARD as the discovery layer in front of MCP, Skills and A2A; `hf-discover` reference implementation (CLI, REST, MCP).
 
 ## Projects
 
@@ -69,7 +73,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 ## Organizations
 
 - [Agentic AI Foundation (AAIF)](../organizations/agentic-ai-foundation.md) — neutral steward of most agent-interop specs in this cluster (MCP, AGENTS.md, A2A, Agent Skills, Open Responses, …).
-- [Amazon Web Services (AWS)](../organizations/aws.md) — publisher of Dogwood; ships agent tool-call governance via Bedrock AgentCore.
+- [Amazon Web Services (AWS)](../organizations/aws.md) — publisher of Dogwood; ships agent tool-call governance via Bedrock AgentCore; AWS Agent Registry (preview) and an ARD Oversight Board seat.
 
 ## Key People
 

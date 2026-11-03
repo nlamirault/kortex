@@ -29,6 +29,7 @@ write operation also appends to `## By Date`.
 - [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — Meta + Sierra standard for personal-agent↔business connection over MCP/OpenAPI; parallel to PACT.
 - [AGENTS.md](concepts/agents-md.md) — open Markdown convention giving AI coding agents per-repo instructions; an AAIF/Linux Foundation project.
 - [Agent Plugins](concepts/agent-plugins.md) — open 1.0.0 packaging standard bundling Agent Skills and MCP servers into one portable plugin directory.
+- [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — open pre-invocation discovery protocol (v0.91, Proposal): domain-anchored entries at `/.well-known/ard.json`, federated registries with REST `/search`, publisher-authority trust binding; `ai-catalog.json` → `ard.json` drift dated.
 - [Telemetry Signals](concepts/telemetry-signals.md) — the three observability data types: traces, metrics, logs.
 - [Distributed Tracing](concepts/distributed-tracing.md) — following one request across services via spans and context propagation.
 - [OpenTelemetry (OTel)](concepts/opentelemetry-otel.md) — vendor-neutral standard and OTLP wire format for telemetry.
@@ -56,6 +57,9 @@ write operation also appends to `## By Date`.
 - [Training agents for real-world tasks with OpenEnv](sources/ai-protocols-openenv-training-agents-2026.md) — fiche: AAIF's OpenEnv reset/step/state interface for agent-training environments, with case studies on reward-design failure modes.
 - [Agentic AI Foundation Announces Four New Projects](sources/ai-protocols-aaif-four-new-projects-2026.md) — fiche: AAIF press release (2026-10-22) taking in Agent Skills (Anthropic), Open Responses (OpenAI), OpenEnv (Hugging Face), OpenSandbox (Alibaba); 10 hosted projects after year one.
 - [Running Agents on Kubernetes with Agent Sandbox](sources/ai-protocols-agent-sandbox-kubernetes-2026.md) — fiche: Kubernetes blog (Kuo & Santa Barbara, 2026-03-20) introducing SIG Apps' Agent Sandbox — a `Sandbox` CRD for isolated, stateful, singleton agent workloads, plus warm-pool extensions.
+- [Announcing the Agentic Resource Discovery specification (Google blog)](sources/ai-protocols-ard-google-announcement-2026.md) — fiche: Google (Bu & Krishnan, 2026-06-17) launches ARD; catalogs + registries, four-phase demo, Google Cloud Agent Registry (native ARD "in the coming months").
+- [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](sources/ai-protocols-ard-aws-agent-registry-2026.md) — fiche: AWS (Damick, Mangal & Talluri, 2026-08-24); AWS Agent Registry (preview) workflow, multi-environment problem, DNS analogy, ARD as complement (stated as expectations).
+- [Agentic Resource Discovery: Let agents search (Hugging Face blog)](sources/ai-protocols-ard-hugging-face-discover-2026.md) — fiche: Hugging Face (Burtenshaw & Smith, 2026-06-17); discovery layer in front of MCP/Skills/A2A; `hf-discover` reference implementation via CLI, REST and MCP.
 
 ## People
 
@@ -68,7 +72,7 @@ write operation also appends to `## By Date`.
 ## Organizations
 
 - [Agentic AI Foundation (AAIF)](organizations/agentic-ai-foundation.md) — vendor-neutral foundation hosting MCP, goose, AGENTS.md, A2A, Agent Skills, Open Responses, OpenEnv, OpenSandbox and more (10 projects).
-- [Amazon Web Services (AWS)](organizations/aws.md) — cloud vendor; publisher of Dogwood and home of Bedrock AgentCore agent governance.
+- [Amazon Web Services (AWS)](organizations/aws.md) — cloud vendor; publisher of Dogwood, home of Bedrock AgentCore agent governance and AWS Agent Registry (preview); ARD Oversight Board member.
 
 ## Decisions
 
@@ -81,6 +85,10 @@ write operation also appends to `## By Date`.
 ## Gaps
 
 ## By Date
+
+### 2026-11-03
+
+- [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md), [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md), [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md), [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — `[INGEST]` + `[FILE]` (concept promotion from queue + 3 fiches); open pre-invocation discovery protocol, `ai-catalog.json` → `ard.json` drift dated — also touched [AWS](organizations/aws.md), [Agent Plugins](concepts/agent-plugins.md), [Model Context Protocol (MCP)](concepts/model-context-protocol-mcp.md), [Agent2Agent (A2A)](concepts/agent2agent-a2a.md), [Tool Use / Function Calling](concepts/tool-use-function-calling.md), [Agent Skills fiche](sources/ai-protocols-agent-skills-overview-2026.md), [AgentReady fiche](sources/ai-protocols-agentready-standard-2026.md), [Agent Plugins (Google blog) fiche](sources/ai-protocols-agent-plugins-google-2026.md), [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-11-02
 

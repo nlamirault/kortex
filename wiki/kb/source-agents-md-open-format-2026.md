@@ -3,7 +3,7 @@ title: "AGENTS.md — A simple, open format for guiding coding agents"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # AGENTS.md — A simple, open format for guiding coding agents

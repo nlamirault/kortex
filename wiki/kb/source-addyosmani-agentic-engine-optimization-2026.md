@@ -3,7 +3,7 @@ title: "Agentic Engine Optimization (AEO) — Addy Osmani"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Agentic Engine Optimization (AEO) — Addy Osmani

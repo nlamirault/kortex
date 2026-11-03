@@ -3,15 +3,15 @@ title: "Agent Plugins"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Agent Plugins
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 5 out / 0 in  
-**Source pages:** 1
+**Degree:** 5 out / 1 in  
+**Source pages:** 2
 
 **Wiki page:** [Agent Plugins](../concepts/agent-plugins.md)
 
@@ -25,6 +25,13 @@ updated: 2026-11-02
 | enables | tool-use-function-calling | agent-plugins.md |
 | described-by | ai-protocols-agent-plugins-spec-2026 | agent-plugins.md |
 
+## Incoming Relations
+
+| Subject | Predicate | Source |
+|---------|-----------|--------|
+| agentic-resource-discovery-ard | enables | agentic-resource-discovery-ard.md |
+
 ## Source Pages
 
 - [concepts/agent-plugins.md](../concepts/agent-plugins.md)
+- [concepts/agentic-resource-discovery-ard.md](../concepts/agentic-resource-discovery-ard.md)

@@ -3,15 +3,15 @@ title: "Model Context Protocol (MCP)"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Model Context Protocol (MCP)
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 3 out / 18 in  
-**Source pages:** 19
+**Degree:** 3 out / 21 in  
+**Source pages:** 22
 
 **Wiki page:** [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md)
 
@@ -29,6 +29,7 @@ updated: 2026-11-02
 |---------|-----------|--------|
 | agent-plugins | implements | agent-plugins.md |
 | agent2agent-a2a | contrasts-with | agent2agent-a2a.md |
+| agentic-resource-discovery-ard | contrasts-with | agentic-resource-discovery-ard.md |
 | agents-md | relates-to | agents-md.md |
 | personal-agent-protocol-pap | builds-on | personal-agent-protocol-pap.md |
 | tool-use-function-calling | used-by | tool-use-function-calling.md |
@@ -40,6 +41,8 @@ updated: 2026-11-02
 | ai-protocols-agent-plugins-google-2026 | implements | ai-protocols-agent-plugins-google-2026.md |
 | ai-protocols-agent-plugins-spec-2026 | implements | ai-protocols-agent-plugins-spec-2026.md |
 | ai-protocols-agentready-standard-2026 | argues-that | ai-protocols-agentready-standard-2026.md |
+| ai-protocols-ard-google-announcement-2026 | contrasts-with | ai-protocols-ard-google-announcement-2026.md |
+| ai-protocols-ard-hugging-face-discover-2026 | contrasts-with | ai-protocols-ard-hugging-face-discover-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | implements | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-open-responses-2026 | contrasts-with | ai-protocols-open-responses-2026.md |
 | ai-protocols-openenv-training-agents-2026 | implements | ai-protocols-openenv-training-agents-2026.md |
@@ -50,6 +53,7 @@ updated: 2026-11-02
 
 - [concepts/agent-plugins.md](../concepts/agent-plugins.md)
 - [concepts/agent2agent-a2a.md](../concepts/agent2agent-a2a.md)
+- [concepts/agentic-resource-discovery-ard.md](../concepts/agentic-resource-discovery-ard.md)
 - [concepts/agents-md.md](../concepts/agents-md.md)
 - [concepts/model-context-protocol-mcp.md](../concepts/model-context-protocol-mcp.md)
 - [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
@@ -62,6 +66,8 @@ updated: 2026-11-02
 - [sources/ai-protocols-agent-plugins-google-2026.md](../sources/ai-protocols-agent-plugins-google-2026.md)
 - [sources/ai-protocols-agent-plugins-spec-2026.md](../sources/ai-protocols-agent-plugins-spec-2026.md)
 - [sources/ai-protocols-agentready-standard-2026.md](../sources/ai-protocols-agentready-standard-2026.md)
+- [sources/ai-protocols-ard-google-announcement-2026.md](../sources/ai-protocols-ard-google-announcement-2026.md)
+- [sources/ai-protocols-ard-hugging-face-discover-2026.md](../sources/ai-protocols-ard-hugging-face-discover-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
 - [sources/ai-protocols-openenv-training-agents-2026.md](../sources/ai-protocols-openenv-training-agents-2026.md)
