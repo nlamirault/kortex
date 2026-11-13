@@ -155,7 +155,23 @@ Follow-up entities surfaced by the Agent Substrate project page (ate.dev + llms.
 - **Agent Substrate docs** (source follow-up) — https://ate.dev/llms-full.txt (~516 KB) bundles every guide. The project page drew only on its Overview, Architecture and Sandbox Classes pages. Ingest the Threat Model, Request Parking, Egress Credential Injection and Version Skew Policy pages for detail. Design-doc drift: the Architecture page (marked "[Status: Planned]") still lists identity and policy under "Problems We Haven't Addressed Yet", although the security guides describe both as shipped. Check against the code, or see whether a later Architecture rewrite fixes it.
 - **Agent Substrate demo video** (source) — https://www.youtube.com/watch?v=ZEzkCFJkzjY (~250 actors on 8 pods).
 
+Follow-up entities surfaced by the Google Cloud CNCF donation fiche (cloud.google.com blog, 2026-11-05):
+
+- **OpenRL** (project) — started at Google, donated to the CNCF with Agent Substrate and gVisor; cncf/sandbox#518 closed 2026-10-20 with `gitvote/passed`. "a clean, self-hosted Python post-training loop directly to your Kubernetes cluster", with four primitives (`sample`, `forward_backward`, `optim_step`, `save_state`) "through a Tinker compatible API"; "started in February as a research preview" (year not stated). Sources: https://openrl.dev, https://opensource.googleblog.com/2026/06/introducing-openrl-a-self-hosted-post-training-api-for-fine-tuning-llms.html.
+- **gVisor** (project) — **in progress on `feat/gvisor`** (parallel stream creates `wiki/projects/gvisor.md` from this same post). 3rd source after Agent Sandbox and Agent Substrate; cncf/sandbox#521 closed 2026-10-28 with `gitvote/passed`; "on a path toward Incubation". Once merged, link it from the fiche and from Agent Substrate's `gvisor` sandbox class.
+- **Cloud Native Computing Foundation (CNCF)** (organization) — ★ **2nd source** for the entry above: Google's donation post names the CNCF Sandbox and onboarding. Promotion candidate.
+- **Google** (organization) — ★ **4th source** for the entry above: Agent Substrate, gVisor and OpenRL "started at Google" and are donated to the CNCF.
+- **kagent** (project) — ★ **2nd source** for the entry above: Substrate "already powers other CNCF projects like kagent".
+- **Agent Compute Engine** (project) — Google's "Titanium microVM service" (fast hibernation, parallel environment-forking); the post says Agent Substrate "complements" it. Deep dive: https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive.
+- **Nous Research / Hermes Enterprise** (organization/project) — design partner building Hermes Enterprise on Agent Substrate. No source links it to the "Hermes" on ate.dev's framework list.
+- **llm-d** (project) — linked from the post's OpenRL section (https://llm-d.ai). KubeRay (cncf/sandbox#525) is linked in the same list of Sandbox issues.
+- **Drew Bradstock** (person) — post author, VP Product Management, Orchestration & Kubernetes (Google Cloud).
+- **Linked posts not read** (source follow-up) — Agent Substrate on GKE deep dive (https://cloud.google.com/blog/products/containers-kubernetes/agent-substrate-available-on-gke), gVisor's move to the CNCF (https://gvisor.dev/blog/2026/10/02/gvisor-cncf/; check `feat/gvisor` first).
+
 ## Done
+
+- https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf?hl=en → [wiki/sources/ai-protocols-google-agents-cncf-donation-2026.md](../wiki/sources/ai-protocols-google-agents-cncf-donation-2026.md) (fiche, 2026-11-13; also updated [wiki/projects/agent-substrate.md](../wiki/projects/agent-substrate.md))
+
 
 - https://agenticresourcediscovery.org/ → [wiki/concepts/agentic-resource-discovery-ard.md](../wiki/concepts/agentic-resource-discovery-ard.md) (concept, 2026-11-03; also read the /spec/, /interoperability/ and /governance/ pages)
 - https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/ → [wiki/sources/ai-protocols-ard-google-announcement-2026.md](../wiki/sources/ai-protocols-ard-google-announcement-2026.md) (fiche, 2026-11-03)

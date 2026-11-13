@@ -2,12 +2,12 @@
 title: source Index
 type: kb-index
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # source
 
-*22 entities*
+*23 entities*
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md)
@@ -27,6 +27,7 @@ updated: 2026-11-03
 - ★ [Introducing the Personal Agent Consent & Trust Protocol (PACT)](source-decagon-pact-introduction-2026.md)
 - ★ [Linux Foundation Announces Operational Launch of x402 Foundation](source-ai-protocols-x402-foundation-launch-2026.md)
 - ★ [PACT Protocol Home (openpactprotocol.org)](source-openpactprotocol-pact-spec-2026.md)
+- ★ [Powering open infrastructure for autonomous agents](source-ai-protocols-google-agents-cncf-donation-2026.md)
 - ★ [Running Agents on Kubernetes with Agent Sandbox](source-ai-protocols-agent-sandbox-kubernetes-2026.md)
 - ★ [The Sandbox as an Agent Primitive](source-ai-protocols-opensandbox-agent-primitive-2026.md)
 - ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md)

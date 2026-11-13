@@ -3,7 +3,7 @@ title: "Linux Foundation Announces Operational Launch of x402 Foundation"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Linux Foundation Announces Operational Launch of x402 Foundation
