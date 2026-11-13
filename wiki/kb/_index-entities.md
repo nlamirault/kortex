@@ -7,7 +7,7 @@ updated: 2026-11-13
 
 # Entity Index
 
-*48 entities — auto-generated*
+*49 entities — auto-generated*
 
 ## A
 
@@ -63,6 +63,7 @@ updated: 2026-11-13
 - ★ [PACT Protocol Home (openpactprotocol.org)](source-openpactprotocol-pact-spec-2026.md) — source
 - ★ [Personal Agent Consent & Trust Protocol (PACT)](concept-personal-agent-consent-trust-protocol-pact.md) — concept
 - ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md) — concept
+- ★ [Personal Agent Protocol (personalagentprotocol.org)](source-ai-protocols-personal-agent-protocol-site-2026.md) — source
 - ★ [Powering open infrastructure for autonomous agents](source-ai-protocols-google-agents-cncf-donation-2026.md) — source
 ## R
 

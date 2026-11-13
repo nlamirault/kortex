@@ -14,7 +14,25 @@ updated: 2026-11-13
 
 ## Current Focus
 
-**OpenShell: NVIDIA's agent-governance runtime joins the CNCF.** Ingested the CNCF launch post
+**Personal Agent Protocol (PAP, "Poppy"): the official site and spec.** Ingested
+personalagentprotocol.org as a **fiche**, and enriched the existing PAP concept page from the site,
+the draft 1.0 spec, the changelog, the roadmap, Path to 1.0, demos and license pages, plus the
+GitHub repo metadata. PAP is Apache-2.0. **v0.4 (2026-11-10) is the 1.0 release candidate**, after
+0.1 (2026-10-09), 0.2 and 0.3, and draft 1.0 takes fixes only. A company publishes
+`/.well-known/poppy.json`. The user signs in on the company's page through OAuth: **Direct Sign-In
+is preferred**, Device Sign-In is also available, and credential-based Mediated Sign-In is a
+transitional extension slated for removal. Each request carries a **signed `Poppy-Session` JWT**
+with a pairwise User ID, across `openapi`/`mcp` APIs, browser join and the `poppy` conversation
+protocol. There are six extensions (`operations` v3 for approved exact terms, `ucp` v1 for
+commerce). **43 listed design partners** include Meta (as a personal agent) and Sierra (as a
+technology provider). No steward is named, and only community demos exist. **Dated drift, noted and
+not escalated:** the Sierra post's "session is built on OAuth" matched 0.1 and was split in 0.3, and
+its reference implementation is not delivered yet. The working-group/"Muse" `PENDING` stays open:
+the site adds evidence (Instinct is listed, no working group is named) but does not resolve it.
+The Sierra update post, UCP, Web Bot Auth (2nd mention), OAuth CIMD, OpenAI and the community demos
+are parked.
+
+Prior: **OpenShell: NVIDIA's agent-governance runtime joins the CNCF.** Ingested the CNCF launch post
 (Bryce & Golshan, 2026-11-10) as a fiche and created an **OpenShell project page** from the repo,
 the docs source, the `ai-openshell` org and `.project`, and the CNCF records. A gateway control
 plane plus a **trusted supervisor outside each sandbox** mediates every TCP/DNS request against
@@ -258,6 +276,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [PAP site fiche](sources/ai-protocols-personal-agent-protocol-site-2026.md) — latest ingest (official "Poppy" site: v0.4 = 1.0 RC, 43 design partners, dated differences from the Sierra post)
+- [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — enriched (spec building blocks, version train, roadmap, governance, Site vs. Sierra table; `PENDING` kept)
 - [OpenShell](projects/openshell.md) / [OpenShell CNCF fiche](sources/ai-protocols-openshell-cncf-2026.md) — latest ingest (CNCF Sandbox agent runtime from NVIDIA; supervisor-mediated sandboxes, YAML policy + SMT prover, Cedar proposed via RFC 0020; Agent Sandbox and Agent Substrate back-linked)
 - [gVisor](projects/gvisor.md) — latest ingest (new project: Sentry/Gofer isolation, `runsc`, platforms, checkpoint/restore, CNCF Sandbox timeline, how Agent Sandbox and Agent Substrate use it)
 - [Agent Sandbox](projects/agent-sandbox.md) — enriched (gVisor linked in the isolation bullet, comparison table and Related)
@@ -325,6 +345,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-13 `[INGEST]` — PAP site fiche (personalagentprotocol.org) + PAP concept enriched (14 sources); Apache-2.0 "Poppy" spec, 0.1→0.4 RC, Session header split from OAuth in 0.3 (dated drift vs the Sierra post, not escalated); working-group/"Muse" `PENDING` kept; Sierra update post, UCP, Web Bot Auth, OAuth CIMD, OpenAI, community demos parked.
 - 2026-11-13 `[INGEST]` — OpenShell fiche (CNCF blog, Bryce & Golshan) + project page (NVIDIA/OpenShell repo + docs source + ai-openshell org/.project + CNCF records); post-vs-repo Cedar gap dated (RFC 0020 open), CNCF milestones separated, repo move in progress; Agent Sandbox/Agent Substrate back-linked (no table row); NVIDIA, Red Hat, Docker, Canonical, authors, RFC 0020, table row and docs parked; Cedar + CNCF grounding noted.
 - 2026-11-13 `[INGEST]` — gVisor project page (Google CNCF post gVisor section + gvisor.dev docs + repo + cncf/sandbox#521 + Agent Sandbox gVisor page); CNCF Sandbox timeline with two acceptance milestones reconciled; maintainer and repo moves dated as announced-not-done; Agent Sandbox linked; GKE Sandbox, adopters, maintainer orgs, authors, unread docs parked.
 - 2026-11-13 `[INGEST]` — Google Cloud CNCF donation fiche (Bradstock, 2026-11-05) + Agent Substrate page reconciled: `v1.0.0` (2026-11-05), GA on GKE, CNCF Sandbox onboarding (#523 passed 2026-10-20); gVisor text-only (page on `feat/gvisor`); OpenRL, Agent Compute Engine, Nous Research, llm-d parked; CNCF now 2-source.

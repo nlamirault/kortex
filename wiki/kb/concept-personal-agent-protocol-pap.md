@@ -10,8 +10,8 @@ updated: 2026-11-13
 
 **Type:** concept  
 **Tier:** Major ★  
-**Degree:** 4 out / 2 in  
-**Source pages:** 3
+**Degree:** 5 out / 3 in  
+**Source pages:** 4
 
 **Wiki page:** [Personal Agent Protocol (PAP)](../concepts/personal-agent-protocol-pap.md)
 
@@ -23,16 +23,19 @@ updated: 2026-11-13
 | part-of | ai-protocols | personal-agent-protocol-pap.md |
 | contrasts-with | personal-agent-consent-trust-protocol-pact | personal-agent-protocol-pap.md |
 | described-by | sierra-personal-agent-protocol-2026 | personal-agent-protocol-pap.md |
+| described-by | ai-protocols-personal-agent-protocol-site-2026 | personal-agent-protocol-pap.md |
 
 ## Incoming Relations
 
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | personal-agent-consent-trust-protocol-pact | contrasts-with | personal-agent-consent-trust-protocol-pact.md |
+| ai-protocols-personal-agent-protocol-site-2026 | argues-that | ai-protocols-personal-agent-protocol-site-2026.md |
 | sierra-personal-agent-protocol-2026 | introduces | sierra-personal-agent-protocol-2026.md |
 
 ## Source Pages
 
 - [concepts/personal-agent-consent-trust-protocol-pact.md](../concepts/personal-agent-consent-trust-protocol-pact.md)
 - [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
+- [sources/ai-protocols-personal-agent-protocol-site-2026.md](../sources/ai-protocols-personal-agent-protocol-site-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

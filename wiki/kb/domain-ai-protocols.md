@@ -10,8 +10,8 @@ updated: 2026-11-13
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 33 in  
-**Source pages:** 34
+**Degree:** 0 out / 34 in  
+**Source pages:** 35
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -47,6 +47,7 @@ updated: 2026-11-13
 | ai-protocols-openenv-training-agents-2026 | extends | ai-protocols-openenv-training-agents-2026.md |
 | ai-protocols-opensandbox-agent-primitive-2026 | extends | ai-protocols-opensandbox-agent-primitive-2026.md |
 | ai-protocols-openshell-cncf-2026 | extends | ai-protocols-openshell-cncf-2026.md |
+| ai-protocols-personal-agent-protocol-site-2026 | extends | ai-protocols-personal-agent-protocol-site-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
 | ai-protocols-x402-foundation-launch-2026 | extends | ai-protocols-x402-foundation-launch-2026.md |
 | decagon-pact-introduction-2026 | extends | decagon-pact-introduction-2026.md |
@@ -84,6 +85,7 @@ updated: 2026-11-13
 - [sources/ai-protocols-openenv-training-agents-2026.md](../sources/ai-protocols-openenv-training-agents-2026.md)
 - [sources/ai-protocols-opensandbox-agent-primitive-2026.md](../sources/ai-protocols-opensandbox-agent-primitive-2026.md)
 - [sources/ai-protocols-openshell-cncf-2026.md](../sources/ai-protocols-openshell-cncf-2026.md)
+- [sources/ai-protocols-personal-agent-protocol-site-2026.md](../sources/ai-protocols-personal-agent-protocol-site-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/ai-protocols-x402-foundation-launch-2026.md](../sources/ai-protocols-x402-foundation-launch-2026.md)
 - [sources/decagon-pact-introduction-2026.md](../sources/decagon-pact-introduction-2026.md)

@@ -10,8 +10,8 @@ updated: 2026-11-13
 
 **Type:** source  
 **Tier:** Major ★  
-**Degree:** 3 out / 1 in  
-**Source pages:** 2
+**Degree:** 3 out / 2 in  
+**Source pages:** 3
 
 **Wiki page:** [Introducing Personal Agent Protocol](../sources/sierra-personal-agent-protocol-2026.md)
 
@@ -28,8 +28,10 @@ updated: 2026-11-13
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | personal-agent-protocol-pap | described-by | personal-agent-protocol-pap.md |
+| ai-protocols-personal-agent-protocol-site-2026 | extends | ai-protocols-personal-agent-protocol-site-2026.md |
 
 ## Source Pages
 
 - [concepts/personal-agent-protocol-pap.md](../concepts/personal-agent-protocol-pap.md)
+- [sources/ai-protocols-personal-agent-protocol-site-2026.md](../sources/ai-protocols-personal-agent-protocol-site-2026.md)
 - [sources/sierra-personal-agent-protocol-2026.md](../sources/sierra-personal-agent-protocol-2026.md)

@@ -13,16 +13,16 @@ updated: 2026-11-13
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 48 |
-| Major entities (★) | 42 |
+| Total entities | 49 |
+| Major entities (★) | 43 |
 | Minor entities | 6 |
-| Total triples | 155 |
+| Total triples | 159 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| source | 24 | [→](kb/_index-type-source.md) |
+| source | 25 | [→](kb/_index-type-source.md) |
 | concept | 15 | [→](kb/_index-type-concept.md) |
 | project | 5 | [→](kb/_index-type-project.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
@@ -36,12 +36,12 @@ updated: 2026-11-13
 | [Agent Plugins](kb/concept-agent-plugins.md) | concept | 5 | 2 |
 | [Agentic Resource Discovery (ARD)](kb/concept-agentic-resource-discovery-ard.md) | concept | 5 | 4 |
 | [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 2 |
+| [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 5 | 4 |
 | [Agentic AI Foundation (AAIF)](kb/organization-agentic-ai-foundation.md) | organization | 5 | 5 |
 | [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 5 | 6 |
 | [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 5 | 3 |
 | [The Sandbox as an Agent Primitive](kb/source-ai-protocols-opensandbox-agent-primitive-2026.md) | source | 5 | 2 |
 | [Introducing Strands Box: AI agent sandboxes powered by Dogwood](kb/source-ai-protocols-strands-box-sandboxes-2026.md) | source | 5 | 6 |
-| [Instrumentation](kb/concept-instrumentation.md) | concept | 4 | 4 |
 
 ## Navigation
 
