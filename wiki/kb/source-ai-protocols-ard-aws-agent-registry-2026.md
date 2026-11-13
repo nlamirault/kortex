@@ -3,7 +3,7 @@ title: "Agentic Resource Discovery (ARD): An open specification for agent discov
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)

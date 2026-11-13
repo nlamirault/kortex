@@ -3,15 +3,15 @@ title: "Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Re
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox
 
 **Type:** source  
 **Tier:** Major ★  
-**Degree:** 4 out / 1 in  
-**Source pages:** 2
+**Degree:** 4 out / 2 in  
+**Source pages:** 3
 
 **Wiki page:** [Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox](../sources/ai-protocols-aaif-four-new-projects-2026.md)
 
@@ -29,8 +29,10 @@ updated: 2026-11-03
 | Subject | Predicate | Source |
 |---------|-----------|--------|
 | agentic-ai-foundation | publishes | agentic-ai-foundation.md |
+| ai-protocols-google-agents-cncf-donation-2026 | contrasts-with | ai-protocols-google-agents-cncf-donation-2026.md |
 
 ## Source Pages
 
 - [organizations/agentic-ai-foundation.md](../organizations/agentic-ai-foundation.md)
 - [sources/ai-protocols-aaif-four-new-projects-2026.md](../sources/ai-protocols-aaif-four-new-projects-2026.md)
+- [sources/ai-protocols-google-agents-cncf-donation-2026.md](../sources/ai-protocols-google-agents-cncf-donation-2026.md)

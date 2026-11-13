@@ -3,15 +3,15 @@ title: "Agent Substrate"
 type: kb-entity
 entity_type: project
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Agent Substrate
 
 **Type:** project  
 **Tier:** Minor  
-**Degree:** 2 out / 0 in  
-**Source pages:** 1
+**Degree:** 2 out / 1 in  
+**Source pages:** 2
 
 **Wiki page:** [Agent Substrate](../projects/agent-substrate.md)
 
@@ -22,6 +22,13 @@ updated: 2026-11-03
 | integrates-with | model-context-protocol-mcp | agent-substrate.md |
 | part-of | ai-protocols | agent-substrate.md |
 
+## Incoming Relations
+
+| Subject | Predicate | Source |
+|---------|-----------|--------|
+| ai-protocols-google-agents-cncf-donation-2026 | argues-that | ai-protocols-google-agents-cncf-donation-2026.md |
+
 ## Source Pages
 
 - [projects/agent-substrate.md](../projects/agent-substrate.md)
+- [sources/ai-protocols-google-agents-cncf-donation-2026.md](../sources/ai-protocols-google-agents-cncf-donation-2026.md)

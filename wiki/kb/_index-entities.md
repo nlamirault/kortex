@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Entity Index
 
-*44 entities — auto-generated*
+*45 entities — auto-generated*
 
 ## A
 
@@ -59,6 +59,7 @@ updated: 2026-11-03
 - ★ [PACT Protocol Home (openpactprotocol.org)](source-openpactprotocol-pact-spec-2026.md) — source
 - ★ [Personal Agent Consent & Trust Protocol (PACT)](concept-personal-agent-consent-trust-protocol-pact.md) — concept
 - ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md) — concept
+- ★ [Powering open infrastructure for autonomous agents](source-ai-protocols-google-agents-cncf-donation-2026.md) — source
 ## R
 
 - ★ [Running Agents on Kubernetes with Agent Sandbox](source-ai-protocols-agent-sandbox-kubernetes-2026.md) — source

@@ -10,7 +10,7 @@ sources: []
 generated: {by: anthropic/claude-opus-4-8, at: 2026-10-08T12:00:00Z}
 verified: []
 stale_after: 2027-04-08T00:00:00Z
-updated: 2026-11-03
+updated: 2026-11-13
 tags: [ai-protocols, agents, interoperability, tools, payments, decision-models]
 ---
 
@@ -63,6 +63,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Announcing the Agentic Resource Discovery specification (Google blog)](../sources/ai-protocols-ard-google-announcement-2026.md) — ARD launch: catalogs on your own domain, registries as search engines, four-phase runtime demo, Google Cloud Agent Registry.
 - [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](../sources/ai-protocols-ard-aws-agent-registry-2026.md) — AWS Agent Registry (preview) plus ARD as a DNS-like federation layer across clouds, on-prem and SaaS (stated as expectations).
 - [Agentic Resource Discovery: Let agents search (Hugging Face blog)](../sources/ai-protocols-ard-hugging-face-discover-2026.md) — ARD as the discovery layer in front of MCP, Skills and A2A; `hf-discover` reference implementation (CLI, REST, MCP).
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](../sources/ai-protocols-google-agents-cncf-donation-2026.md) — Google donates Agent Substrate, gVisor and OpenRL to the CNCF after Sandbox acceptance; Agent Substrate 1.0 and GA on GKE.
 
 ## Projects
 
