@@ -70,6 +70,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [agentic-seo](../projects/agentic-seo.md) — CLI auditing documentation for AEO readiness (robots.txt, llms.txt, token budgets, skill.md, agent-permissions.json).
 - [Agent Sandbox](../projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; isolation backend (gVisor or Kata) decoupled from the API.
 - [Agent Substrate](../projects/agent-substrate.md) — CNCF Sandbox runtime (originally Google): many stateful actors multiplexed onto warm Kubernetes worker pods, sub-500 ms suspend/resume (project-reported), gVisor or Kata-on-Cloud-Hypervisor, zero ambient credentials + default-deny egress.
+- [gVisor](../projects/gvisor.md) — user-space application kernel in Go (OCI runtime `runsc`), originally Google, CNCF Sandbox since 2026; an isolation backend (one of two) under Agent Sandbox (`runtimeClassName: gvisor`) and Agent Substrate (`gvisor` class).
 
 ## Organizations
 

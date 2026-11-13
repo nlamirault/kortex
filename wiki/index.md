@@ -69,6 +69,7 @@ write operation also appends to `## By Date`.
 - [agentic-seo](projects/agentic-seo.md) — Osmani's MIT-licensed CLI auditing docs for Agentic Engine Optimization (AEO); 10 checks, 0–100 score.
 - [Agent Sandbox](projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD, gVisor/Kata isolation decoupled from the API, warm pools, Python/Go SDKs.
 - [Agent Substrate](projects/agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended stateful actors onto warm Kubernetes workers; gVisor or Kata-on-Cloud-Hypervisor; SPIFFE identity, no in-sandbox credentials, default-deny egress.
+- [gVisor](projects/gvisor.md) — user-space application kernel in Go (`runsc` OCI runtime) isolating untrusted container code from the host kernel; CNCF Sandbox (2026); backend for Agent Sandbox and Agent Substrate.
 
 ## Organizations
 
@@ -89,6 +90,7 @@ write operation also appends to `## By Date`.
 
 ### 2026-11-13
 
+- [gVisor](projects/gvisor.md) — `[INGEST]` (project); Google Cloud CNCF-donation post (gVisor section) + gvisor.dev docs + repo + CNCF issue #521: Sentry/Gofer isolation, `systrap`/KVM platforms, checkpoint/restore, CNCF Sandbox timeline — also touched [Agent Sandbox](projects/agent-sandbox.md) (gVisor links), [AI Protocols](domains/ai-protocols.md)
 - [Powering open infrastructure for autonomous agents (Google Cloud blog)](sources/ai-protocols-google-agents-cncf-donation-2026.md), [Agent Substrate](projects/agent-substrate.md) — `[INGEST]` (fiche + project update); Agent Substrate, gVisor and OpenRL donated to the CNCF after Sandbox acceptance; Agent Substrate `v1.0.0` (2026-11-05) and GA on GKE — also touched [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-11-03
