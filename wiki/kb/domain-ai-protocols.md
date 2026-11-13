@@ -10,8 +10,8 @@ updated: 2026-11-13
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 30 in  
-**Source pages:** 31
+**Degree:** 0 out / 34 in  
+**Source pages:** 35
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -33,6 +33,8 @@ updated: 2026-11-13
 | aws | member-of | aws.md |
 | agent-sandbox | part-of | agent-sandbox.md |
 | agent-substrate | part-of | agent-substrate.md |
+| gvisor | part-of | gvisor.md |
+| openshell | part-of | openshell.md |
 | agents-md-open-format-2026 | extends | agents-md-open-format-2026.md |
 | ai-protocols-a2a-agentic-ai-foundation-2026 | extends | ai-protocols-a2a-agentic-ai-foundation-2026.md |
 | ai-protocols-aaif-four-new-projects-2026 | extends | ai-protocols-aaif-four-new-projects-2026.md |
@@ -40,9 +42,11 @@ updated: 2026-11-13
 | ai-protocols-agent-skills-overview-2026 | extends | ai-protocols-agent-skills-overview-2026.md |
 | ai-protocols-clef-decision-models-2026 | extends | ai-protocols-clef-decision-models-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | extends | ai-protocols-dogwood-runtime-verification-2026.md |
+| ai-protocols-google-agents-cncf-donation-2026 | extends | ai-protocols-google-agents-cncf-donation-2026.md |
 | ai-protocols-open-responses-2026 | extends | ai-protocols-open-responses-2026.md |
 | ai-protocols-openenv-training-agents-2026 | extends | ai-protocols-openenv-training-agents-2026.md |
 | ai-protocols-opensandbox-agent-primitive-2026 | extends | ai-protocols-opensandbox-agent-primitive-2026.md |
+| ai-protocols-openshell-cncf-2026 | extends | ai-protocols-openshell-cncf-2026.md |
 | ai-protocols-personal-agent-protocol-site-2026 | extends | ai-protocols-personal-agent-protocol-site-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
 | ai-protocols-x402-foundation-launch-2026 | extends | ai-protocols-x402-foundation-launch-2026.md |
@@ -67,6 +71,8 @@ updated: 2026-11-13
 - [organizations/aws.md](../organizations/aws.md)
 - [projects/agent-sandbox.md](../projects/agent-sandbox.md)
 - [projects/agent-substrate.md](../projects/agent-substrate.md)
+- [projects/gvisor.md](../projects/gvisor.md)
+- [projects/openshell.md](../projects/openshell.md)
 - [sources/agents-md-open-format-2026.md](../sources/agents-md-open-format-2026.md)
 - [sources/ai-protocols-a2a-agentic-ai-foundation-2026.md](../sources/ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - [sources/ai-protocols-aaif-four-new-projects-2026.md](../sources/ai-protocols-aaif-four-new-projects-2026.md)
@@ -74,9 +80,11 @@ updated: 2026-11-13
 - [sources/ai-protocols-agent-skills-overview-2026.md](../sources/ai-protocols-agent-skills-overview-2026.md)
 - [sources/ai-protocols-clef-decision-models-2026.md](../sources/ai-protocols-clef-decision-models-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
+- [sources/ai-protocols-google-agents-cncf-donation-2026.md](../sources/ai-protocols-google-agents-cncf-donation-2026.md)
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
 - [sources/ai-protocols-openenv-training-agents-2026.md](../sources/ai-protocols-openenv-training-agents-2026.md)
 - [sources/ai-protocols-opensandbox-agent-primitive-2026.md](../sources/ai-protocols-opensandbox-agent-primitive-2026.md)
+- [sources/ai-protocols-openshell-cncf-2026.md](../sources/ai-protocols-openshell-cncf-2026.md)
 - [sources/ai-protocols-personal-agent-protocol-site-2026.md](../sources/ai-protocols-personal-agent-protocol-site-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/ai-protocols-x402-foundation-launch-2026.md](../sources/ai-protocols-x402-foundation-launch-2026.md)

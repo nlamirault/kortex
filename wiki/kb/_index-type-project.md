@@ -7,8 +7,10 @@ updated: 2026-11-13
 
 # project
 
-*3 entities*
+*5 entities*
 
-- · [Agent Sandbox](project-agent-sandbox.md)
-- · [Agent Substrate](project-agent-substrate.md)
+- ★ [Agent Sandbox](project-agent-sandbox.md)
+- ★ [Agent Substrate](project-agent-substrate.md)
 - · [agentic-seo](project-agentic-seo.md)
+- ★ [gVisor](project-gvisor.md)
+- ★ [OpenShell](project-openshell.md)

@@ -7,7 +7,7 @@ updated: 2026-11-13
 
 # Entity Index
 
-*45 entities — auto-generated*
+*49 entities — auto-generated*
 
 ## A
 
@@ -16,9 +16,9 @@ updated: 2026-11-13
 - ★ [Agent Plugins](concept-agent-plugins.md) — concept
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md) — source
 - ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md) — source
-- · [Agent Sandbox](project-agent-sandbox.md) — project
+- ★ [Agent Sandbox](project-agent-sandbox.md) — project
 - ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
-- · [Agent Substrate](project-agent-substrate.md) — project
+- ★ [Agent Substrate](project-agent-substrate.md) — project
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
 - ★ [Agentic AI Foundation (AAIF)](organization-agentic-ai-foundation.md) — organization
 - ★ [Agentic AI Foundation Announces Four New Projects: Agent Skills, Open Responses, OpenEnv, and OpenSandbox](source-ai-protocols-aaif-four-new-projects-2026.md) — source
@@ -36,6 +36,9 @@ updated: 2026-11-13
 ## D
 
 - ★ [Distributed Tracing](concept-distributed-tracing.md) — concept
+## G
+
+- ★ [gVisor](project-gvisor.md) — project
 ## I
 
 - ★ [Instrumentation](concept-instrumentation.md) — concept
@@ -53,6 +56,7 @@ updated: 2026-11-13
 ## O
 
 - ★ [Observability](domain-observability.md) — domain
+- ★ [OpenShell](project-openshell.md) — project
 - ★ [OpenTelemetry (OTel)](concept-opentelemetry-otel.md) — concept
 ## P
 
@@ -60,6 +64,7 @@ updated: 2026-11-13
 - ★ [Personal Agent Consent & Trust Protocol (PACT)](concept-personal-agent-consent-trust-protocol-pact.md) — concept
 - ★ [Personal Agent Protocol (PAP)](concept-personal-agent-protocol-pap.md) — concept
 - ★ [Personal Agent Protocol (personalagentprotocol.org)](source-ai-protocols-personal-agent-protocol-site-2026.md) — source
+- ★ [Powering open infrastructure for autonomous agents](source-ai-protocols-google-agents-cncf-donation-2026.md) — source
 ## R
 
 - ★ [Running Agents on Kubernetes with Agent Sandbox](source-ai-protocols-agent-sandbox-kubernetes-2026.md) — source
@@ -74,6 +79,7 @@ updated: 2026-11-13
 - ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md) — source
 ## W
 
+- ★ [Welcoming OpenShell to the CNCF: Open Governance to Secure Agentic AI](source-ai-protocols-openshell-cncf-2026.md) — source
 - ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md) — source
 ## X
 

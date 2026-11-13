@@ -61,6 +61,8 @@ write operation also appends to `## By Date`.
 - [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](sources/ai-protocols-ard-aws-agent-registry-2026.md) — fiche: AWS (Damick, Mangal & Talluri, 2026-08-24); AWS Agent Registry (preview) workflow, multi-environment problem, DNS analogy, ARD as complement (stated as expectations).
 - [Agentic Resource Discovery: Let agents search (Hugging Face blog)](sources/ai-protocols-ard-hugging-face-discover-2026.md) — fiche: Hugging Face (Burtenshaw & Smith, 2026-06-17); discovery layer in front of MCP/Skills/A2A; `hf-discover` reference implementation via CLI, REST and MCP.
 - [Personal Agent Protocol (personalagentprotocol.org)](sources/ai-protocols-personal-agent-protocol-site-2026.md) — fiche: official PAP ("Poppy") site; Apache-2.0, `/.well-known/poppy.json`, OAuth sign-in, one signed Session across APIs/web/company agent, extensions (UCP, Operations); v0.4 = 1.0 release candidate (2026-11-10); 43 listed design partners; dated differences from the Sierra launch post.
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](sources/ai-protocols-google-agents-cncf-donation-2026.md) — fiche: Google (Bradstock, 2026-11-05) donates Agent Substrate, gVisor and OpenRL to the CNCF after their CNCF Sandbox acceptance; Agent Substrate reaches 1.0 and GA on GKE.
+- [Welcoming OpenShell to the CNCF: Open Governance to Secure Agentic AI](sources/ai-protocols-openshell-cncf-2026.md) — fiche: CNCF blog (Bryce & Golshan, 2026-11-10); NVIDIA contributes OpenShell as a CNCF Sandbox project; enforcement outside the agent, move to the `ai-openshell` org, Cedar adoption announced.
 
 ## People
 
@@ -69,6 +71,8 @@ write operation also appends to `## By Date`.
 - [agentic-seo](projects/agentic-seo.md) — Osmani's MIT-licensed CLI auditing docs for Agentic Engine Optimization (AEO); 10 checks, 0–100 score.
 - [Agent Sandbox](projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD, gVisor/Kata isolation decoupled from the API, warm pools, Python/Go SDKs.
 - [Agent Substrate](projects/agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended stateful actors onto warm Kubernetes workers; gVisor or Kata-on-Cloud-Hypervisor; SPIFFE identity, no in-sandbox credentials, default-deny egress.
+- [gVisor](projects/gvisor.md) — user-space application kernel in Go (`runsc` OCI runtime) isolating untrusted container code from the host kernel; CNCF Sandbox (2026); backend for Agent Sandbox and Agent Substrate.
+- [OpenShell](projects/openshell.md) — CNCF Sandbox agent runtime (contributed by NVIDIA): trusted supervisor mediating every network request against YAML policy, credentials only for approved endpoints, SMT prover for proposed rules; Cedar proposed as an alternate policy language.
 
 ## Organizations
 
@@ -90,6 +94,9 @@ write operation also appends to `## By Date`.
 ### 2026-11-13
 
 - [Personal Agent Protocol site fiche](sources/ai-protocols-personal-agent-protocol-site-2026.md), [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — `[INGEST]` (fiche + concept enriched); "Poppy" spec building blocks, 0.1→0.4 RC version train, design partners, dated drift vs the Sierra post (session/OAuth split in 0.3) — also touched [AI Protocols](domains/ai-protocols.md)
+- [Welcoming OpenShell to the CNCF](sources/ai-protocols-openshell-cncf-2026.md), [OpenShell](projects/openshell.md) — `[INGEST]` (fiche + project); NVIDIA contributes OpenShell to the CNCF (Sandbox); supervisor-mediated sandboxes, YAML policy + SMT prover, Cedar proposed as an alternate policy language (RFC 0020, open) — also touched [Agent Sandbox](projects/agent-sandbox.md), [Agent Substrate](projects/agent-substrate.md), [AI Protocols](domains/ai-protocols.md)
+- [gVisor](projects/gvisor.md) — `[INGEST]` (project); Google Cloud CNCF-donation post (gVisor section) + gvisor.dev docs + repo + CNCF issue #521: Sentry/Gofer isolation, `systrap`/KVM platforms, checkpoint/restore, CNCF Sandbox timeline — also touched [Agent Sandbox](projects/agent-sandbox.md) (gVisor links), [AI Protocols](domains/ai-protocols.md)
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](sources/ai-protocols-google-agents-cncf-donation-2026.md), [Agent Substrate](projects/agent-substrate.md) — `[INGEST]` (fiche + project update); Agent Substrate, gVisor and OpenRL donated to the CNCF after Sandbox acceptance; Agent Substrate `v1.0.0` (2026-11-05) and GA on GKE — also touched [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-11-03
 

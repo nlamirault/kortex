@@ -13,18 +13,18 @@ updated: 2026-11-13
 
 | Metric | Count |
 |--------|-------|
-| Total entities | 45 |
-| Major entities (★) | 37 |
-| Minor entities | 8 |
-| Total triples | 146 |
+| Total entities | 49 |
+| Major entities (★) | 43 |
+| Minor entities | 6 |
+| Total triples | 159 |
 
 ## Entities by Type
 
 | Type | Count | Index |
 |------|-------|-------|
-| source | 23 | [→](kb/_index-type-source.md) |
+| source | 25 | [→](kb/_index-type-source.md) |
 | concept | 15 | [→](kb/_index-type-concept.md) |
-| project | 3 | [→](kb/_index-type-project.md) |
+| project | 5 | [→](kb/_index-type-project.md) |
 | domain | 2 | [→](kb/_index-type-domain.md) |
 | organization | 2 | [→](kb/_index-type-organization.md) |
 
@@ -35,13 +35,13 @@ updated: 2026-11-13
 | [Personal Agent Consent & Trust Protocol (PACT)](kb/concept-personal-agent-consent-trust-protocol-pact.md) | concept | 6 | 5 |
 | [Agent Plugins](kb/concept-agent-plugins.md) | concept | 5 | 2 |
 | [Agentic Resource Discovery (ARD)](kb/concept-agentic-resource-discovery-ard.md) | concept | 5 | 4 |
-| [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 1 |
+| [OpenTelemetry (OTel)](kb/concept-opentelemetry-otel.md) | concept | 5 | 2 |
 | [Personal Agent Protocol (PAP)](kb/concept-personal-agent-protocol-pap.md) | concept | 5 | 4 |
 | [Agentic AI Foundation (AAIF)](kb/organization-agentic-ai-foundation.md) | organization | 5 | 5 |
 | [Amazon Web Services (AWS)](kb/organization-aws.md) | organization | 5 | 6 |
 | [Introducing Dogwood: runtime verification for AI agents](kb/source-ai-protocols-dogwood-runtime-verification-2026.md) | source | 5 | 3 |
 | [The Sandbox as an Agent Primitive](kb/source-ai-protocols-opensandbox-agent-primitive-2026.md) | source | 5 | 2 |
-| [Introducing Strands Box: AI agent sandboxes powered by Dogwood](kb/source-ai-protocols-strands-box-sandboxes-2026.md) | source | 5 | 5 |
+| [Introducing Strands Box: AI agent sandboxes powered by Dogwood](kb/source-ai-protocols-strands-box-sandboxes-2026.md) | source | 5 | 6 |
 
 ## Navigation
 
