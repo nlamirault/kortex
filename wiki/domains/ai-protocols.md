@@ -63,6 +63,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [Announcing the Agentic Resource Discovery specification (Google blog)](../sources/ai-protocols-ard-google-announcement-2026.md) — ARD launch: catalogs on your own domain, registries as search engines, four-phase runtime demo, Google Cloud Agent Registry.
 - [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](../sources/ai-protocols-ard-aws-agent-registry-2026.md) — AWS Agent Registry (preview) plus ARD as a DNS-like federation layer across clouds, on-prem and SaaS (stated as expectations).
 - [Agentic Resource Discovery: Let agents search (Hugging Face blog)](../sources/ai-protocols-ard-hugging-face-discover-2026.md) — ARD as the discovery layer in front of MCP, Skills and A2A; `hf-discover` reference implementation (CLI, REST, MCP).
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](../sources/ai-protocols-google-agents-cncf-donation-2026.md) — Google donates Agent Substrate, gVisor and OpenRL to the CNCF after Sandbox acceptance; Agent Substrate 1.0 and GA on GKE.
 - [Welcoming OpenShell to the CNCF](../sources/ai-protocols-openshell-cncf-2026.md) — CNCF blog (Bryce & Golshan, 2026-11-10): NVIDIA contributes OpenShell as a CNCF Sandbox project; enforcement outside the agent, vendor-neutral governance, Cedar adoption announced.
 
 ## Projects
@@ -70,6 +71,7 @@ each other (agent ↔ agent); **x402** lets agents transact (agent ↔ payment r
 - [agentic-seo](../projects/agentic-seo.md) — CLI auditing documentation for AEO readiness (robots.txt, llms.txt, token budgets, skill.md, agent-permissions.json).
 - [Agent Sandbox](../projects/agent-sandbox.md) — kubernetes-sigs project: declarative `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; isolation backend (gVisor or Kata) decoupled from the API.
 - [Agent Substrate](../projects/agent-substrate.md) — CNCF Sandbox runtime (originally Google): many stateful actors multiplexed onto warm Kubernetes worker pods, sub-500 ms suspend/resume (project-reported), gVisor or Kata-on-Cloud-Hypervisor, zero ambient credentials + default-deny egress.
+- [gVisor](../projects/gvisor.md) — user-space application kernel in Go (OCI runtime `runsc`), originally Google, CNCF Sandbox since 2026; an isolation backend (one of two) under Agent Sandbox (`runtimeClassName: gvisor`) and Agent Substrate (`gvisor` class).
 - [OpenShell](../projects/openshell.md) — CNCF Sandbox runtime (contributed by NVIDIA): trusted per-sandbox supervisor mediating every TCP/DNS request against YAML policy (Landlock + seccomp on Linux), credentials added only for approved endpoints, SMT prover for proposed network rules; Docker/Podman/Kubernetes/VM runtimes; Cedar proposed as an alternate policy language.
 
 ## Organizations

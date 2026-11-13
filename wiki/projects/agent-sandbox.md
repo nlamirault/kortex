@@ -50,7 +50,7 @@ contains.[^agent-sandbox-blog-2026]
 "fully decouples the execution layer from the underlying isolation technology". It documents two
 backends:[^agent-sandbox-site-2026]
 
-- **gVisor:** a userspace kernel that intercepts system calls to protect the host.
+- **[gVisor](gvisor.md):** a userspace kernel that intercepts system calls to protect the host.
 - **Kata Containers:** hardware virtualization with a dedicated kernel per sandbox, using Kata
   Containers and QEMU.
 
@@ -100,8 +100,8 @@ comparison: no source compares them.*
 |---|---|---|---|---|
 | [Strands Box](../sources/ai-protocols-strands-box-sandboxes-2026.md) | The developer's machine | Nothing; one local runtime | OS containment (macOS Seatbelt first) | Dogwood at the network, shell, Python and MCP boundaries |
 | [OpenSandbox](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) | Docker or Kubernetes | The provisioning runtime, behind lifecycle and execution OpenAPIs | Not described in its fiche | Not described |
-| **Agent Sandbox** | Kubernetes only | The isolation backend, behind a declarative CRD and controller | gVisor (userspace kernel) or Kata Containers (VM per sandbox) | None described |
-| [Agent Substrate](agent-substrate.md) | Kubernetes 1.37+ (worker pods only) | Which worker an actor runs on: actors suspend to snapshots and resume on any warm pod, behind a gRPC API kept off the Kubernetes API path | gVisor (`runsc`) or Kata Containers on Cloud Hypervisor (KVM microVM); plain containers unsupported | Built in: `EgressPolicy` allowlists, OpenFGA authorization, egress credential injection, SPIFFE identity |
+| **Agent Sandbox** | Kubernetes only | The isolation backend, behind a declarative CRD and controller | [gVisor](gvisor.md) (userspace kernel) or Kata Containers (VM per sandbox) | None described |
+| [Agent Substrate](agent-substrate.md) | Kubernetes 1.37+ (worker pods only) | Which worker an actor runs on: actors suspend to snapshots and resume on any warm pod, behind a gRPC API kept off the Kubernetes API path | [gVisor](gvisor.md) (`runsc`) or Kata Containers on Cloud Hypervisor (KVM microVM); plain containers unsupported | Built in: `EgressPolicy` allowlists, OpenFGA authorization, egress credential injection, SPIFFE identity |
 
 It is also the first `kubernetes-sigs` project in the wiki and a seed for a future Kubernetes
 domain (queued).
@@ -112,6 +112,7 @@ domain (queued).
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — OpenSandbox (AAIF), a sandbox API that works across runtimes.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — local OS containment plus Dogwood policy.
 - [Agent Substrate](agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended actors onto warm Kubernetes workers; the opposite design choice (workload state out of the Kubernetes API).
+- [gVisor](gvisor.md) — user-space application kernel (`runsc`, written in Go) selected through `runtimeClassName: gvisor`; CNCF Sandbox project since 2026.
 - [OpenShell](openshell.md) — CNCF Sandbox runtime contributed by NVIDIA: a trusted supervisor outside each sandbox mediates every network request against YAML policy, over Docker, Podman, Kubernetes or VM runtimes. Not yet a row in the comparison table above.
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
