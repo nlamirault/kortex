@@ -3,7 +3,7 @@ title: "Introducing the Personal Agent Consent & Trust Protocol (PACT)"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Introducing the Personal Agent Consent & Trust Protocol (PACT)

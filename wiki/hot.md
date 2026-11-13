@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,25 @@ updated: 2026-11-03
 
 ## Current Focus
 
-**Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
+**Personal Agent Protocol (PAP, "Poppy"): the official site and spec.** Ingested
+personalagentprotocol.org as a **fiche**, and enriched the existing PAP concept page from the site,
+the draft 1.0 spec, the changelog, the roadmap, Path to 1.0, demos and license pages, plus the
+GitHub repo metadata. PAP is Apache-2.0. **v0.4 (2026-11-10) is the 1.0 release candidate**, after
+0.1 (2026-10-09), 0.2 and 0.3, and draft 1.0 takes fixes only. A company publishes
+`/.well-known/poppy.json`. The user signs in on the company's page through OAuth: **Direct Sign-In
+is preferred**, Device Sign-In is also available, and credential-based Mediated Sign-In is a
+transitional extension slated for removal. Each request carries a **signed `Poppy-Session` JWT**
+with a pairwise User ID, across `openapi`/`mcp` APIs, browser join and the `poppy` conversation
+protocol. There are six extensions (`operations` v3 for approved exact terms, `ucp` v1 for
+commerce). **43 listed design partners** include Meta (as a personal agent) and Sierra (as a
+technology provider). No steward is named, and only community demos exist. **Dated drift, noted and
+not escalated:** the Sierra post's "session is built on OAuth" matched 0.1 and was split in 0.3, and
+its reference implementation is not delivered yet. The working-group/"Muse" `PENDING` stays open:
+the site adds evidence (Instinct is listed, no working group is named) but does not resolve it.
+The Sierra update post, UCP, Web Bot Auth (2nd mention), OAuth CIMD, OpenAI and the community demos
+are parked.
+
+Prior: **Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
 from the queue to a **concept page**, grounded on the project site (home, spec v0.91,
 interoperability and governance pages), plus **3 fiches** for the Google, AWS and Hugging Face
 posts. ARD is an open, Apache-2.0 protocol that **sits entirely before invocation**. A client asks
@@ -216,6 +234,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [PAP site fiche](sources/ai-protocols-personal-agent-protocol-site-2026.md) — latest ingest (official "Poppy" site: v0.4 = 1.0 RC, 43 design partners, dated differences from the Sierra post)
+- [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — enriched (spec building blocks, version train, roadmap, governance, Site vs. Sierra table; `PENDING` kept)
 - [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — latest ingest (new concept: pre-invocation discovery, JSON-LD entries, `/.well-known/ard.json`, REST `/search` + federation, publisher-authority trust binding, own governance; dated `ai-catalog.json` → `ard.json` drift)
 - [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md) / [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md) / [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — latest ingest (launch posts: catalogs + registries; AWS Agent Registry + DNS analogy; `hf-discover`)
 - [AWS](organizations/aws.md) — enriched (AWS Agent Registry preview; ARD Oversight Board seat)
@@ -278,6 +298,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-13 `[INGEST]` — PAP site fiche (personalagentprotocol.org) + PAP concept enriched (14 sources); Apache-2.0 "Poppy" spec, 0.1→0.4 RC, Session header split from OAuth in 0.3 (dated drift vs the Sierra post, not escalated); working-group/"Muse" `PENDING` kept; Sierra update post, UCP, Web Bot Auth, OAuth CIMD, OpenAI, community demos parked.
 - 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
 - 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.

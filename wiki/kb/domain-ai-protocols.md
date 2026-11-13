@@ -3,15 +3,15 @@ title: "AI Protocols"
 type: kb-entity
 entity_type: domain
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # AI Protocols
 
 **Type:** domain  
 **Tier:** Major ★  
-**Degree:** 0 out / 29 in  
-**Source pages:** 30
+**Degree:** 0 out / 30 in  
+**Source pages:** 31
 
 **Wiki page:** [AI Protocols](../domains/ai-protocols.md)
 
@@ -43,6 +43,7 @@ updated: 2026-11-03
 | ai-protocols-open-responses-2026 | extends | ai-protocols-open-responses-2026.md |
 | ai-protocols-openenv-training-agents-2026 | extends | ai-protocols-openenv-training-agents-2026.md |
 | ai-protocols-opensandbox-agent-primitive-2026 | extends | ai-protocols-opensandbox-agent-primitive-2026.md |
+| ai-protocols-personal-agent-protocol-site-2026 | extends | ai-protocols-personal-agent-protocol-site-2026.md |
 | ai-protocols-strands-box-sandboxes-2026 | extends | ai-protocols-strands-box-sandboxes-2026.md |
 | ai-protocols-x402-foundation-launch-2026 | extends | ai-protocols-x402-foundation-launch-2026.md |
 | decagon-pact-introduction-2026 | extends | decagon-pact-introduction-2026.md |
@@ -76,6 +77,7 @@ updated: 2026-11-03
 - [sources/ai-protocols-open-responses-2026.md](../sources/ai-protocols-open-responses-2026.md)
 - [sources/ai-protocols-openenv-training-agents-2026.md](../sources/ai-protocols-openenv-training-agents-2026.md)
 - [sources/ai-protocols-opensandbox-agent-primitive-2026.md](../sources/ai-protocols-opensandbox-agent-primitive-2026.md)
+- [sources/ai-protocols-personal-agent-protocol-site-2026.md](../sources/ai-protocols-personal-agent-protocol-site-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 - [sources/ai-protocols-x402-foundation-launch-2026.md](../sources/ai-protocols-x402-foundation-launch-2026.md)
 - [sources/decagon-pact-introduction-2026.md](../sources/decagon-pact-introduction-2026.md)

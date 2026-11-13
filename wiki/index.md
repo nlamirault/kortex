@@ -60,6 +60,7 @@ write operation also appends to `## By Date`.
 - [Announcing the Agentic Resource Discovery specification (Google blog)](sources/ai-protocols-ard-google-announcement-2026.md) — fiche: Google (Bu & Krishnan, 2026-06-17) launches ARD; catalogs + registries, four-phase demo, Google Cloud Agent Registry (native ARD "in the coming months").
 - [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](sources/ai-protocols-ard-aws-agent-registry-2026.md) — fiche: AWS (Damick, Mangal & Talluri, 2026-08-24); AWS Agent Registry (preview) workflow, multi-environment problem, DNS analogy, ARD as complement (stated as expectations).
 - [Agentic Resource Discovery: Let agents search (Hugging Face blog)](sources/ai-protocols-ard-hugging-face-discover-2026.md) — fiche: Hugging Face (Burtenshaw & Smith, 2026-06-17); discovery layer in front of MCP/Skills/A2A; `hf-discover` reference implementation via CLI, REST and MCP.
+- [Personal Agent Protocol (personalagentprotocol.org)](sources/ai-protocols-personal-agent-protocol-site-2026.md) — fiche: official PAP ("Poppy") site; Apache-2.0, `/.well-known/poppy.json`, OAuth sign-in, one signed Session across APIs/web/company agent, extensions (UCP, Operations); v0.4 = 1.0 release candidate (2026-11-10); 43 listed design partners; dated differences from the Sierra launch post.
 
 ## People
 
@@ -85,6 +86,10 @@ write operation also appends to `## By Date`.
 ## Gaps
 
 ## By Date
+
+### 2026-11-13
+
+- [Personal Agent Protocol site fiche](sources/ai-protocols-personal-agent-protocol-site-2026.md), [Personal Agent Protocol (PAP)](concepts/personal-agent-protocol-pap.md) — `[INGEST]` (fiche + concept enriched); "Poppy" spec building blocks, 0.1→0.4 RC version train, design partners, dated drift vs the Sierra post (session/OAuth split in 0.3) — also touched [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-11-03
 
