@@ -113,6 +113,7 @@ domain (queued).
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — local OS containment plus Dogwood policy.
 - [Agent Substrate](agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended actors onto warm Kubernetes workers; the opposite design choice (workload state out of the Kubernetes API).
 - [gVisor](gvisor.md) — user-space application kernel (`runsc`, written in Go) selected through `runtimeClassName: gvisor`; CNCF Sandbox project since 2026.
+- [OpenShell](openshell.md) — CNCF Sandbox runtime contributed by NVIDIA: a trusted supervisor outside each sandbox mediates every network request against YAML policy, over Docker, Podman, Kubernetes or VM runtimes. Not yet a row in the comparison table above.
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
 [^agent-sandbox-site-2026]: Agent Sandbox project site, https://agent-sandbox.sigs.k8s.io/, read 2026-11-02.

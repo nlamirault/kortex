@@ -7,7 +7,7 @@ updated: 2026-11-13
 
 # Entity Index
 
-*46 entities — auto-generated*
+*48 entities — auto-generated*
 
 ## A
 
@@ -56,6 +56,7 @@ updated: 2026-11-13
 ## O
 
 - ★ [Observability](domain-observability.md) — domain
+- ★ [OpenShell](project-openshell.md) — project
 - ★ [OpenTelemetry (OTel)](concept-opentelemetry-otel.md) — concept
 ## P
 
@@ -77,6 +78,7 @@ updated: 2026-11-13
 - ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md) — source
 ## W
 
+- ★ [Welcoming OpenShell to the CNCF: Open Governance to Secure Agentic AI](source-ai-protocols-openshell-cncf-2026.md) — source
 - ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md) — source
 ## X
 

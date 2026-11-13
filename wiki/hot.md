@@ -14,7 +14,20 @@ updated: 2026-11-13
 
 ## Current Focus
 
-**gVisor: the isolation kernel under the Kubernetes agent sandboxes.** Promoted gVisor from the
+**OpenShell: NVIDIA's agent-governance runtime joins the CNCF.** Ingested the CNCF launch post
+(Bryce & Golshan, 2026-11-10) as a fiche and created an **OpenShell project page** from the repo,
+the docs source, the `ai-openshell` org and `.project`, and the CNCF records. A gateway control
+plane plus a **trusted supervisor outside each sandbox** mediates every TCP/DNS request against
+**YAML policy**; runtimes (Docker, Podman, Kubernetes, VM) only build the fence. Landlock and
+seccomp are described for the Linux backend only. Credentials are added only for approved
+endpoints, and an **SMT prover** checks proposed network rules. **Dated gap, not escalated:** the
+post says OpenShell "is adopting Cedar … as its policy language", but on 2026-11-13 Cedar is RFC
+0020, an *alternate* language, still open. CNCF milestones are kept apart: TOC vote 2026-09-26,
+onboarding 2026-10-02, public welcome 2026-11-10. Code still lives at `NVIDIA/OpenShell` (v0.1.8);
+the move to `ai-openshell` is in progress. Maintainers: 11 NVIDIA, 3 Red Hat. **Cedar (3 sources)
+and CNCF (3, after Agent Substrate and Google's donation post) are promotion candidates.** No OpenShell row in the Agent Sandbox table yet (parked).
+
+Prior: **gVisor: the isolation kernel under the Kubernetes agent sandboxes.** Promoted gVisor from the
 queue to a **new project page**. It draws on the gVisor section of Google's CNCF-donation post
 (Drew Bradstock, 2026-11-05), the gvisor.dev docs, repo metadata, CNCF issue #521 and Agent
 Sandbox's gVisor page. gVisor is a **Go application kernel**: the Sentry serves system calls in
@@ -245,6 +258,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [OpenShell](projects/openshell.md) / [OpenShell CNCF fiche](sources/ai-protocols-openshell-cncf-2026.md) — latest ingest (CNCF Sandbox agent runtime from NVIDIA; supervisor-mediated sandboxes, YAML policy + SMT prover, Cedar proposed via RFC 0020; Agent Sandbox and Agent Substrate back-linked)
 - [gVisor](projects/gvisor.md) — latest ingest (new project: Sentry/Gofer isolation, `runsc`, platforms, checkpoint/restore, CNCF Sandbox timeline, how Agent Sandbox and Agent Substrate use it)
 - [Agent Sandbox](projects/agent-sandbox.md) — enriched (gVisor linked in the isolation bullet, comparison table and Related)
 - [Google CNCF donation fiche](sources/ai-protocols-google-agents-cncf-donation-2026.md) — latest ingest (Agent Substrate, gVisor, OpenRL donated to the CNCF; Substrate 1.0 + GA on GKE)
@@ -311,6 +325,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-13 `[INGEST]` — OpenShell fiche (CNCF blog, Bryce & Golshan) + project page (NVIDIA/OpenShell repo + docs source + ai-openshell org/.project + CNCF records); post-vs-repo Cedar gap dated (RFC 0020 open), CNCF milestones separated, repo move in progress; Agent Sandbox/Agent Substrate back-linked (no table row); NVIDIA, Red Hat, Docker, Canonical, authors, RFC 0020, table row and docs parked; Cedar + CNCF grounding noted.
 - 2026-11-13 `[INGEST]` — gVisor project page (Google CNCF post gVisor section + gvisor.dev docs + repo + cncf/sandbox#521 + Agent Sandbox gVisor page); CNCF Sandbox timeline with two acceptance milestones reconciled; maintainer and repo moves dated as announced-not-done; Agent Sandbox linked; GKE Sandbox, adopters, maintainer orgs, authors, unread docs parked.
 - 2026-11-13 `[INGEST]` — Google Cloud CNCF donation fiche (Bradstock, 2026-11-05) + Agent Substrate page reconciled: `v1.0.0` (2026-11-05), GA on GKE, CNCF Sandbox onboarding (#523 passed 2026-10-20); gVisor text-only (page on `feat/gvisor`); OpenRL, Agent Compute Engine, Nous Research, llm-d parked; CNCF now 2-source.
 - 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
