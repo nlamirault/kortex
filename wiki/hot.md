@@ -26,8 +26,22 @@ began 2026-10-28; Google's "last month" refers to the October step (reconciled, 
 It is "on a path toward Incubation". **Announced, not done yet:** Ant Group, Modal and Tines
 joining as maintainers (MAINTAINERS.md is still all-Google), and a repo move out of `google`.
 Agent Sandbox selects it with `runtimeClassName: gvisor`; Agent Substrate has a `gvisor` class
-and integrates with its checkpoint/restore. Adopter claims are vendor-reported. No fiche for the
-post (a parallel stream owns it).
+and integrates with its checkpoint/restore. Adopter claims are vendor-reported. The post itself
+has its own [fiche](sources/ai-protocols-google-agents-cncf-donation-2026.md), from the parallel
+Agent Substrate ingest.
+
+Prior: **Agent Substrate 1.0 goes to the CNCF.** Ingested Google Cloud's post "Powering open
+infrastructure for autonomous agents" (Drew Bradstock, 2026-11-05) as a fiche, and reconciled the
+[Agent Substrate](projects/agent-substrate.md) page with it. Google donates **Agent Substrate,
+gVisor and OpenRL** to the CNCF "following their acceptance last month into the CNCF Sandbox".
+Each project is working through Sandbox onboarding, and gVisor is "on a path toward Incubation".
+Substrate's lifecycle moves from pre-1.0 (`v1.0.0-rc.1`, read 2026-11-02) to **`v1.0.0`, released
+2026-11-05**, and **GA as Agent Substrate on GKE** (managed on Google Cloud, or open source on any
+cluster). cncf/sandbox#523 closed on 2026-10-20 with `gitvote/passed`. The post describes the
+model as Actors, Workers and Gateways, and adds 100+ contributors, Nous Research's Hermes
+Enterprise and a complement, Agent Compute Engine. The <500 ms, 10× and 500+/s figures are still
+vendor-reported. No contradictions. gVisor stays text-only here; its page is being built on
+`feat/gvisor`. OpenRL is parked. **CNCF now has 2 sources** (promotion candidate).
 
 Prior: **Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
 from the queue to a **concept page**, grounded on the project site (home, spec v0.91,
@@ -233,6 +247,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 - [gVisor](projects/gvisor.md) — latest ingest (new project: Sentry/Gofer isolation, `runsc`, platforms, checkpoint/restore, CNCF Sandbox timeline, how Agent Sandbox and Agent Substrate use it)
 - [Agent Sandbox](projects/agent-sandbox.md) — enriched (gVisor linked in the isolation bullet, comparison table and Related)
+- [Google CNCF donation fiche](sources/ai-protocols-google-agents-cncf-donation-2026.md) — latest ingest (Agent Substrate, gVisor, OpenRL donated to the CNCF; Substrate 1.0 + GA on GKE)
+- [Agent Substrate](projects/agent-substrate.md) — reconciled (dated release timeline to `v1.0.0`; GKE GA; CNCF onboarding; Actors/Workers/Gateways)
 - [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — latest ingest (new concept: pre-invocation discovery, JSON-LD entries, `/.well-known/ard.json`, REST `/search` + federation, publisher-authority trust binding, own governance; dated `ai-catalog.json` → `ard.json` drift)
 - [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md) / [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md) / [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — latest ingest (launch posts: catalogs + registries; AWS Agent Registry + DNS analogy; `hf-discover`)
 - [AWS](organizations/aws.md) — enriched (AWS Agent Registry preview; ARD Oversight Board seat)
@@ -296,6 +312,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 ## Last Operations
 
 - 2026-11-13 `[INGEST]` — gVisor project page (Google CNCF post gVisor section + gvisor.dev docs + repo + cncf/sandbox#521 + Agent Sandbox gVisor page); CNCF Sandbox timeline with two acceptance milestones reconciled; maintainer and repo moves dated as announced-not-done; Agent Sandbox linked; GKE Sandbox, adopters, maintainer orgs, authors, unread docs parked.
+- 2026-11-13 `[INGEST]` — Google Cloud CNCF donation fiche (Bradstock, 2026-11-05) + Agent Substrate page reconciled: `v1.0.0` (2026-11-05), GA on GKE, CNCF Sandbox onboarding (#523 passed 2026-10-20); gVisor text-only (page on `feat/gvisor`); OpenRL, Agent Compute Engine, Nous Research, llm-d parked; CNCF now 2-source.
 - 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
 - 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.

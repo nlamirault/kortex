@@ -60,6 +60,7 @@ write operation also appends to `## By Date`.
 - [Announcing the Agentic Resource Discovery specification (Google blog)](sources/ai-protocols-ard-google-announcement-2026.md) — fiche: Google (Bu & Krishnan, 2026-06-17) launches ARD; catalogs + registries, four-phase demo, Google Cloud Agent Registry (native ARD "in the coming months").
 - [Agentic Resource Discovery (ARD): An open specification for agent discovery (AWS blog)](sources/ai-protocols-ard-aws-agent-registry-2026.md) — fiche: AWS (Damick, Mangal & Talluri, 2026-08-24); AWS Agent Registry (preview) workflow, multi-environment problem, DNS analogy, ARD as complement (stated as expectations).
 - [Agentic Resource Discovery: Let agents search (Hugging Face blog)](sources/ai-protocols-ard-hugging-face-discover-2026.md) — fiche: Hugging Face (Burtenshaw & Smith, 2026-06-17); discovery layer in front of MCP/Skills/A2A; `hf-discover` reference implementation via CLI, REST and MCP.
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](sources/ai-protocols-google-agents-cncf-donation-2026.md) — fiche: Google (Bradstock, 2026-11-05) donates Agent Substrate, gVisor and OpenRL to the CNCF after their CNCF Sandbox acceptance; Agent Substrate reaches 1.0 and GA on GKE.
 
 ## People
 
@@ -90,6 +91,7 @@ write operation also appends to `## By Date`.
 ### 2026-11-13
 
 - [gVisor](projects/gvisor.md) — `[INGEST]` (project); Google Cloud CNCF-donation post (gVisor section) + gvisor.dev docs + repo + CNCF issue #521: Sentry/Gofer isolation, `systrap`/KVM platforms, checkpoint/restore, CNCF Sandbox timeline — also touched [Agent Sandbox](projects/agent-sandbox.md) (gVisor links), [AI Protocols](domains/ai-protocols.md)
+- [Powering open infrastructure for autonomous agents (Google Cloud blog)](sources/ai-protocols-google-agents-cncf-donation-2026.md), [Agent Substrate](projects/agent-substrate.md) — `[INGEST]` (fiche + project update); Agent Substrate, gVisor and OpenRL donated to the CNCF after Sandbox acceptance; Agent Substrate `v1.0.0` (2026-11-05) and GA on GKE — also touched [AI Protocols](domains/ai-protocols.md)
 
 ### 2026-11-03
 

@@ -10,6 +10,6 @@ updated: 2026-11-13
 *4 entities*
 
 - ★ [Agent Sandbox](project-agent-sandbox.md)
-- · [Agent Substrate](project-agent-substrate.md)
+- ★ [Agent Substrate](project-agent-substrate.md)
 - · [agentic-seo](project-agentic-seo.md)
 - ★ [gVisor](project-gvisor.md)
