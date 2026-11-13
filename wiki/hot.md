@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,22 @@ updated: 2026-11-03
 
 ## Current Focus
 
-**Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
+**gVisor: the isolation kernel under the Kubernetes agent sandboxes.** Promoted gVisor from the
+queue to a **new project page**. It draws on the gVisor section of Google's CNCF-donation post
+(Drew Bradstock, 2026-11-05), the gvisor.dev docs, repo metadata, CNCF issue #521 and Agent
+Sandbox's gVisor page. gVisor is a **Go application kernel**: the Sentry serves system calls in
+user space, a Gofer mediates file access, and it has its own network stack. It ships the
+**`runsc` OCI runtime**, used as a Kubernetes RuntimeClass. `systrap` has been the default
+platform since mid-2023 and KVM suits bare metal. It supports checkpoint/restore (GPU too, via
+cuda-checkpoint) and GPUs/TPUs. **CNCF Sandbox:** the TOC vote passed 2026-09-28 and onboarding
+began 2026-10-28; Google's "last month" refers to the October step (reconciled, not escalated).
+It is "on a path toward Incubation". **Announced, not done yet:** Ant Group, Modal and Tines
+joining as maintainers (MAINTAINERS.md is still all-Google), and a repo move out of `google`.
+Agent Sandbox selects it with `runtimeClassName: gvisor`; Agent Substrate has a `gvisor` class
+and integrates with its checkpoint/restore. Adopter claims are vendor-reported. No fiche for the
+post (a parallel stream owns it).
+
+Prior: **Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
 from the queue to a **concept page**, grounded on the project site (home, spec v0.91,
 interoperability and governance pages), plus **3 fiches** for the Google, AWS and Hugging Face
 posts. ARD is an open, Apache-2.0 protocol that **sits entirely before invocation**. A client asks
@@ -216,6 +231,8 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [gVisor](projects/gvisor.md) — latest ingest (new project: Sentry/Gofer isolation, `runsc`, platforms, checkpoint/restore, CNCF Sandbox timeline, how Agent Sandbox and Agent Substrate use it)
+- [Agent Sandbox](projects/agent-sandbox.md) — enriched (gVisor linked in the isolation bullet, comparison table and Related)
 - [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — latest ingest (new concept: pre-invocation discovery, JSON-LD entries, `/.well-known/ard.json`, REST `/search` + federation, publisher-authority trust binding, own governance; dated `ai-catalog.json` → `ard.json` drift)
 - [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md) / [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md) / [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — latest ingest (launch posts: catalogs + registries; AWS Agent Registry + DNS analogy; `hf-discover`)
 - [AWS](organizations/aws.md) — enriched (AWS Agent Registry preview; ARD Oversight Board seat)
@@ -278,6 +295,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-13 `[INGEST]` — gVisor project page (Google CNCF post gVisor section + gvisor.dev docs + repo + cncf/sandbox#521 + Agent Sandbox gVisor page); CNCF Sandbox timeline with two acceptance milestones reconciled; maintainer and repo moves dated as announced-not-done; Agent Sandbox linked; GKE Sandbox, adopters, maintainer orgs, authors, unread docs parked.
 - 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
 - 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.

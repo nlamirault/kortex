@@ -3,7 +3,7 @@ title: "Agentic Resource Discovery: Let agents search for tools, skills, and oth
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Agentic Resource Discovery: Let agents search for tools, skills, and other agents (Hugging Face blog)

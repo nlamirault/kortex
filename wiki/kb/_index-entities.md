@@ -2,12 +2,12 @@
 title: Entity Index
 type: kb-index
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Entity Index
 
-*44 entities — auto-generated*
+*45 entities — auto-generated*
 
 ## A
 
@@ -16,7 +16,7 @@ updated: 2026-11-03
 - ★ [Agent Plugins](concept-agent-plugins.md) — concept
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md) — source
 - ★ [Agent Plugins — portable package format for skills and MCP servers (spec site)](source-ai-protocols-agent-plugins-spec-2026.md) — source
-- · [Agent Sandbox](project-agent-sandbox.md) — project
+- ★ [Agent Sandbox](project-agent-sandbox.md) — project
 - ★ [Agent Skills — standardized way to give AI agents new capabilities](source-ai-protocols-agent-skills-overview-2026.md) — source
 - · [Agent Substrate](project-agent-substrate.md) — project
 - ★ [Agent2Agent (A2A)](concept-agent2agent-a2a.md) — concept
@@ -36,6 +36,9 @@ updated: 2026-11-03
 ## D
 
 - ★ [Distributed Tracing](concept-distributed-tracing.md) — concept
+## G
+
+- ★ [gVisor](project-gvisor.md) — project
 ## I
 
 - ★ [Instrumentation](concept-instrumentation.md) — concept
