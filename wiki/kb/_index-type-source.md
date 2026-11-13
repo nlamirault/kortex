@@ -2,12 +2,12 @@
 title: source Index
 type: kb-index
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # source
 
-*22 entities*
+*23 entities*
 
 - ★ [A New Chapter for A2A: Joining the Agentic AI Foundation](source-ai-protocols-a2a-agentic-ai-foundation-2026.md)
 - ★ [Agent Plugins package your skills, tools, and more (Google Developers blog)](source-ai-protocols-agent-plugins-google-2026.md)
@@ -30,4 +30,5 @@ updated: 2026-11-03
 - ★ [Running Agents on Kubernetes with Agent Sandbox](source-ai-protocols-agent-sandbox-kubernetes-2026.md)
 - ★ [The Sandbox as an Agent Primitive](source-ai-protocols-opensandbox-agent-primitive-2026.md)
 - ★ [Training agents for real-world tasks with OpenEnv](source-ai-protocols-openenv-training-agents-2026.md)
+- ★ [Welcoming OpenShell to the CNCF: Open Governance to Secure Agentic AI](source-ai-protocols-openshell-cncf-2026.md)
 - ★ [What Open Responses changes for AI developers](source-ai-protocols-open-responses-2026.md)

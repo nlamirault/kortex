@@ -23,7 +23,7 @@ sources:
 generated: {by: anthropic/claude-opus-5-5, at: 2026-11-02T00:00:00Z}
 verified: []
 stale_after: 2027-05-02T00:00:00Z
-updated: 2026-11-02
+updated: 2026-11-13
 tags: [agent-substrate, sandbox, kubernetes, gvisor, kata-containers, cloud-hypervisor, microvm, spiffe, suspend-resume, cncf, agents]
 ---
 
@@ -156,6 +156,7 @@ marked `NOT VERIFIED`.
 - [Agent Sandbox](agent-sandbox.md): kubernetes-sigs `Sandbox` CRD with gVisor/Kata backends and warm pools. Holds the canonical sandbox comparison table.
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md): OpenSandbox (AAIF), a lifecycle and execution API that works across runtimes.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md): local OS containment plus Dogwood policy.
+- [OpenShell](openshell.md): another CNCF Sandbox agent runtime (contributed by NVIDIA); a per-sandbox trusted supervisor enforces YAML policy and injects credentials, with Cedar proposed as an alternate policy language.
 - [Model Context Protocol (MCP)](../concepts/model-context-protocol-mcp.md): MCP servers are among the workloads Substrate runs as actors.
 - [OpenTelemetry (OTel)](../concepts/opentelemetry-otel.md): Substrate defines its metrics and log events as an OTel Weaver registry.
 - [AI Protocols](../domains/ai-protocols.md): domain cluster.

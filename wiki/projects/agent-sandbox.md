@@ -17,7 +17,7 @@ sources:
 generated: {by: anthropic/claude-opus-5-5, at: 2026-11-02T00:00:00Z}
 verified: []
 stale_after: 2027-05-02T00:00:00Z
-updated: 2026-11-02
+updated: 2026-11-13
 tags: [agent-sandbox, sandbox, kubernetes, crd, gvisor, kata-containers, sig-apps, agents, sdk]
 ---
 
@@ -112,6 +112,7 @@ domain (queued).
 - [The Sandbox as an Agent Primitive](../sources/ai-protocols-opensandbox-agent-primitive-2026.md) — OpenSandbox (AAIF), a sandbox API that works across runtimes.
 - [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md) — local OS containment plus Dogwood policy.
 - [Agent Substrate](agent-substrate.md) — CNCF Sandbox runtime multiplexing suspended actors onto warm Kubernetes workers; the opposite design choice (workload state out of the Kubernetes API).
+- [OpenShell](openshell.md) — CNCF Sandbox runtime contributed by NVIDIA: a trusted supervisor outside each sandbox mediates every network request against YAML policy, over Docker, Podman, Kubernetes or VM runtimes. Not yet a row in the comparison table above.
 - [AI Protocols](../domains/ai-protocols.md) — domain cluster.
 
 [^agent-sandbox-site-2026]: Agent Sandbox project site, https://agent-sandbox.sigs.k8s.io/, read 2026-11-02.

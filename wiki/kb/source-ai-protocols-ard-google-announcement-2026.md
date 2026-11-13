@@ -3,7 +3,7 @@ title: "Announcing the Agentic Resource Discovery specification (Google Develope
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Announcing the Agentic Resource Discovery specification (Google Developers blog)

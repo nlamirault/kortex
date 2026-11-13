@@ -3,15 +3,15 @@ title: "Introducing Strands Box: AI agent sandboxes powered by Dogwood"
 type: kb-entity
 entity_type: source
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Introducing Strands Box: AI agent sandboxes powered by Dogwood
 
 **Type:** source  
 **Tier:** Major ★  
-**Degree:** 5 out / 4 in  
-**Source pages:** 5
+**Degree:** 5 out / 5 in  
+**Source pages:** 6
 
 **Wiki page:** [Introducing Strands Box: AI agent sandboxes powered by Dogwood](../sources/ai-protocols-strands-box-sandboxes-2026.md)
 
@@ -33,6 +33,7 @@ updated: 2026-11-03
 | ai-protocols-agent-sandbox-kubernetes-2026 | contrasts-with | ai-protocols-agent-sandbox-kubernetes-2026.md |
 | ai-protocols-dogwood-runtime-verification-2026 | used-by | ai-protocols-dogwood-runtime-verification-2026.md |
 | ai-protocols-opensandbox-agent-primitive-2026 | contrasts-with | ai-protocols-opensandbox-agent-primitive-2026.md |
+| ai-protocols-openshell-cncf-2026 | contrasts-with | ai-protocols-openshell-cncf-2026.md |
 
 ## Source Pages
 
@@ -40,4 +41,5 @@ updated: 2026-11-03
 - [sources/ai-protocols-agent-sandbox-kubernetes-2026.md](../sources/ai-protocols-agent-sandbox-kubernetes-2026.md)
 - [sources/ai-protocols-dogwood-runtime-verification-2026.md](../sources/ai-protocols-dogwood-runtime-verification-2026.md)
 - [sources/ai-protocols-opensandbox-agent-primitive-2026.md](../sources/ai-protocols-opensandbox-agent-primitive-2026.md)
+- [sources/ai-protocols-openshell-cncf-2026.md](../sources/ai-protocols-openshell-cncf-2026.md)
 - [sources/ai-protocols-strands-box-sandboxes-2026.md](../sources/ai-protocols-strands-box-sandboxes-2026.md)

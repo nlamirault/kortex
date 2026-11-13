@@ -2,7 +2,7 @@
 type: cache
 title: Session Hot Cache
 description: Read silently at every session start. ~500 words. Current focus, active pages, open threads.
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # Kortex — Session Hot Cache
@@ -14,7 +14,20 @@ updated: 2026-11-03
 
 ## Current Focus
 
-**Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
+**OpenShell: NVIDIA's agent-governance runtime joins the CNCF.** Ingested the CNCF launch post
+(Bryce & Golshan, 2026-11-10) as a fiche and created an **OpenShell project page** from the repo,
+the docs source, the `ai-openshell` org and `.project`, and the CNCF records. A gateway control
+plane plus a **trusted supervisor outside each sandbox** mediates every TCP/DNS request against
+**YAML policy**; runtimes (Docker, Podman, Kubernetes, VM) only build the fence. Landlock and
+seccomp are described for the Linux backend only. Credentials are added only for approved
+endpoints, and an **SMT prover** checks proposed network rules. **Dated gap, not escalated:** the
+post says OpenShell "is adopting Cedar … as its policy language", but on 2026-11-13 Cedar is RFC
+0020, an *alternate* language, still open. CNCF milestones are kept apart: TOC vote 2026-09-26,
+onboarding 2026-10-02, public welcome 2026-11-10. Code still lives at `NVIDIA/OpenShell` (v0.1.8);
+the move to `ai-openshell` is in progress. Maintainers: 11 NVIDIA, 3 Red Hat. **Cedar (3 sources)
+and CNCF (2) are promotion candidates.** No OpenShell row in the Agent Sandbox table yet (parked).
+
+Prior: **Agentic Resource Discovery (ARD): search for agent resources before invoking them.** Promoted ARD
 from the queue to a **concept page**, grounded on the project site (home, spec v0.91,
 interoperability and governance pages), plus **3 fiches** for the Google, AWS and Hugging Face
 posts. ARD is an open, Apache-2.0 protocol that **sits entirely before invocation**. A client asks
@@ -216,6 +229,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Active Pages
 
+- [OpenShell](projects/openshell.md) / [OpenShell CNCF fiche](sources/ai-protocols-openshell-cncf-2026.md) — latest ingest (CNCF Sandbox agent runtime from NVIDIA; supervisor-mediated sandboxes, YAML policy + SMT prover, Cedar proposed via RFC 0020; Agent Sandbox and Agent Substrate back-linked)
 - [Agentic Resource Discovery (ARD)](concepts/agentic-resource-discovery-ard.md) — latest ingest (new concept: pre-invocation discovery, JSON-LD entries, `/.well-known/ard.json`, REST `/search` + federation, publisher-authority trust binding, own governance; dated `ai-catalog.json` → `ard.json` drift)
 - [ARD Google fiche](sources/ai-protocols-ard-google-announcement-2026.md) / [ARD AWS fiche](sources/ai-protocols-ard-aws-agent-registry-2026.md) / [ARD Hugging Face fiche](sources/ai-protocols-ard-hugging-face-discover-2026.md) — latest ingest (launch posts: catalogs + registries; AWS Agent Registry + DNS analogy; `hf-discover`)
 - [AWS](organizations/aws.md) — enriched (AWS Agent Registry preview; ARD Oversight Board seat)
@@ -278,6 +292,7 @@ VERIFIED` recall claims) still awaits real OTel-spec ingests.
 
 ## Last Operations
 
+- 2026-11-13 `[INGEST]` — OpenShell fiche (CNCF blog, Bryce & Golshan) + project page (NVIDIA/OpenShell repo + docs source + ai-openshell org/.project + CNCF records); post-vs-repo Cedar gap dated (RFC 0020 open), CNCF milestones separated, repo move in progress; Agent Sandbox/Agent Substrate back-linked (no table row); NVIDIA, Red Hat, Docker, Canonical, authors, RFC 0020, table row and docs parked; Cedar + CNCF grounding noted.
 - 2026-11-03 `[INGEST]`+`[FILE]` — ARD concept (site + spec v0.91 + interop + governance) + 3 fiches (Google, AWS, HF); pre-invocation discovery protocol with its own Board and Maintainers (not AAIF); `ai-catalog.json` → `ard.json` drift dated, not escalated; AWS org, Agent Plugins, MCP, A2A, Tool Use, Agent Skills, AgentReady and Agent Plugins (Google) back-linked; AI Catalog, hf-discover, both Agent Registries, Microsoft, Cisco, GoDaddy, spec authors, DNS-AID/ANS parked; Google (3 sources) and Hugging Face (2) now promotion candidates.
 - 2026-11-02 `[INGEST]` — Agent Substrate project page (ate.dev + llms.txt + docs bundle + repo); CNCF Sandbox, originally Google; actors/workers, suspend to snapshot + resume on any worker, gVisor or Kata-on-Cloud-Hypervisor, zero-trust egress; Agent Sandbox table extended to 4 rows; Architecture-page drift on identity/policy noted; Kubernetes bootstrap trigger met; CNCF, kagent, Agent Executor, SPIFFE, OpenFGA, Cloud Hypervisor parked.
 - 2026-11-02 `[INGEST]` — Agent Sandbox fiche (Kubernetes blog, Kuo & Santa Barbara) + project page (agent-sandbox.sigs.k8s.io); SIG Apps `Sandbox` CRD + warm-pool extensions + Python/Go SDKs; OpenSandbox/Strands Box back-linked (editorial 3-way comparison); SIG Apps, gVisor, Kata, OpenClaw, authors, docs sub-pages, Kubernetes domain candidate parked.

@@ -3,7 +3,7 @@ title: "x402"
 type: kb-entity
 entity_type: concept
 status: auto-generated
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # x402
